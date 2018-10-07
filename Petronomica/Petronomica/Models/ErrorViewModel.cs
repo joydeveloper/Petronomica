@@ -1,6 +1,6 @@
 using System;
 
-namespace Petronomica.Models
+namespace aspnetboot.Models
 {
     public class ErrorViewModel
     {

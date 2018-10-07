@@ -1,34 +1,84 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using Petronomica.Services;
+using Petronomica.Models;
+using ReUse;
+using System.IO;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Logging;
+using Petronomica.ReUse;
 
-namespace Petronomica
+namespace PetronomicaBootstrap
 {
     public class Startup
     {
-        // This method gets called by the runtime. Use this method to add services to the container.
-        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
+        public IConfiguration Configuration { get; }
         public void ConfigureServices(IServiceCollection services)
         {
-        }
+            services.AddTransient<IPasswordValidator<User>,
+                    CustomPasswordValidator>(serv => new CustomPasswordValidator(6));
+            services.AddDbContext<ApplicationContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+            services.AddIdentity<User, IdentityRole>((config =>
+            {
+
+                config.Password.RequireNonAlphanumeric = false;
+                config.Password.RequireLowercase = false;
+                config.Password.RequireUppercase = false;
+                config.Password.RequireDigit = true;
+            }))
+                .AddEntityFrameworkStores<ApplicationContext>()
+               .AddDefaultTokenProviders();
+            services.AddTransient<IMessageSender, EmailMessageSender>();
+            services.AddTransient<MessageService>();
+            services.AddDistributedMemoryCache();
+            services.AddSession();
+            services.AddMvc();
+        }
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, MessageService messageService)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            else
+            {
+                app.UseExceptionHandler("/Home/Error");
+                app.UseHsts();
+            }
+            loggerFactory.AddFile(Path.Combine(Directory.GetCurrentDirectory(), "logger.txt"));
+            var logger = loggerFactory.CreateLogger("FileLogger");
+            app.UseSession();
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
+            app.UseCookiePolicy();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
+            });
+            app.Use(async (context, next) =>
+            {
+                context.Items["text"] = "Text from HttpContext.Items";
+                await next.Invoke();
+            });
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Hello World!");
+                logger.LogInformation("Processing request {0}", context.Request.Path);
+                context.Response.ContentType = "text/html; charset=utf-8";
+                await context.Response.WriteAsync("Index");
             });
+
         }
     }
 }

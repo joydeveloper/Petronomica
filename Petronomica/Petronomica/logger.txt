@@ -1,0 +1,36 @@
+Request starting HTTP/1.1 DEBUG http://localhost:49749/  0
+Request starting HTTP/1.1 GET http://localhost:44312/  
+Request finished in 42.5659ms 200 
+Route matched with {action = "Index", controller = "Home"}. Executing action Petronomica.Controllers.HomeController.Index (Petronomica)
+Executing action method Petronomica.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.7571ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 48.891ms.
+Executed action Petronomica.Controllers.HomeController.Index (Petronomica) in 83.4063ms
+Request finished in 289.0904ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:44312/favicon.ico  
+Processing request /favicon.ico
+Request finished in 10.4131ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:44312/  
+Request starting HTTP/1.1 DEBUG http://localhost:49749/  0
+Request finished in 29.9278ms 200 
+Route matched with {action = "Index", controller = "Home"}. Executing action Petronomica.Controllers.HomeController.Index (Petronomica)
+Executing action method Petronomica.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.6467ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 37.5645ms.
+Executed action Petronomica.Controllers.HomeController.Index (Petronomica) in 61.4746ms
+Request finished in 214.2875ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:44312/favicon.ico  
+Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\User\Source\Repos\Petronomica\Petronomica\Petronomica\wwwroot\favicon.ico'
+Request finished in 10.9583ms 200 image/x-icon
+Request starting HTTP/1.1 GET http://localhost:44312/  
+Request starting HTTP/1.1 DEBUG http://localhost:49749/  0
+Request finished in 28.0731ms 200 
+Route matched with {action = "Index", controller = "Home"}. Executing action Petronomica.Controllers.HomeController.Index (Petronomica)
+Executing action method Petronomica.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.6407ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 40.5322ms.
+Executed action Petronomica.Controllers.HomeController.Index (Petronomica) in 71.0471ms
+Request finished in 221.0199ms 200 text/html; charset=utf-8

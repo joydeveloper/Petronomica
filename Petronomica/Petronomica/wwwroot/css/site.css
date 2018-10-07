@@ -105,18 +105,9 @@ img {
     background-color: #CDDEFC;
     border: 0.5em double #86813C;
     padding: 2px;
-    display: table-cell;
-    height: 100%;
 }
 
-.col-container {
-    display: table; /* Make the container element behave like a table */
-    width: 100%; /* Set full-width to expand the whole page */
-}
 
-.col {
-    display: table-cell; /* Make elements inside the container behave like table cells */
-}
 /* Hide/rearrange for smaller screens */
 @media screen and (max-width: 767px) {
     /* Hide captions */

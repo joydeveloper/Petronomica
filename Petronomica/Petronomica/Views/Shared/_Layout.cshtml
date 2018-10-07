@@ -36,7 +36,7 @@
                     <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" asp-controller="Services" asp-action="Index">Проект</a>
+                    <a class="nav-link" asp-controller="Project" asp-action="Index">Проект</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" asp-controller="Useful" asp-action="Index">Полезное</a>
@@ -47,9 +47,7 @@
 
             </ul>
             <a href="#"><i id="social-em" class="fa fa-envelope-square fa-3x social-em"></i></a>
-            <a href="#">
-                <i class="fa fa-address-card" style="font-size:24px"></i>
-            </a>
+       
                 @*<form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -64,18 +62,18 @@
             <a href="#"><img src="~/images/whatsup.png" alt="Whatsup"></a>
             <a href="#"><img src="~/images/sup.png" alt="Поддержка"></a>
             <a href="#"><img src="~/images/vk-icon.png" alt="Вконтакте"> </a>
-
-
-            <div class="footer-copyright text-left py-3" style="margin-left:1%">
-                © 2018 Copyright:
-                <a href="https://feziko.ru/"> feziko.ru</a>
-            </div>
-        </footer>
+          @*<a href="https://feziko.ru/" style="margin-left:20%;padding-top:10px"> © 2018 Copyright</a>*@
+        </footer>          
+     
     </div>
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous">
+        </script>
     </environment>
     <environment exclude="Development">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

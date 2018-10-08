@@ -38,6 +38,10 @@ namespace Petronomica.Models
         public bool Presentation { get; set; }
         public bool PresentationReport { get; set; }
     }
+    public class MagisterPreOrder : DiplomPreOrder
+    {
+        public string Magister = "Диссертация";
+    }
     public class PracticeReportPreOrder:PreOrder
     {
         public bool Theme { get; set; }

@@ -71,7 +71,10 @@ Will you be my +1?
             try
             {
                 if (et.AttachmentPath != null)
-                    builder.Attachments.Add(et.AttachmentPath);
+                    foreach (string s in et.AttachmentPath)
+                    {
+                        builder.Attachments.Add(s);
+                    }
                 builder.HtmlBody = et.Message;
             }
             catch (Exception e)

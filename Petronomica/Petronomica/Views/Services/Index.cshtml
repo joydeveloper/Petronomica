@@ -35,7 +35,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary">Заказать</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Конструктор</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="CoursePreOrder()">Конструктор</button>
                     </div>
                     <small class="text-muted alert alert-success">От 4000 рублей</small>
                 </div>
@@ -49,7 +49,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary">Заказать</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="test()">Конструктор</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="DiplomPreOrder()">Конструктор</button>
                     </div>
                     <small class="text-muted  alert alert-primary">От 8000 рублей</small>
                 </div>
@@ -63,7 +63,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary">Заказать</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Конструктор</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="MagisterPreOrder()">Конструктор</button>
                     </div>
                     <small class="text-muted alert alert-warning">От 14000 рублей</small>
                 </div>
@@ -87,9 +87,14 @@
     function Result(msg) {
       document.getElementById("result").innerHTML = msg;
     }
-
-    function test() {
-        httpGetAsync("@Url.Action("GetServiceType", "Services")",Result);
+    function DiplomPreOrder() {
+        httpGetAsync("@Url.Action("GetServiceType", "Services")?id="+0,Result);
+    }
+     function CoursePreOrder() {
+        httpGetAsync("@Url.Action("GetServiceType", "Services")?id="+1,Result);
+    }
+     function MagisterPreOrder() {
+        httpGetAsync("@Url.Action("GetServiceType", "Services")?id="+2,Result);
     }
 </script>
 

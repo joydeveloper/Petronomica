@@ -12,7 +12,7 @@ namespace Petronomica.Models
         public string To { get; set; }
         public string Subject { get; set; }
         public string Message { get; set; }
-        public string AttachmentPath { get; set; }
+        public string[] AttachmentPath { get; set; }
         public string Password;
     }
     public class TestEmail : EmailType
@@ -47,7 +47,7 @@ namespace Petronomica.Models
     public class TestConstOrderEmail : TestEmail
     {
        
-       public TestConstOrderEmail(string message,string attach): base()
+       public TestConstOrderEmail(string message,string[] attach): base()
         {
             Message = message;
             AttachmentPath = attach;

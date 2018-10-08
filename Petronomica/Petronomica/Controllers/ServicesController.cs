@@ -15,73 +15,98 @@ namespace Petronomica.Controllers
     {
         public IActionResult Index()
         {
-            return View("Index");//, new Models.ConstOrder());
+            return View("Index");
         }
         [HttpGet]
         public PartialViewResult GetServiceType(int id)
         {
-        
-            string[] constructorsarr = new string[] { "_DiplomworkType", "_СourseworkType", "_MagisterworkType"};
-         
-         
-            return  PartialView(constructorsarr[id]);
+            string[] constructorsarr = new string[] { "_DiplomworkType", "_СourseworkType", "_MagisterworkType" };
+            return PartialView(constructorsarr[id]);
         }
         [Route("Save")]
         [HttpPost]
-        public IActionResult Save(int id,Models.ConstOrder corder, IFormFile[] files, [FromServices]MessageService ms)
+        public IActionResult Save(Models.DiplomPreOrder corder, IFormFile[] files, [FromServices]MessageService ms)
         {
             try
             {
-                corder.YFiles = new List<string>(); foreach (IFormFile doc in files)
+                int z = 0;
+                corder.YFiles = new string[files.Length];
+                foreach (IFormFile doc in files)
                 {
                     var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/userfiles", doc.FileName);
                     var stream = new FileStream(path, FileMode.Create);
                     doc.CopyToAsync(stream);
-                    corder.YFiles.Add(doc.FileName);
+                    corder.YFiles[z]=path;
                     stream.Close();
+                    z++;
                 }
                 StringBuilder sb = new StringBuilder();
-                sb.Append("<h3>Предзаказ №</h3>" + corder.Id);
-                sb.Append("<h3>Адрес электронной почты</h3>" + corder.Email);
-                sb.Append("<h3>Тема курсовой/ дипломной работы</h3>" + corder.Theme);
-                sb.Append("<h3>Содержание/ план работы</h3>" + corder.Plan);
-                sb.Append("<h3>Реферат</h3>" + corder.Referat);
-                sb.Append("<h3>Введение</h3>" + corder.Intro);
-                sb.Append("<h3>Теоретическая часть работы</h3>" + corder.Theory);
-                sb.Append("<h3>Аналитическая часть работы</h3>" + corder.Anal);
-                sb.Append("<h3>Проблемы и совершенствование предмета исследования</h3>" + corder.Problems);
-                sb.Append("<h3>Заключение</h3>" + corder.Conclusion);
-                sb.Append("<h3>Список используемой литературы</h3>" + corder.Literature);
-                sb.Append("<h3>Презентация</h3>" + corder.Presentation);
-                sb.Append("<h3>Доклад к презентации</h3>" + corder.PresentationReport);
-                sb.Append("<h3>Желаемая оценка</h3>" + corder.WishMark);
-                string[] attachments = new string[corder.YFiles.Count];
-                int i = 0;
-                foreach (string s in corder.YFiles)
-                {
-                    attachments[i] = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/userfiles", s);
-                    i++;
-                }
-                TestConstOrderEmail tcoe = new TestConstOrderEmail(sb.ToString(), attachments);
-                TempData["ResultMessage"] = ms.Send(tcoe).ToString();
-                TempData["YourMail"] = corder.Email;
-                //  return View("Success");
-                return Content(CreatePreOrder(id).GetType().ToString());
+                sb.Append("<h3>Предзаказ № " + corder.Id+"</h3>");
+                sb.Append("<h3>Адрес электронной почты:" + corder.Email + "</h3>");
+                sb.Append("<h3>Тема курсовой/ дипломной работы-" + BoolToRus(corder.Theme) + "</h3>");
+                sb.Append("<h3>Содержание/ план работы-" + BoolToRus(corder.Plan) + "</h3>");
+                sb.Append("<h3>Реферат-" + BoolToRus(corder.Referat) + "</h3>");
+                sb.Append("<h3>Введение-" + BoolToRus(corder.Intro) + "</h3>");
+                sb.Append("<h3>Теоретическая часть работы-" + BoolToRus(corder.Theory) + "</h3>");
+                sb.Append("<h3>Аналитическая часть работы-" + BoolToRus(corder.Anal) + "</h3>");
+                sb.Append("<h3>Проблемы и совершенствование предмета исследования-" + BoolToRus(corder.Problems) + "</h3>");
+                sb.Append("<h3>Заключение-" + BoolToRus(corder.Conclusion) + "</h3>");
+                sb.Append("<h3>Список используемой литературы-" + BoolToRus(corder.Literature) + "</h3>");
+                sb.Append("<h3>Презентация-" + BoolToRus(corder.Presentation) + "</h3>");
+                sb.Append("<h3>Доклад к презентации-" + BoolToRus(corder.PresentationReport) + "</h3>");
+                sb.Append("<h3>Желаемая оценка-" + corder.WishMark + "</h3>");
+                corder.Message += sb.ToString();
+                PreOrderEmail poe = new PreOrderEmail(corder);
+                PreOrderEmailReport tcoe = new PreOrderEmailReport(corder);
+                TempData["ResultEmploer"] = ms.Send(poe).ToString();
+                TempData["ResultReport"] = ms.Send(tcoe).ToString();
+                return View("Success");
             }
             catch (Exception e)
             {
                 return Content(e.ToString());
             }
         }
-        private PreOrder CreatePreOrder(int id)
+        [Route("SaveC")]
+        [HttpPost]
+        public IActionResult SaveC(Models.CourseWorkPreOrder corder, IFormFile[] files, [FromServices]MessageService ms)
         {
-            switch(id)
+            try
             {
-                case 0:return new DiplomPreOrder();
-                case 1: return new CourseWorkPreOrder();
-                case 2: return new MagisterPreOrder();
+                int z = 0;
+                corder.YFiles = new string[files.Length];
+                foreach (IFormFile doc in files)
+                {
+                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/userfiles", doc.FileName);
+                    var stream = new FileStream(path, FileMode.Create);
+                    doc.CopyToAsync(stream);
+                    corder.YFiles[z] = path;
+                    stream.Close();
+                    z++;
+                }
+                StringBuilder sb = new StringBuilder();
+                sb.Append("<h3>Предзаказ № " + corder.Id + "</h3>");
+                sb.Append("<h3>Адрес электронной почты:" + corder.Email + "</h3>");
+                sb.Append("<h3>Тема курсовой/ дипломной работы-" + BoolToRus(corder.Theme) + "</h3>");
+                sb.Append("<h3>Содержание/ план работы-" + BoolToRus(corder.Plan) + "</h3>");
+                sb.Append("<h3>Введение-" + BoolToRus(corder.Intro) + "</h3>");
+                sb.Append("<h3>Теоретическая часть работы-" + BoolToRus(corder.Theory) + "</h3>");
+                sb.Append("<h3>Аналитическая часть работы-" + BoolToRus(corder.Anal) + "</h3>");
+                sb.Append("<h3>Проблемы и совершенствование предмета исследования-" + BoolToRus(corder.Problems) + "</h3>");
+                sb.Append("<h3>Заключение-" + BoolToRus(corder.Conclusion) + "</h3>");
+                sb.Append("<h3>Список используемой литературы-" + BoolToRus(corder.Literature) + "</h3>");
+                sb.Append("<h3>Желаемая оценка-" + corder.WishMark + "</h3>");
+                corder.Message += sb.ToString();
+                PreOrderEmail poe = new PreOrderEmail(corder);
+                PreOrderEmailReport tcoe = new PreOrderEmailReport(corder);
+                TempData["ResultEmploer"] = ms.Send(poe).ToString();
+                TempData["ResultReport"] = ms.Send(tcoe).ToString();
+                return View("Success");
             }
-            return null;
+            catch (Exception e)
+            {
+                return Content(e.ToString());
+            }
         }
         private string BoolToRus(bool val)
         {
@@ -92,3 +117,4 @@ namespace Petronomica.Controllers
         }
     }
 }
+   

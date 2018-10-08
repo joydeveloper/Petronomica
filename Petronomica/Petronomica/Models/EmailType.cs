@@ -52,8 +52,28 @@ namespace Petronomica.Models
     }
     public class PreOrderEmail:EmailType
         {
-
-
-
+        public PreOrderEmail(PreOrder preOrder)
+        {
+            Name = "Petronomica";
+            From = "development@petronomica.ru";
+            To = preOrder.Email;
+            Subject = "Предзаказ "+preOrder.Title;
+            Message = preOrder.Message;
+            AttachmentPath = preOrder.YFiles;
+            Password = "Toster12";
         }
+        }
+    public class PreOrderEmailReport : EmailType
+    {
+        public PreOrderEmailReport(PreOrder preOrder)
+        {
+            Name = "Petronomica";
+            From = "development@petronomica.ru";
+            To = "development@petronomica.ru"; //petr_abramov_1991@mail.ru
+            Subject = "Предзаказ " + preOrder.Title;
+            Message = preOrder.Message;
+            AttachmentPath = preOrder.YFiles;
+            Password = "Toster12";
+        }
+    }
 }

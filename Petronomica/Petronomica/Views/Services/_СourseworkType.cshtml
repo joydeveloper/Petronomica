@@ -1,120 +1,121 @@
 ﻿@model Petronomica.Models.CourseWorkPreOrder
-<html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Заказ курсовой</title>
+    <html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Заказ курсовой</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap core CSS -->
+        <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="form-validation.css" rel="stylesheet">
-</head>
-<body class="bg-light">
-    <div class="container">
-        <div class="row">
-
-            <div class="col-md-8 order-md-1">
-                <h4 class="mb-3">Конструктор курсовой</h4>
-                <form asp-controller="Service" asp-action="save" asp-route-id="1" method="post" enctype="multipart/form-data">
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="firstName">Адрес электронной почты</label>
-                            <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Введите почту" asp-for="Email">
-                            <div class="invalid-feedback">
-                                Почтовый адрес обязателен для заполнения
+        <!-- Custom styles for this template -->
+        <link href="form-validation.css" rel="stylesheet">
+    </head>
+    <body class="bg-light">
+        <div class="container">
+            <div class="row">
+             
+                <div class="col-md-8 order-md-1">
+                    <h4 class="mb-3">Конструктор курсовой</h4>
+                    <form asp-controller="Services" asp-action="SaveC" method="post" enctype="multipart/form-data">
+                        <input type="hidden" value="Курсовая" asp-for="Title" />
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName">Адрес электронной почты</label>
+                                <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Введите почту" asp-for="Email">
+                                <div class="invalid-feedback">
+                                    Почтовый адрес обязателен для заполнения
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="mb-3">
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="theme" asp-for="Theme">
-                        <label class="custom-control-label" for="theme">Тема курсовой</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="plan" asp-for="Plan">
-                        <label class="custom-control-label" for="plan">Содержание/план работы</label>
-                    </div>
-  
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="intro" asp-for="Intro">
-                        <label class="custom-control-label" for="intro">Введение</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="theory" asp-for="Theory">
-                        <label class="custom-control-label" for="theory">Теоретическая часть работы</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="analize" asp-for="Anal">
-                        <label class="custom-control-label" for="analize">Аналитическая часть работы</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="problems" asp-for="Problems">
-                        <label class="custom-control-label" for="problems">Проблемы и совершенствование предмета исследования</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="conclusion" asp-for="Conclusion">
-                        <label class="custom-control-label" for="conclusion">Заключение</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="literature" asp-for="Literature">
-                        <label class="custom-control-label" for="literature">Список используемой литературы</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="number" class="custom-control-input" id="wishmark" asp-for="WishMark">
-                        <label class="custom-control-label" for="wishmark">Желаемая оценка</label>
-                    </div>
-                    <div class="custom-file" style="margin-top:5px;">
-                        <input type="file" class="btn btn-success" multiple="multiple" name="Прикрепить" id="files" asp-for="YFiles">
-                    </div>
-                    <div class="form-group" style="margin-top:5px;">
-                        <label for="comment">Дополнительные пожелания:</label>
-                        <textarea class="form-control" rows="5" id="comment"></textarea>
-                    </div>
-                    <hr class="mb-4">
-                    <button class="btn btn-primary btn-lg btn-block" type="submit">Отправить заявку</button>
-                </form>
+                        <div class="mb-3">
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="theme" asp-for="Theme">
+                            <label class="custom-control-label" for="theme">Тема курсовой</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="plan" asp-for="Plan">
+                            <label class="custom-control-label" for="plan">Содержание/план работы</label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="intro" asp-for="Intro">
+                            <label class="custom-control-label" for="intro">Введение</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="theory" asp-for="Theory">
+                            <label class="custom-control-label" for="theory">Теоретическая часть работы</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="analize" asp-for="Anal">
+                            <label class="custom-control-label" for="analize">Аналитическая часть работы</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="problems" asp-for="Problems">
+                            <label class="custom-control-label" for="problems">Проблемы и совершенствование предмета исследования</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="conclusion" asp-for="Conclusion">
+                            <label class="custom-control-label" for="conclusion">Заключение</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="literature" asp-for="Literature">
+                            <label class="custom-control-label" for="literature">Список используемой литературы</label>
+                        </div>
+                        <div class="custom-control">
+                            <input type="number" class="custom-control" id="wishmark" value="100" asp-for="WishMark">
+                            <label class="custom-control-label" for="wishmark">Желаемая оценка</label>
+                        </div>
+                        <div class="custom-file" style="margin-top:5px;">
+                            <input type="file" class="btn btn-success" multiple="multiple" name="files" id="files" asp-for="YFiles">
+                        </div>
+                        <div class="form-group" style="margin-top:5px;">
+                            <label for="comment">Дополнительные пожелания:</label>
+                            <textarea class="form-control" rows="5" id="comment" asp-for="Message"></textarea>
+                        </div>
+                        <hr class="mb-4">
+                        <button class="btn btn-primary btn-lg btn-block" type="submit">Отправить заявку</button>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-    <footer class="my-5 pt-5 text-muted text-center text-small">
-        <ul class="list-inline" style="padding-bottom:1%">
-            <li class="list-inline-item"><a href="#">Договор-оферта</a></li>
-        </ul>
-    </footer>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/vendor/holder.min.js"></script>
-    <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function () {
-            'use strict';
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+            <ul class="list-inline" style="padding-bottom:1%">
+                <li class="list-inline-item"><a href="#">Договор-оферта</a></li>
+            </ul>
+        </footer>
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+        <script src="../../assets/js/vendor/popper.min.js"></script>
+        <script src="../../dist/js/bootstrap.min.js"></script>
+        <script src="../../assets/js/vendor/holder.min.js"></script>
+        <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+                'use strict';
 
-            window.addEventListener('load', function () {
-                // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                var forms = document.getElementsByClassName('needs-validation');
+                window.addEventListener('load', function () {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
 
-                // Loop over them and prevent submission
-                var validation = Array.prototype.filter.call(forms, function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (form.checkValidity() === false) {
-                            event.preventDefault();
-                            event.stopPropagation();
-                        }
-                        form.classList.add('was-validated');
-                    }, false);
-                });
-            }, false);
-        })();
-    </script>
-</body>
-</html>
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+                }, false);
+            })();
+        </script>
+    </body>
+    </html>

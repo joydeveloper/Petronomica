@@ -16,10 +16,11 @@
 <body class="bg-light">
     <div class="container">
         <div class="row">
-
+          
             <div class="col-md-8 order-md-1">
                 <h4 class="mb-3">Конструктор диплома</h4>
-                <form asp-controller="Services" asp-action="Save" asp-route-id="0"  method="post" enctype="multipart/form-data">
+                <form asp-controller="Services" asp-action="Save" method="post" enctype="multipart/form-data">
+                    <input type="hidden" value="Диплом" asp-for="Title" />
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="firstName">Адрес электронной почты</label>
@@ -75,16 +76,16 @@
                         <input type="checkbox" class="custom-control-input" id="presentreport" asp-for="PresentationReport">
                         <label class="custom-control-label" for="presentreport">Доклад к презентации</label>
                     </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="number" class="custom-control-input" id="wishmark" asp-for="WishMark">
+                    <div class="custom-control">
+                        <input type="number" class="custom-control" id="wishmark" value="100" asp-for="WishMark">
                         <label class="custom-control-label" for="wishmark">Желаемая оценка</label>
                     </div>
                     <div class="custom-file" style="margin-top:5px;">
-                        <input type="file" class="btn btn-success" multiple="multiple" name="files"  id="files" asp-for="YFiles">
+                        <input type="file" class="btn btn-success" multiple="multiple" name="files" id="files" asp-for="YFiles">
                     </div>
                     <div class="form-group" style="margin-top:5px;">
                         <label for="comment">Дополнительные пожелания:</label>
-                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                        <textarea class="form-control" rows="5" id="comment"  asp-for="Message"></textarea>
                     </div>
                     <hr class="mb-4">
                     <button class="btn btn-primary btn-lg btn-block" type="submit">Отправить заявку</button>

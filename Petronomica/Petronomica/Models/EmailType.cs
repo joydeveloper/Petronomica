@@ -25,35 +25,35 @@ namespace Petronomica.Models
             Subject = "Test";
             Message = "Test message";
             Password = "Toster12";
-
         }
 
     }
- 
     public class ValidationEmail : EmailType
     {
-        public ValidationEmail(string email,string msg)
+        public ValidationEmail(string email, string msg)
         {
             Name = "Petronomica";
             From = "development@petronomica.ru";
             To = email;
             Subject = "Подтверждение аккаунта";
-            Message =msg;
+            Message = msg;
             Password = "Toster12";
 
         }
-
     }
     public class TestConstOrderEmail : TestEmail
     {
-       
-       public TestConstOrderEmail(string message,string[] attach): base()
+
+        public TestConstOrderEmail(string message, string[] attach) : base()
         {
             Message = message;
             AttachmentPath = attach;
+        }
+    }
+    public class PreOrderEmail:EmailType
+        {
+
+
 
         }
-
-
-    }
 }

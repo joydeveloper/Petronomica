@@ -20,6 +20,7 @@ namespace Petronomica.Models
         public bool Plan { get; set; }
         public int WishMark { get; set; }
         public bool Literature { get; set; }
+        public List<string> YFiles { get; set; }
     }
     public class CourseWorkPreOrder : PreOrder
     {
@@ -29,8 +30,7 @@ namespace Petronomica.Models
         public bool Anal { get; set; }
         public bool Problems { get; set; }
         public bool Conclusion { get; set; }
-       
-        public List<string> YFiles { get; set; }
+      
     }
     public class DiplomPreOrder : CourseWorkPreOrder
     {

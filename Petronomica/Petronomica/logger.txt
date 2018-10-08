@@ -566,3 +566,136 @@ Executed action method Petronomica.Controllers.ServicesController.Save (Petronom
 Executing ContentResult with HTTP Response ContentType of text/plain; charset=utf-8
 Executed action Petronomica.Controllers.ServicesController.Save (Petronomica) in 341.3477ms
 Request finished in 368.5016ms 200 text/plain; charset=utf-8
+Request starting HTTP/1.1 DEBUG http://localhost:62289/  0
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Failed to determine the https port for redirect.
+Request finished in 198.8461ms 200 
+Route matched with {action = "Index", controller = "Home"}. Executing action aspnetboot.Controllers.HomeController.Index (Petronomica)
+Executing action method aspnetboot.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method aspnetboot.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.7001ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 211.7773ms.
+Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 255.7616ms
+Request finished in 735.065ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.4758ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 47.7455ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 108.8131ms
+Request finished in 164.0495ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetServiceType?id=0  
+Route matched with {action = "GetServiceType", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetServiceType (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetServiceType (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetServiceType (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.3419ms.
+Executing PartialViewResult, running view _DiplomworkType.
+Executed PartialViewResult - view _DiplomworkType executed in 107.9776ms.
+Executed action Petronomica.Controllers.ServicesController.GetServiceType (Petronomica) in 142.4431ms
+Request finished in 165.229ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 POST http://localhost:62289/Services/Save/?id=1 multipart/form-data; boundary=----WebKitFormBoundaryVQKi8quUnCiaBj7L 1760
+Processing request /Services/Save/%3Fid=1
+Request finished in 10.7487ms 200 text/html; charset=utf-8
+Connection id "0HLHDAIAB0GN4", Request id "0HLHDAIAB0GN4:00000003": the application completed without reading the entire request body.
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Request starting HTTP/1.1 DEBUG http://localhost:62289/  0
+Failed to determine the https port for redirect.
+Request finished in 118.7257ms 200 
+Route matched with {action = "Index", controller = "Home"}. Executing action aspnetboot.Controllers.HomeController.Index (Petronomica)
+Executing action method aspnetboot.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method aspnetboot.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4.5219ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 164.379ms.
+Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 197.2359ms
+Request finished in 483.6389ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.4788ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 17.1459ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 25.6878ms
+Request finished in 36.9488ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetServiceType?id=0  
+Route matched with {action = "GetServiceType", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetServiceType (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetServiceType (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetServiceType (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.7722ms.
+Executing PartialViewResult, running view _DiplomworkType.
+Executed PartialViewResult - view _DiplomworkType executed in 130.3477ms.
+Executed action Petronomica.Controllers.ServicesController.GetServiceType (Petronomica) in 169.4368ms
+Request finished in 218.5263ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 POST http://localhost:62289/Services/Save?id=1 multipart/form-data; boundary=----WebKitFormBoundaryAQcBqBK3ooGDBVnu 1760
+Processing request /Services/Save%3Fid=1
+Request finished in 6.6272ms 200 text/html; charset=utf-8
+Connection id "0HLHDAIH9L8B8", Request id "0HLHDAIH9L8B8:00000003": the application completed without reading the entire request body.
+Request starting HTTP/1.1 DEBUG http://localhost:62289/  0
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Request finished in 57.514ms 200 
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action aspnetboot.Controllers.HomeController.Index (Petronomica)
+Executing action method aspnetboot.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method aspnetboot.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.8668ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 133.8156ms.
+Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 158.2831ms
+Request finished in 377.8446ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.5186ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 23.509ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 41.816ms
+Request finished in 62.9002ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetServiceType?id=0  
+Route matched with {action = "GetServiceType", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetServiceType (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetServiceType (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetServiceType (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.5201ms.
+Executing PartialViewResult, running view _DiplomworkType.
+Executed PartialViewResult - view _DiplomworkType executed in 122.4707ms.
+Executed action Petronomica.Controllers.ServicesController.GetServiceType (Petronomica) in 161.169ms
+Request finished in 186.8011ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 POST http://localhost:62289/Save?id=1 multipart/form-data; boundary=----WebKitFormBoundaryk0JRCAZwGwhRYyUO 1760
+Route matched with {action = "Save", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Save (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Save (Petronomica) with arguments (1, Petronomica.Models.ConstOrder, Microsoft.AspNetCore.Http.IFormFile[], Petronomica.Services.MessageService) - Validation state: Invalid
+Executed action method Petronomica.Controllers.ServicesController.Save (Petronomica), returned result Microsoft.AspNetCore.Mvc.ContentResult in 266.4658ms.
+Executing ContentResult with HTTP Response ContentType of text/plain; charset=utf-8
+Executed action Petronomica.Controllers.ServicesController.Save (Petronomica) in 385.213ms
+Request finished in 412.2694ms 200 text/plain; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Request starting HTTP/1.1 DEBUG http://localhost:62289/  0
+Request finished in 26.7344ms 200 
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action aspnetboot.Controllers.HomeController.Index (Petronomica)
+Executing action method aspnetboot.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method aspnetboot.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.6995ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 115.8148ms.
+Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 139.0066ms
+Request finished in 324.1855ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/css/site.css  
+Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\css\site.css'
+Request finished in 15.4124ms 200 text/css
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2767ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 21.9048ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 29.0293ms
+Request finished in 59.4257ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetServiceType?id=0  
+Route matched with {action = "GetServiceType", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetServiceType (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetServiceType (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetServiceType (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.3413ms.
+Executing PartialViewResult, running view _DiplomworkType.
+Executed PartialViewResult - view _DiplomworkType executed in 137.5786ms.
+Executed action Petronomica.Controllers.ServicesController.GetServiceType (Petronomica) in 195.0408ms
+Request finished in 261.2946ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 POST http://localhost:62289/Save?id=0 multipart/form-data; boundary=----WebKitFormBoundaryhMP6oBIGiOxHwhmG 137360
+Route matched with {action = "Save", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Save (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Save (Petronomica) with arguments (0, Petronomica.Models.ConstOrder, Microsoft.AspNetCore.Http.IFormFile[], Petronomica.Services.MessageService) - Validation state: Invalid
+Executed action method Petronomica.Controllers.ServicesController.Save (Petronomica), returned result Microsoft.AspNetCore.Mvc.ContentResult in 270.0533ms.
+Executing ContentResult with HTTP Response ContentType of text/plain; charset=utf-8
+Executed action Petronomica.Controllers.ServicesController.Save (Petronomica) in 479.0099ms
+Request finished in 555.265ms 200 text/plain; charset=utf-8

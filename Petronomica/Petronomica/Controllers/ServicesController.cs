@@ -15,7 +15,7 @@ namespace Petronomica.Controllers
     {
         public IActionResult Index()
         {
-            return View("Index", new Models.ConstOrder());
+            return View("Index");//, new Models.ConstOrder());
         }
         [HttpGet]
         public PartialViewResult GetServiceType(int id)
@@ -26,13 +26,10 @@ namespace Petronomica.Controllers
          
             return  PartialView(constructorsarr[id]);
         }
-
         [Route("Save")]
         [HttpPost]
         public IActionResult Save(int id,Models.ConstOrder corder, IFormFile[] files, [FromServices]MessageService ms)
         {
-        
-     
             try
             {
                 corder.YFiles = new List<string>(); foreach (IFormFile doc in files)
@@ -69,8 +66,7 @@ namespace Petronomica.Controllers
                 TempData["ResultMessage"] = ms.Send(tcoe).ToString();
                 TempData["YourMail"] = corder.Email;
                 //  return View("Success");
-             
-                return Content(CreatePreOrder(1).GetType().ToString());
+                return Content(CreatePreOrder(id).GetType().ToString());
             }
             catch (Exception e)
             {
@@ -86,6 +82,13 @@ namespace Petronomica.Controllers
                 case 2: return new MagisterPreOrder();
             }
             return null;
+        }
+        private string BoolToRus(bool val)
+        {
+            if (val)
+                return "Да";
+            else
+                return "Нет";
         }
     }
 }

@@ -1,0 +1,117 @@
+﻿@*@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    ViewData["Title"] = "Конструктор";
+}
+
+@model Petronomica.Models.DiplomPreOrder
+@*<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <form asp-controller="Constructor" asp-action="save" method="post" enctype="multipart/form-data">
+        <table cellpadding="5" cellspacing="5" class="table table-bordered table-dark" style="background-color:#2A3943;color:white;width:30%">
+            <tr>
+                <td>
+                    <input type="hidden" asp-for="Id" />
+                </td>
+            </tr>
+            <tr>
+                <td>Адрес почты</td>
+                <td>
+                    <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Введите почту" asp-for="Email">
+                </td>
+            </tr>
+            <tr>
+                <td>Тема курсовой/дипломной работы</td>
+                <td align="center">
+                    <input type="checkbox" class="form-check-input" asp-for="Theme" />
+                </td>
+            </tr>
+            <tr>
+                <td>Содержание/план работы</td>
+                <td align="center">
+                    <input type="checkbox" class="form-check-input" asp-for="Plan" />
+                </td>
+            </tr>
+            <tr>
+                <td>Реферат</td>
+                <td align="center">
+                    <input type="checkbox" class="form-check-input" asp-for="Referat" />
+                </td>
+            </tr>
+            <tr>
+                <td>Введение</td>
+                <td align="center">
+                    <input type="checkbox" class="form-check-input" asp-for="Intro" />
+                </td>
+            </tr>
+            <tr>
+                <td>Теоретическая часть работы</td>
+                <td align="center">
+                    <input type="checkbox" class="form-check-input" asp-for="Theory" />
+                </td>
+            </tr>
+            <tr>
+                <td>Аналитическая часть работы</td>
+                <td align="center">
+                    <input type="checkbox" class="form-check-input" asp-for="Anal" />
+                </td>
+            </tr>
+            <tr>
+                <td>Проблемы и совершенствование предмета исследования</td>
+                <td align="center">
+                    <input type="checkbox" class="form-check-input" asp-for="Problems" />
+                </td>
+            </tr>
+            <tr>
+                <td>Заключение</td>
+                <td align="center">
+                    <input type="checkbox" class="form-check-input" asp-for="Conclusion" />
+                </td>
+            </tr>
+            <tr>
+                <td>Список используемой литературы</td>
+                <td align="center">
+                    <input type="checkbox" class="form-check-input" asp-for="Literature" />
+                </td>
+            </tr>
+            <tr>
+                <td>Презентация</td>
+                <td align="center">
+                    <input type="checkbox" class="form-check-input" asp-for="Presentation" />
+                </td>
+            </tr>
+            <tr>
+                <td>Доклад к презентации</td>
+                <td align="center">
+                    <input type="checkbox" class="form-check-input" asp-for="PresentationReport" />
+                </td>
+            </tr>
+            <tr>
+                <td>Желаемая оценка</td>
+                <td>
+                    <input type="number" class="form-control" value="5" asp-for="WishMark" />
+                </td>
+            </tr>
+            <tr>
+                <td>Файлы</td>
+                <td>
+                    <input type="file" class="btn btn-success" name="docs" multiple="multiple" />
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <input type="submit" class="btn btn-primary" value="Отправить заявку" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>*@

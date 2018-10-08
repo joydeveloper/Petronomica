@@ -3,9 +3,9 @@
     ViewData["Title"] = "Index";
 }
 <p>
-    
-    <button class="btn btn-primary" style="margin-top:1%;"  type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-       Что значит конструктор?
+
+    <button class="btn btn-primary" style="margin-top:1%;" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Что значит конструктор?
     </button>
 </p>
 <div class="collapse" id="collapseExample">
@@ -49,7 +49,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary">Заказать</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Конструктор</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="test()">Конструктор</button>
                     </div>
                     <small class="text-muted  alert alert-primary">От 8000 рублей</small>
                 </div>
@@ -72,3 +72,24 @@
     </div>
 
 </div>
+@await Component.InvokeAsync("PreOrder")
+<p id="result"></p>
+<script>
+  function httpGetAsync(theUrl, callback) {
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.onreadystatechange = function () {
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+            callback(xmlHttp.responseText);
+    }
+    xmlHttp.open("GET", theUrl, true);
+    xmlHttp.send(null);
+}
+    function Result(msg) {
+      document.getElementById("result").innerHTML = msg;
+    }
+
+    function test() {
+        httpGetAsync("@Url.Action("GetServiceType", "Services")",Result);
+    }
+</script>
+

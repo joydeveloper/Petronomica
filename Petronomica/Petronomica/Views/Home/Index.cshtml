@@ -12,24 +12,33 @@
         <a asp-controller="Account" asp-action="Register">Регистрация</a>
     }*@
 
-
+<style>
+    .carousel-item .img-fluid {
+        width: 100%;
+        height: 100%;
+    }
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
 <div class="row row-eq-height" style="padding-top:3%">
     <div class="col text-center">
         <h2>Здравствуй человек тянущийся к знаниям!</h2>
         <p>Наш портал предлагает качественную и уникальную информацию по темам:</p>
-        <ul class="text-left" style="padding-right:1%" >
+        <ul class="text-left" style="padding-right:1%">
             <li>Экономика</li>
             <li>Маркетинг</li>
             <li>Менджмент</li>
         </ul>
         <p>В разделе услуги вы можете получить консультацию или помощь в написании НИР (научно-исследовательской работы)</p>
-        <p>Мы группа специалистов нацеленных на предоставлении самого качественного материала.И квалифицированном решении ваших проблем связанных с обучением</p>
+        <p>Мы группа специалистов нацеленных на предоставлении самого качественного материала.И квалифицированном решении ваших проблем связанных с обучением.</p>
     </div>
 
     <div class="col text-center">
         <h2>Возможности:</h2>
-        <p>Вы можете заказать у нас научно-исследовательскую работу <a asp-area="" asp-controller="Home" asp-action="Services">полностью</a></p>
-        <p>Или часть работы выполнить  <a asp-area="" asp-controller="Home" asp-action="Services">самостоятельно</a></p>
+        <p>Вы можете заказать у нас научно-исследовательскую работу <a asp-area="" asp-controller="Home" asp-action="Services">полностью.</a></p>
+        <p>Или часть работы выполнить  <a asp-area="" asp-controller="Home" asp-action="Services">самостоятельно.</a></p>
     </div>
     <div class="col text-center">
         <div class="btn-group-vertical">
@@ -40,25 +49,28 @@
         </div>
     </div>
 </div>
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
+
+<div id="carouselExampleControls" class="carousel slide d-none d-lg-block" data-ride="carousel">
+    <div class="carousel-inner " >
         <div class="carousel-item active">
-            <img src="~/images/banner1.svg" alt="Акция осени" class="img-responsive" />
+            <img src="~/images/banner1.svg" alt="Акция осени" class="img-fluid" />
             <div class="carousel-caption" role="option">
-                <p>
-                    Успей заказать!
-
-                    <a class="btn btn-danger" asp-area="" asp-controller="Home" asp-action="Services">Научные работы</a>
-
-
-                </p>
+                <p>Успей заказать!</p><a class="btn btn-danger" asp-area="" asp-controller="Home" asp-action="Services">Научные работы</a>
             </div>
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Second slide" alt="Second slide">
+            <img src="~/images/banner2.svg" alt="Акция осени" class="img-fluid" />
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Third slide" alt="Third slide">
+            <img src="~/images/banner3.svg" alt="Акция осени" class="img-fluid" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    <a class="btn btn-info" href="~/infopages/competitton.html" target="_blank">
+                        Требования к дипломной работе
+                    </a>
+                </p>
+            </div>
+
         </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -71,50 +83,6 @@
     </a>
 </div>
 
-@*<div id="myCarousel" class="carousel slide hidden-sm hidden-xs" data-ride="carousel" data-interval="10000">
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner" >
-        <div class="item active">
-            <img src="~/images/banner1.svg" alt="Акция осени" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Успей заказать!
 
-                    <a class="btn btn-danger" asp-area="" asp-controller="Home" asp-action="Services">Научные работы</a>
-
-
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner2.svg" alt="АГУ" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner3.svg" alt="Конкурс" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    <a class="btn btn-default" href="~/infopages/competitton.html" target="_blank">
-                        Требования к дипломной работе
-                    </a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Предыдущая</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Следующая</span>
-    </a>
-</div>*@
 
 

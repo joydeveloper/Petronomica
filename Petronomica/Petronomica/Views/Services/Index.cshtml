@@ -2,12 +2,25 @@
 @{
     ViewData["Title"] = "Index";
 }
+
+<div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-between">
+        <a class="p-2 text-muted" href="#">Экономика</a>
+        <a class="p-2 text-muted" href="#">Менджемент</a>
+        <a class="p-2 text-muted" href="#">Банковское дело</a>
+        <a class="p-2 text-muted" href="#">Страхование</a>
+        <a class="p-2 text-muted" href="#">Туризм</a>
+        <a class="p-2 text-muted" href="#">Бизнес</a>
+    </nav>
+</div>
 <p>
 
     <button class="btn btn-primary" style="margin-top:1%;" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
         Что значит конструктор?
     </button>
 </p>
+
+
 <div class="collapse" id="collapseExample">
     <div class="card card-body">
         Выберите необходимые пункты работы, прикрепите всю необходимую документацию. Cписок тем, требования и рекомендации к оформлению работы, а также какой-либо материал по выбранной теме. Укажите желаемую оценку и напишите сообщение, указав важную по вашему мнению информацию.
@@ -74,39 +87,39 @@
 </div>
 @await Component.InvokeAsync("PreOrder")
 <p id="result"></p>
-<script>
-  function httpGetAsync(theUrl, callback) {
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.onreadystatechange = function () {
-        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
-            callback(xmlHttp.responseText);
+@*<script>
+      function httpGetAsync(theUrl, callback) {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.onreadystatechange = function () {
+            if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+                callback(xmlHttp.responseText);
+        }
+        xmlHttp.open("GET", theUrl, true);
+        xmlHttp.send(null);
     }
-    xmlHttp.open("GET", theUrl, true);
-    xmlHttp.send(null);
-}
-    function Result(msg) {
-      document.getElementById("result").innerHTML = msg;
-    }
-    function DiplomPreOrder() {
-        httpGetAsync("@Url.Action("GetServiceType", "Services")?id="+0,Result);
-    }
-     function CoursePreOrder() {
-        httpGetAsync("@Url.Action("GetServiceType", "Services")?id="+1,Result);
-    }
-     function MagisterPreOrder() {
-        httpGetAsync("@Url.Action("GetServiceType", "Services")?id="+2,Result);
-    }
-     function DiplomOrder() {
-        httpGetAsync("@Url.Action("GetFastOrder", "Services")?id="+0,Result);
-    }
-     function CourseOrder() {
-        httpGetAsync("@Url.Action("GetFastOrder", "Services")?id="+1,Result);
-    }
-     function MagisterOrder() {
-        httpGetAsync("@Url.Action("GetFastOrder", "Services")?id="+2,Result);
-    }
-     function ReportOrder() {
-        httpGetAsync("@Url.Action("GetFastOrder", "Services")?id="+3,Result);
-    }
-</script>
+        function Result(msg) {
+          document.getElementById("result").innerHTML = msg;
+        }
+        function DiplomPreOrder() {
+            httpGetAsync("@Url.Action("GetServiceType", "Services")?id="+0,Result);
+        }
+         function CoursePreOrder() {
+            httpGetAsync("@Url.Action("GetServiceType", "Services")?id="+1,Result);
+        }
+         function MagisterPreOrder() {
+            httpGetAsync("@Url.Action("GetServiceType", "Services")?id="+2,Result);
+        }
+         function DiplomOrder() {
+            httpGetAsync("@Url.Action("GetFastOrder", "Services")?id="+0,Result);
+        }
+         function CourseOrder() {
+            httpGetAsync("@Url.Action("GetFastOrder", "Services")?id="+1,Result);
+        }
+         function MagisterOrder() {
+            httpGetAsync("@Url.Action("GetFastOrder", "Services")?id="+2,Result);
+        }
+         function ReportOrder() {
+            httpGetAsync("@Url.Action("GetFastOrder", "Services")?id="+3,Result);
+        }
+    </script>*@
 

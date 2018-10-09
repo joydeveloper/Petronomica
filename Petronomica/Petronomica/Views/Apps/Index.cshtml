@@ -1,7 +1,336 @@
-﻿
-@{
-    ViewData["Title"] = "Index";
-}
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
 
-<h2>Index</h2>
+    <style>
+    </style>
+    <script src="scripts/balanceanalyze.js"></script>
+</head>
+<body>
 
+    <button class="btn-primary" onclick="CalculateBalance()">Рассчитать</button>
+    <button class="btn-info" >Комплексный анализ педприятия</button>
+    <script>
+        function BalanceAnalize() {
+
+
+        }
+        BalanceAnalize.prototype.CurrentLiquid = function (a, b, c, d) {
+            return a / (b + c + d);
+        }
+        BalanceAnalize.prototype.FastLiquid = function (a, b, c, d, e, f) {
+
+            return (a + b + c) / (d + e + f);
+
+        }
+        BalanceAnalize.prototype.AbsLiquid = function (a, b, c, d, e) {
+            return (a + b) / (c + d + e);
+        }
+        BalanceAnalize.prototype.ShareCurrentAssets = function (a, b) {
+            return a / b;
+        }
+        BalanceAnalize.prototype.ProvisionCurCirculating = function (a, b, c, d, e) {
+            return (a + b + c - d) / e;
+
+        }
+        BalanceAnalize.prototype.ProvisionMaterialCirculating = function (a, b, c, d, e) {
+            return (a + b + c - d) / e;
+        }
+        BalanceAnalize.prototype.ManeuverabilityEquityCapital = function (a, b, c, d, e, f, g) {
+            return (a + b + c - d) / (e + f + g);
+        }
+        BalanceAnalize.prototype.ConstActive = function (a, b, c, d) {
+            return a / (b + c + d);
+        }
+        BalanceAnalize.prototype.LongTermBor = function (a, b, c, d, e) {
+            return a / (b + c + d + e);
+        }
+        BalanceAnalize.prototype.ValueOfProperty = function (a, b, c) {
+            return (a + b) / c;
+        }
+        BalanceAnalize.prototype.IndependentValue = function (a, b) {
+            return (a / b);
+        }
+        BalanceAnalize.prototype.SustainableFinancing = function (a, b, c) {
+            return (a + b) / c;
+        }
+        BalanceAnalize.prototype.FinanceActivity = function (a, b, c, d, e, f, g) {
+            return (a + b - c - d) / (e + f + g);
+        }
+        BalanceAnalize.prototype.Financing = function (a, b, c, d, e) {
+            return (a + b + c) / (d + e);
+        }
+        BalanceAnalize.prototype.Maneuverabilit = function (a, b, c, d, e) {
+            return (a + b + c - d) / e
+        }
+        BalanceAnalize.prototype.AutonomySources = function (a, b, c, d, e) {
+            return (a + b + c - d) / e
+        }
+        BalanceAnalize.prototype.ProvisionReservesOwn = function (a, b, c, d, e) {
+            return (a + b + c - d) / e
+        }
+        BalanceAnalize.prototype.OwnFunds = function (a, b, c, d, e) {
+            return (a + b + c - d) / e
+        }
+        BalanceAnalize.prototype.EquityConcentration = function (a, b, c, d, e) {
+            return (a + b + c - d) / e
+        }
+        BalanceAnalize.prototype.EquityConcentration2 = function (a, b, c, d, e) {
+            return (a + b + c - d) / e
+        }
+        BalanceAnalize.prototype.FinancialDependenceSources = function (a, b, c, d, e) {
+            return (a + b + c - d) / e
+        }
+        BalanceAnalize.prototype.FinancialInDependenceSources = function (a, b, c, d, e) {
+            return (a + b + c - d) / e
+        }
+        BalanceAnalize.prototype.FinancialLeverage = function (a, b, c, d, e) {
+            return (a + b + c - d) / e
+        }
+        BalanceAnalize.prototype.InterestSecurity = function (a, b, c, d, e) {
+
+        }
+        function BuhBalance() {
+            this.fixedassets;
+        }
+        function BalanceRow(name, code) {
+            this.name = name;
+            this.code = code;
+            this.values = new Array();
+        }
+        BalanceRow.addvalue = function (period, val) {
+            this.values[period] = val;
+        }
+        BalanceRow.zerovalues = function () {
+            for (var i = 0; i < this.values.length;) {
+                this.values[i] = 0;
+            }
+        }
+        function BalancePart(name, BalanceRowArray) {
+            this.name = name;
+            this.balanceRowArray = BalanceRowArray;
+        }
+        function Table(irows, icolumns, id) {
+            this.rows = irows;
+            this.columns = icolumns;
+            this.id = id;
+            this.table = document.createElement("TABLE");
+            this.table.setAttribute("id", this.id);
+            this.table.setAttribute("class", "table table-responsive");
+
+        }
+        Table.prototype.zerovalues = function () {
+            for (var i = 0; i < this.values.length;) {
+                this.values[i] = 0;
+            }
+        }
+        Table.prototype.createTable = function () {
+            document.body.appendChild(this.table);
+            for (var x = 0; x < this.rows; x++) {
+                var tr = document.createElement("TR");
+                tr.setAttribute("id", this.id + x);
+                document.getElementById(this.id).appendChild(tr);
+
+                for (var y = 0; y < this.columns; y++) {
+                    var td = document.createElement("TD");
+                    document.getElementById(this.id + x).appendChild(td);
+                }
+            }
+        }
+        function TableProcessor(Table) {
+            this.table = Table;
+            this.table.createTable();
+        }
+        TableProcessor.prototype.AddHeader = function (captionsarr) {
+            var htr = document.createElement("TR");
+            document.getElementById(this.table.id).insertBefore(htr, document.getElementById(this.table.id).firstChild);
+            for (var x = 0; x < captionsarr.length; x++) {
+                var th = document.createElement("TH");
+                var t = document.createTextNode(captionsarr[x]);
+                th.appendChild(t);
+                htr.appendChild(th);
+            }
+        }
+        TableProcessor.prototype.AddValue = function (rowid, colid, value) {
+            var x = document.getElementById(this.table.id).rows[rowid].cells;
+            x[colid].innerHTML = value;
+        }
+        TableProcessor.prototype.AddInput = function (rowid, colid, type) {
+            var x = document.createElement("INPUT");
+            x.setAttribute("type", type);
+            x.setAttribute("class", "val");
+            x.setAttribute("name", rowid);
+            x.setAttribute("id", colid);
+
+            var el = document.getElementById(this.table.id).rows[rowid].cells;
+            el[colid].appendChild(x);
+        }
+        TableProcessor.prototype.GetValue = function (rowid, colid) {
+            var val = 0;
+            if (document.getElementById(this.table.id).rows[rowid].cells[colid].hasChildNodes()) {
+                console.log()
+                val = document.getElementById(this.table.id).rows[rowid].cells[colid].innerHTML;
+
+            }
+            else {
+                val = document.getElementById(this.table.id).rows[rowid].cells[colid].innerHTML;
+                //if (isNaN(this.GetInputValue(rowid, colid)))
+                //    val = 0;
+                //else
+                //    val = (this.GetInputValue(roid, colid));
+            }
+            return val;
+
+
+
+
+        }
+        TableProcessor.prototype.GetInputValue = function (rowid, colid) {
+            return parseFloat(document.getElementById(this.table.id).rows[rowid].cells[colid].children[0].value);
+        }
+
+        TableProcessor.prototype.AddValues = function (rowid, colid, values) {
+            for (var x = rowid; x < values.length + rowid; x++) {
+                this.AddValue(x, colid, values[x - rowid]);
+            }
+        }
+        TableProcessor.prototype.AddInputs = function (rowstart, rowend, columnstart, columnend, type) {
+            for (var x = rowstart; x < rowend; x++) {
+                for (var y = columnstart; y < columnend; y++) {
+                    this.AddInput(x, y, type);
+                }
+            }
+        }
+
+        TableProcessor.prototype.AddClass = function (rowid, colid, cls) {
+            var x = document.getElementById(this.table.id).rows[rowid].cells;
+            x[colid].className = cls;
+
+        }
+        TableProcessor.prototype.AddClassFor = function (rowstart, rowend, columnstart, columnend, cls) {
+            for (var x = rowstart; x < rowend; x++) {
+                for (var y = columnstart; y < columnend; y++) {
+                    this.AddClass(x, y, cls);
+                }
+            }
+        }
+        TableProcessor.prototype.CalcSum = function (xstart, xend, columnid) {
+            var sum = 0;
+            for (var x = xstart; x < xend; x++) {
+                var incr = 0;
+                if (isNaN(this.GetInputValue(x, columnid)))
+                    incr = 0;
+                else
+                    incr = (this.GetInputValue(x, columnid));
+
+                sum += incr;
+            }
+            return sum;
+        }
+        var tp = new TableProcessor(new Table(45, 5, "balancetable"));
+        var header = ['Наименование показателя', 'Код', 'На 31 декабря 2017', 'На 31 декабря 2016', 'На 31 декабря 2015'];
+        var firstcolumnvalues = ['АКТИВ', 'Ⅰ.ВНЕОБОРОТНЫЕ АКТИВЫ', 'Нематериальные активы', 'Результаты исследований и разработок', 'Нематериальные поисковые активы', 'Материальные поисковые активы', 'Основные средства', 'Доходные вложения в материальные ценности', ' Финансовые вложения',
+            'Отложенные налоговые активы', 'Прочие внеоборотные активы', 'Итого по разделу I', 'Ⅱ.ОБОРОТНЫЕ АКТИВЫ', 'Запасы', 'Налог на добавленную стоимость по приобретенным ценностям', 'Дебиторская задолженность', 'Финансовые вложения (за исключением денежных эквивалентов)	', 'Денежные средства и денежные эквиваленты', 'Прочие оборотные активы',
+            'Итого по разделу II', 'БАЛАНС', 'ПАССИВ', 'Ⅲ.КАПИТАЛ И РЕЗЕРВЫ', 'Уставный капитал (складочный капитал, уставный фонд, вклады товарищей)', 'Собственные акции, выкупленные у акционеров', 'Переоценка внеоборотных активов', 'Добавочный капитал (без переоценки)', 'Резервный капитал',
+            'Нераспределенная прибыль (непокрытый убыток)', 'Итого по разделу III	', 'IV.ДОЛГОСРОЧНЫЕ ОБЯЗАТЕЛЬСТВА	', 'Заемные средства', 'Отложенные налоговые обязательства', 'Оценочные обязательства', 'Прочие обязательства', 'Итого по разделу IV', 'V.КРАТКОСРОЧНЫЕ ОБЯЗАТЕЛЬСТВА',
+            'Заемные средства', 'Кредиторская задолженность', 'Доходы будущих периодов', 'Оценочные обязательства', 'Прочие обязательства', 'Итого по разделу V', 'БАЛАНС'];
+        var secondcolumnvalues = ['1110', '1120', '1130', '1140', '1150', '1160', '1170', '1180', '1190', '1100', '', '1210', '1220', '1230', '1240', '1250', '1260', '1200', '1600', '', '', '1310', '1320', '1340', '1350', '1360', '1370', '1300', '', '1410', '1420', '1430', '1450', '1400', '', '1510', '1520', '1530', '1540', '1550', '1500', '1700'];
+        tp.AddHeader(header);
+        tp.AddClassFor(3, 45, 2, 5, "noinput");
+        tp.AddValues(1, 0, firstcolumnvalues);
+        tp.AddValues(3, 1, secondcolumnvalues);
+        tp.AddInputs(3, 12, 2, 5, "number");
+        tp.AddInputs(14, 20, 2, 5, "number");
+        tp.AddInputs(24, 30, 2, 5, "number");
+        tp.AddInputs(32, 36, 2, 5, "number");
+        tp.AddInputs(38, 43, 2, 5, "number");
+        document.getElementById(tp.table.id).addEventListener("input", function (e) {
+            var inp = e.target;
+            //console.log(inp.name+":"+inp.id);
+            var block = 0;
+            if (inp.tagName === "INPUT") {
+
+                if (inp.name > 0 && inp.name < 12) {
+                    block = 0;
+                }
+                if (inp.name > 13 && inp.name < 20) {
+                    block = 1;
+                }
+                if (inp.name > 23 && inp.name < 30) {
+                    block = 2;
+                }
+                if (inp.name > 30 && inp.name < 36) {
+                    block = 3;
+                }
+                if (inp.name > 36) {
+                    block = 4;
+                }
+                switch (block) {
+                    case 0:
+                        tp.AddValue(12, inp.id, (tp.CalcSum(3, 12, inp.id)));
+                        break;
+                    case 1:
+                        tp.AddValue(20, inp.id, tp.CalcSum(14, 20, inp.id));
+                        break;
+                    case 2:
+
+                        tp.AddValue(30, inp.id, tp.CalcSum(24, 30, inp.id));
+                        break;
+                    case 3:
+                        tp.AddValue(36, inp.id, tp.CalcSum(32, 36, inp.id));
+                        break;
+                    case 4:
+                        tp.AddValue(43, inp.id, tp.CalcSum(38, 43, inp.id));
+                        break;
+                    default:
+                        break;
+                }
+            }
+        });
+        tpr = new TableProcessor(new Table(35, 4, "resulttable"));
+        var resheader = ['Наименование показателя', 'На 31 декабря 2017', 'На 31 декабря 2016', 'На 31 декабря 2015'];
+        var firstcolumnres = ['1.Частные показатели ликвидности и платежеспособности', 'Коэффициент текущей ликвидности', 'Коэффициент быстрой (срочной) ликвидности',
+            'Коэффициент абсолютной ликвидности', 'Доля оборотных средств в активах', '2.Частные показатели рыночной устойчивости (Ионова)',
+            'Коэффициент обеспеченности оборотных активов собственными оборотными средствами', 'Коэффициент обеспеченности материальных запасов собственными оборотными средствами', 'Коэффициент маневренности собственного капитала',
+            'Индекс постоянного актива', 'Коэффициент долгосрочного привлечения заемных средств', 'Коэффициент реальной стоимости имущества', 'Коэффициент автономии (независимости)', 'Коэффициент финансовой устойчивости', 'Коэффициент финансовой активности',
+            'Коэффициент финансирования', '3.Частные показатели финансовой устойчивости(Шеремет)', 'Коэффициент маневренности', 'Коэффициент автономии источников формирования запасов', 'Коэффициент обеспеченности запасов собственными источниками',
+            'Коэффициент обеспеченности собственными средствами', '4.Частные показатели финансовой устойчивости (Ковалев В.В.)',
+            'Коэффициент концентрации собственного капитала', 'Коэффициент концентрации собственного капитала', 'Коэффициент финансовой зависимости капитализированных источников', 'Коэффициент финансовой независимости капитализированных источников',
+            'Уровень финансового левериджа', 'Коэффициент обеспеченности процентов к уплате'];
+        tpr.AddHeader(resheader);
+        tpr.AddValues(1, 0, firstcolumnres);
+        function CalculateBalance() {
+            var ba = new BalanceAnalize();
+            tpr.AddValue(1, 1, ba.CurrentLiquid(tp.GetValue(20, 2), tp.GetValue(39, 2), tp.GetValue(38, 2), tp.GetValue(42, 2)));
+            tpr.AddValue(2, 1, ba.FastLiquid(tp.GetValue(16, 2), tp.GetValue(17, 2), tp.GetValue(18, 2), tp.GetValue(39, 2), tp.GetValue(38, 2), tp.GetValue(42, 2)));
+            tpr.AddValue(3, 1, ba.AbsLiquid(tp.GetValue(17, 2), tp.GetValue(18, 2), tp.GetValue(39, 2), tp.GetValue(38, 2), tp.GetValue(42, 2)));
+
+            //tpr.AddValue(1, 1, ba.ShareCurrentAssets(tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(42, 2)));
+            //tpr.AddValue(1, 1, ba.ProvisionCurCirculating(tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2)));
+            //tpr.AddValue(1, 1, ba.ProvisionMaterialCirculating(tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2)));
+            //tpr.AddValue(1, 1, ba.ManeuverabilityEquityCapital(tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2)));
+            //tpr.AddValue(1, 1, ba.ConstActive(tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2)));
+            //tpr.AddValue(1, 1, ba.LongTermBor(tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2)));
+            //tpr.AddValue(1, 1, ba.ValueOfProperty(tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2)));
+            //tpr.AddValue(1, 1, ba.IndependentValue(tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2)));
+            //tpr.AddValue(1, 1, ba.SustainableFinancing(tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2)));
+            //tpr.AddValue(1, 1, ba.FinanceActivity(tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2)));
+            //tpr.AddValue(1, 1, ba.Financing(tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2)));
+            //tpr.AddValue(1, 1, ba.AutonomySources(tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2)));
+            //tpr.AddValue(1, 1, ba.ProvisionReservesOwn(tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2)));
+            //tpr.AddValue(1, 1, ba.OwnFunds(tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2)));
+            //tpr.AddValue(1, 1, ba.EquityConcentration(tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2)));
+            //tpr.AddValue(1, 1, ba.EquityConcentration2(tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2)));
+            //tpr.AddValue(1, 1, ba.FinancialDependenceSources(tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2)));
+            //tpr.AddValue(1, 1, ba.FinancialInDependenceSources(tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2)));
+            //tpr.AddValue(1, 1, ba.FinancialLeverage(tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2)));
+            //tpr.AddValue(1, 1, ba.InterestSecurity(tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2), tp.GetValue(20, 2)));
+        }
+
+    </script>
+
+
+</body>
+</html>

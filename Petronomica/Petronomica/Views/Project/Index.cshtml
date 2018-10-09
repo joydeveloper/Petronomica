@@ -1,7 +1,104 @@
-﻿
-@{
-    ViewData["Title"] = "Index";
-}
+﻿<head>
+    <style>
+            a,
+            a:focus,
+            a:hover {
+                color: #fff;
+            }
 
-<h2>Index</h2>
+            /* Custom default button */
+            .btn-secondary,
+            .btn-secondary:hover,
+            .btn-secondary:focus {
+                color: #333;
+                text-shadow: none; /* Prevent inheritance from `body` */
+                background-color: #fff;
+                border: .05rem solid #fff;
+            }
+
+
+            /*
+        * Base structure
+        */
+
+            html,
+            body {
+                height: 100%;
+            }
+    </style>
+</head>
+<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+    <main role="main" class="inner cover">
+        <h1 class="cover-heading">Введение</h1>
+        <p class="lead">Мы команда людей с отличными навыками и богатой фантазией... </p>
+        <p class="lead">
+            <a href="#" class="btn btn-lg btn-info">Узнать подробнее</a>
+        </p>
+    </main>
+
+
+
+</div>
+<div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+        <div class="col-lg-4">
+            <img class="rounded-circle border-0" style="background-color:firebrick"  width="140" height="140">
+        
+            <h2>Инвестиции А</h2>
+            <p>Наш труд и капитал</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Смотреть отчёт &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <img class="rounded-circle border-0" style="background-color:orange" width="140" height="140">
+            <h2>Инвестиции B</h2>
+            <p>К нам присоединилось еще несколько единомышленников!</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Смотреть отчёт &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <img class="rounded-circle border-0" style="background-color:yellow" width="140" height="140">
+            <h2>Инвестиции C</h2>
+            <p>Один из наших проектов получил успех!</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Смотреть отчёт &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Как все начиналось?</h2>
+            <p class="lead">Одна идея,одно событие и три дня на реализацию</p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" style="background-color:cornflowerblue;width:100%;height:75%">
+            <a class="btn btn-success" href="#" role="button">Первый пре-стартап &raquo;</a>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Можно реализовать за три дня :D ?<span class="text-muted"><a class="btn btn-md btn-warning"  href="#" role="button">Смотрите сами</a></span></h2>
+            <div class="jumbotron border-light">
+                <h1>Путь к мечте</h1>
+                <p class="lead">Мотивация,амбиции трудолюбие, ответственность</p>
+                <a class="btn btn-lg btn-primary" href="#" role="button">Результаты &raquo;</a>
+            </div>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto"  style="background-color:fuchsia;width:100%;height:25%">
+        </div>
+    </div>
+
+</div>
+
+
+<!-- /END THE FEATURETTES -->
+<!-- /.container -->
+<!-- FOOTER -->
+
 

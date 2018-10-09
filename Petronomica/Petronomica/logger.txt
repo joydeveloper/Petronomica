@@ -3128,3 +3128,1092 @@ Processing request /dist/css/bootstrap.min.css
 Processing request /form-validation.css
 Request finished in 7.6888ms 200 text/html; charset=utf-8
 Request finished in 8.5437ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 DEBUG http://localhost:62289/  0
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Request finished in 22.7639ms 200 
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action aspnetboot.Controllers.HomeController.Index (Petronomica)
+Executing action method aspnetboot.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method aspnetboot.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.7134ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 113.3918ms.
+Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 140.1521ms
+Request finished in 306.4347ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.3208ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 17.9784ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 24.3237ms
+Request finished in 31.904ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=0  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.407ms.
+Executing ObjectResult, writing value of type 'System.String'.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 36.6015ms
+Request finished in 57.2101ms 200 text/plain; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=3  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (3) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0229ms.
+Executing ObjectResult, writing value of type 'System.String'.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 7.3861ms
+Request finished in 78.7499ms 200 text/plain; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=1  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (1) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0063ms.
+Executing ObjectResult, writing value of type 'System.String'.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 4.8096ms
+Request finished in 10.9019ms 200 text/plain; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=2  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (2) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0057ms.
+Executing ObjectResult, writing value of type 'System.String'.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 4.6136ms
+Request finished in 11.0433ms 200 text/plain; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=0  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0051ms.
+Executing ObjectResult, writing value of type 'System.String'.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 5.6915ms
+Request finished in 11.2239ms 200 text/plain; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=2  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (2) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0051ms.
+Executing ObjectResult, writing value of type 'System.String'.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 5.4238ms
+Request finished in 11.3991ms 200 text/plain; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=1  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (1) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0063ms.
+Executing ObjectResult, writing value of type 'System.String'.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 6.0241ms
+Request finished in 14.4433ms 200 text/plain; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=3  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (3) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0051ms.
+Executing ObjectResult, writing value of type 'System.String'.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 5.0966ms
+Request finished in 10.9809ms 200 text/plain; charset=utf-8
+Request starting HTTP/1.1 DEBUG http://localhost:62289/  0
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Request finished in 25.5563ms 200 
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action aspnetboot.Controllers.HomeController.Index (Petronomica)
+Executing action method aspnetboot.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method aspnetboot.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.7559ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 119.9924ms.
+Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 147.4888ms
+Request finished in 330.1714ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2544ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 15.0096ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 21.5056ms
+Request finished in 29.5461ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=0  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.3594ms.
+Executing ContentResult with HTTP Response ContentType of text/plain; charset=utf-8
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 22.2498ms
+Request finished in 42.859ms 200 text/plain; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=3  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (3) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.1172ms.
+Executing ContentResult with HTTP Response ContentType of text/plain; charset=utf-8
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 7.8863ms
+Request finished in 13.656ms 200 text/plain; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=1  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (1) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.003ms.
+Executing ContentResult with HTTP Response ContentType of text/plain; charset=utf-8
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 3.8326ms
+Request finished in 11.8668ms 200 text/plain; charset=utf-8
+Request starting HTTP/1.1 DEBUG http://localhost:62289/  0
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Request finished in 47.0342ms 200 
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action aspnetboot.Controllers.HomeController.Index (Petronomica)
+Executing action method aspnetboot.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method aspnetboot.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.6585ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 121.6792ms.
+Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 144.4021ms
+Request finished in 352.395ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Project  
+Route matched with {action = "Index", controller = "Project"}. Executing action Petronomica.Controllers.ProjectController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ProjectController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ProjectController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.445ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 7.2384ms.
+Executed action Petronomica.Controllers.ProjectController.Index (Petronomica) in 15.1848ms
+Request finished in 22.4798ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Useful  
+Route matched with {action = "Index", controller = "Useful"}. Executing action Petronomica.Controllers.UsefulController.Index (Petronomica)
+Executing action method Petronomica.Controllers.UsefulController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.UsefulController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2683ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 6.3145ms.
+Executed action Petronomica.Controllers.UsefulController.Index (Petronomica) in 11.7139ms
+Request finished in 18.3866ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2291ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 18.6475ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 24.7319ms
+Request finished in 35.9315ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0129ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 2.6199ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 9.3683ms
+Request finished in 16.8588ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Project  
+Route matched with {action = "Index", controller = "Project"}. Executing action Petronomica.Controllers.ProjectController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ProjectController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ProjectController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0298ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 1.8347ms.
+Executed action Petronomica.Controllers.ProjectController.Index (Petronomica) in 9.8312ms
+Request finished in 17.6307ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Useful  
+Route matched with {action = "Index", controller = "Useful"}. Executing action Petronomica.Controllers.UsefulController.Index (Petronomica)
+Executing action method Petronomica.Controllers.UsefulController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.UsefulController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0165ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 2.9899ms.
+Executed action Petronomica.Controllers.UsefulController.Index (Petronomica) in 21.1209ms
+Request finished in 32.8716ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Apps  
+Route matched with {action = "Index", controller = "Apps"}. Executing action Petronomica.Controllers.AppsController.Index (Petronomica)
+Executing action method Petronomica.Controllers.AppsController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.AppsController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2041ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 7.5354ms.
+Executed action Petronomica.Controllers.AppsController.Index (Petronomica) in 15.9349ms
+Request finished in 23.6697ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Useful  
+Route matched with {action = "Index", controller = "Useful"}. Executing action Petronomica.Controllers.UsefulController.Index (Petronomica)
+Executing action method Petronomica.Controllers.UsefulController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.UsefulController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0144ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 2.3811ms.
+Executed action Petronomica.Controllers.UsefulController.Index (Petronomica) in 10.2832ms
+Request finished in 20.8293ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Project  
+Route matched with {action = "Index", controller = "Project"}. Executing action Petronomica.Controllers.ProjectController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ProjectController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ProjectController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0126ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 3.2513ms.
+Executed action Petronomica.Controllers.ProjectController.Index (Petronomica) in 9.7633ms
+Request finished in 18.3966ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0132ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 2.3636ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 6.7134ms
+Request finished in 13.8207ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetServiceType?id=0  
+Route matched with {action = "GetServiceType", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetServiceType (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetServiceType (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetServiceType (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.297ms.
+Executing PartialViewResult, running view _DiplomworkType.
+Executed PartialViewResult - view _DiplomworkType executed in 63.2442ms.
+Executed action Petronomica.Controllers.ServicesController.GetServiceType (Petronomica) in 84.7936ms
+Request finished in 105.4816ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 DEBUG http://localhost:62289/  0
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Request finished in 35.5778ms 200 
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action aspnetboot.Controllers.HomeController.Index (Petronomica)
+Executing action method aspnetboot.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method aspnetboot.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.7655ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 141.8162ms.
+Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 165.6307ms
+Request finished in 350.9335ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/css/site.css  
+The file /css/site.css was not modified
+Request finished in 19.1703ms 304 text/css
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.4284ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 18.6637ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 26.694ms
+Request finished in 37.2941ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=0  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.2915ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 36.0503ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 59.9648ms
+Request finished in 83.5354ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 POST http://localhost:62289/Services/FastOrder multipart/form-data; boundary=----WebKitFormBoundaryyNfCgc47UEhBO7fJ 643
+Route matched with {action = "FastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.FastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.FastOrder (Petronomica) with arguments (Petronomica.ViewModels.PreOrderViewModel, Microsoft.AspNetCore.Http.IFormFile[], Petronomica.Services.MessageService) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.FastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 314.8373ms.
+Executing ViewResult, running view Success.
+Executed ViewResult - view Success executed in 19.4613ms.
+Executed action Petronomica.Controllers.ServicesController.FastOrder (Petronomica) in 385.8821ms
+Request finished in 399.0364ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Request starting HTTP/1.1 DEBUG http://localhost:62289/  0
+Request finished in 32.571ms 200 
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action aspnetboot.Controllers.HomeController.Index (Petronomica)
+Executing action method aspnetboot.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method aspnetboot.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.6651ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 139.9751ms.
+Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 162.2455ms
+Request finished in 352.7022ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2686ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 17.66ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 24.1654ms
+Request finished in 32.9533ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=3  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (3) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.4993ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 26.583ms
+An unhandled exception has occurred while executing the request.
+Request finished in 152.7299ms 500 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=0  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.0238ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 8.9604ms
+An unhandled exception has occurred while executing the request.
+Request finished in 25.8051ms 500 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=2  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (2) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.0229ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 5.4024ms
+An unhandled exception has occurred while executing the request.
+Request finished in 20.4002ms 500 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=1  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (1) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.0162ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 7.4642ms
+An unhandled exception has occurred while executing the request.
+Request finished in 21.2581ms 500 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Request starting HTTP/1.1 DEBUG http://localhost:62289/  0
+Request finished in 34.5987ms 200 
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action aspnetboot.Controllers.HomeController.Index (Petronomica)
+Executing action method aspnetboot.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method aspnetboot.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.6826ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 164.6067ms.
+Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 187.105ms
+Request finished in 380.9678ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.4344ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 18.1792ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 24.9315ms
+Request finished in 41.636ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=0  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.3262ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 29.9595ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 66.9877ms
+Request finished in 87.4072ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 POST http://localhost:62289/Services/FastOrder multipart/form-data; boundary=----WebKitFormBoundaryQrCCLUnM3kCDBIox 694
+Route matched with {action = "FastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.FastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.FastOrder (Petronomica) with arguments (Petronomica.ViewModels.PreOrderViewModel, Microsoft.AspNetCore.Http.IFormFile[], Petronomica.Services.MessageService) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.FastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 235.0662ms.
+Executing ViewResult, running view Success.
+Executed ViewResult - view Success executed in 27.9118ms.
+Executed action Petronomica.Controllers.ServicesController.FastOrder (Petronomica) in 373.221ms
+Request finished in 411.0814ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 DEBUG http://localhost:62289/  0
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Request finished in 29.1752ms 200 
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action aspnetboot.Controllers.HomeController.Index (Petronomica)
+Executing action method aspnetboot.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method aspnetboot.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.8123ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 151.2862ms.
+Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 178.419ms
+Request finished in 363.1088ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.3986ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 15.6738ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 23.1161ms
+Request finished in 34.3759ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=0  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.5333ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 29.3691ms
+An unhandled exception has occurred while executing the request.
+Request finished in 115.9493ms 500 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=3  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (3) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.0195ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 6.2108ms
+An unhandled exception has occurred while executing the request.
+Request finished in 22.1207ms 500 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/js/bootstrap.js.map  
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/css/bootstrap.css.map  
+Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js.map'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map'
+Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css.map'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map'
+Request finished in 40.556ms 200 text/plain
+Request finished in 49.5836ms 200 text/plain
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=0  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.0214ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 6.8856ms
+An unhandled exception has occurred while executing the request.
+Request finished in 30.0539ms 500 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Request starting HTTP/1.1 DEBUG http://localhost:62289/  0
+Request finished in 29.4927ms 200 
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action aspnetboot.Controllers.HomeController.Index (Petronomica)
+Executing action method aspnetboot.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method aspnetboot.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.1174ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 159.2528ms.
+Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 182.9756ms
+Request finished in 354.6332ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2774ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 18.3049ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 43.9623ms
+Request finished in 53.8116ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=0  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.439ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 29.3055ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 51.8206ms
+Request finished in 71.2494ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 DEBUG http://localhost:62289/  0
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Request finished in 32.3406ms 200 
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action aspnetboot.Controllers.HomeController.Index (Petronomica)
+Executing action method aspnetboot.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method aspnetboot.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.4976ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 166.6323ms.
+Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 189.8537ms
+Request finished in 389.4512ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2927ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 18.0402ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 25.3853ms
+Request finished in 35.592ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=0  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.6039ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 29.9767ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 52.8253ms
+Request finished in 72.7709ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=2  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (2) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.0165ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 2.328ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 8.7152ms
+Request finished in 15.2095ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=1  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (1) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.0398ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 1.9038ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 9.2532ms
+Request finished in 14.7804ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=3  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (3) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.0189ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 3.2127ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 8.9423ms
+Request finished in 13.4447ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=0  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.1344ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 2.1052ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 9.5791ms
+Request finished in 14.3764ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/js/bootstrap.js.map  
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/css/bootstrap.css.map  
+Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js.map'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map'
+Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css.map'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map'
+Request finished in 66.3584ms 200 text/plain
+Request finished in 33.7174ms 200 text/plain
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=1  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (1) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.3989ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 2.0594ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 8.7837ms
+Request finished in 14.1421ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=0  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.0452ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 1.8803ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 6.7092ms
+Request finished in 12.4605ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=3  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (3) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.0217ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 2.0633ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 7.5236ms
+Request finished in 13.9524ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetServiceType?id=0  
+Route matched with {action = "GetServiceType", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetServiceType (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetServiceType (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetServiceType (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.303ms.
+Executing PartialViewResult, running view _DiplomworkType.
+Executed PartialViewResult - view _DiplomworkType executed in 55.9817ms.
+Executed action Petronomica.Controllers.ServicesController.GetServiceType (Petronomica) in 61.9124ms
+Request finished in 69.3097ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=0  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.0223ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 1.9433ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 7.722ms
+Request finished in 14.6293ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetServiceType?id=2  
+Route matched with {action = "GetServiceType", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetServiceType (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetServiceType (Petronomica) with arguments (2) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetServiceType (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.015ms.
+Executing PartialViewResult, running view _MagisterworkType.
+Executed PartialViewResult - view _MagisterworkType executed in 32.2661ms.
+Executed action Petronomica.Controllers.ServicesController.GetServiceType (Petronomica) in 37.5323ms
+Request finished in 43.6134ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/dist/css/bootstrap.min.css  
+Request starting HTTP/1.1 GET http://localhost:62289/form-validation.css  
+Processing request /form-validation.css
+Processing request /dist/css/bootstrap.min.css
+Request finished in 8.7605ms 200 text/html; charset=utf-8
+Request finished in 8.7605ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=2  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (2) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.1233ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 2.2159ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 8.1882ms
+Request finished in 13.2547ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetServiceType?id=1  
+Route matched with {action = "GetServiceType", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetServiceType (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetServiceType (Petronomica) with arguments (1) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetServiceType (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.0967ms.
+Executing PartialViewResult, running view _СourseworkType.
+Executed PartialViewResult - view _СourseworkType executed in 38.4531ms.
+Executed action Petronomica.Controllers.ServicesController.GetServiceType (Petronomica) in 45.5691ms
+Request finished in 51.1835ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/dist/css/bootstrap.min.css  
+Request starting HTTP/1.1 GET http://localhost:62289/form-validation.css  
+Processing request /form-validation.css
+Processing request /dist/css/bootstrap.min.css
+Request finished in 14.2862ms 200 text/html; charset=utf-8
+Request finished in 14.1629ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=1  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (1) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.1827ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 1.9228ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 8.9432ms
+Request finished in 13.5499ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=3  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (3) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.0162ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 1.8601ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 7.3575ms
+Request finished in 14.2853ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetServiceType?id=0  
+Route matched with {action = "GetServiceType", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetServiceType (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetServiceType (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetServiceType (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.0165ms.
+Executing PartialViewResult, running view _DiplomworkType.
+Executed PartialViewResult - view _DiplomworkType executed in 4.1164ms.
+Executed action Petronomica.Controllers.ServicesController.GetServiceType (Petronomica) in 10.8558ms
+Request finished in 15.8065ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=3  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (3) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.0268ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 1.8573ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 6.9453ms
+Request finished in 12.5232ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=0  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.0232ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 2.2897ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 10.01ms
+Request finished in 15.5993ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetServiceType?id=0  
+Route matched with {action = "GetServiceType", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetServiceType (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetServiceType (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetServiceType (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.0153ms.
+Executing PartialViewResult, running view _DiplomworkType.
+Executed PartialViewResult - view _DiplomworkType executed in 3.9991ms.
+Executed action Petronomica.Controllers.ServicesController.GetServiceType (Petronomica) in 9.1163ms
+Request finished in 15.6982ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=0  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.0138ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 2.0325ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 7.6916ms
+Request finished in 15.1118ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 POST http://localhost:62289/Services/FastOrder multipart/form-data; boundary=----WebKitFormBoundaryG1OJ9FXeQEDyUdnR 658
+Route matched with {action = "FastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.FastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.FastOrder (Petronomica) with arguments (Petronomica.ViewModels.PreOrderViewModel, Microsoft.AspNetCore.Http.IFormFile[], Petronomica.Services.MessageService) - Validation state: Valid
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Request starting HTTP/1.1 DEBUG http://localhost:62289/  0
+Request finished in 38.8147ms 200 
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action aspnetboot.Controllers.HomeController.Index (Petronomica)
+Executing action method aspnetboot.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method aspnetboot.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.6657ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 108.8529ms.
+Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 132.882ms
+Request finished in 331.8066ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.3175ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 17.7857ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 24.0586ms
+Request finished in 31.4879ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=0  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (0) - Validation state: Valid
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetServiceType?id=0  
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=3  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Route matched with {action = "GetServiceType", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetServiceType (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (3) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.018ms.
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 10329.1929ms.
+Executing PartialViewResult, running view _FastOrder.
+Executing action method Petronomica.Controllers.ServicesController.GetServiceType (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetServiceType (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.6467ms.
+Executing PartialViewResult, running view _DiplomworkType.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 3553.7896ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 5745.6328ms
+Request finished in 9052.402ms 200 text/html; charset=utf-8
+Executed PartialViewResult - view _FastOrder executed in 3055.1908ms.
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=0  
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=0  
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 19057.4332ms
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Request finished in 19082.2729ms 200 text/html; charset=utf-8
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (0) - Validation state: Valid
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.022ms.
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.0211ms.
+Executing PartialViewResult, running view _FastOrder.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 5.4762ms.
+Executed PartialViewResult - view _FastOrder executed in 7.6934ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 19.5599ms
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 24.1394ms
+Request finished in 44.9076ms 200 text/html; charset=utf-8
+Request finished in 46.6172ms 200 text/html; charset=utf-8
+Executed PartialViewResult - view _DiplomworkType executed in 3873.4978ms.
+Executed action Petronomica.Controllers.ServicesController.GetServiceType (Petronomica) in 5284.75ms
+Request finished in 9502.5373ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=3  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (3) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.0192ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 2.5165ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 8.376ms
+Request finished in 14.0429ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 POST http://localhost:62289/Services/FastOrder multipart/form-data; boundary=----WebKitFormBoundaryeSlmfRPdr5nHsWTW 658
+Route matched with {action = "FastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.FastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.FastOrder (Petronomica) with arguments (Petronomica.ViewModels.PreOrderViewModel, Microsoft.AspNetCore.Http.IFormFile[], Petronomica.Services.MessageService) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.FastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 185.5386ms.
+Executing ViewResult, running view Success.
+Executed ViewResult - view Success executed in 12.0628ms.
+Executed action Petronomica.Controllers.ServicesController.FastOrder (Petronomica) in 252.7018ms
+Request finished in 273.1458ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 DEBUG http://localhost:62289/  0
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Request finished in 28.4886ms 200 
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action aspnetboot.Controllers.HomeController.Index (Petronomica)
+Executing action method aspnetboot.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method aspnetboot.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.6151ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 139.022ms.
+Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 161.1392ms
+Request finished in 343.1689ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.3159ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 19.5635ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 46.8762ms
+Request finished in 55.5228ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=0  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.5116ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 30.6623ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 54.8368ms
+Request finished in 74.3838ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=2  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (2) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.0702ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 3.2157ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 14.3372ms
+Request finished in 20.9155ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=1  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (1) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.0274ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 5.3493ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 12.8558ms
+Request finished in 18.9282ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=3  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (3) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.0205ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 2.4194ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 8.5889ms
+Request finished in 15.0111ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 DEBUG http://localhost:62289/  0
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Request finished in 52.2018ms 200 
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action aspnetboot.Controllers.HomeController.Index (Petronomica)
+Executing action method aspnetboot.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method aspnetboot.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.7321ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 139.9233ms.
+Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 162.42ms
+Request finished in 366.6478ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2761ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 21.4459ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 30.6572ms
+Request finished in 47.8734ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=0  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.5349ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 29.7746ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 54.3893ms
+Request finished in 71.8115ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 DEBUG http://localhost:62289/  0
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Request finished in 32.985ms 200 
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action aspnetboot.Controllers.HomeController.Index (Petronomica)
+Executing action method aspnetboot.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method aspnetboot.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.6561ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 110.0777ms.
+Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 134.7066ms
+Request finished in 321.4392ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.265ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 17.119ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 24.1985ms
+Request finished in 32.2655ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=0  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.6705ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 33.2256ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 61.4875ms
+Request finished in 88.3456ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 POST http://localhost:62289/Services/FastOrder multipart/form-data; boundary=----WebKitFormBoundaryfoiFImtJWNlw9iWF 827
+Route matched with {action = "FastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.FastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.FastOrder (Petronomica) with arguments (Petronomica.ViewModels.PreOrderViewModel, Microsoft.AspNetCore.Http.IFormFile[], Petronomica.Services.MessageService) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.FastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 204.0432ms.
+Executing ViewResult, running view Success.
+Executed ViewResult - view Success executed in 10.9118ms.
+Executed action Petronomica.Controllers.ServicesController.FastOrder (Petronomica) in 261.873ms
+Request finished in 276.0401ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 DEBUG http://localhost:62289/  0
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Request finished in 29.1737ms 200 
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action aspnetboot.Controllers.HomeController.Index (Petronomica)
+Executing action method aspnetboot.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method aspnetboot.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.6503ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 144.9388ms.
+Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 167.6581ms
+Request finished in 360.7361ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/css/site.css  
+The file /css/site.css was not modified
+Request finished in 11.2209ms 304 text/css
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2927ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 19.6208ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 27.8958ms
+Request finished in 36.3814ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=0  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.5873ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 31.6525ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 55.41ms
+Request finished in 76.157ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 POST http://localhost:62289/Services/FastOrder multipart/form-data; boundary=----WebKitFormBoundaryAj7CORfxQfJVkmPq 136288
+Route matched with {action = "FastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.FastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.FastOrder (Petronomica) with arguments (Petronomica.ViewModels.PreOrderViewModel, Microsoft.AspNetCore.Http.IFormFile[], Petronomica.Services.MessageService) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.FastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 221.0489ms.
+Executing ViewResult, running view Success.
+Executed ViewResult - view Success executed in 15.3946ms.
+Executed action Petronomica.Controllers.ServicesController.FastOrder (Petronomica) in 318.4511ms
+Request finished in 336.138ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Request starting HTTP/1.1 DEBUG http://localhost:62289/  0
+Request finished in 28.0945ms 200 
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action aspnetboot.Controllers.HomeController.Index (Petronomica)
+Executing action method aspnetboot.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method aspnetboot.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.6784ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 105.3679ms.
+Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 128.4454ms
+Request finished in 301.9453ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.262ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 15.249ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 22.0447ms
+Request finished in 30.5876ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=3  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (3) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.5539ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 30.315ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 57.8551ms
+Request finished in 74.9868ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=1  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (1) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.0199ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 6.0618ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 14.2217ms
+Request finished in 22.0396ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=2  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (2) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.0259ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 2.1908ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 9.6901ms
+Request finished in 15.7432ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=0  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.0153ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 2.0636ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 7.2284ms
+Request finished in 12.3932ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/js/bootstrap.js.map  
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/css/bootstrap.css.map  
+Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js.map'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map'
+Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css.map'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map'
+Request finished in 42.0995ms 200 text/plain
+Request finished in 35.1297ms 200 text/plain
+Request starting HTTP/1.1 DEBUG http://localhost:62289/  0
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Request finished in 27.6887ms 200 
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action aspnetboot.Controllers.HomeController.Index (Petronomica)
+Executing action method aspnetboot.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method aspnetboot.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.7058ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 121.2999ms.
+Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 144.716ms
+Request finished in 315.3719ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2704ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 18.532ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 25.818ms
+Request finished in 34.7558ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=0  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.7432ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 27.8298ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 51.95ms
+Request finished in 69.7198ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Request starting HTTP/1.1 DEBUG http://localhost:62289/  0
+Failed to determine the https port for redirect.
+Request finished in 53.1745ms 200 
+Route matched with {action = "Index", controller = "Home"}. Executing action aspnetboot.Controllers.HomeController.Index (Petronomica)
+Executing action method aspnetboot.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method aspnetboot.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.7109ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 127.4133ms.
+Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 149.9034ms
+Request finished in 347.1515ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2562ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 18.6203ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 26.6454ms
+Request finished in 36.1875ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=0  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.587ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 29.6965ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 53.0156ms
+Request finished in 73.2814ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 DEBUG http://localhost:62289/  0
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Failed to determine the https port for redirect.
+Request finished in 37.4409ms 200 
+Route matched with {action = "Index", controller = "Home"}. Executing action aspnetboot.Controllers.HomeController.Index (Petronomica)
+Executing action method aspnetboot.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method aspnetboot.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.6624ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 122.6612ms.
+Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 196.7855ms
+Request finished in 395.416ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.297ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 26.6849ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 38.5466ms
+Request finished in 68.874ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=0  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.5596ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 30.005ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 50.0718ms
+Request finished in 66.3548ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 POST http://localhost:62289/Services/FastOrder multipart/form-data; boundary=----WebKitFormBoundaryPCyPQrtDaeZB3zug 774
+Route matched with {action = "FastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.FastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.FastOrder (Petronomica) with arguments (Petronomica.ViewModels.PreOrderViewModel, Microsoft.AspNetCore.Http.IFormFile[], Petronomica.Services.MessageService) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.FastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 183.2226ms.
+Executing ViewResult, running view Success.
+Executed ViewResult - view Success executed in 22.4798ms.
+Executed action Petronomica.Controllers.ServicesController.FastOrder (Petronomica) in 258.2577ms
+Request finished in 273.6143ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 DEBUG http://localhost:62289/  0
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Request finished in 28.2073ms 200 
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action aspnetboot.Controllers.HomeController.Index (Petronomica)
+Executing action method aspnetboot.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method aspnetboot.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.701ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 126.1004ms.
+Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 149.2681ms
+Request finished in 333.2892ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2339ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 17.3174ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 23.0901ms
+Request finished in 30.7021ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=3  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (3) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.5153ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 28.3466ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 62.5923ms
+Request finished in 84.3076ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=1  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (1) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.0214ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 2.512ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 10.9384ms
+Request finished in 17.7281ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=2  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (2) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.0186ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 1.9146ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 8.7776ms
+Request finished in 13.7682ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetFastOrder?id=0  
+Route matched with {action = "GetFastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.0232ms.
+Executing PartialViewResult, running view _FastOrder.
+Executed PartialViewResult - view _FastOrder executed in 1.7835ms.
+Executed action Petronomica.Controllers.ServicesController.GetFastOrder (Petronomica) in 6.8735ms
+Request finished in 13.5167ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetServiceType?id=0  
+Route matched with {action = "GetServiceType", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetServiceType (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetServiceType (Petronomica) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetServiceType (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 1.333ms.
+Executing PartialViewResult, running view _DiplomworkType.
+Executed PartialViewResult - view _DiplomworkType executed in 51.7148ms.
+Executed action Petronomica.Controllers.ServicesController.GetServiceType (Petronomica) in 59.6084ms
+Request finished in 65.8355ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetServiceType?id=2  
+Route matched with {action = "GetServiceType", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetServiceType (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetServiceType (Petronomica) with arguments (2) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetServiceType (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.0265ms.
+Executing PartialViewResult, running view _MagisterworkType.
+Executed PartialViewResult - view _MagisterworkType executed in 29.3326ms.
+Executed action Petronomica.Controllers.ServicesController.GetServiceType (Petronomica) in 36.9968ms
+Request finished in 42.9425ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/dist/css/bootstrap.min.css  
+Request starting HTTP/1.1 GET http://localhost:62289/form-validation.css  
+Processing request /form-validation.css
+Processing request /dist/css/bootstrap.min.css
+Request finished in 11.5864ms 200 text/html; charset=utf-8
+Request finished in 11.4663ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services/GetServiceType?id=1  
+Route matched with {action = "GetServiceType", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetServiceType (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.GetServiceType (Petronomica) with arguments (1) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetServiceType (Petronomica), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.018ms.
+Executing PartialViewResult, running view _СourseworkType.
+Executed PartialViewResult - view _СourseworkType executed in 32.1461ms.
+Executed action Petronomica.Controllers.ServicesController.GetServiceType (Petronomica) in 38.0111ms
+Request finished in 44.0482ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/dist/css/bootstrap.min.css  
+Request starting HTTP/1.1 GET http://localhost:62289/form-validation.css  
+Processing request /form-validation.css
+Processing request /dist/css/bootstrap.min.css
+Request finished in 6.1616ms 200 text/html; charset=utf-8
+Request finished in 7.2498ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0796ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 2.5382ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 10.8265ms
+Request finished in 18.5416ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Route matched with {action = "Index", controller = "Home"}. Executing action aspnetboot.Controllers.HomeController.Index (Petronomica)
+Executing action method aspnetboot.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method aspnetboot.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0247ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 3.9747ms.
+Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 14.3227ms
+Request finished in 47.4072ms 200 text/html; charset=utf-8

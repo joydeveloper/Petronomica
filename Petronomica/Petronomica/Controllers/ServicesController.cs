@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Petronomica.Models;
 using Petronomica.Services;
+using Petronomica.ViewModels;
 
 namespace Petronomica.Controllers
 {
@@ -22,6 +23,47 @@ namespace Petronomica.Controllers
         {
             string[] constructorsarr = new string[] { "_DiplomworkType", "_СourseworkType", "_MagisterworkType" };
             return PartialView(constructorsarr[id]);
+        }
+        [HttpGet]
+        public PartialViewResult GetFastOrder(int id)
+        {
+            string[] constructorsarr = new string[] { "Диплом", "Курсовая", "Диссертация","Отчет" };
+            PreOrderViewModel n = new PreOrderViewModel();
+            n.Title = constructorsarr[id];
+            return PartialView("_FastOrder",n);//, constructorsarr[id]);
+        }
+        [HttpPost]
+        public IActionResult FastOrder(PreOrderViewModel povm, IFormFile[] files, [FromServices]MessageService ms)
+        {
+           
+            PreOrder po = new PreOrder();
+            po.Email = povm.Email;
+            po.YFiles = povm.YFiles;
+            po.Message = povm.Message;
+            po.Title = povm.Title;
+            try
+            {
+                int z = 0;
+                po.YFiles = new string[files.Length];
+                foreach (IFormFile doc in files)
+                {
+                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/userfiles", doc.FileName);
+                    var stream = new FileStream(path, FileMode.Create);
+                    doc.CopyToAsync(stream);
+                    po.YFiles[z] = path;
+                    stream.Close();
+                    z++;
+                }
+                FastOrderEmail poe = new FastOrderEmail(po);
+                FastOrderEmailReport tcoe = new FastOrderEmailReport(po);
+                TempData["ResultEmploer"] = ms.Send(poe).ToString();
+                TempData["ResultReport"] = ms.Send(tcoe).ToString();
+                return View("Success");
+            }
+            catch (Exception e)
+            {
+                return Content(e.ToString());
+            }
         }
         [Route("Save")]
         [HttpPost]

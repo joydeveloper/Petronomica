@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Petronomica.Models
 {
-    public abstract class PreOrder
+    public  class PreOrder
     {
         private static int _id;
         public PreOrder()

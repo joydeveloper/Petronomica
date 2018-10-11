@@ -8016,3 +8016,406 @@ Request finished in 21.5038ms 304 image/png
 Request finished in 23.7083ms 304 image/png
 Sending file. Request path: '/images/yamoney.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\yamoney.png'
 Request finished in 77.9807ms 200 image/png
+Request starting HTTP/1.1 DEBUG http://localhost:62289/  0
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Request finished in 88.1708ms 200 
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action aspnetboot.Controllers.HomeController.Index (Petronomica)
+Executing action method aspnetboot.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method aspnetboot.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.6959ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 104.985ms.
+Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 128.5073ms
+Request finished in 360.1905ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/lib/jquery/dist/jquery.js  
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/js/bootstrap.js  
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/css/bootstrap.css  
+Request starting HTTP/1.1 GET http://localhost:62289/css/site.css  
+Request starting HTTP/1.1 GET http://localhost:62289/images/banner1.svg  
+The file /css/site.css was not modified
+The file /lib/bootstrap/dist/js/bootstrap.js was not modified
+The file /lib/bootstrap/dist/css/bootstrap.css was not modified
+The file /lib/jquery/dist/jquery.js was not modified
+The file /images/banner1.svg was not modified
+Request finished in 30.5496ms 304 application/javascript
+Request finished in 30.6397ms 304 text/css
+Request starting HTTP/1.1 GET http://localhost:62289/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA  
+Request finished in 33.8257ms 304 application/javascript
+The file /js/site.js was not modified
+Request finished in 34.9823ms 304 text/css
+Request finished in 23.7423ms 304 application/javascript
+Request starting HTTP/1.1 GET http://localhost:62289/images/sup.png  
+Request finished in 32.1998ms 304 image/svg+xml
+The file /images/sup.png was not modified
+Request starting HTTP/1.1 GET http://localhost:62289/images/whatsup.png  
+The file /images/whatsup.png was not modified
+Request finished in 10.5606ms 304 image/png
+Request finished in 10.6332ms 304 image/png
+Request starting HTTP/1.1 GET http://localhost:62289/images/logo2.svg  
+The file /images/logo2.svg was not modified
+Request finished in 4.565ms 304 image/svg+xml
+Request starting HTTP/1.1 GET http://localhost:62289/Portfolio  
+Route matched with {action = "Index", controller = "Portfolio"}. Executing action Petronomica.Controllers.PortfolioController.Index (Petronomica)
+Executing action method Petronomica.Controllers.PortfolioController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.PortfolioController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3.0595ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 18.9915ms.
+Executed action Petronomica.Controllers.PortfolioController.Index (Petronomica) in 33.9004ms
+Request finished in 327.2365ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Useful  
+Route matched with {action = "Index", controller = "Useful"}. Executing action Petronomica.Controllers.UsefulController.Index (Petronomica)
+Executing action method Petronomica.Controllers.UsefulController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.UsefulController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.3802ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 6.654ms.
+Executed action Petronomica.Controllers.UsefulController.Index (Petronomica) in 13.3988ms
+Request finished in 21.43ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Project  
+Route matched with {action = "Index", controller = "Project"}. Executing action Petronomica.Controllers.ProjectController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ProjectController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ProjectController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2032ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 8.405ms.
+Executed action Petronomica.Controllers.ProjectController.Index (Petronomica) in 15.495ms
+Request finished in 27.471ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/js/bootstrap.js.map  
+Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js.map'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map'
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/css/bootstrap.css.map  
+Request finished in 175.6188ms 200 text/plain
+Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css.map'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map'
+Request finished in 478.3251ms 200 text/plain
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2472ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 41.8893ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 55.7272ms
+Request finished in 90.8124ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/css/bootstrap.css  
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/js/bootstrap.js  
+Request starting HTTP/1.1 GET http://localhost:62289/css/site.css  
+Request starting HTTP/1.1 GET http://localhost:62289/images/qiwi.png  
+Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\css\site.css'
+Request starting HTTP/1.1 GET http://localhost:62289/lib/jquery/dist/jquery.js  
+Request finished in 34.6072ms 200 text/css
+Request starting HTTP/1.1 GET http://localhost:62289/images/yamoney.png  
+Request starting HTTP/1.1 GET http://localhost:62289/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA  
+Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\js\site.js'
+Request finished in 7.7859ms 200 application/javascript
+Sending file. Request path: '/images/qiwi.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\qiwi.png'
+Request starting HTTP/1.1 GET http://localhost:62289/images/sber.png  
+Request finished in 61.3905ms 200 image/png
+Request starting HTTP/1.1 GET http://localhost:62289/images/whatsup.png  
+Sending file. Request path: '/images/sber.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\sber.png'
+Request finished in 31.7683ms 200 image/png
+Request starting HTTP/1.1 GET http://localhost:62289/images/sup.png  
+Sending file. Request path: '/images/whatsup.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\whatsup.png'
+Request finished in 52.0848ms 200 image/png
+Request starting HTTP/1.1 GET http://localhost:62289/images/vk-icon.png  
+Sending file. Request path: '/images/yamoney.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\yamoney.png'
+Request finished in 103.2895ms 200 image/png
+Sending file. Request path: '/images/sup.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\sup.png'
+Request finished in 55.3344ms 200 image/png
+Sending file. Request path: '/images/vk-icon.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\vk-icon.png'
+Request finished in 50.4695ms 200 image/png
+Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+Request finished in 191.7561ms 200 text/css
+Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+Request finished in 203.1375ms 200 application/javascript
+Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\jquery\dist\jquery.js'
+Request finished in 195.0379ms 200 application/javascript
+Request starting HTTP/1.1 GET http://localhost:62289/images/logo2.svg  
+Sending file. Request path: '/images/logo2.svg'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\logo2.svg'
+Request finished in 28.3219ms 200 image/svg+xml
+Request starting HTTP/1.1 GET http://localhost:62289/Portfolio  
+Route matched with {action = "Index", controller = "Portfolio"}. Executing action Petronomica.Controllers.PortfolioController.Index (Petronomica)
+Executing action method Petronomica.Controllers.PortfolioController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.PortfolioController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0322ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 2.7119ms.
+Executed action Petronomica.Controllers.PortfolioController.Index (Petronomica) in 50.0896ms
+Request finished in 118.4553ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/images/whatsup.png  
+Request starting HTTP/1.1 GET http://localhost:62289/images/sup.png  
+Request starting HTTP/1.1 GET http://localhost:62289/css/site.css  
+Request starting HTTP/1.1 GET http://localhost:62289/lib/jquery/dist/jquery.js  
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/js/bootstrap.js  
+Sending file. Request path: '/images/sup.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\sup.png'
+Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\css\site.css'
+Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\jquery\dist\jquery.js'
+Request finished in 523.613ms 200 image/png
+Request finished in 523.9254ms 200 image/png
+Request starting HTTP/1.1 GET http://localhost:62289/images/vk-icon.png  
+Request starting HTTP/1.1 GET http://localhost:62289/images/logo2.svg  
+Request finished in 524.1214ms 200 text/css
+Request finished in 524.877ms 200 text/css
+Sending file. Request path: '/images/vk-icon.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\vk-icon.png'
+Request starting HTTP/1.1 GET http://localhost:62289/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA  
+Sending file. Request path: '/images/logo2.svg'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\logo2.svg'
+Request finished in 43.3879ms 200 image/png
+Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\js\site.js'
+Request finished in 38.4182ms 200 image/svg+xml
+Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+Request finished in 33.3471ms 200 application/javascript
+Request finished in 243.3504ms 200 application/javascript
+Request finished in 527.1607ms 200 application/javascript
+Request starting HTTP/1.1 GET http://localhost:62289/Useful  
+Route matched with {action = "Index", controller = "Useful"}. Executing action Petronomica.Controllers.UsefulController.Index (Petronomica)
+Executing action method Petronomica.Controllers.UsefulController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.UsefulController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0147ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 3.6336ms.
+Executed action Petronomica.Controllers.UsefulController.Index (Petronomica) in 11.934ms
+Request finished in 21.2514ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/css/site.css  
+Request starting HTTP/1.1 GET http://localhost:62289/images/sup.png  
+Request starting HTTP/1.1 GET http://localhost:62289/lib/jquery/dist/jquery.js  
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/css/bootstrap.css  
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/js/bootstrap.js  
+Request starting HTTP/1.1 GET http://localhost:62289/images/whatsup.png  
+Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\css\site.css'
+Sending file. Request path: '/images/sup.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\sup.png'
+Request finished in 34.1721ms 200 text/css
+Sending file. Request path: '/images/whatsup.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\whatsup.png'
+Request starting HTTP/1.1 GET http://localhost:62289/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA  
+Request finished in 51.3271ms 200 image/png
+Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+Request finished in 38.7746ms 200 image/png
+Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\jquery\dist\jquery.js'
+Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\js\site.js'
+Request starting HTTP/1.1 GET http://localhost:62289/images/vk-icon.png  
+Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+Request starting HTTP/1.1 GET http://localhost:62289/images/logo2.svg  
+Request finished in 182.7508ms 200 application/javascript
+Request finished in 139.7289ms 200 application/javascript
+Sending file. Request path: '/images/vk-icon.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\vk-icon.png'
+Sending file. Request path: '/images/logo2.svg'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\logo2.svg'
+Request finished in 119.2957ms 200 image/png
+Request finished in 37.918ms 200 image/svg+xml
+Request finished in 183.9533ms 200 application/javascript
+Request starting HTTP/1.1 GET http://localhost:62289/Project  
+Route matched with {action = "Index", controller = "Project"}. Executing action Petronomica.Controllers.ProjectController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ProjectController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ProjectController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0138ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 5560.8384ms.
+Executed action Petronomica.Controllers.ProjectController.Index (Petronomica) in 5570.1411ms
+Request finished in 5595.4258ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/lib/jquery/dist/jquery.js  
+Request starting HTTP/1.1 GET http://localhost:62289/images/sup.png  
+Request starting HTTP/1.1 GET http://localhost:62289/css/site.css  
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/css/bootstrap.css  
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/js/bootstrap.js  
+Sending file. Request path: '/images/sup.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\sup.png'
+Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\css\site.css'
+Sending file. Request path: '/images/whatsup.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\whatsup.png'
+Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\jquery\dist\jquery.js'
+Request finished in 89.6883ms 200 text/css
+Request finished in 57.9504ms 200 image/png
+Request finished in 89.8683ms 200 application/javascript
+Request finished in 69.6022ms 200 text/css
+Request starting HTTP/1.1 GET http://localhost:62289/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA  
+Request starting HTTP/1.1 GET http://localhost:62289/images/logo2.svg  
+Request starting HTTP/1.1 GET http://localhost:62289/images/vk-icon.png  
+Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\js\site.js'
+Sending file. Request path: '/images/vk-icon.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\vk-icon.png'
+Request finished in 82.5953ms 200 application/javascript
+Sending file. Request path: '/images/logo2.svg'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\logo2.svg'
+Request finished in 78.7149ms 200 image/png
+Request finished in 79.7983ms 200 image/svg+xml
+Request finished in 148.6845ms 200 application/javascript
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0413ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 37.0574ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 47.5915ms
+Request finished in 68.9205ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/lib/jquery/dist/jquery.js  
+Request starting HTTP/1.1 GET http://localhost:62289/css/site.css  
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/css/bootstrap.css  
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/js/bootstrap.js  
+Request starting HTTP/1.1 GET http://localhost:62289/images/qiwi.png  
+Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\css\site.css'
+Request starting HTTP/1.1 GET http://localhost:62289/images/yamoney.png  
+Request finished in 11.8065ms 200 text/css
+Sending file. Request path: '/images/qiwi.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\qiwi.png'
+Sending file. Request path: '/images/yamoney.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\yamoney.png'
+Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+Request finished in 42.0986ms 200 image/png
+Request finished in 53.7396ms 200 application/javascript
+Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+Request finished in 37.3885ms 200 image/png
+Request finished in 70.3171ms 200 text/css
+Request starting HTTP/1.1 GET http://localhost:62289/images/sber.png  
+Request starting HTTP/1.1 GET http://localhost:62289/images/sup.png  
+Request starting HTTP/1.1 GET http://localhost:62289/images/whatsup.png  
+Sending file. Request path: '/images/sup.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\sup.png'
+Request starting HTTP/1.1 GET http://localhost:62289/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA  
+Request finished in 16.3866ms 200 image/png
+Sending file. Request path: '/images/whatsup.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\whatsup.png'
+Request starting HTTP/1.1 GET http://localhost:62289/images/vk-icon.png  
+Request finished in 25.3748ms 200 image/png
+Sending file. Request path: '/images/sber.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\sber.png'
+Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\js\site.js'
+Request finished in 44.3821ms 200 image/png
+Sending file. Request path: '/images/vk-icon.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\vk-icon.png'
+Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\jquery\dist\jquery.js'
+Request finished in 48.2642ms 200 image/png
+Request finished in 157.7145ms 200 application/javascript
+Request starting HTTP/1.1 GET http://localhost:62289/images/logo2.svg  
+Request finished in 96.7027ms 200 application/javascript
+Sending file. Request path: '/images/logo2.svg'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\logo2.svg'
+Request finished in 36.1209ms 200 image/svg+xml
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Route matched with {action = "Index", controller = "Home"}. Executing action aspnetboot.Controllers.HomeController.Index (Petronomica)
+Executing action method aspnetboot.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method aspnetboot.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0189ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 2.5204ms.
+Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 11.8662ms
+Request finished in 26.9331ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/css/bootstrap.css  
+Request starting HTTP/1.1 GET http://localhost:62289/images/banner2.svg  
+Request starting HTTP/1.1 GET http://localhost:62289/css/site.css  
+Request starting HTTP/1.1 GET http://localhost:62289/lib/jquery/dist/jquery.js  
+Request starting HTTP/1.1 GET http://localhost:62289/images/banner1.svg  
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/js/bootstrap.js  
+Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\css\site.css'
+Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+Request finished in 88.8694ms 200 text/css
+Sending file. Request path: '/images/banner1.svg'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\banner1.svg'
+Request finished in 92.9493ms 200 text/css
+Request finished in 38.306ms 200 image/svg+xml
+Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+Request starting HTTP/1.1 GET http://localhost:62289/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA  
+Request starting HTTP/1.1 GET http://localhost:62289/images/banner3.svg  
+Request finished in 52.0598ms 200 application/javascript
+Request starting HTTP/1.1 GET http://localhost:62289/images/whatsup.png  
+Request starting HTTP/1.1 GET http://localhost:62289/images/sup.png  
+Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\js\site.js'
+Sending file. Request path: '/images/banner3.svg'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\banner3.svg'
+Sending file. Request path: '/images/whatsup.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\whatsup.png'
+Request finished in 189.6515ms 200 application/javascript
+Request finished in 66.4691ms 200 image/png
+Request finished in 79.4561ms 200 image/svg+xml
+Request finished in 98.9403ms 200 application/javascript
+Sending file. Request path: '/images/sup.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\sup.png'
+Request starting HTTP/1.1 GET http://localhost:62289/images/vk-icon.png  
+Request finished in 59.2412ms 200 image/png
+Request starting HTTP/1.1 GET http://localhost:62289/images/logo2.svg  
+Sending file. Request path: '/images/vk-icon.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\vk-icon.png'
+Sending file. Request path: '/images/logo2.svg'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\logo2.svg'
+Request finished in 75.9412ms 200 image/png
+Request finished in 49.7242ms 200 image/svg+xml
+Sending file. Request path: '/images/banner2.svg'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\banner2.svg'
+Request finished in 328.49ms 200 image/svg+xml
+Request starting HTTP/1.1 GET http://localhost:62289/Useful  
+Route matched with {action = "Index", controller = "Useful"}. Executing action Petronomica.Controllers.UsefulController.Index (Petronomica)
+Executing action method Petronomica.Controllers.UsefulController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.UsefulController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.015ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 3.0224ms.
+Executed action Petronomica.Controllers.UsefulController.Index (Petronomica) in 11.6177ms
+Request finished in 21.3169ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/js/bootstrap.js  
+Request starting HTTP/1.1 GET http://localhost:62289/images/whatsup.png  
+Request starting HTTP/1.1 GET http://localhost:62289/images/sup.png  
+Request starting HTTP/1.1 GET http://localhost:62289/css/site.css  
+Sending file. Request path: '/images/whatsup.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\whatsup.png'
+Request starting HTTP/1.1 GET http://localhost:62289/lib/jquery/dist/jquery.js  
+Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/css/bootstrap.css  
+Request finished in 59.9251ms 200 image/png
+Request finished in 66.4278ms 200 application/javascript
+Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\css\site.css'
+Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\jquery\dist\jquery.js'
+Request finished in 82.9703ms 200 text/css
+Request finished in 108.36ms 200 application/javascript
+Request finished in 90.56ms 200 text/css
+Sending file. Request path: '/images/sup.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\sup.png'
+Request starting HTTP/1.1 GET http://localhost:62289/images/vk-icon.png  
+Request finished in 114.0395ms 200 image/png
+Sending file. Request path: '/images/vk-icon.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\vk-icon.png'
+Request starting HTTP/1.1 GET http://localhost:62289/images/logo2.svg  
+Request finished in 18.229ms 200 image/png
+Request starting HTTP/1.1 GET http://localhost:62289/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA  
+Sending file. Request path: '/images/logo2.svg'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\logo2.svg'
+Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\js\site.js'
+Request finished in 34.9467ms 200 image/svg+xml
+Request finished in 39.8317ms 200 application/javascript
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Route matched with {action = "Index", controller = "Home"}. Executing action aspnetboot.Controllers.HomeController.Index (Petronomica)
+Executing action method aspnetboot.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method aspnetboot.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0153ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 2.7037ms.
+Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 25.6588ms
+Request finished in 37.8776ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/images/banner2.svg  
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/css/bootstrap.css  
+Request starting HTTP/1.1 GET http://localhost:62289/css/site.css  
+Request starting HTTP/1.1 GET http://localhost:62289/images/banner1.svg  
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/js/bootstrap.js  
+Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\css\site.css'
+Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+Request finished in 36.4776ms 200 text/css
+Sending file. Request path: '/images/banner1.svg'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\banner1.svg'
+Request finished in 43.2742ms 200 text/css
+Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+Request finished in 57.2228ms 200 image/svg+xml
+Sending file. Request path: '/images/banner2.svg'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\banner2.svg'
+Request starting HTTP/1.1 GET http://localhost:62289/images/banner3.svg  
+Request finished in 70.4742ms 200 application/javascript
+Request finished in 81.9403ms 200 image/svg+xml
+Request starting HTTP/1.1 GET http://localhost:62289/images/whatsup.png  
+Request starting HTTP/1.1 GET http://localhost:62289/images/sup.png  
+Request starting HTTP/1.1 GET http://localhost:62289/images/vk-icon.png  
+Request starting HTTP/1.1 GET http://localhost:62289/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA  
+Request starting HTTP/1.1 GET http://localhost:62289/lib/jquery/dist/jquery.js  
+Sending file. Request path: '/images/vk-icon.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\vk-icon.png'
+Sending file. Request path: '/images/sup.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\sup.png'
+Request finished in 48.3836ms 200 image/png
+Request finished in 63.3365ms 200 image/png
+Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\js\site.js'
+Sending file. Request path: '/images/whatsup.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\whatsup.png'
+Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\jquery\dist\jquery.js'
+Request finished in 129.2922ms 200 application/javascript
+Request finished in 192.7837ms 200 application/javascript
+Request finished in 120.8926ms 200 image/png
+Sending file. Request path: '/images/banner3.svg'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\banner3.svg'
+Request finished in 130.8586ms 200 image/svg+xml
+Request starting HTTP/1.1 GET http://localhost:62289/images/logo2.svg  
+Sending file. Request path: '/images/logo2.svg'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\logo2.svg'
+Request finished in 8.1749ms 200 image/svg+xml
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/js/bootstrap.js.map  
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/css/bootstrap.css.map  
+Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js.map'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map'
+Request finished in 107.3435ms 200 text/plain
+Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css.map'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map'
+Request finished in 125.6669ms 200 text/plain
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0195ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 28.0885ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 39.0704ms
+Request finished in 55.5753ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 DEBUG http://localhost:62289/  0
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Request finished in 30.0807ms 200 
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action aspnetboot.Controllers.HomeController.Index (Petronomica)
+Executing action method aspnetboot.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method aspnetboot.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.9555ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 106.1495ms.
+Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 127.6956ms
+Request finished in 306.7901ms 200 text/html; charset=utf-8

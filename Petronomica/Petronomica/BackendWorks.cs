@@ -23,6 +23,7 @@ namespace Petronomica
         public IConfiguration Configuration { get; }
         public void ConfigureServices(IServiceCollection services)
         {
+            
             services.AddResponseCompression(options =>
             {
                 options.EnableForHttps = true;
@@ -84,9 +85,11 @@ namespace Petronomica
                 logger.LogInformation("Identity{0}", context.User.Identity);
               
                 context.Response.ContentType = "text/html; charset=utf-8";
-
-                await context.Response.WriteAsync(context.Request.Headers.ToString());
-              
+                //foreach (string c in context.Request.HttpContext.Request.Headers.Values)
+                //{
+                //    await context.Response.WriteAsync(c);
+                //}
+                await context.Response.WriteAsync("Index");
             });
 
         }

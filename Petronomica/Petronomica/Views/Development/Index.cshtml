@@ -1,12 +1,15 @@
-﻿
-@*
-    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
-*@
-<script asp-src-include="~/js/app.js" asp-append-version="true" ></script>
-<script asp-src-include="~/js/userinfo.js" asp-append-version="true" ></script>
-<script>
+﻿@{
+    Layout = "_DevLA.cshtml";
+}
+<script asp-src-include="~/js/app.js" asp-append-version="true"></script>
+<script asp-src-include="~/js/userinfo.js" asp-append-version="true"></script>
+<script type="application/javascript" asp-src-include="~/js/sw.js" asp-append-version="true"></script>
+<script type="application/javascript">
     var app = new AppX();
-    function SendData() {
+        if('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register('~/js/sw.js')
+                .then(function () { console.log("Service Worker Registered"); });
+        }
 
-    }
 </script>

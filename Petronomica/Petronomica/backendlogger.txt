@@ -1053,3 +1053,72 @@ Executing ViewResult, running view Index.
 Executed ViewResult - view Index executed in 14.63ms.
 Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 23.6362ms
 Request finished in 33.7466ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/  
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Development"}. Executing action Petronomica.Controllers.DevelopmentController.Index (Petronomica)
+Executing action method Petronomica.Controllers.DevelopmentController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.DevelopmentController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 26.1437ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 623.8606ms.
+Executed action Petronomica.Controllers.DevelopmentController.Index (Petronomica) in 683.6597ms
+Request finished in 1115.4346ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/css/dev.css  
+Request starting HTTP/1.1 GET http://localhost:62292/js/sw.js?v=UEyFf6KNs3Ovp1rvvzq17RV5fMVyc1KWr4Oo7oSMEkU  
+The file /js/sw.js was not modified
+The file /css/dev.css was not modified
+Request finished in 204.9303ms 304 text/css
+Request finished in 207.7836ms 304 application/javascript
+Request starting HTTP/1.1 GET http://localhost:62292/~/js/sw.js  
+IdentitySystem.Security.Claims.ClaimsIdentity
+Request finished in 23.4227ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.3205ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 69.1252ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 78.2904ms
+Request finished in 91.1359ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/lib/bootstrap/dist/css/bootstrap.css  
+Request starting HTTP/1.1 GET http://localhost:62292/css/site.css  
+Request starting HTTP/1.1 GET http://localhost:62292/lib/bootstrap/dist/js/bootstrap.js  
+Request starting HTTP/1.1 GET http://localhost:62292/images/yamoney.png  
+The file /lib/bootstrap/dist/css/bootstrap.css was not modified
+Request starting HTTP/1.1 GET http://localhost:62292/images/qiwi.png  
+Request starting HTTP/1.1 GET http://localhost:62292/lib/jquery/dist/jquery.js  
+The file /css/site.css was not modified
+Request finished in 15.3078ms 304 text/css
+Request finished in 18.1512ms 304 text/css
+Request starting HTTP/1.1 GET http://localhost:62292/images/sber.png  
+Request starting HTTP/1.1 GET http://localhost:62292/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA  
+The file /images/sber.png was not modified
+The file /js/site.js was not modified
+The file /images/yamoney.png was not modified
+The file /images/qiwi.png was not modified
+The file /lib/jquery/dist/jquery.js was not modified
+Request finished in 350.1258ms 304 application/javascript
+Request finished in 304.7164ms 304 image/png
+Request finished in 318.709ms 304 application/javascript
+Request starting HTTP/1.1 GET http://localhost:62292/images/vk-icon.png  
+Request finished in 353.2466ms 304 image/png
+Request starting HTTP/1.1 GET http://localhost:62292/images/whatsup.png  
+The file /images/vk-icon.png was not modified
+Request starting HTTP/1.1 GET http://localhost:62292/images/logo2.svg  
+Request finished in 354.1566ms 304 image/png
+The file /images/whatsup.png was not modified
+Request finished in 13.7145ms 304 image/png
+The file /images/logo2.svg was not modified
+Request starting HTTP/1.1 GET http://localhost:62292/images/sup.png  
+Request finished in 15.2031ms 304 image/png
+Request finished in 13.9431ms 304 image/svg+xml
+The file /images/sup.png was not modified
+Request finished in 354.6755ms 304 application/javascript
+Request finished in 16.5865ms 304 image/png
+Request starting HTTP/1.1 GET http://localhost:62292/Useful  
+Route matched with {action = "Index", controller = "Useful"}. Executing action Petronomica.Controllers.UsefulController.Index (Petronomica)
+Executing action method Petronomica.Controllers.UsefulController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.UsefulController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2243ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 10.1553ms.
+Executed action Petronomica.Controllers.UsefulController.Index (Petronomica) in 19.1353ms
+Request finished in 27.8871ms 200 text/html; charset=utf-8

@@ -8773,3 +8773,36 @@ Executing ViewResult, running view Index.
 Executed ViewResult - view Index executed in 111.7958ms.
 Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 134.5577ms
 Request finished in 301.7989ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/  
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action aspnetboot.Controllers.HomeController.Index (Petronomica)
+Executing action method aspnetboot.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method aspnetboot.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.7809ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 555.2971ms.
+Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 584.6243ms
+Request finished in 795.6193ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/Portfolio  
+Route matched with {action = "Index", controller = "Portfolio"}. Executing action Petronomica.Controllers.PortfolioController.Index (Petronomica)
+Executing action method Petronomica.Controllers.PortfolioController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.PortfolioController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2526ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 25.1303ms.
+Executed action Petronomica.Controllers.PortfolioController.Index (Petronomica) in 37.172ms
+Request finished in 80.7381ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/Useful  
+Route matched with {action = "Index", controller = "Useful"}. Executing action Petronomica.Controllers.UsefulController.Index (Petronomica)
+Executing action method Petronomica.Controllers.UsefulController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.UsefulController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.281ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 6.7999ms.
+Executed action Petronomica.Controllers.UsefulController.Index (Petronomica) in 16.7201ms
+Request finished in 27.9875ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/  
+Route matched with {action = "Index", controller = "Home"}. Executing action aspnetboot.Controllers.HomeController.Index (Petronomica)
+Executing action method aspnetboot.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method aspnetboot.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.018ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 3.0939ms.
+Executed action aspnetboot.Controllers.HomeController.Index (Petronomica) in 10.5841ms
+Request finished in 28.8318ms 200 text/html; charset=utf-8

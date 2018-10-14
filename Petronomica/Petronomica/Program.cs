@@ -21,8 +21,8 @@ namespace aspnetboot
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-          // .UseStartup<Startup>()
-           .UseStartup<BackendWorks>()
+         .UseStartup<Startup>()
+         //  .UseStartup<BackendWorks>()
                 .Build();
     }
 }

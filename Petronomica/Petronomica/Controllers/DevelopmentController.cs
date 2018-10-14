@@ -10,6 +10,7 @@ namespace Petronomica.Controllers
     {
         public IActionResult Index()
         {
+            ViewData["Message"] = "Hello world!";
             return View();
         }
     }

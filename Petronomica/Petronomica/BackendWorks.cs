@@ -49,6 +49,7 @@ namespace Petronomica
             services.AddSession();
             services.AddMvc();
         }
+   
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, MessageService messageService)
         {
        

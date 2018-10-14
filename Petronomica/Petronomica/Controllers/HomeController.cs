@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Petronomica.ViewModels;
 
-namespace aspnetboot.Controllers
+namespace Petronomica.Controllers
 {
     public class HomeController : Controller
     {
         public IActionResult Index()
         {
-            ViewData["Message"] = "Hello world!";
+           
             return View("Index");
         }
 

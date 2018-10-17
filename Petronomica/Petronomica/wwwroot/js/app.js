@@ -6,10 +6,14 @@ function AppX()
     var currentstr;
     var self = this;
     window.addEventListener("load",Start);
-    window.addEventListener("resize",Start);
+    window.addEventListener("resize", Start);
+    var sw = new ServiceWorker();
     this.ShowUserInfo=function()
     {
-      console.log(this._userinfo);
+        self._userinfo = new UserInfo(); 
+        console.log(this._userinfo);
+        console.log(window.document.head);
+   
     }
     function SelectStrategy()
     {
@@ -60,13 +64,14 @@ function Strategy() {
 };
 function FHDStrategy() {
     Strategy.call(this);
-    this.exec = function() {
+    this.exec = function () {
         console.log('FHD');
     };
 };
 function Strategy1600() {
     Strategy.call(this);
-    this.exec = function() {
+    this.exec = function () {
+       
         console.log('1600');
     };
 };
@@ -78,13 +83,29 @@ function Strategy1200() {
 }; 
 function Strategy1024() {
     Strategy.call(this);
-    this.exec = function() {
+    this.exec = function () {
+ 
         console.log('1024');
     };
 }; 
 function StrategyMobile() {
     Strategy.call(this);
-    this.exec = function() {
+    this.exec = function () {
+      
         console.log('Mobile');
     };
-}; 
+};
+function ServiceWorker() {
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js', { scope: '/' })
+            .then(function (registration) {
+                console.log('Service Worker Registered');
+            });
+
+        navigator.serviceWorker.ready.then(function (registration) {
+            console.log('Service Worker Ready');
+        }) .catch (function () {
+            console.log('Error');
+        });
+    }
+}

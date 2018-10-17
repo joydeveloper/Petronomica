@@ -3,13 +3,18 @@
 }
 <script asp-src-include="~/js/app.js" asp-append-version="true"></script>
 <script asp-src-include="~/js/userinfo.js" asp-append-version="true"></script>
-<script type="application/javascript" asp-src-include="~/js/sw.js" asp-append-version="true"></script>
-<script type="application/javascript">
+
+<script>
+
     var app = new AppX();
-        if('serviceWorker' in navigator) {
+    app.ShowUserInfo();
+    // Register the service worker if available.
+   
+
+        @*if('serviceWorker' in navigator) {
             navigator.serviceWorker
                 .register('~/js/sw.js')
                 .then(function () { console.log("Service Worker Registered"); });
-        }
+        }*@
 
 </script>

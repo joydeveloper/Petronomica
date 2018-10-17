@@ -44,6 +44,7 @@ namespace XUnitTestPetronomica
             HomeController controller = new HomeController();
             // Act
             ViewResult result = controller.Index() as ViewResult;
+            
             // Assert
             Assert.Equal("Index", result?.ViewName);
         }

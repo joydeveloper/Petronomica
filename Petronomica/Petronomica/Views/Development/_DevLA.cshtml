@@ -1,11 +1,17 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 *@
-<environment include="Development">
- 
-    <link rel="stylesheet" href="~/css/dev.css" />
 
+
+<environment include="Development">
+
+    <link rel="stylesheet" href="~/css/dev.css" />
+    <link rel="manifest" href="~/manifest.json">
+    @*<script type="text/javascript" src="~/js/sw.js"></script>*@
 </environment>
+<script>
+   
+</script>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand logoimg"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,3 +45,6 @@
     </div>
 </nav>
 @RenderBody()
+
+
+

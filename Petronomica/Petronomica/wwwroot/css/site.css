@@ -16,7 +16,7 @@ body {
 }
 
 .logoimg {
-    background-image: url("../images/logo2.svg");
+    background-image: url("~/images/logo2.svg");
     background-repeat: no-repeat;
     min-height: 60px;
     min-width: 200px;

@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Logging;
 using Petronomica.ReUse;
+using WebEssentials.AspNetCore.Pwa;
 
 namespace Petronomica
 {
@@ -23,6 +24,12 @@ namespace Petronomica
         public IConfiguration Configuration { get; }
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddServiceWorker(new PwaOptions
+            {
+                Strategy = ServiceWorkerStrategy.CacheFirst,
+                CacheId = "v3",
+                RoutesToPreCache = "~/css/site.css, ~/js/app.js"
+            });
             services.AddTransient<IPasswordValidator<User>,
                     CustomPasswordValidator>(serv => new CustomPasswordValidator(6));
             services.AddDbContext<ApplicationContext>(options =>
@@ -43,6 +50,8 @@ namespace Petronomica
             services.AddDistributedMemoryCache();
             services.AddSession();
             services.AddMvc();
+            services.AddProgressiveWebApp();
+    
         }
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, MessageService messageService)
         {
@@ -61,6 +70,7 @@ namespace Petronomica
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
+   
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

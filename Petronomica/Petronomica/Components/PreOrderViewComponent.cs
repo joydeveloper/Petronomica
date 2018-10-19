@@ -18,5 +18,17 @@ namespace Petronomica.Components
             return $"Ваш выбор:";
         }
     }
+    public class PreOrder1ViewComponent
+    {
+
+        public PreOrder1ViewComponent()
+        {
+
+        }
+        public string Invoke()
+        {
+            return $"Компонент 2";
+        }
+    }
 }
 

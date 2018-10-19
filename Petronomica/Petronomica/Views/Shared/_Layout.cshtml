@@ -98,42 +98,11 @@
     </environment>
     <script asp-src-include="~/js/app.js" asp-append-version="true"></script>
     <script asp-src-include="~/js/userinfo.js" asp-append-version="true"></script>
+    <script asp-src-include="~/js/site.js" asp-append-version="true"></script>
     <script>
         var app = new AppX();
         app.ShowUserInfo();
-  function httpGetAsync(theUrl, callback) {
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.onreadystatechange = function () {
-        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
-            callback(xmlHttp.responseText);
-    }
-    xmlHttp.open("GET", theUrl, true);
-    xmlHttp.send(null);
-}
-    function Result(msg) {
-      document.getElementById("result").innerHTML = msg;
-    }
-    function DiplomPreOrder() {
-        httpGetAsync("@Url.Action("GetServiceType", "Services")?id="+0,Result);
-    }
-     function CoursePreOrder() {
-        httpGetAsync("@Url.Action("GetServiceType", "Services")?id="+1,Result);
-    }
-     function MagisterPreOrder() {
-        httpGetAsync("@Url.Action("GetServiceType", "Services")?id="+2,Result);
-    }
-     function DiplomOrder() {
-        httpGetAsync("@Url.Action("GetFastOrder", "Services")?id="+0,Result);
-    }
-     function CourseOrder() {
-        httpGetAsync("@Url.Action("GetFastOrder", "Services")?id="+1,Result);
-    }
-     function MagisterOrder() {
-        httpGetAsync("@Url.Action("GetFastOrder", "Services")?id="+2,Result);
-    }
-     function ReportOrder() {
-        httpGetAsync("@Url.Action("GetFastOrder", "Services")?id="+3,Result);
-    }
+
     </script>
     @RenderSection("Scripts", required: false)
 </body>

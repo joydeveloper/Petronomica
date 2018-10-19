@@ -19,8 +19,8 @@
       "sizes": "128x128"
     }
   ],
-  "scope": "/racer/",
-  "start_url": "/racer/start.html",
+  "scope": "/petronomica/",
+  "start_url": "/Home/Index.cshtml",
   "display": "fullscreen",
   "orientation": "landscape",
   "theme_color": "aliceblue",

@@ -10738,3 +10738,324 @@ WebEssentials.AspNetCore.ServiceWorker.PwaController.ServiceWorkerAsync (WebEsse
 An unhandled exception has occurred while executing the request.
 Request finished in 52.5911ms 500 text/html; charset=utf-8
 Connection processing ended abnormally.
+Request starting HTTP/1.1 DEBUG http://localhost:62289/  0
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Failed to determine the https port for redirect.
+Request finished in 33.5763ms 200 
+Route matched with {action = "Index", controller = "Home"}. Executing action Petronomica.Controllers.HomeController.Index (Petronomica)
+Executing action method Petronomica.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.9072ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 194.967ms.
+Executed action Petronomica.Controllers.HomeController.Index (Petronomica) in 218.5381ms
+Request finished in 430.2531ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/css/site.css  
+The file /css/site.css was not modified
+Request finished in 9.5197ms 304 text/css
+Request starting HTTP/1.1 GET http://localhost:62289/js/app.js?v=JOWBcBvQXmK-dVxQOVCLZLRt4oFkAGNGk7_pYRWfA9I  
+The file /js/app.js was not modified
+Request starting HTTP/1.1 GET http://localhost:62289/js/userinfo.js?v=idYUX6RV3KTu8NuwU0oCbNzFaFtiwF59-r50a9AeD4A  
+Request finished in 27.7966ms 304 application/javascript
+The file /js/userinfo.js was not modified
+Request finished in 5.6448ms 304 application/javascript
+Request starting HTTP/1.1 GET http://localhost:62289/js/site.js?v=LT6BRCzsFygqXjjJi2w-iCUOcmBwzNPQjzkSCTxnkKk  
+The file /js/site.js was not modified
+Request finished in 3.542ms 304 application/javascript
+Request starting HTTP/1.1 GET http://localhost:62289/css/~/images/logo2.svg  
+Processing request /css/~/images/logo2.svg
+Request finished in 6.0057ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/sw.js  
+Sending file. Request path: '/sw.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\sw.js'
+Request finished in 7.1217ms 200 application/javascript
+Request starting HTTP/1.1 GET http://localhost:62289/manifest.json  
+Sending file. Request path: '/manifest.json'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\manifest.json'
+Request finished in 13.0216ms 200 application/json
+Request starting HTTP/1.1 GET http://localhost:62289/[object Object]  
+Request matched multiple actions resulting in ambiguity. Matching actions: WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa)
+WebEssentials.AspNetCore.ServiceWorker.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.ServiceWorker)
+Processing request /%5Bobject%20Object%5D
+Request finished in 263.3044ms 200 text/html; charset=utf-8
+An unhandled exception has occurred while executing the request.
+Request finished in 341.687ms 500 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/js/bootstrap.js.map  
+Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js.map'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map'
+Request finished in 109.901ms 200 text/plain
+Request starting HTTP/1.1 DEBUG http://localhost:62289/  0
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Request finished in 26.6789ms 200 
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action Petronomica.Controllers.HomeController.Index (Petronomica)
+Executing action method Petronomica.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.7691ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 122.9215ms.
+Executed action Petronomica.Controllers.HomeController.Index (Petronomica) in 144.002ms
+Request finished in 334.312ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/css/~/images/logo2.svg  
+Processing request /css/~/images/logo2.svg
+Request finished in 7.6795ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/sw.js  
+Sending file. Request path: '/sw.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\sw.js'
+Request finished in 18.5694ms 200 application/javascript
+Request starting HTTP/1.1 GET http://localhost:62289/serviceworker  
+Request matched multiple actions resulting in ambiguity. Matching actions: WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa)
+WebEssentials.AspNetCore.ServiceWorker.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.ServiceWorker)
+An unhandled exception has occurred while executing the request.
+Request finished in 55.3349ms 500 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Portfolio  
+Route matched with {action = "Index", controller = "Portfolio"}. Executing action Petronomica.Controllers.PortfolioController.Index (Petronomica)
+Executing action method Petronomica.Controllers.PortfolioController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.PortfolioController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2578ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 48.4903ms.
+Executed action Petronomica.Controllers.PortfolioController.Index (Petronomica) in 55.3253ms
+Request finished in 63.6175ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/css/~/images/logo2.svg  
+Request starting HTTP/1.1 GET http://localhost:62289/sw.js  
+Processing request /css/~/images/logo2.svg
+Request finished in 47.8752ms 200 text/html; charset=utf-8
+Sending file. Request path: '/sw.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\sw.js'
+Request finished in 61.5961ms 200 application/javascript
+Request starting HTTP/1.1 GET http://localhost:62289/serviceworker  
+Request matched multiple actions resulting in ambiguity. Matching actions: WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa)
+WebEssentials.AspNetCore.ServiceWorker.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.ServiceWorker)
+An unhandled exception has occurred while executing the request.
+Request finished in 11.2704ms 500 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2089ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 39.1174ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 45.2293ms
+Request finished in 54.1017ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/images/yamoney.png  
+Request starting HTTP/1.1 GET http://localhost:62289/images/sber.png  
+Request starting HTTP/1.1 GET http://localhost:62289/images/qiwi.png  
+The file /images/sber.png was not modified
+The file /images/qiwi.png was not modified
+The file /images/yamoney.png was not modified
+Request starting HTTP/1.1 GET http://localhost:62289/css/~/images/logo2.svg  
+Request finished in 21.3114ms 304 image/png
+Request finished in 26.4736ms 304 image/png
+Request finished in 27.6127ms 304 image/png
+Processing request /css/~/images/logo2.svg
+Request starting HTTP/1.1 GET http://localhost:62289/sw.js  
+Request finished in 31.8796ms 200 text/html; charset=utf-8
+Sending file. Request path: '/sw.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\sw.js'
+Request finished in 11.7899ms 200 application/javascript
+Request starting HTTP/1.1 GET http://localhost:62289/serviceworker  
+Request matched multiple actions resulting in ambiguity. Matching actions: WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa)
+WebEssentials.AspNetCore.ServiceWorker.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.ServiceWorker)
+An unhandled exception has occurred while executing the request.
+Request finished in 9.3014ms 500 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0168ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 2.8542ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica) in 8.5774ms
+Request finished in 17.4667ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/css/~/images/logo2.svg  
+Processing request /css/~/images/logo2.svg
+Request starting HTTP/1.1 GET http://localhost:62289/sw.js  
+Request finished in 16.6589ms 200 text/html; charset=utf-8
+Sending file. Request path: '/sw.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\sw.js'
+Request finished in 10.673ms 200 application/javascript
+Request starting HTTP/1.1 GET http://localhost:62289/serviceworker  
+Request matched multiple actions resulting in ambiguity. Matching actions: WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa)
+WebEssentials.AspNetCore.ServiceWorker.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.ServiceWorker)
+An unhandled exception has occurred while executing the request.
+Request finished in 9.6801ms 500 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Petronomica.Controllers.HomeController.Index (Petronomica)
+Executing action method Petronomica.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0208ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 2.5255ms.
+Executed action Petronomica.Controllers.HomeController.Index (Petronomica) in 8.8648ms
+Request finished in 26.3053ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/css/~/images/logo2.svg  
+Processing request /css/~/images/logo2.svg
+Request finished in 5.4449ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/sw.js  
+Sending file. Request path: '/sw.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\sw.js'
+Request finished in 8.6444ms 200 application/javascript
+Request starting HTTP/1.1 GET http://localhost:62289/serviceworker  
+Request matched multiple actions resulting in ambiguity. Matching actions: WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa)
+WebEssentials.AspNetCore.ServiceWorker.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.ServiceWorker)
+An unhandled exception has occurred while executing the request.
+Request finished in 10.5853ms 500 text/html; charset=utf-8
+Request starting HTTP/1.1 DEBUG http://localhost:62289/  0
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Request finished in 50.9369ms 200 
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action Petronomica.Controllers.HomeController.Index (Petronomica)
+Executing action method Petronomica.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.7842ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 111.7575ms.
+Executed action Petronomica.Controllers.HomeController.Index (Petronomica) in 136.1033ms
+Request finished in 343.2887ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/css/~/images/logo2.svg  
+Processing request /css/~/images/logo2.svg
+Request finished in 7.6545ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/sw.js  
+Sending file. Request path: '/sw.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\sw.js'
+Request finished in 21.2195ms 200 application/javascript
+Request starting HTTP/1.1 GET http://localhost:62289/serviceworker  
+Request matched multiple actions resulting in ambiguity. Matching actions: WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa)
+WebEssentials.AspNetCore.ServiceWorker.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.ServiceWorker)
+An unhandled exception has occurred while executing the request.
+Request finished in 51.7987ms 500 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/js/bootstrap.js.map  
+Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js.map'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map'
+Request finished in 19.2098ms 200 text/plain
+Request starting HTTP/1.1 DEBUG http://localhost:62289/  0
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Request finished in 25.6133ms 200 
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action Petronomica.Controllers.HomeController.Index (Petronomica)
+Executing action method Petronomica.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.6558ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 128.2452ms.
+Executed action Petronomica.Controllers.HomeController.Index (Petronomica) in 151.4943ms
+Request finished in 344.32ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/css/~/images/logo2.svg  
+Processing request /css/~/images/logo2.svg
+Request finished in 9.9126ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/sw.js  
+Sending file. Request path: '/sw.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\sw.js'
+Request finished in 12.4255ms 200 application/javascript
+Request starting HTTP/1.1 GET http://localhost:62289/serviceworker  
+Request matched multiple actions resulting in ambiguity. Matching actions: WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa)
+WebEssentials.AspNetCore.ServiceWorker.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.ServiceWorker)
+An unhandled exception has occurred while executing the request.
+Request finished in 52.143ms 500 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/js/bootstrap.js.map  
+Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js.map'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map'
+Request finished in 40.673ms 200 text/plain
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Petronomica.Controllers.HomeController.Index (Petronomica)
+Executing action method Petronomica.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2912ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 34.0545ms.
+Executed action Petronomica.Controllers.HomeController.Index (Petronomica) in 46.7789ms
+Request finished in 63.8319ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/css/~/images/logo2.svg  
+Processing request /css/~/images/logo2.svg
+Request finished in 15.8339ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/sw.js  
+Request starting HTTP/1.1 GET http://localhost:62289/favicon.ico  
+Sending file. Request path: '/sw.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\sw.js'
+Request finished in 19.3962ms 200 application/javascript
+Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\favicon.ico'
+Request finished in 47.3032ms 200 image/x-icon
+Request starting HTTP/1.1 GET http://localhost:62289/{/offlinepage.html}  
+Request starting HTTP/1.1 GET http://localhost:62289/[object Object]  
+Processing request /%5Bobject%20Object%5D
+Processing request /%7B/offlinepage.html%7D
+Request finished in 28.4003ms 200 text/html; charset=utf-8
+Request finished in 29.0588ms 200 text/html; charset=utf-8
+An unhandled exception has occurred while executing the request.
+Request finished in 193.9497ms 500 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Petronomica.Controllers.HomeController.Index (Petronomica)
+Executing action method Petronomica.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0162ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 3.3755ms.
+Executed action Petronomica.Controllers.HomeController.Index (Petronomica) in 13.7486ms
+Request finished in 47.1805ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/css/~/images/logo2.svg  
+Processing request /css/~/images/logo2.svg
+Request finished in 20.6993ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/favicon.ico  
+Request starting HTTP/1.1 GET http://localhost:62289/sw.js  
+Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\favicon.ico'
+Request finished in 23.8804ms 200 image/x-icon
+Sending file. Request path: '/sw.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\sw.js'
+Request finished in 26.3608ms 200 application/javascript
+Request starting HTTP/1.1 GET http://localhost:62289/{/offlinepage.html}  
+Request starting HTTP/1.1 GET http://localhost:62289/[object Object]  
+Processing request /%5Bobject%20Object%5D
+Processing request /%7B/offlinepage.html%7D
+Request finished in 17.3093ms 200 text/html; charset=utf-8
+Request finished in 20.1828ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/serviceworker  
+Request matched multiple actions resulting in ambiguity. Matching actions: WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa)
+WebEssentials.AspNetCore.ServiceWorker.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.ServiceWorker)
+An unhandled exception has occurred while executing the request.
+Request finished in 29.1267ms 500 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Petronomica.Controllers.HomeController.Index (Petronomica)
+Executing action method Petronomica.Controllers.HomeController.Index (Petronomica) - Validation state: Valid
+Executed action method Petronomica.Controllers.HomeController.Index (Petronomica), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0162ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 3.8344ms.
+Executed action Petronomica.Controllers.HomeController.Index (Petronomica) in 13.9078ms
+Request finished in 37.0327ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/css/site.css  
+Request starting HTTP/1.1 GET http://localhost:62289/lib/jquery/dist/jquery.js  
+Request starting HTTP/1.1 GET http://localhost:62289/images/banner1.svg  
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/js/bootstrap.js  
+Request starting HTTP/1.1 GET http://localhost:62289/images/banner2.svg  
+Request starting HTTP/1.1 GET http://localhost:62289/js/site.js?v=LT6BRCzsFygqXjjJi2w-iCUOcmBwzNPQjzkSCTxnkKk  
+Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\css\site.css'
+Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\js\site.js'
+Request finished in 15.062ms 200 application/javascript
+Request finished in 55.1736ms 200 text/css
+Request starting HTTP/1.1 GET http://localhost:62289/js/app.js?v=JOWBcBvQXmK-dVxQOVCLZLRt4oFkAGNGk7_pYRWfA9I  
+Sending file. Request path: '/images/banner1.svg'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\banner1.svg'
+Sending file. Request path: '/js/app.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\js\app.js'
+Request finished in 41.2474ms 200 image/svg+xml
+Request finished in 13.9482ms 200 application/javascript
+Request starting HTTP/1.1 GET http://localhost:62289/js/userinfo.js?v=idYUX6RV3KTu8NuwU0oCbNzFaFtiwF59-r50a9AeD4A  
+Sending file. Request path: '/js/userinfo.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\js\userinfo.js'
+Request starting HTTP/1.1 GET http://localhost:62289/images/whatsup.png  
+Request finished in 42.2545ms 200 application/javascript
+Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+Request starting HTTP/1.1 GET http://localhost:62289/images/sup.png  
+Request finished in 133.2934ms 200 application/javascript
+Sending file. Request path: '/images/whatsup.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\whatsup.png'
+Request finished in 48.0085ms 200 image/png
+Request starting HTTP/1.1 GET http://localhost:62289/images/vk-icon.png  
+Sending file. Request path: '/images/banner3.svg'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\banner3.svg'
+Request finished in 82.5892ms 200 image/svg+xml
+Sending file. Request path: '/images/sup.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\sup.png'
+Request starting HTTP/1.1 GET http://localhost:62289/css/~/images/logo2.svg  
+Request finished in 54.1382ms 200 image/png
+Processing request /css/~/images/logo2.svg
+Request finished in 6.714ms 200 text/html; charset=utf-8
+Sending file. Request path: '/images/vk-icon.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\vk-icon.png'
+Request finished in 38.1649ms 200 image/png
+Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\jquery\dist\jquery.js'
+Request finished in 268.4439ms 200 application/javascript
+Sending file. Request path: '/images/banner2.svg'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\images\banner2.svg'
+Request finished in 260.5092ms 200 image/svg+xml
+Request starting HTTP/1.1 GET http://localhost:62289/lib/bootstrap/dist/js/bootstrap.js.map  
+Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js.map'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map'
+Request finished in 28.6466ms 200 text/plain
+Request starting HTTP/1.1 GET http://localhost:62289/sw.js  
+Sending file. Request path: '/sw.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\sw.js'
+Request finished in 10.7792ms 200 application/javascript
+Request starting HTTP/1.1 GET http://localhost:62289/favicon.ico  
+Request starting HTTP/1.1 GET http://localhost:62289/manifest.json  
+Sending file. Request path: '/manifest.json'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\manifest.json'
+Request starting HTTP/1.1 GET http://localhost:62289/{/offlinepage.html}  
+Request starting HTTP/1.1 GET http://localhost:62289/[object Object]  
+Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica\wwwroot\favicon.ico'
+Processing request /%7B/offlinepage.html%7D
+Processing request /%5Bobject%20Object%5D
+Request finished in 49.0578ms 200 application/json
+Request finished in 63.7608ms 200 image/x-icon
+Request finished in 46.2877ms 200 text/html; charset=utf-8
+Request finished in 44.6284ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62289/serviceworker  
+Request matched multiple actions resulting in ambiguity. Matching actions: WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa)
+WebEssentials.AspNetCore.ServiceWorker.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.ServiceWorker)
+An unhandled exception has occurred while executing the request.
+Request finished in 30.6548ms 500 text/html; charset=utf-8

@@ -28,7 +28,7 @@ namespace Petronomica
             {
                 Strategy = ServiceWorkerStrategy.CacheFirst,
                 CacheId = "v3",
-                RoutesToPreCache = "~/css/site.css, ~/js/app.js"
+                RoutesToPreCache = "~/css/site.css, ~/js/app.js,~/images"
             });
             services.AddTransient<IPasswordValidator<User>,
                     CustomPasswordValidator>(serv => new CustomPasswordValidator(6));
@@ -68,10 +68,10 @@ namespace Petronomica
             var logger = loggerFactory.CreateLogger("FileLogger");
             app.UseSession();
             app.UseHttpsRedirection();
-            DefaultFilesOptions options = new DefaultFilesOptions();
-            options.DefaultFileNames.Clear();
-            options.DefaultFileNames.Add("startup.html");
-            app.UseDefaultFiles(options);
+            //DefaultFilesOptions options = new DefaultFilesOptions();
+            //options.DefaultFileNames.Clear();
+            //options.DefaultFileNames.Add("startup.html");
+            //app.UseDefaultFiles(options);
             app.UseStaticFiles();
             app.UseCookiePolicy();
             app.UseMvc(routes =>
@@ -91,14 +91,11 @@ namespace Petronomica
                 logger.LogInformation("Processing request {0}", context.Request.Path);
                 if (context.Request.Cookies.ContainsKey("guest"))
                 {
-                 
-                    await context.Response.WriteAsync("G");
-                }
-                  
-                else
                     await context.Response.WriteAsync("I");
-                
-             
+
+                }
+                else
+                context.Response.Redirect("startup.html");
             });
 
         }

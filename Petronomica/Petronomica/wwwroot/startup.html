@@ -6,6 +6,7 @@
 </head>
 <body>
     <h1>Loading...</h1>
+    <button onclick="LoadStrategy()">Start</button>
     <p id="main"></p>
     <script>
         function httpGetAsync(theUrl, callback) {
@@ -20,7 +21,7 @@
         function Result(msg) {
             document.getElementById("main").innerHTML = msg;
         }
-        function DiplomPreOrder() {
+        function LoadStrategy() {
             httpGetAsync("/Home/Strategy?id=" + 0, Result);
         }
     </script>

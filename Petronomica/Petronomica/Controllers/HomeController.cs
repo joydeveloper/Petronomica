@@ -12,7 +12,9 @@ namespace Petronomica.Controllers
     {
         public IActionResult Index()
         {
-           
+            
+          
+            this.ControllerContext.HttpContext.Response.Cookies.Append("name","vasya");
             return View("Index");
         }
 

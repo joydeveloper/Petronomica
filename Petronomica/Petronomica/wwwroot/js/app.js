@@ -7,7 +7,7 @@ function AppX()
     var self = this;
     window.addEventListener("load",Start);
     window.addEventListener("resize", Start);
-    var sw = new ServiceWorker();
+   // var sw = new ServiceWorker();
     this.ShowUserInfo=function()
     {
         self._userinfo = new UserInfo(); 

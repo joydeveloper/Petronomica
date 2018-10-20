@@ -68,10 +68,10 @@ namespace Petronomica
             var logger = loggerFactory.CreateLogger("FileLogger");
             app.UseSession();
             app.UseHttpsRedirection();
-            //DefaultFilesOptions options = new DefaultFilesOptions();
-            //options.DefaultFileNames.Clear();
+            DefaultFilesOptions options = new DefaultFilesOptions();
+            options.DefaultFileNames.Clear();
             //options.DefaultFileNames.Add("startup.html");
-            //app.UseDefaultFiles(options);
+            app.UseDefaultFiles(options);
             app.UseStaticFiles();
             app.UseCookiePolicy();
             app.UseMvc(routes =>

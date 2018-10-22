@@ -1,0 +1,184 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+<div id="begin"></div>
+<div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-between">
+        <a class="p-2 text-muted" href="#">Финансы и кредит</a>
+        <a class="p-2 text-muted" href="#">Бухгалтерский учёт</a>
+        <a class="p-2 text-muted" href="#">Банковское дело</a>
+        <a class="p-2 text-muted" href="#">Маркетинг</a>
+        <a class="p-2 text-muted" href="#">Менеджемент</a>
+        <a class="p-2 text-muted" href="#">Страхование</a>
+        <a class="p-2 text-muted" href="#">Туризм</a>
+    </nav>
+</div>
+<p>
+    <div class="row" style="margin-top:1%;">
+        <div class="col-md-6">
+            <button class="btn btn-primary" style="margin-top:1%;" type="button" data-toggle="collapse" data-target="#constructor" aria-expanded="false" aria-controls="constructor">
+                Что значит конструктор?
+            </button>
+        </div>
+        <div class="col-md-6">
+            <button class="btn btn-success" style="margin-top:1%;" type="button" data-toggle="collapse" data-target="#paid" aria-expanded="false" aria-controls="paid">
+                Оплата
+            </button>
+        </div>
+    </div>
+</p>
+<div class="collapse" id="constructor">
+    <div class="card card-body">
+        Выберите соответствующую форму предзаказа и те пункты работы, которые необходимо выполнить, прикрепите всю необходимую документацию, содержащую список тем, требования и рекомендации к оформлению работы, а также какой-либо материал по выбранной теме. Укажите желаемую оценку и напишите сообщение, указав в нем важную, по вашему мнению, информацию. Мы ознакомимся с Вашей заявкой и в этот же день вышлем ответное письмо на эл. почту.
+    </div>
+</div>
+<div class="collapse" id="paid">
+    <div class="row" style="width:50%">
+        <div class="col">
+            <img class="rounded-top" src="~/images/yamoney.png" width="150" height="128">
+        </div>
+        <div class="col">
+            <img class="rounded-top border-0" src="~/images/qiwi.png" width="150" height="128">
+        </div>
+        <div class="col">
+            <img class="rounded-top border-0" src="~/images/sber.png" width="150" height="128">
+        </div>
+    </div>
+</div>
+<div class="card mb-6 shadow-sm">
+    <input class="form-control mr-sm-2" type="text" placeholder="Платный поиск" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" onclick="SearchPreOrder()">Заказать</button>
+</div>
+<div class="row" style="margin-top:1%;">
+  
+    <div class="col-md-6">
+        <div class="card mb-6 shadow-sm">
+            <div class="card-body">
+                <p class="card-text">Отчёт по практике</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="ReportOrder()">Заказать</button>
+                    </div>
+                    <small class="text-muted alert alert-info">От 3000 рублей</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card mb-6 shadow-sm">
+            <div class="card-body">
+                <p class="card-text">Курсовая работа</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="CourseOrder()">Заказать</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="CoursePreOrder()">Конструктор</button>
+                    </div>
+                    <small class="text-muted alert alert-success">От 4000 рублей</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card mb-6 shadow-sm">
+            <div class="card-body">
+                <p class="card-text">Дипломная работа</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="DiplomOrder()">Заказать</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="DiplomPreOrder()">Конструктор</button>
+                    </div>
+                    <small class="text-muted  alert alert-primary">От 8000 рублей</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card mb-6 shadow-sm">
+            <div class="card-body">
+                <p class="card-text">Магистерская диссертация</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="MagisterOrder()">Заказать</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="MagisterPreOrder()">Конструктор</button>
+                    </div>
+                    <small class="text-muted alert alert-warning">От 14000 рублей</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="card mb-6 shadow-sm">
+    <button class="btn btn-light my-2 my-sm-0" onclick="Consultation()">Консультация по НИР</button>
+</div>
+<p id="result"></p>
+<a class="btn-info btn-sm d-xl-none d-lg-none" href="#begin">Наверх</a>
+<script>
+function Result(msg) {
+    document.getElementById("result").innerHTML = msg;
+}
+function DiplomPreOrder() {
+    httpGetAsync("@Url.Action("GetServiceType", "Services")?id=" + 0, Result);
+}
+function CoursePreOrder() {
+    httpGetAsync("@Url.Action("GetServiceType", "Services")?id=" + 1, Result);
+}
+function MagisterPreOrder() {
+    httpGetAsync("@Url.Action("GetServiceType", "Services")?id=" + 2, Result);
+    }
+    function SearchPreOrder() {
+    httpGetAsync("@Url.Action("GetServiceType", "Services")?id=" +3, Result);
+}
+function DiplomOrder() {
+    httpGetAsync("@Url.Action("GetFastOrder", "Services")?id=" + 0, Result);
+}
+function CourseOrder() {
+    httpGetAsync("@Url.Action("GetFastOrder", "Services")?id=" + 1, Result);
+}
+function MagisterOrder() {
+    httpGetAsync("@Url.Action("GetFastOrder", "Services")?id=" + 2, Result);
+}
+function ReportOrder() {
+    httpGetAsync("@Url.Action("GetFastOrder", "Services")?id=" + 3, Result);
+}
+function Consultation() {
+    httpGetAsync("@Url.Action("Consultation", "Services")", Result);
+}
+</script>
+@*<script>
+      function httpGetAsync(theUrl, callback) {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.onreadystatechange = function () {
+            if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+                callback(xmlHttp.responseText);
+        }
+        xmlHttp.open("GET", theUrl, true);
+        xmlHttp.send(null);
+    }
+        function Result(msg) {
+          document.getElementById("result").innerHTML = msg;
+        }
+        function DiplomPreOrder() {
+            httpGetAsync("@Url.Action("GetServiceType", "Services")?id="+0,Result);
+        }
+         function CoursePreOrder() {
+            httpGetAsync("@Url.Action("GetServiceType", "Services")?id="+1,Result);
+        }
+         function MagisterPreOrder() {
+            httpGetAsync("@Url.Action("GetServiceType", "Services")?id="+2,Result);
+        }
+         function DiplomOrder() {
+            httpGetAsync("@Url.Action("GetFastOrder", "Services")?id="+0,Result);
+        }
+         function CourseOrder() {
+            httpGetAsync("@Url.Action("GetFastOrder", "Services")?id="+1,Result);
+        }
+         function MagisterOrder() {
+            httpGetAsync("@Url.Action("GetFastOrder", "Services")?id="+2,Result);
+        }
+         function ReportOrder() {
+            httpGetAsync("@Url.Action("GetFastOrder", "Services")?id="+3,Result);
+        }
+    </script>*@
+

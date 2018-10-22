@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Petronomica\Petronomica.csproj" />
+    <ProjectReference Include="..\Petronomica\Petronomica1.0.csproj" />
   </ItemGroup>
 
   <ItemGroup>

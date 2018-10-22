@@ -1,0 +1,29 @@
+﻿@model Petronomica.ViewModels.ErrorViewModel
+@{
+    ViewData["Title"] = "Error";
+}
+<h1 class="text-danger">Ошибка</h1>
+<h2 class="text-danger">По вашему запросу произошла ошибка</h2>
+@if (Model.ShowRequestId)
+{
+    <p>
+        <strong>Request ID:</strong> <code>@Model.RequestId</code>
+    </p>
+}
+<form asp-controller="Development" asp-action="OnError" method="post" enctype="multipart/form-data">
+    <h3>Сообщить об ошибке</h3>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label for="firstName">Адрес электронной почты</label>
+            <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Введите почту" asp-for="Userid.Email" required>
+            <div class="invalid-feedback">
+                Почтовый адрес обязателен для заполнения
+            </div>
+        </div>
+        <div class="form-group" style="margin-top:5px;">
+            <label for="comment">Дополнительные пожелания:</label>
+            <textarea class="form-control" rows="5" id="comment" asp-for="Message"></textarea>
+        </div>
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Отправить заявку</button>
+    </div>
+</form>

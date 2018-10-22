@@ -1,0 +1,24 @@
+﻿@page
+@using WebEssentials.AspNetCore.Pwa
+@inject WebManifest wm
+@{
+//if (!Request.IsHttps && Request.Host.Host != "localhost")
+//{
+//    Response.Redirect("https://" + Request.Host);
+//}
+//if
+//Response.Redirect("Home/Index");
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Загрузка</title>
+    @{
+        Response.Redirect("Home/Index");
+    }
+    </head>
+<body>
+</body>
+</html>

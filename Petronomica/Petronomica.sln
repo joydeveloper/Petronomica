@@ -3,17 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Petronomica", "Petronomica\Petronomica.csproj", "{E201E3D6-EBBA-49F6-9442-447A88D4D230}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Petronomica", "Petronomica\Petronomica.csproj", "{E201E3D6-EBBA-49F6-9442-447A88D4D230}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitPetronomica", "XUnitPetronomica\XUnitPetronomica.csproj", "{37638248-BCF1-431F-9BFB-4C63F5501005}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitPetronomica", "XUnitPetronomica\XUnitPetronomica.csproj", "{37638248-BCF1-431F-9BFB-4C63F5501005}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetronomicaModels", "PetronomicaModels\PetronomicaModels.csproj", "{88BB86C6-9733-43DA-8AF6-8D7F17E48638}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetronomicaModels", "PetronomicaModels\PetronomicaModels.csproj", "{88BB86C6-9733-43DA-8AF6-8D7F17E48638}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetronomicaServices", "PetronomicaServices\PetronomicaServices.csproj", "{262D3221-F562-4BC2-BA3B-264D345A6135}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetronomicaServices", "PetronomicaServices\PetronomicaServices.csproj", "{262D3221-F562-4BC2-BA3B-264D345A6135}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedServices", "SharedServices\SharedServices.csproj", "{7367EF50-2456-4917-8C35-98C868F4CDFA}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebEssentials.AspNetCore.Pwa", "..\..\WebEssentials.AspNetCore.ServiceWorker\src\WebEssentials.AspNetCore.Pwa.csproj", "{60050B2A-B7D8-4409-AC52-BB315D068BAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedServices", "SharedServices\SharedServices.csproj", "{7367EF50-2456-4917-8C35-98C868F4CDFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +39,6 @@ Global
 		{7367EF50-2456-4917-8C35-98C868F4CDFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7367EF50-2456-4917-8C35-98C868F4CDFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7367EF50-2456-4917-8C35-98C868F4CDFA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{60050B2A-B7D8-4409-AC52-BB315D068BAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{60050B2A-B7D8-4409-AC52-BB315D068BAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{60050B2A-B7D8-4409-AC52-BB315D068BAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{60050B2A-B7D8-4409-AC52-BB315D068BAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

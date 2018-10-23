@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Petronomica", "Petronomica\Petronomica.csproj", "{E201E3D6-EBBA-49F6-9442-447A88D4D230}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetronomicaTest", "Petronomica\PetronomicaTest.csproj", "{E201E3D6-EBBA-49F6-9442-447A88D4D230}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitPetronomica", "XUnitPetronomica\XUnitPetronomica.csproj", "{37638248-BCF1-431F-9BFB-4C63F5501005}"
 EndProject

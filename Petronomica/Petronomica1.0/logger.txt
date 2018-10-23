@@ -14541,3 +14541,28 @@ Executed action method WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerA
 Executing ContentResult with HTTP Response ContentType of application/javascript; charset=utf-8
 Executed action WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa) in 9.751ms
 Request finished in 26.9792ms 200 application/javascript; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/  
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action Petronomica.Controllers.HomeController.Index (Petronomica1.0)
+Executing action method Petronomica.Controllers.HomeController.Index (Petronomica1.0) - Validation state: Valid
+Executed action method Petronomica.Controllers.HomeController.Index (Petronomica1.0), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4.7203ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 207.9748ms.
+Executed action Petronomica.Controllers.HomeController.Index (Petronomica1.0) in 235.7148ms
+Request finished in 452.9754ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/lib/jquery/dist/jquery.js  
+Request starting HTTP/1.1 GET http://localhost:62292/lib/bootstrap/dist/js/bootstrap.js  
+Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica1.0\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+Request finished in 274.9541ms 200 application/javascript
+Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica1.0\wwwroot\lib\jquery\dist\jquery.js'
+Request finished in 311.7037ms 200 application/javascript
+Request starting HTTP/1.1 GET http://localhost:62292/icon/hd_lo  
+Processing request /icon/hd_lo
+Request finished in 6.799ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/serviceworker  
+Route matched with {action = "ServiceWorkerAsync", controller = "Pwa"}. Executing action WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa)
+Executing action method WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa) - Validation state: Valid
+Executed action method WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa), returned result Microsoft.AspNetCore.Mvc.ContentResult in 4.8231ms.
+Executing ContentResult with HTTP Response ContentType of application/javascript; charset=utf-8
+Executed action WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa) in 15.7296ms
+Request finished in 27.0269ms 200 application/javascript; charset=utf-8

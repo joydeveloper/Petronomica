@@ -60,7 +60,7 @@ namespace Petronomica
             services.AddProgressiveWebApp(new PwaOptions
             {
                 Strategy = ServiceWorkerStrategy.CacheFirst,
-                CacheId = "v4",
+                CacheId = "v5",
                 RoutesToPreCache = "~/css/site.css, ~/images",
                 RegisterServiceWorker = true
             });

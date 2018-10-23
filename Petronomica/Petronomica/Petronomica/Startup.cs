@@ -1,31 +1,59 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using AutoMapper;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Petronomica.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-
+using Microsoft.Extensions.Logging;
+using Petronomica.Data;
+using WebEssentials.AspNetCore.Pwa;
 namespace Petronomica
 {
+    //TODO project version,description etc
+    //TODO error pages
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public IConfigurationRoot Configuration { get; }
+        public Startup(IHostingEnvironment env)
         {
-            Configuration = configuration;
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(env.ContentRootPath)
+                .AddJsonFile("appsettings.json", false, true)
+                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", true)
+                .AddEnvironmentVariables();
+            Configuration = builder.Build();
         }
-
-        public IConfiguration Configuration { get; }
-
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
+        {
+            ConfigureCommonServices(services);
+            // services.AddSingleton<IOrderRepository, OrderRepositoryMock>();
+        }
+        public void ConfigureDevelopmentServices(IServiceCollection services)
+        {
+            ConfigureCommonServices(services);
+            //services.AddSingleton<IOrderRepository, OrderRepositoryMock>();
+        }
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        {
+            ILogger WLogger = loggerFactory.CreateLogger("Warning");
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+
+            }
+            else
+            {
+                app.UseExceptionHandler("/Error");
+
+            }
+            app.UseStatusCodePagesWithReExecute("/errors/{0}.html");
+            app.UseCookiePolicy();
+            app.UseStaticFiles();
+            app.UseMvcWithDefaultRoute();
+        }
+        private void ConfigureCommonServices(IServiceCollection services)
         {
             services.Configure<CookiePolicyOptions>(options =>
             {
@@ -39,36 +67,18 @@ namespace Petronomica
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-        }
-
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
-        {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-                app.UseDatabaseErrorPage();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Home/Error");
-                app.UseHsts();
-            }
-
-            app.UseHttpsRedirection();
-            app.UseStaticFiles();
-            app.UseCookiePolicy();
-
-            app.UseAuthentication();
-
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
-            });
+            services.AddSession();
+            services.AddDistributedMemoryCache();
+            services.AddMvc();
+            //services.AddProgressiveWebApp(new PwaOptions
+            //{
+            //    Strategy = ServiceWorkerStrategy.CacheFirst,
+            //    CacheId = "v5",
+            //    RoutesToPreCache = "~/css/site.css, ~/images",
+            //    RegisterServiceWorker = true
+            //});
+            //services.AddAutoMapper();
+            services.AddSingleton<IConfiguration>(Configuration);
         }
     }
 }

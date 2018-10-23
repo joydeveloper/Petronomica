@@ -8,9 +8,11 @@
     font-size: 16px
 }
 body {
-    background: url('../images/404.jpg') center no-repeat #fff
+    background: url('/images/404.jpg') center no-repeat #fff
 }
+.imgblock {
 
+}
 .content {
     width: 100%;
     text-align: center;

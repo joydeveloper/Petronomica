@@ -2,7 +2,7 @@
     'use strict';
 
     // Update 'version' if you need to refresh the cache
-    var version = '{version}';
+    var version = '{version1}';
     var offlineUrl = "{/offlinepage.html}";
     var routes = ['', ''];
     // Store core files in a cache (including a page to display when offline)

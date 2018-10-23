@@ -31,7 +31,7 @@ namespace Petronomica
         public void ConfigureDevelopmentServices(IServiceCollection services)
         {
             ConfigureCommonServices(services);
-            // services.AddSingleton<IOrderRepository, OrderRepositoryMock>();
+            //services.AddSingleton<IOrderRepository, OrderRepositoryMock>();
         }
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
@@ -48,6 +48,7 @@ namespace Petronomica
                
             }
             app.UseStatusCodePagesWithReExecute("/errors/{0}.html");
+            app.UseCookiePolicy();
             app.UseStaticFiles();
             app.UseMvcWithDefaultRoute();
         }
@@ -59,9 +60,10 @@ namespace Petronomica
             services.AddProgressiveWebApp(new PwaOptions
             {
                 Strategy = ServiceWorkerStrategy.CacheFirst,
-                CacheId = "v3",
+                CacheId = "v4",
                 RoutesToPreCache = "~/css/site.css, ~/images",
-            RegisterServiceWorker = true });
+                RegisterServiceWorker = true
+            });
             services.AddAutoMapper();
             services.AddSingleton<IConfiguration>(Configuration);
         }

@@ -17,13 +17,13 @@ namespace Petronomica.Controllers
         }
         public IActionResult Index()
         {
-           
-           
-            //string cookieValueFromContext = _httpContextAccessor.HttpContext.Request.Cookies["guest"];
 
-            //string cookieValueFromReq = Request.Cookies["guest"];
 
-            //Set("guest", "start", 10);
+            string cookieValueFromContext = _httpContextAccessor.HttpContext.Request.Cookies["guest"];
+
+            string cookieValueFromReq = Request.Cookies["guest"];
+
+            Set("guest", "start", 10);
 
             return View();
         }

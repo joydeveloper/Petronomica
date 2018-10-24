@@ -1,0 +1,23 @@
+﻿@{
+  ViewData["Title"] = "Misc";
+}
+
+@{
+    string[] elbib = new string[] { "http://bookscafe.net", "https://www.mybrary.ru/books/busines-/economics/",
+ "http://www.consultant.ru/edu/student/download_books/rubr/ekonomika_i_finansy/","http://учебники.информ2000.рф/finans/finans.htm",
+"https://nauchniestati.ru/primery/nauchnaja-statja-na-temu-osobennosti-upravlenija-finansami-v-organizacijah-malogo-biznesa-2/"
+,"https://cyberleninka.ru/journal/n/finansy-i-kredit","http://www.mirkin.ru","https://creativeconomy.ru/journals/eo","http://institutiones.com","http://www.mirec.ru",
+"https://www.cfin.ru","https://elibrary.ru/defaultx.asp" };
+   string[] sites = new string[] { "http://www.cbr.ru", "https://www.minfin.ru/ru/",
+ "http://www.gks.ru","http://government.ru",
+"http://www.consultant.ru"
+,"http://www.ach.gov.ru","https://www.nalog.ru/rn04/","http://www.roskazna.ru","http://www.acexpert.ru" };
+}
+@using HtmlHelpersApp.App_Code
+
+<h3>Электронные библиотеки, сборники:</h3>
+@Html.CreateA(elbib)
+
+<h3>Сайты:</h3>
+@Html.CreateA(sites)
+

@@ -34,4 +34,6 @@
     <PackageReference Include="WebEssentials.AspNetCore.PWA" Version="1.0.49" />
   </ItemGroup>
 
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JSONSchema="" /></VisualStudio></ProjectExtensions>
+
 </Project>

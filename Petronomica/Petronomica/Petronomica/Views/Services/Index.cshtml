@@ -1,0 +1,91 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+<link rel="stylesheet" href="~/css/services.css" />
+<div id="begin"></div>
+<div class="nav-scroller py-1 mb-2">
+    <nav class="nav  justify-content-between d-none d-lg-block">
+        <a class="p-2 text-muted" href="#">Финансы и кредит</a>
+        <a class="p-2 text-muted" href="#">Бухгалтерский учёт</a>
+        <a class="p-2 text-muted" href="#">Банковское дело</a>
+        <a class="p-2 text-muted" href="#">Маркетинг</a>
+        <a class="p-2 text-muted" href="#">Менеджемент</a>
+        <a class="p-2 text-muted" href="#">Страхование</a>
+        <a class="p-2 text-muted" href="#">Туризм</a>
+    </nav>
+</div>
+<p>
+  
+    <div class="row d-none d-lg-block" style="margin-top:1%;">
+        <div class="col-md-3 col-lg-2">
+            <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#constructor" aria-expanded="false" aria-controls="constructor">
+                Что значит конструктор?
+            </button>
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#paid" aria-expanded="false" aria-controls="paid">
+                Про оплату
+            </button>
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#search" aria-expanded="false" aria-controls="search">
+                Преимущества нашего поиска
+            </button>
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#consul" aria-expanded="false" aria-controls="consul">
+                О консультациях
+            </button>
+        </div>
+    </div>
+</p>
+<div class="collapse" id="constructor">
+    <div class="card card-body">
+        Выберите соответствующую форму предзаказа и те пункты работы, которые необходимо выполнить, прикрепите всю необходимую документацию, содержащую список тем, требования и рекомендации к оформлению работы, а также какой-либо материал по выбранной теме. Укажите желаемую оценку и напишите сообщение, указав в нем важную, по вашему мнению, информацию. Мы ознакомимся с Вашей заявкой и в этот же день вышлем ответное письмо на эл. почту.
+    </div>
+</div>
+<div class="collapse" id="paid">
+    <div class="row" style="width:50%">
+        <div class="col">
+            <img class="rounded-top" src="~/images/yamoney.png" width="150" height="128">
+        </div>
+        <div class="col">
+            <img class="rounded-top border-0" src="~/images/qiwi.png" width="150" height="128">
+        </div>
+        <div class="col">
+            <img class="rounded-top border-0" src="~/images/sber.png" width="150" height="128">
+        </div>
+    </div>
+</div>
+<div class="collapse" id="search">
+    <div class="card card-body">
+        Мы занимаемся поиском непосредственно из официальных источников и учебной литературы.
+        <a class="nav-link" asp-controller="Misc" asp-action="Index">Источники</a>
+    </div>
+</div>
+<div class="collapse" id="consul">
+    <div class="card card-body">
+        Если вы выполняете работу самостоятельно,но у вас возникли некоторые вопросы-воспользуйтесь нашей консультацией!
+    </div>
+</div>
+<div class="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">НИР под ключ</a>
+    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Конструктор НИР</a>
+    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Поиск информации</a>
+    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Консультация</a>
+</div>
+<div class="tab-content" id="v-pills-tabContent">
+    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+     
+    </div>
+    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+        ...
+    </div>
+    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+        ...
+    </div>
+    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+        ...
+    </div>
+</div>

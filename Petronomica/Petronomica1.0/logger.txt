@@ -14597,3 +14597,153 @@ Request finished in 116.3636ms 200 text/plain
 Request starting HTTP/1.1 GET http://localhost:62292/lib/bootstrap/dist/js/bootstrap.js.map  
 Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js.map'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica1.0\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map'
 Request finished in 90.8887ms 200 text/plain
+Request starting HTTP/1.1 GET http://localhost:62292/  
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action Petronomica.Controllers.HomeController.Index (Petronomica1.0)
+Executing action method Petronomica.Controllers.HomeController.Index (Petronomica1.0) - Validation state: Valid
+Executed action method Petronomica.Controllers.HomeController.Index (Petronomica1.0), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4.5934ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 584.5149ms.
+Executed action Petronomica.Controllers.HomeController.Index (Petronomica1.0) in 613.1902ms
+Request finished in 895.1633ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/lib/jquery/dist/jquery.js  
+Request starting HTTP/1.1 GET http://localhost:62292/lib/bootstrap/dist/js/bootstrap.js  
+The file /lib/jquery/dist/jquery.js was not modified
+The file /lib/bootstrap/dist/js/bootstrap.js was not modified
+Request finished in 31.7701ms 304 application/javascript
+Request finished in 24.0442ms 304 application/javascript
+Request starting HTTP/1.1 GET http://localhost:62292/serviceworker  
+Route matched with {action = "ServiceWorkerAsync", controller = "Pwa"}. Executing action WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa)
+Executing action method WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa) - Validation state: Valid
+Executed action method WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa), returned result Microsoft.AspNetCore.Mvc.ContentResult in 7.6913ms.
+Executing ContentResult with HTTP Response ContentType of application/javascript; charset=utf-8
+Executed action WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa) in 74.29ms
+Request finished in 108.3663ms 200 application/javascript; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/icon/hd_lo  
+Processing request /icon/hd_lo
+Request finished in 12.2129ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/icon/hd_lo  
+Processing request /icon/hd_lo
+Request finished in 14.0833ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/serviceworker  
+Route matched with {action = "ServiceWorkerAsync", controller = "Pwa"}. Executing action WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa)
+Executing action method WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa) - Validation state: Valid
+Executed action method WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.164ms.
+Executing ContentResult with HTTP Response ContentType of application/javascript; charset=utf-8
+Executed action WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa) in 10.4933ms
+Request finished in 19.1378ms 200 application/javascript; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica1.0)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica1.0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica1.0), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.3548ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 41.8945ms.
+Request starting HTTP/1.1 GET http://localhost:62292/images/yamoney.png  
+Request starting HTTP/1.1 GET http://localhost:62292/images/sber.png  
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica1.0) in 104.3382ms
+Request starting HTTP/1.1 GET http://localhost:62292/images/qiwi.png  
+Request finished in 142.4736ms 200 text/html; charset=utf-8
+Sending file. Request path: '/images/yamoney.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica1.0\wwwroot\images\yamoney.png'
+Sending file. Request path: '/images/sber.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica1.0\wwwroot\images\sber.png'
+Request finished in 122.5693ms 200 image/png
+Request finished in 97.9383ms 200 image/png
+Sending file. Request path: '/images/qiwi.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica1.0\wwwroot\images\qiwi.png'
+Request finished in 109.6725ms 200 image/png
+Request starting HTTP/1.1 GET http://localhost:62292/icon/hd_lo  
+Processing request /icon/hd_lo
+Request finished in 7.9684ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/serviceworker  
+Route matched with {action = "ServiceWorkerAsync", controller = "Pwa"}. Executing action WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa)
+Executing action method WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa) - Validation state: Valid
+Executed action method WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.2077ms.
+Executing ContentResult with HTTP Response ContentType of application/javascript; charset=utf-8
+Executed action WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa) in 7.0463ms
+Request finished in 15.7269ms 200 application/javascript; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Petronomica.Controllers.HomeController.Index (Petronomica1.0)
+Executing action method Petronomica.Controllers.HomeController.Index (Petronomica1.0) - Validation state: Valid
+Executed action method Petronomica.Controllers.HomeController.Index (Petronomica1.0), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2083ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 14.0417ms.
+Executed action Petronomica.Controllers.HomeController.Index (Petronomica1.0) in 27.4197ms
+Request finished in 122.0314ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/icon/hd_lo  
+Processing request /icon/hd_lo
+Request finished in 5.194ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/serviceworker  
+Route matched with {action = "ServiceWorkerAsync", controller = "Pwa"}. Executing action WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa)
+Executing action method WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa) - Validation state: Valid
+Executed action method WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.1266ms.
+Executing ContentResult with HTTP Response ContentType of application/javascript; charset=utf-8
+Executed action WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa) in 8.4535ms
+Request finished in 17.2846ms 200 application/javascript; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica1.0)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica1.0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica1.0), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0244ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 10.0157ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica1.0) in 80.3386ms
+Request finished in 145.513ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/icon/hd_lo  
+Processing request /icon/hd_lo
+Request finished in 7.1ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/serviceworker  
+Route matched with {action = "ServiceWorkerAsync", controller = "Pwa"}. Executing action WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa)
+Executing action method WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa) - Validation state: Valid
+Executed action method WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.0844ms.
+Executing ContentResult with HTTP Response ContentType of application/javascript; charset=utf-8
+Executed action WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa) in 9.0186ms
+Request finished in 26.4669ms 200 application/javascript; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/  
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action Petronomica.Controllers.HomeController.Index (Petronomica1.0)
+Executing action method Petronomica.Controllers.HomeController.Index (Petronomica1.0) - Validation state: Valid
+Executed action method Petronomica.Controllers.HomeController.Index (Petronomica1.0), returned result Microsoft.AspNetCore.Mvc.ViewResult in 5.4413ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 1042.6697ms.
+Executed action Petronomica.Controllers.HomeController.Index (Petronomica1.0) in 1087.3859ms
+Request starting HTTP/1.1 GET http://localhost:62292/lib/bootstrap/dist/js/bootstrap.js  
+Request starting HTTP/1.1 GET http://localhost:62292/lib/jquery/dist/jquery.js  
+Request finished in 1435.6715ms 200 text/html; charset=utf-8
+The file /lib/jquery/dist/jquery.js was not modified
+The file /lib/bootstrap/dist/js/bootstrap.js was not modified
+Request finished in 47.7449ms 304 application/javascript
+Request finished in 76.0509ms 304 application/javascript
+Request starting HTTP/1.1 GET http://localhost:62292/serviceworker  
+Route matched with {action = "ServiceWorkerAsync", controller = "Pwa"}. Executing action WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa)
+Executing action method WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa) - Validation state: Valid
+Executed action method WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa), returned result Microsoft.AspNetCore.Mvc.ContentResult in 5.4054ms.
+Executing ContentResult with HTTP Response ContentType of application/javascript; charset=utf-8
+Executed action WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa) in 60.3605ms
+Request finished in 215.433ms 200 application/javascript; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/icon/hd_lo  
+Processing request /icon/hd_lo
+Request finished in 13.2888ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica1.0)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica1.0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica1.0), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.3199ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 35.3809ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica1.0) in 44.8958ms
+Request finished in 55.7495ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/images/yamoney.png  
+Request starting HTTP/1.1 GET http://localhost:62292/images/qiwi.png  
+Request starting HTTP/1.1 GET http://localhost:62292/images/sber.png  
+The file /images/yamoney.png was not modified
+The file /images/sber.png was not modified
+Request finished in 31.6914ms 304 image/png
+The file /images/qiwi.png was not modified
+Request finished in 30.5372ms 304 image/png
+Request finished in 54.5811ms 304 image/png
+Request starting HTTP/1.1 GET http://localhost:62292/icon/hd_lo  
+Processing request /icon/hd_lo
+Request finished in 7.7115ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/serviceworker  
+Route matched with {action = "ServiceWorkerAsync", controller = "Pwa"}. Executing action WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa)
+Executing action method WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa) - Validation state: Valid
+Executed action method WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.1396ms.
+Executing ContentResult with HTTP Response ContentType of application/javascript; charset=utf-8
+Executed action WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa) in 10.3341ms
+Request finished in 20.1907ms 200 application/javascript; charset=utf-8

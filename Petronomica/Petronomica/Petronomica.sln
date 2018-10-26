@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Petronomica", "Petronomica\Petronomica.csproj", "{B4B30955-B312-4DAC-98E3-8991A9D8ECD2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orders", "Orders\Orders.csproj", "{E13AA014-E8EC-4447-8346-609B74D4AC61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Products", "Products\Products.csproj", "{7038F9DC-03E2-490F-BBB7-A57A31C13EDE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{B4B30955-B312-4DAC-98E3-8991A9D8ECD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4B30955-B312-4DAC-98E3-8991A9D8ECD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4B30955-B312-4DAC-98E3-8991A9D8ECD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E13AA014-E8EC-4447-8346-609B74D4AC61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E13AA014-E8EC-4447-8346-609B74D4AC61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E13AA014-E8EC-4447-8346-609B74D4AC61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E13AA014-E8EC-4447-8346-609B74D4AC61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7038F9DC-03E2-490F-BBB7-A57A31C13EDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7038F9DC-03E2-490F-BBB7-A57A31C13EDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7038F9DC-03E2-490F-BBB7-A57A31C13EDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7038F9DC-03E2-490F-BBB7-A57A31C13EDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -23,6 +23,15 @@
         height: auto;
     }
 </style>
+@*@using Orders
+    @{
+
+
+        Order myorder = new Order { Id = 1, OrderDate = DateTime.Now, OrderStatus = Status.Preorder, OrderType = "Course" };
+    }
+
+    <order-info order="myorder"></order-info>*@
+
 <div id="begin"></div>
 <div class="row row-eq-height" style="padding-top:3%">
     <div class="col text-center">

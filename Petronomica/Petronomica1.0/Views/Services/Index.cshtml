@@ -26,7 +26,7 @@
                 Оплата
             </button>
         </div>
-      
+
     </div>
 </p>
 <div class="collapse" id="constructor">
@@ -52,7 +52,7 @@
     <button class="btn btn-outline-success my-2 my-sm-0" onclick="SearchPreOrder()">Заказать</button>
 </div>
 <div class="row" style="margin-top:1%;">
-  
+
     <div class="col-md-6">
         <div class="card mb-6 shadow-sm">
             <div class="card-body">
@@ -183,3 +183,55 @@ function Consultation() {
         }
     </script>*@
 
+<div class="row d-none d-lg-block" style="margin-top:1%;">
+    <div class="col-md-3 col-lg-2">
+        <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#constructor" aria-expanded="false" aria-controls="constructor">
+            Что значит конструктор?
+        </button>
+    </div>
+    <div class="col-md-3">
+        <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#paid" aria-expanded="false" aria-controls="paid">
+            Про оплату
+        </button>
+    </div>
+    <div class="col-md-3">
+        <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#search" aria-expanded="false" aria-controls="search">
+            Преимущества нашего поиска
+        </button>
+    </div>
+    <div class="col-md-3">
+        <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#consul" aria-expanded="false" aria-controls="consul">
+            О консультациях
+        </button>
+    </div>
+</div>
+</p>
+<div class="collapse" id="constructor">
+    <div class="card card-body">
+        Выберите соответствующую форму предзаказа и те пункты работы, которые необходимо выполнить, прикрепите всю необходимую документацию, содержащую список тем, требования и рекомендации к оформлению работы, а также какой-либо материал по выбранной теме. Укажите желаемую оценку и напишите сообщение, указав в нем важную, по вашему мнению, информацию. Мы ознакомимся с Вашей заявкой и в этот же день вышлем ответное письмо на эл. почту.
+    </div>
+</div>
+<div class="collapse" id="paid">
+    <div class="row" style="width:50%">
+        <div class="col">
+            <img class="rounded-top" src="~/images/yamoney.png" width="150" height="128">
+        </div>
+        <div class="col">
+            <img class="rounded-top border-0" src="~/images/qiwi.png" width="150" height="128">
+        </div>
+        <div class="col">
+            <img class="rounded-top border-0" src="~/images/sber.png" width="150" height="128">
+        </div>
+    </div>
+</div>
+<div class="collapse" id="search">
+    <div class="card card-body">
+        Мы занимаемся поиском непосредственно из официальных источников и учебной литературы.
+        <a class="nav-link" asp-controller="Misc" asp-action="Index">Источники</a>
+    </div>
+</div>
+<div class="collapse" id="consul">
+    <div class="card card-body">
+        Если вы выполняете работу самостоятельно,но у вас возникли некоторые вопросы-воспользуйтесь нашей консультацией!
+    </div>
+</div>

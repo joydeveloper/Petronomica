@@ -5,9 +5,13 @@ VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Petronomica", "Petronomica\Petronomica.csproj", "{B4B30955-B312-4DAC-98E3-8991A9D8ECD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orders", "Orders\Orders.csproj", "{E13AA014-E8EC-4447-8346-609B74D4AC61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orders", "Orders\Orders.csproj", "{E13AA014-E8EC-4447-8346-609B74D4AC61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Products", "Products\Products.csproj", "{7038F9DC-03E2-490F-BBB7-A57A31C13EDE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Products", "Products\Products.csproj", "{7038F9DC-03E2-490F-BBB7-A57A31C13EDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HardCodeData", "HardCodeData\HardCodeData.csproj", "{2736D7F7-4F4E-4EF1-B1C5-85F57049EB28}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetronomicaServices", "..\PetronomicaServices\PetronomicaServices.csproj", "{F8093702-08C7-4C98-A008-68B8F6A26412}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{7038F9DC-03E2-490F-BBB7-A57A31C13EDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7038F9DC-03E2-490F-BBB7-A57A31C13EDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7038F9DC-03E2-490F-BBB7-A57A31C13EDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2736D7F7-4F4E-4EF1-B1C5-85F57049EB28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2736D7F7-4F4E-4EF1-B1C5-85F57049EB28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2736D7F7-4F4E-4EF1-B1C5-85F57049EB28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2736D7F7-4F4E-4EF1-B1C5-85F57049EB28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8093702-08C7-4C98-A008-68B8F6A26412}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8093702-08C7-4C98-A008-68B8F6A26412}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8093702-08C7-4C98-A008-68B8F6A26412}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8093702-08C7-4C98-A008-68B8F6A26412}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

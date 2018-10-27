@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Petronomica.Data;
+using Petronomica.Models;
 using WebEssentials.AspNetCore.Pwa;
 namespace Petronomica
 {
@@ -55,6 +56,8 @@ namespace Petronomica
         }
         private void ConfigureCommonServices(IServiceCollection services)
         {
+      
+         
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.

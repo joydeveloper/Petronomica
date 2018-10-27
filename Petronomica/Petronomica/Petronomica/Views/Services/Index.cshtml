@@ -13,52 +13,54 @@
         <a class="p-2 text-muted" href="#">Туризм</a>
     </nav>
 </div>
-
-@using HardCodeData
-@{
-
-    HardCodeProducts hrcodepr = new HardCodeProducts();
-    //Product consul = new Product { Id = 1, Name = "Консультация по НИР", Price = 150, Image = "'../images/products/consul.png'" };
-    //Product course = new Product { Id = 2, Name = "Курсовая", Price = 4000, Image = "'../images/products/course.png'" };
-    //Product diplom = new Product { Id = 3, Name = "Диплом", Price = 8000, Image = "'../images/products/diplom.png'" };
-    //Product magister = new Product { Id = 4, Name = "Магистерская диссертация", Price = 14000, Image = "'../images/products/magister.png'" };
-    //Product analyze = new Product { Id = 5, Name = "Комплексный анализ предприятия", Price = 4500, Image = "'../images/products/analyze.png'" };
-    //Product practice = new Product { Id = 6, Name = "Отчет по практике", Price = 2000, Image = "'../images/products/practice.png'" };
-    //Product busynesscredit = new Product { Id = 7, Name = "Бизнес-план для получения кредита", Price = 6000, Image = "'../images/products/businesscredit.png'" };
-    //Product busynessinvest = new Product { Id = 8, Name = "Инвестиционный бизнес-план", Price = 4700, Image = "'../images/products/businesscredit.png'" };
-}
-
+@model IEnumerable<Product>
+<button id="orderbut" type="button"
+        class="btn btn-primary btn-lg"
+        bs-toggle-modal="simpleModal">
+</button>
+<p class="lead bg-purple">Это модифицированный jumbotron, который занимает все горизонтальное пространство своего родителя.</p>
 <div class="row" style="margin-top:1%;">
+
+
     <div class="col-md-4">
-        <product-card product="hrcodepr.products[0]"></product-card>
-    </div>
-    @*<div class="col-md-4">
-        <product-card product="diplom"></product-card>
+        <product-card product="Model.First(x=>x.Id==2)"></product-card>
     </div>
     <div class="col-md-4">
-        <product-card product="magister"></product-card>
+
+        <product-card product="Model.First(x=>x.Id==3)"></product-card>
     </div>
+    <div class="col-md-4">
+        <product-card product="Model.First(x=>x.Id==4)"></product-card>
+    </div>
+
 </div>
 <div class="row" style="margin-top:1%;">
     <div class="col-md-6">
-        <product-card product="consul"></product-card>
+        <product-card product="Model.First(x=>x.Id==1)"></product-card>
     </div>
     <div class="col-md-6">
-        <product-card product="practice"></product-card>
+        <product-card product="Model.First(x=>x.Id==6)"></product-card>
     </div>
 </div>
 <div class="row" style="margin-top:1%;">
     <div class="col-md-4">
-        <product-card product="analyze"></product-card>
+        <product-card product="Model.First(x=>x.Id==5)"></product-card>
     </div>
     <div class="col-md-4">
-        <product-card product="busynesscredit"></product-card>
+        <product-card product="Model.First(x=>x.Id==7)"></product-card>
     </div>
     <div class="col-md-4">
-        <product-card product="busynessinvest"></product-card>
-    </div>*@
+        <product-card product="Model.First(x=>x.Id==8)"></product-card>
+    </div>
 </div>
-<p id="result"></p>
+<a id="myAnchor" href="https://www.w3schools.com">Visit W3Schools.com</a>
+
+<modal id="simpleModal"
+       title="Предзаказ">
+    <modal-body>
+        <p id="result"></p>
+    </modal-body>
+</modal>
 <script asp-src-include="~/js/serviceorders.js">
 
 </script>

@@ -14,7 +14,7 @@ namespace Products
 $@"<div class='card-body'>
     <p class='card-text'>{Product.Name}</p>
       <div class='d-flex justify-content-between align-items-center'>
-             <img id='{Product.Id}' class='card-img-right' onclick='PreOrder({Product.Id})'  style='cursor:pointer' src={Product.Image}/>
+             <img id='{Product.Id}'  class='card-img-right' onclick='PreOrder({Product.Id})'  style='cursor:pointer' src={Product.Image}/>
                  <h5 class='text-muted alert alert-info'>От {Product.Price} рублей</h5>
       </div>";
             output.TagName = "div";

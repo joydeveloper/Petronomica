@@ -4,4 +4,10 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Petronomica\HardCodeData\HardCodeData.csproj" />
+    <ProjectReference Include="..\Petronomica\Orders\Orders.csproj" />
+    <ProjectReference Include="..\Petronomica\Products\Products.csproj" />
+  </ItemGroup>
+
 </Project>

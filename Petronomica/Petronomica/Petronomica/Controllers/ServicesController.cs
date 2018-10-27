@@ -8,14 +8,23 @@ namespace Petronomica.Controllers
 {
     public class ServicesController : Controller
     {
-        public IActionResult Index()
+        private readonly IOrderController _orderController;
+        public ServicesController(IOrderController orderController)
         {
-            return View();
+            _orderController = orderController;
+          //  _mapper = mapper;
+        }
+        public async Task<IActionResult> Index()
+        {
+            return View(await _orderController.GetProducts());
+          
         }
         public IActionResult CreatePreOrder(int id)
         {
-           // Order preorder=new Order()
-            return Content(id.ToString()+"FKFKKF");
+            // Order preorder=new Order()
+            string res = $@"<button type='button' class='btn btn-primary btn-lg' bs-toggle-modal='simpleModal'>hh</button>";
+            string result = _orderController.GetProduct(id).Name;
+            return Content(result);
 
         }
     }

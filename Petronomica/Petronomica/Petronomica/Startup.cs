@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Petronomica.Data;
 using Petronomica.Models;
+using PetronomicaServices;
 using WebEssentials.AspNetCore.Pwa;
 namespace Petronomica
 {
@@ -82,6 +83,7 @@ namespace Petronomica
             //});
             //services.AddAutoMapper();
             services.AddSingleton<IConfiguration>(Configuration);
+            services.AddSingleton<IOrderController,HardCodeOrderController>();
         }
     }
 }

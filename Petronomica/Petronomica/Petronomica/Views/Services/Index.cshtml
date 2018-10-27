@@ -1,9 +1,9 @@
 ﻿
-<link rel="stylesheet" href="~/css/services.css" />
+<link  rel="stylesheet" asp-href-include="~/css/services.css" asp-append-version="true" />
 
 <div id="begin"></div>
 <div class="nav-scroller py-1 mb-2">
-    <nav class="nav  justify-content-between d-none d-lg-block">
+    <nav class="nav justify-content-center d-none d-lg-block">
         <a class="p-2 text-muted" href="#">Финансы и кредит</a>
         <a class="p-2 text-muted" href="#">Бухгалтерский учёт</a>
         <a class="p-2 text-muted" href="#">Банковское дело</a>
@@ -14,11 +14,13 @@
     </nav>
 </div>
 @model IEnumerable<Product>
-<button id="orderbut" type="button"
-        class="btn btn-primary btn-lg"
-        bs-toggle-modal="simpleModal">
-</button>
-<p class="lead bg-purple">Это модифицированный jumbotron, который занимает все горизонтальное пространство своего родителя.</p>
+
+    <button id="orderbut" type="button"  bs-toggle-modal="simpleModal">
+        <h4>Оформить</h4>
+    </button>
+
+
+  <p class="lead bg-purple">Для студентов:</p>
 <div class="row" style="margin-top:1%;">
 
 
@@ -42,6 +44,7 @@
         <product-card product="Model.First(x=>x.Id==6)"></product-card>
     </div>
 </div>
+<p class="lead bg-purple">Для бизнеса:</p>
 <div class="row" style="margin-top:1%;">
     <div class="col-md-4">
         <product-card product="Model.First(x=>x.Id==5)"></product-card>
@@ -53,15 +56,15 @@
         <product-card product="Model.First(x=>x.Id==8)"></product-card>
     </div>
 </div>
-<a id="myAnchor" href="https://www.w3schools.com">Visit W3Schools.com</a>
+
 
 <modal id="simpleModal"
        title="Предзаказ">
     <modal-body>
-        <p id="result"></p>
+        <p id="result">Нажмите на иконку нужной услуги</p>
     </modal-body>
 </modal>
-<script asp-src-include="~/js/serviceorders.js">
+<script asp-src-include="~/js/serviceorders.js" asp-append-version="true">
 
 </script>
 

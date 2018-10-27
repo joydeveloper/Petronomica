@@ -32,6 +32,9 @@ body {
     margin-left: 1%;
     margin-top: 1%;
 }
+.mainnav {
+    font-size:20px;
+}
 
 .navbtn {
     cursor: pointer;
@@ -148,6 +151,9 @@ img {
     #social-em {
         font-size: 30px;
     }
+    .mainnav{
+        font-size:10px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -169,6 +175,9 @@ img {
     .body {
         margin-top: 10px;
     }
+    .mainnav {
+        font-size: 14px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -183,6 +192,9 @@ img {
         width: 64px;
         height: 64px;
         object-fit: cover;
+    }
+    .mainnav {
+        font-size: 16px;
     }
 }
 
@@ -199,5 +211,8 @@ img {
         width: 64px;
         height: 64px;
         object-fit: cover;
+    }
+    .mainnav {
+        font-size: 20px;
     }
 }

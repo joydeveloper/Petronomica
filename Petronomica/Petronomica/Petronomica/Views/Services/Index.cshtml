@@ -1,5 +1,5 @@
 ﻿
-<link  rel="stylesheet" asp-href-include="~/css/services.css" asp-append-version="true" />
+<link rel="stylesheet" asp-href-include="~/css/services.css" asp-append-version="true" />
 
 <div id="begin"></div>
 <div class="nav-scroller py-1 mb-2">
@@ -12,59 +12,208 @@
         <a class="p-2 text-muted" href="#">Страхование</a>
         <a class="p-2 text-muted" href="#">Туризм</a>
     </nav>
+    <div id="orderbut" class='btn-group mr-2' role='group' aria-label='First group'>
+        <button type="button" class="btn btn-primary " bs-toggle-modal="simpleModal">
+            Предзаказ <span class="badge badge-light">1</span>
+            <span class="sr-only"></span>
+        </button>
+        <button  type="button" class="btn btn-primary " bs-toggle-modal="simpleModal">
+            Заказ <span class="badge badge-light">1</span>
+            <span class="sr-only"></span>
+        </button>
+        <button  type="button" class="btn btn-primary " bs-toggle-modal="simpleModal">
+            Конструктор <span class="badge badge-light">3</span>
+            <span class="sr-only"></span>
+        </button>
+    </div>
+   
 </div>
 @model IEnumerable<Product>
-
-    <button id="orderbut" type="button"  bs-toggle-modal="simpleModal">
-        <h4>Оформить</h4>
-    </button>
-
-
-  <p class="lead bg-purple">Для студентов:</p>
-<div class="row" style="margin-top:1%;">
-
-
-    <div class="col-md-4">
-        <product-card product="Model.First(x=>x.Id==2)"></product-card>
+  
+    <div class='btn-group mr-2  orderbutgroup' role='group' aria-label='First group'>
+        <button type='button' class='btn btn-secondary'>Предзаказ</button>
+        <button type='button' class='btn btn-secondary'>Заказ</button>
+        <button type='button' class='btn btn-secondary'>Конструктор</button>
     </div>
-    <div class="col-md-4">
+    @*<div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>*@
 
-        <product-card product="Model.First(x=>x.Id==3)"></product-card>
-    </div>
-    <div class="col-md-4">
-        <product-card product="Model.First(x=>x.Id==4)"></product-card>
-    </div>
+    @{var ismobile = false;}
+    @if (!ismobile)
+    {
 
-</div>
-<div class="row" style="margin-top:1%;">
-    <div class="col-md-6">
-        <product-card product="Model.First(x=>x.Id==1)"></product-card>
-    </div>
-    <div class="col-md-6">
-        <product-card product="Model.First(x=>x.Id==6)"></product-card>
-    </div>
-</div>
-<p class="lead bg-purple">Для бизнеса:</p>
-<div class="row" style="margin-top:1%;">
-    <div class="col-md-4">
-        <product-card product="Model.First(x=>x.Id==5)"></product-card>
-    </div>
-    <div class="col-md-4">
-        <product-card product="Model.First(x=>x.Id==7)"></product-card>
-    </div>
-    <div class="col-md-4">
-        <product-card product="Model.First(x=>x.Id==8)"></product-card>
-    </div>
-</div>
+        @*<div class="card-deck">
+                <product-cardbuttongroup product="Model.First(x => x.Id == 1)"></product-cardbuttongroup>
+                <product-cardbuttongroup product="Model.First(x => x.Id == 2)"></product-cardbuttongroup>
+                <product-cardbuttongroup product="Model.First(x => x.Id == 3)"></product-cardbuttongroup>
+            </div>
+            <div class="card-deck">
+                <product-cardbuttongroup product="Model.First(x => x.Id == 4)"></product-cardbuttongroup>
+                <product-cardbuttongroup product="Model.First(x => x.Id == 5)"></product-cardbuttongroup>
+                <product-cardbuttongroup product="Model.First(x => x.Id == 6)"></product-cardbuttongroup>
+            </div>
+            <div class="card-deck">
+                <product-cardbuttongroup product="Model.First(x => x.Id == 7)"></product-cardbuttongroup>
+                <product-cardbuttongroup product="Model.First(x => x.Id == 8)"></product-cardbuttongroup>
+            </div>*@
+
+        @*<div class="card-deck">
+                <product-cardcss product="Model.First(x => x.Id == 1)"></product-cardcss>
+                <product-cardcss product="Model.First(x => x.Id == 2)"></product-cardcss>
+                <product-cardcss product="Model.First(x => x.Id == 3)"></product-cardcss>
+            </div>
+            <div class="card-deck">
+                <product-cardcss product="Model.First(x => x.Id == 4)"></product-cardcss>
+                <product-cardcss product="Model.First(x => x.Id == 5)"></product-cardcss>
+                <product-cardcss product="Model.First(x => x.Id == 6)"></product-cardcss>
+            </div>
+            <div class="card-deck">
+                <product-cardcss product="Model.First(x => x.Id == 7)"></product-cardcss>
+                <product-cardcss product="Model.First(x => x.Id == 8)"></product-cardcss>
+            </div>*@
+        <div class="card-deck">
+            <product-cardbest product="Model.First(x => x.Id == 1)"></product-cardbest>
+            <product-cardbest product="Model.First(x => x.Id == 2)"></product-cardbest>
+            <product-cardbest product="Model.First(x => x.Id == 3)"></product-cardbest>
+        </div>
+        <div class="card-deck">
+            <product-cardbest product="Model.First(x => x.Id == 4)"></product-cardbest>
+            <product-cardbest product="Model.First(x => x.Id == 5)"></product-cardbest>
+            <product-cardbest product="Model.First(x => x.Id == 6)"></product-cardbest>
+        </div>
+        <div class="card-deck">
+            <product-cardbest product="Model.First(x => x.Id == 7)"></product-cardbest>
+            <product-cardbest product="Model.First(x => x.Id == 8)"></product-cardbest>
+        </div>
+        @*<div class="card-deck">
+                <product-cardbest product="Model.First(x => x.Id == 1)"></product-cardbest>
+                <product-cardbest product="Model.First(x => x.Id == 2)"></product-cardbest>
+                <product-cardbest product="Model.First(x => x.Id == 3)"></product-cardbest>
+            </div>
+            <div class="card-deck">
+                <product-cardbest product="Model.First(x => x.Id == 4)"></product-cardbest>
+                <product-cardbest product="Model.First(x => x.Id == 5)"></product-cardbest>
+                <product-cardbest product="Model.First(x => x.Id == 6)"></product-cardbest>
+            </div>
+            <div class="card-deck">
+                <product-cardb product="Model.First(x => x.Id == 7)"></product-cardb>
+                <product-cardb product="Model.First(x => x.Id == 8)"></product-cardb>
+            </div>*@
+    }
+    else
+    {
+        <div class="row" style="margin-top:1%;">
+            <div class="col-md-4">
+                <product-card product="Model.First(x=>x.Id==2)"></product-card>
+            </div>
+            <div class="col-md-4">
+                <product-card product="Model.First(x=>x.Id==3)"></product-card>
+            </div>
+            <div class="col-md-4">
+                <product-card product="Model.First(x=>x.Id==4)"></product-card>
+            </div>
+
+        </div>
+        <div class="row" style="margin-top:1%;">
+            <div class="col-md-6">
+                <product-card product="Model.First(x=>x.Id==1)"></product-card>
+            </div>
+            <div class="col-md-6">
+                <product-card product="Model.First(x=>x.Id==6)"></product-card>
+            </div>
+        </div>
+        <p class="lead bg-purple">Для бизнеса:</p>
+        <div class="row" style="margin-top:1%;">
+            <div class="col-md-4">
+                <product-card product="Model.First(x=>x.Id==5)"></product-card>
+            </div>
+            <div class="col-md-4">
+                <product-card product="Model.First(x=>x.Id==7)"></product-card>
+            </div>
+            <div class="col-md-4">
+                <product-card product="Model.First(x=>x.Id==8)"></product-card>
+            </div>
+        </div>
+    }
 
 
-<modal id="simpleModal"
-       title="Предзаказ">
-    <modal-body>
-        <p id="result">Нажмите на иконку нужной услуги</p>
-    </modal-body>
-</modal>
-<script asp-src-include="~/js/serviceorders.js" asp-append-version="true">
 
-</script>
+    @*<p class="lead bg-purple">Для студентов:</p>
+        <div class="row" style="margin-top:1%;">
+
+
+            <div class="col-md-4">
+               <product-carda product="Model.First(x=>x.Id==2)"></product-carda>
+
+            </div>
+            <div class="col-md-4">
+
+                <product-carda product="Model.First(x=>x.Id==3)"></product-carda>
+            </div>
+            <div class="col-md-4">
+                <product-carda product="Model.First(x=>x.Id==4)"></product-carda>
+            </div>
+
+        </div>
+        <div class="row" style="margin-top:1%;">
+            <div class="col-md-6">
+                <product-carda product="Model.First(x=>x.Id==1)"></product-carda>
+            </div>
+            <div class="col-md-6">
+                <product-carda product="Model.First(x=>x.Id==6)"></product-carda>
+            </div>
+        </div>
+        <p class="lead bg-purple">Для бизнеса:</p>
+        <div class="row" style="margin-top:1%;">
+            <div class="col-md-4">
+                <product-carda product="Model.First(x=>x.Id==5)"></product-carda>
+            </div>
+            <div class="col-md-4">
+                <product-carda product="Model.First(x=>x.Id==7)"></product-carda>
+            </div>
+            <div class="col-md-4">
+                <product-carda product="Model.First(x=>x.Id==8)"></product-carda>
+            </div>
+        </div>*@
+
+
+    <modal id="simpleModal"
+           title="Предзаказ">
+        <modal-body>
+            <p id="result">Нажмите на иконку нужной услуги</p>
+        </modal-body>
+    </modal>
+    <script asp-src-include="~/js/serviceorders.js" asp-append-version="true">
+
+    </script>
 

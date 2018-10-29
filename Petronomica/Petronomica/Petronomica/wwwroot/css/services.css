@@ -1,22 +1,18 @@
 ﻿body {
   margin:0;
 }
-
-#orderbut {
+.orderbutgroup {
     position: fixed;
     z-index: 100;
-    margin-left: 25%;
+    background-image: linear-gradient(to top, #5884BC, #395e8d);
+    background-color: #4471a9;
+}
+#orderbut {
+    z-index: 100;
     cursor: pointer;
-    border: none;
     color: whitesmoke;
-    border-radius: 1px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    width: auto;
-    height: auto;
-    font-size: 10px;
-    padding: 1px 4px;
     box-shadow: inset 0px 1px 1px 0 #90ADD2,0px 5px 0px 0 #223955,0px 8px 5px 0 #B3B3B3;
     -moz-box-shadow: inset 0px 1px 1px 0 #90ADD2,0px 5px 0px 0 #223955,0px 8px 5px 0 #B3B3B3;
     -webkit-box-shadow: inset 0px 1px 1px 0 #90ADD2,0px 5px 0px 0 #223955,0px 8px 5px 0 #B3B3B3;
@@ -33,22 +29,43 @@
         -webkit-box-shadow: inset 0px 1px 0px 0 #90ADD2,0px 2px 0px 0 #223955,0px 4px 3px 0 #6B6B6B;
         background-color: #395e8d;
     }
-
+.backgroundcard {
+    background-color:whitesmoke;
+}
     #orderbut:active {
         text-decoration-color: whitesmoke;
         background-color: #63A3F5;
     }
-@media (max-width: 700px) {
+@media (max-width:573px) {
     #orderbut {
-        margin-left: 55%;
+        display: none;
+    }
+ 
+  
+}
+@media (min-width:573px) {
+    #orderbut {
         font-size: 7px;
     }
+    .orderbutgroup {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    #orderbut {
+        
+        font-size: 1em;
+    }
+  
+   
 }
     @media (min-width: 700px) {
         .dr-breakout-btn {
             display: none;
         }
-
+     
+    
         .dr-breakout {
             display: inline;
             background: transparent;

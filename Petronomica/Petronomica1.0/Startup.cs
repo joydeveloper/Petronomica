@@ -64,6 +64,7 @@ namespace Petronomica
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
+            
             loggerFactory.AddFile(Path.Combine(Directory.GetCurrentDirectory(), "logger.txt"));
             var logger = loggerFactory.CreateLogger("FileLogger");
             app.UseSession();

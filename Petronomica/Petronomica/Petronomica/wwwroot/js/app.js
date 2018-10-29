@@ -57,7 +57,7 @@ function Context(strategy) {
     };
 }
 function Strategy() {
-    this.exec = function () { console.log('str') };
+    this.exec = function () { console.log('str') }
 };
 function FHDStrategy() {
     Strategy.call(this);

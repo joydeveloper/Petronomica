@@ -17,7 +17,7 @@ namespace HardCodeData
             products.Add(new Product { Id = 5, Name = "Комплексный анализ предприятия", Price = 4500, Image = "'../images/products/analyze.png'" });
             products.Add(new Product { Id = 6, Name = "Отчет по практике", Price = 2000, Image = "'../images/products/practice.png'" });
             products.Add(new Product { Id = 7, Name = "Бизнес-план для получения кредита", Price = 6000, Image = "'../images/products/businesscredit.png'" });
-            products.Add(new Product { Id = 8, Name = "Инвестиционный бизнес-план", Price = 4700, Image = "'../images/products/businesscredit.png'" });
+            products.Add(new Product { Id = 8, Name = "Инвестиционный бизнес-план", Price = 4700, Image = "'../images/products/businessinvest.png'" });
         }
     }
 }

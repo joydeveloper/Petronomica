@@ -1,67 +1,77 @@
-﻿
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+
 <link rel="stylesheet" asp-href-include="~/css/services.css" asp-append-version="true" />
 
 <div id="begin"></div>
-@*<div class="nav-scroller py-1 mb-2">
-        <nav class="nav justify-content-center d-none d-lg-block">
-            <a class="p-2 text-muted" href="#">Финансы и кредит</a>
-            <a class="p-2 text-muted" href="#">Бухгалтерский учёт</a>
-            <a class="p-2 text-muted" href="#">Банковское дело</a>
-            <a class="p-2 text-muted" href="#">Маркетинг</a>
-            <a class="p-2 text-muted" href="#">Менеджемент</a>
-            <a class="p-2 text-muted" href="#">Страхование</a>
-            <a class="p-2 text-muted" href="#">Туризм</a>
-        </nav>
-    </div>*@
-@*<p>
-        <div class="row" style="margin-top:1%;">
-            <div class="col-md-6">
-                <button class="btn btn-primary" style="margin-top:1%;" type="button" data-toggle="collapse" data-target="#constructor" aria-expanded="false" aria-controls="constructor">
-                    Что значит конструктор?
-                </button>
-            </div>
-            <div class="col-md-6">
-                <button class="btn btn-success" style="margin-top:1%;" type="button" data-toggle="collapse" data-target="#paid" aria-expanded="false" aria-controls="paid">
-                    Оплата
-                </button>
-            </div>
-
+@*
+<div class="nav-scroller py-1 mb-2">
+    <nav class="nav justify-content-center d-none d-lg-block">
+        <a class="p-2 text-muted" href="#">Финансы и кредит</a>
+        <a class="p-2 text-muted" href="#">Бухгалтерский учёт</a>
+        <a class="p-2 text-muted" href="#">Банковское дело</a>
+        <a class="p-2 text-muted" href="#">Маркетинг</a>
+        <a class="p-2 text-muted" href="#">Менеджемент</a>
+        <a class="p-2 text-muted" href="#">Страхование</a>
+        <a class="p-2 text-muted" href="#">Туризм</a>
+    </nav>
+</div>*@
+@*
+<p>
+    <div class="row" style="margin-top:1%;">
+        <div class="col-md-6">
+            <button class="btn btn-primary" style="margin-top:1%;" type="button" data-toggle="collapse" data-target="#constructor" aria-expanded="false" aria-controls="constructor">
+                Что значит конструктор?
+            </button>
         </div>
-    </p>
-    <div class="collapse" id="constructor">
-        <div class="card card-body">
-            Выберите соответствующую форму предзаказа и те пункты работы, которые необходимо выполнить, прикрепите всю необходимую документацию, содержащую список тем, требования и рекомендации к оформлению работы, а также какой-либо материал по выбранной теме. Укажите желаемую оценку и напишите сообщение, указав в нем важную, по вашему мнению, информацию. Мы ознакомимся с Вашей заявкой и в этот же день вышлем ответное письмо на эл. почту.
+        <div class="col-md-6">
+            <button class="btn btn-success" style="margin-top:1%;" type="button" data-toggle="collapse" data-target="#paid" aria-expanded="false" aria-controls="paid">
+                Оплата
+            </button>
+        </div>
+
+    </div>
+</p>
+<div class="collapse" id="constructor">
+    <div class="card card-body">
+        Выберите соответствующую форму предзаказа и те пункты работы, которые необходимо выполнить, прикрепите всю необходимую документацию, содержащую список тем, требования и рекомендации к оформлению работы, а также какой-либо материал по выбранной теме. Укажите желаемую оценку и напишите сообщение, указав в нем важную, по вашему мнению, информацию. Мы ознакомимся с Вашей заявкой и в этот же день вышлем ответное письмо на эл. почту.
+    </div>
+</div>
+<div class="collapse" id="paid">
+    <div class="row" style="width:50%">
+        <div class="col">
+            <img class="rounded-top" src="~/images/yamoney.png" width="150" height="128">
+        </div>
+        <div class="col">
+            <img class="rounded-top border-0" src="~/images/qiwi.png" width="150" height="128">
+        </div>
+        <div class="col">
+            <img class="rounded-top border-0" src="~/images/sber.png" width="150" height="128">
         </div>
     </div>
-    <div class="collapse" id="paid">
-        <div class="row" style="width:50%">
-            <div class="col">
-                <img class="rounded-top" src="~/images/yamoney.png" width="150" height="128">
-            </div>
-            <div class="col">
-                <img class="rounded-top border-0" src="~/images/qiwi.png" width="150" height="128">
-            </div>
-            <div class="col">
-                <img class="rounded-top border-0" src="~/images/sber.png" width="150" height="128">
-            </div>
-        </div>
-    </div>
-    <div class="card mb-6 shadow-sm">
-        <input class="form-control mr-sm-2" type="text" placeholder="Платный поиск" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" onclick="SearchPreOrder()">Заказать</button>
-    </div>*@
+</div>
+<div class="card mb-6 shadow-sm">
+    <input class="form-control mr-sm-2" type="text" placeholder="Платный поиск" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" onclick="SearchPreOrder()">Заказать</button>
+</div>*@
 
 
 
-@*<div id="questbut" class='btn-group mr-2' role='group' aria-label='First group'>
+@*
+<div id="questbut" class='btn-group mr-2' role='group' aria-label='First group'>
 
 
-    </div>*@
+</div>*@
 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-   Выбрать направление
+    Выбрать направление
 </button>
 <div id="orderbut" class='btn-group mr-2' role='group' aria-label='First group'>
-    
+
     <button type="button" class="btn btn-primary " bs-toggle-modal="simpleModal">
         Предзаказ <span class="badge badge-light">0</span>
         <span class="sr-only"></span>
@@ -99,14 +109,15 @@
         </div>
     </div>
 </div>
-@model IEnumerable<Product>
+@model IEnumerable
+<Product>
 
-<div class='justify-content-lg-start mr-2  orderbutgroup' role='group' aria-label='First group'>
-    <button type='button' class='btn btn-secondary'>Предзаказ</button>
-    <button type='button' class='btn btn-secondary'>Заказ</button>
-    <button type='button' class='btn btn-secondary'>Конструктор</button>
-</div>
-@*<div class="card-deck">
+    <div class='justify-content-lg-start mr-2  orderbutgroup' role='group' aria-label='First group'>
+        <button type='button' class='btn btn-secondary'>Предзаказ</button>
+        <button type='button' class='btn btn-secondary'>Заказ</button>
+        <button type='button' class='btn btn-secondary'>Конструктор</button>
+    </div>
+    @*<div class="card-deck">
         <div class="card">
             <img class="card-img-top" src=".../100px180/" alt="Card image cap">
             <div class="card-body">
@@ -139,39 +150,39 @@
         </div>
     </div>*@
 
-@{var ismobile = false;}
-@if (!ismobile)
-{
+    @{var ismobile = false;}
+    @if (!ismobile)
+    {
 
     @*<div class="card-deck">
-            <product-cardbuttongroup product="Model.First(x => x.Id == 1)"></product-cardbuttongroup>
-            <product-cardbuttongroup product="Model.First(x => x.Id == 2)"></product-cardbuttongroup>
-            <product-cardbuttongroup product="Model.First(x => x.Id == 3)"></product-cardbuttongroup>
-        </div>
-        <div class="card-deck">
-            <product-cardbuttongroup product="Model.First(x => x.Id == 4)"></product-cardbuttongroup>
-            <product-cardbuttongroup product="Model.First(x => x.Id == 5)"></product-cardbuttongroup>
-            <product-cardbuttongroup product="Model.First(x => x.Id == 6)"></product-cardbuttongroup>
-        </div>
-        <div class="card-deck">
-            <product-cardbuttongroup product="Model.First(x => x.Id == 7)"></product-cardbuttongroup>
-            <product-cardbuttongroup product="Model.First(x => x.Id == 8)"></product-cardbuttongroup>
-        </div>*@
+        <product-cardbuttongroup product="Model.First(x => x.Id == 1)"></product-cardbuttongroup>
+        <product-cardbuttongroup product="Model.First(x => x.Id == 2)"></product-cardbuttongroup>
+        <product-cardbuttongroup product="Model.First(x => x.Id == 3)"></product-cardbuttongroup>
+    </div>
+    <div class="card-deck">
+        <product-cardbuttongroup product="Model.First(x => x.Id == 4)"></product-cardbuttongroup>
+        <product-cardbuttongroup product="Model.First(x => x.Id == 5)"></product-cardbuttongroup>
+        <product-cardbuttongroup product="Model.First(x => x.Id == 6)"></product-cardbuttongroup>
+    </div>
+    <div class="card-deck">
+        <product-cardbuttongroup product="Model.First(x => x.Id == 7)"></product-cardbuttongroup>
+        <product-cardbuttongroup product="Model.First(x => x.Id == 8)"></product-cardbuttongroup>
+    </div>*@
 
     <div class="card-deck">
-            <product-cardcss product="Model.First(x => x.Id == 1)"></product-cardcss>
-            <product-cardcss product="Model.First(x => x.Id == 2)"></product-cardcss>
-            <product-cardcss product="Model.First(x => x.Id == 3)"></product-cardcss>
-        </div>
-        <div class="card-deck">
-            <product-cardcss product="Model.First(x => x.Id == 4)"></product-cardcss>
-            <product-cardcss product="Model.First(x => x.Id == 5)"></product-cardcss>
-            <product-cardcss product="Model.First(x => x.Id == 6)"></product-cardcss>
-        </div>
-        <div class="card-deck">
-            <product-cardcss product="Model.First(x => x.Id == 7)"></product-cardcss>
-            <product-cardcss product="Model.First(x => x.Id == 8)"></product-cardcss>
-        </div>
+        <product-cardcss product="Model.First(x => x.Id == 1)"></product-cardcss>
+        <product-cardcss product="Model.First(x => x.Id == 2)"></product-cardcss>
+        <product-cardcss product="Model.First(x => x.Id == 3)"></product-cardcss>
+    </div>
+    <div class="card-deck">
+        <product-cardcss product="Model.First(x => x.Id == 4)"></product-cardcss>
+        <product-cardcss product="Model.First(x => x.Id == 5)"></product-cardcss>
+        <product-cardcss product="Model.First(x => x.Id == 6)"></product-cardcss>
+    </div>
+    <div class="card-deck">
+        <product-cardcss product="Model.First(x => x.Id == 7)"></product-cardcss>
+        <product-cardcss product="Model.First(x => x.Id == 8)"></product-cardcss>
+    </div>
     @*<div class="card-deck">
         <product-cardbest product="Model.First(x => x.Id == 1)"></product-cardbest>
         <product-cardbest product="Model.First(x => x.Id == 2)"></product-cardbest>
@@ -187,22 +198,22 @@
         <product-cardbest product="Model.First(x => x.Id == 8)"></product-cardbest>
     </div>*@
     @*<div class="card-deck">
-            <product-cardbest product="Model.First(x => x.Id == 1)"></product-cardbest>
-            <product-cardbest product="Model.First(x => x.Id == 2)"></product-cardbest>
-            <product-cardbest product="Model.First(x => x.Id == 3)"></product-cardbest>
-        </div>
-        <div class="card-deck">
-            <product-cardbest product="Model.First(x => x.Id == 4)"></product-cardbest>
-            <product-cardbest product="Model.First(x => x.Id == 5)"></product-cardbest>
-            <product-cardbest product="Model.First(x => x.Id == 6)"></product-cardbest>
-        </div>
-        <div class="card-deck">
-            <product-cardb product="Model.First(x => x.Id == 7)"></product-cardb>
-            <product-cardb product="Model.First(x => x.Id == 8)"></product-cardb>
-        </div>*@
-}
-else
-{
+        <product-cardbest product="Model.First(x => x.Id == 1)"></product-cardbest>
+        <product-cardbest product="Model.First(x => x.Id == 2)"></product-cardbest>
+        <product-cardbest product="Model.First(x => x.Id == 3)"></product-cardbest>
+    </div>
+    <div class="card-deck">
+        <product-cardbest product="Model.First(x => x.Id == 4)"></product-cardbest>
+        <product-cardbest product="Model.First(x => x.Id == 5)"></product-cardbest>
+        <product-cardbest product="Model.First(x => x.Id == 6)"></product-cardbest>
+    </div>
+    <div class="card-deck">
+        <product-cardb product="Model.First(x => x.Id == 7)"></product-cardb>
+        <product-cardb product="Model.First(x => x.Id == 8)"></product-cardb>
+    </div>*@
+    }
+    else
+    {
     <div class="row" style="margin-top:1%;">
         <div class="col-md-4">
             <product-card product="Model.First(x=>x.Id==2)"></product-card>
@@ -235,16 +246,16 @@ else
             <product-card product="Model.First(x=>x.Id==8)"></product-card>
         </div>
     </div>
-}
+    }
 
 
 
-@*<p class="lead bg-purple">Для студентов:</p>
+    @*<p class="lead bg-purple">Для студентов:</p>
     <div class="row" style="margin-top:1%;">
 
 
         <div class="col-md-4">
-           <product-carda product="Model.First(x=>x.Id==2)"></product-carda>
+            <product-carda product="Model.First(x=>x.Id==2)"></product-carda>
 
         </div>
         <div class="col-md-4">
@@ -278,13 +289,15 @@ else
     </div>*@
 
 
-<modal id="simpleModal"
-       title="Предзаказ">
-    <modal-body>
-        <p id="result">Нажмите на иконку нужной услуги</p>
-    </modal-body>
-</modal>
-<script asp-src-include="~/js/serviceorders.js" asp-append-version="true">
+    <modal id="simpleModal"
+           title="Предзаказ">
+        <modal-body>
+            <p id="result">Нажмите на иконку нужной услуги</p>
+        </modal-body>
+    </modal>
+    <script asp-src-include="~/js/serviceorders.js" asp-append-version="true">
 
-</script>
+    </script>
 
+
+</html>

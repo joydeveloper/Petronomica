@@ -10,11 +10,11 @@ function PreOrder(id) {
 }
 function CardAnimOver(x) {
 
-    x.style.backgroundColor='white';
+    x.style.border ='2px solid darkseagreen';
     x.style.opacity='60%';
 }
 function CardAnimLost(x) {
 
-    x.style.backgroundColor = 'green';
+    x.style.border='none';
     x.style.opacity = '90%';
 }

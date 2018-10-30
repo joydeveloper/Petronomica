@@ -9,9 +9,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orders", "Orders\Orders.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Products", "Products\Products.csproj", "{7038F9DC-03E2-490F-BBB7-A57A31C13EDE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HardCodeData", "HardCodeData\HardCodeData.csproj", "{2736D7F7-4F4E-4EF1-B1C5-85F57049EB28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HardCodeData", "HardCodeData\HardCodeData.csproj", "{2736D7F7-4F4E-4EF1-B1C5-85F57049EB28}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetronomicaServices", "..\PetronomicaServices\PetronomicaServices.csproj", "{F8093702-08C7-4C98-A008-68B8F6A26412}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ResScripts", "ResScripts", "{B6B60ED3-626C-4003-8A26-92E852665426}"
+	ProjectSection(SolutionItems) = preProject
+		HTMLPage1.html = HTMLPage1.html
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

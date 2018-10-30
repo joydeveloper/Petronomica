@@ -83,12 +83,12 @@ $@"<img class='card-img-top' style='background-color:{topcolors[i]};cursor:point
         {
             i = rand.Next(0, 4);
             var template =
-$@"<img class='card-img-top' src={Product.Image} alt={Product.Id}>
+$@"<img class='card-img-top' style='cursor:pointer' src={Product.Image} alt={Product.Id}  onclick='PreOrder({Product.Id})' onmouseover='CardAnimOver(this)' onmouseout='CardAnimLost(this)'>
         <div class='card-body {css}'  onclick='PreOrder({Product.Id})';>
             <h5 class='card-title'>{Product.Name}</h5>
             <p class='card-text'>Цена от </p>
              <div class='card-footer'>
-              <small class='text-muted alert {colors[i]}'>{Product.Price}</small>
+             <h5 class='text-muted alert {colors[i]}'>От {Product.Price} рублей</h5>
         </div>";
 
                output.TagName = "div";
@@ -108,7 +108,7 @@ $@"<img class='card-img-top' src={Product.Image} alt={Product.Id}>
         {
             i = rand.Next(0, 4);
             var template =
-$@"<img class='card-img-top' src={Product.Image} alt={Product.Id}>
+$@"<img class='card-img-top'   src={Product.Image} alt={Product.Id}>
          <div class='card-img-overlay'>
           <h4 class='card-title'>John Doe</h4>
       <p class='card-text'>Some example text some example text.Some example text some example text.Some example text some example text. Some example text some example text.</p>

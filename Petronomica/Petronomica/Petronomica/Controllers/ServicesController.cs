@@ -19,6 +19,12 @@ namespace Petronomica.Controllers
             return View(await _orderController.GetProducts());
           
         }
+        public async Task<IActionResult> CreatePanel()
+        {
+            return View(await _orderController.GetProducts());
+
+        }
+        [HttpPost]
         public IActionResult CreatePreOrder(int id)
         {
             // Order preorder=new Order()

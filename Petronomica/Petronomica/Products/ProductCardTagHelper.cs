@@ -154,17 +154,17 @@ $@"<div class='btn-group mr-2' role='group' aria-label='First group'>
         Random rand = new Random();
         int i;
         string[] colors = new string[] { "alert-success", "alert-warning", "alert-primary", "alert-danger", "alert-light" };
-        string[] topcolors = new string[] { "#E74431", "#E0F383", "#95E7F1", "#BC96EA" };
+        string[] topcolors = new string[] { "#C4EEC0", "#C0EEEA", "#C0EEEA", "#D1ECF5" };
         public Product Product { get; set; }
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
             i = rand.Next(0, 4);
             var template =
-$@"<img class='card-img-top' style='background-color:{topcolors[i]};cursor:pointer' onclick='PreOrder({Product.Id})'>
+$@"<img class='card-img-top' style='background-color:{topcolors[i]};cursor:pointer;box-shadow:0px 0px 0px 2px #9fb4f2;' onclick='PreOrder({Product.Id})' onmouseover='CardAnimOver(this)' onmouseout='CardAnimLost(this)'>
               <div class='card-body'>
             <h5 class='card-title'>{Product.Name}</h5>
-            <p class='card-text'>Цена от</p>
-            <h7 class='text-muted alert {colors[i]}'>{Product.Price}</h7>";
+            <h7 class='card-text'>Цена</h7>
+            <h5 class='text-muted alert {colors[i]}'>От {Product.Price} рублей</h5>";
             output.TagName = "div";
             output.Attributes.SetAttribute("class", "card ");
             output.Content.AppendHtml(template);

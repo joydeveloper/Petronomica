@@ -103,12 +103,13 @@ body {
 
 .indexfooter {
  
-    position: fixed;
+  
     left: 0;
     bottom: 0;
     width: 100%;
-    color: white;
+    color: cornflowerblue;
     text-align: center;
+    margin-top:10%;
 }
 
 #social-em {

@@ -23,6 +23,7 @@ $@"<div class='card-body'>
       </div>";
             output.TagName = "div";
             output.Attributes.SetAttribute("class", "card mb-6 shadow-sm");
+      
             output.Content.AppendHtml(template);
             output.Content.AppendHtml("</div>");
         }

@@ -10,7 +10,7 @@ function PreOrder(id) {
 }
 function CardAnimOver(x) {
 
-    x.style.border ='2px solid darkseagreen';
+    x.style.border ='4px solid darkseagreen';
     x.style.opacity='60%';
 }
 function CardAnimLost(x) {

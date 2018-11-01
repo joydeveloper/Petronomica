@@ -4,6 +4,7 @@ namespace Orders
 {
     public class Order
     {
+        public const string zeroorder = "Предзаказ";
         private static int id;
         public Order(string Ordertype)
         {
@@ -11,7 +12,7 @@ namespace Orders
             Id = id;
             OrderDate = DateTime.Today;
             OrderType = Ordertype;
-            OrderStatus = "Предзаказ";
+            OrderStatus = zeroorder;
         }
         public Order()
         {

@@ -83,7 +83,7 @@ namespace Petronomica
             //});
             //services.AddAutoMapper();
             services.AddSingleton<IConfiguration>(Configuration);
-            services.AddSingleton<IOrderController,HardCodeOrderController>();
+            services.AddSingleton<IOrderRepo,HardCodeOrderRepository>();
         }
     }
 }

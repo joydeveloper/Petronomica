@@ -14,9 +14,14 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\PetronomicaServices\PetronomicaServices.csproj" />
+    <ProjectReference Include="..\Client\Client.csproj" />
     <ProjectReference Include="..\HardCodeData\HardCodeData.csproj" />
     <ProjectReference Include="..\Orders\Orders.csproj" />
     <ProjectReference Include="..\Products\Products.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Components\" />
   </ItemGroup>
 
 </Project>

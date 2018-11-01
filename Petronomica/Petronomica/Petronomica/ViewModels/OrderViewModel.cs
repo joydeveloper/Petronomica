@@ -8,6 +8,7 @@ namespace Petronomica.ViewModels
 {
     public class OrderViewModel
     {
+      public OrderViewModel() { }
       public OrderViewModel(Orders.Order order)
         {
             OrderType = order.OrderType;
@@ -20,5 +21,6 @@ namespace Petronomica.ViewModels
         public string OrderDate { get; set; }
         [Display(Name = "Статус")]
         public string OrderStatus { get; set; }
+      
     }
 }

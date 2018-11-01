@@ -9,7 +9,7 @@ namespace Orders
         {
             id++;
             Id = id;
-            OrderDate = DateTime.Now;
+            OrderDate = DateTime.Today;
             OrderType = Ordertype;
             OrderStatus = "Предзаказ";
         }

@@ -4,8 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Orders;
+using Petronomica.ViewModels;
+
 namespace Petronomica.Controllers
 {
+    //TODO rename iordercontroller!
     public class ServicesController : Controller
     {
         private readonly IOrderController _orderController;
@@ -24,13 +27,18 @@ namespace Petronomica.Controllers
             return View(await _orderController.GetProducts());
 
         }
-        [HttpPost]
-        public IActionResult CreatePreOrder(int id)
+     
+ 
+        public async Task<IActionResult> GetOrderInfo()
         {
-            // Order preorder=new Order()
-            string res = $@"<button type='button' class='btn btn-primary btn-lg' bs-toggle-modal='simpleModal'>hh</button>";
-            string result = _orderController.GetProduct(id).Name;
-            return Content(result);
+            return  PartialView( "_GetOrderInfo");
+        }
+        // [HttpPost]
+    
+        public IActionResult OrderSettings(int id)
+        {
+
+            return View(new OrderViewModel(_orderController.CreatePreOrder(id)));
 
         }
     }

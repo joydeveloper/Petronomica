@@ -1,12 +1,20 @@
 ﻿
 function Result(msg) {
-    document.getElementById("result").style.innerHTML = msg;
+    //document.getElementById("result").style.innerHTML = msg;
+  //  console.log(msg);
+    window.location.href = 'OrderSettings?id' + id;
 }
 function PreOrder(id) {
-   
-    httpGetAsync("/Services/CreatePreOrder?id=" + id, Result);
+    var url = 'Services/OrderSettings?id='+id;
+    //httpGetAsyncP(url, Result);
+  
+            ////console.log("lnkLogout_Confirm clciked.");
 
-    
+            window.location.href = url;
+      
+   
+
+  
 }
 function CardAnimOver(x) {
 

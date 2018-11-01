@@ -14,9 +14,9 @@ namespace PetronomicaServices
         {
             _ordercontrol = ordercontrol;
         }
-        public async Task CreatePreOrder(int id)
+        public Order CreatePreOrder(int id)
         {
-            await _ordercontrol.CreatePreOrder(id);
+            return _ordercontrol.CreatePreOrder(id);
         }
         public async Task PromoteOrder(Order order)
         {
@@ -27,7 +27,7 @@ namespace PetronomicaServices
 }
 public interface IOrderController
 {
-    Task CreatePreOrder(int id);
+    Order CreatePreOrder(int id);
     Task PromoteOrder(Order order);
     Task<IEnumerable<Product>> GetProducts();
     Product GetProduct(int id);
@@ -35,10 +35,9 @@ public interface IOrderController
 public class HardCodeOrderController : IOrderController
 {
     private HardCodeProducts hardCodeProducts = new HardCodeProducts();
-    public async Task CreatePreOrder(int id)
+    public  Order CreatePreOrder(int id)
     {
-        Order order = new Order(hardCodeProducts.products[id].Name);
-        await Task.CompletedTask;
+        return new Order(hardCodeProducts.products.Find(x => x.Id == id).Name);
     }
     public Product GetProduct(int id)
     {

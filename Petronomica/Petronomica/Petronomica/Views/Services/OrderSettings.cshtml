@@ -1,0 +1,42 @@
+﻿@model Petronomica.ViewModels.OrderViewModel
+
+@{
+    ViewData["Title"] = "OrderSettings";
+}
+
+<h2>Настройки заказа</h2>
+<div class="container">
+    <div class="row">
+        <div class="mb-6 shadow-sm">
+            <h4>Детали</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.OrderType)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.OrderType)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.OrderDate)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.OrderDate)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.OrderStatus)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.OrderStatus)
+                </dd>
+            </dl>
+        </div>
+        <div class="mb-6 shadow-sm">
+
+        </div>
+
+    </div>
+    <div>
+
+        <a asp-action="Index">Витрина</a>
+    </div>

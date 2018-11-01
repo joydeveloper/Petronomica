@@ -1,89 +1,32 @@
-﻿
+﻿@model IEnumerable<Product>
 <link rel="stylesheet" asp-href-include="~/css/services.css" asp-append-version="true" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-          asp-fallback-src="~/lib/bootstrap/assets/js/vendor/popper.min.js"
+        asp-fallback-src="~/lib/bootstrap/assets/js/vendor/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
 <div id="begin"></div>
+<a asp-action="OrderSettings" asp-controller="Services" asp-route-id="2">sdsd</a>
 
-
-<div id="orderbut" class='btn-group mr-2' role='group' aria-label='First group'>
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Выбрать направление
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Финансы и кредит</a>
-            <a class="dropdown-item" href="#">Бухгалтерский учёт</a>
-            <a class="dropdown-item" href="#">Банковское дело</a>
-            <a class="dropdown-item" href="#">Маркетинг</a>
-            <a class="dropdown-item" href="#">Менеджемент</a>
-            <a class="dropdown-item" href="#">Страхование</a>
-            <a class="dropdown-item" href="#">Туризм</a>
-        </div>
-    </div>
-    <button type="button" class="btn btn-primary " bs-toggle-modal="simpleModal">
-        Предзаказ <span class="badge badge-light">0</span>
-        <span class="sr-only"></span>
-    </button>
-    <button type="button" class="btn btn-primary " bs-toggle-modal="simpleModal">
-        Заказ <span class="badge badge-light">0</span>
-        <span class="sr-only"></span>
-    </button>
-    <button type="button" class="btn btn-primary " bs-toggle-modal="simpleModal">
-        Конструктор <span class="badge badge-light">0</span>
-        <span class="sr-only"></span>
-    </button>
-    <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#constructor" aria-expanded="false" aria-controls="constructor">
-        Что значит конструктор?
-    </button>
-    <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#paid" aria-expanded="false" aria-controls="paid">
-        Оплата
-    </button>
-</div>
-<div class="collapse" id="constructor">
-    <div class="helpbar">
-        Выберите соответствующую форму предзаказа и те пункты работы, которые необходимо выполнить, прикрепите всю необходимую документацию, содержащую список тем, требования и рекомендации к оформлению работы, а также какой-либо материал по выбранной теме. Укажите желаемую оценку и напишите сообщение, указав в нем важную, по вашему мнению, информацию. Мы ознакомимся с Вашей заявкой и в этот же день вышлем ответное письмо на эл. почту.
-    </div>
-</div>
-<div class="collapse" id="paid">
-    <div class="row" style="width:50%">
-        <div class="col">
-            <img class="rounded-top" src="~/images/yamoney.png" width="150" height="128">
-        </div>
-        <div class="col">
-            <img class="rounded-top border-0" src="~/images/qiwi.png" width="150" height="128">
-        </div>
-        <div class="col">
-            <img class="rounded-top border-0" src="~/images/sber.png" width="150" height="128">
-        </div>
-    </div>
-</div>
-@model IEnumerable<Product>
-<div class='justify-content-lg-start mr-2  orderbutgroup' role='group' aria-label='First group'>
-    <button type='button' class='btn btn-secondary'>Предзаказ</button>
-    <button type='button' class='btn btn-secondary'>Заказ</button>
-    <button type='button' class='btn btn-secondary'>Конструктор</button>
-</div>
+@{await Html.RenderPartialAsync("_GetOrderInfo");}
 @{var ismobile = false;}
 @if (!ismobile)
 {
-<div>
-    <div class="card-deck">
-        <product-cardcss product="Model.First(x => x.Id == 1)"></product-cardcss>
-        <product-cardcss product="Model.First(x => x.Id == 2)"></product-cardcss>
-        <product-cardcss product="Model.First(x => x.Id == 3)"></product-cardcss>
+    <div>
+        <div class="card-deck">
+            <product-cardcss product="Model.First(x => x.Id == 1)"></product-cardcss>
+            <product-cardcss product="Model.First(x => x.Id == 2)"></product-cardcss>
+            <product-cardcss product="Model.First(x => x.Id == 3)"></product-cardcss>
+        </div>
+        <div class="card-deck" style="margin-top:2%">
+            <product-cardcss product="Model.First(x => x.Id == 4)"></product-cardcss>
+            <product-cardcss product="Model.First(x => x.Id == 5)"></product-cardcss>
+            <product-cardcss product="Model.First(x => x.Id == 6)"></product-cardcss>
+        </div>
+        <div class="card-deck" style="margin-top:2%">
+            <product-cardcss product="Model.First(x => x.Id == 7)"></product-cardcss>
+            <product-cardcss product="Model.First(x => x.Id == 8)"></product-cardcss>
+        </div>
     </div>
-    <div class="card-deck" style="margin-top:2%">
-        <product-cardcss product="Model.First(x => x.Id == 4)"></product-cardcss>
-        <product-cardcss product="Model.First(x => x.Id == 5)"></product-cardcss>
-        <product-cardcss product="Model.First(x => x.Id == 6)"></product-cardcss>
-    </div>
-    <div class="card-deck" style="margin-top:2%">
-        <product-cardcss product="Model.First(x => x.Id == 7)"></product-cardcss>
-        <product-cardcss product="Model.First(x => x.Id == 8)"></product-cardcss>
-    </div>
-</div>
 }
 else
 {
@@ -119,6 +62,7 @@ else
         </div>
     </div>
 }
+
 <modal id="simpleModal"
        title="Предзаказ">
     <modal-body>

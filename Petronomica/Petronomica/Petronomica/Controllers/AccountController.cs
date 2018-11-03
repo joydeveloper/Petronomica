@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
 using Petronomica.Models;
 using Petronomica.ViewModels;
+using Microsoft.AspNetCore.Authorization;
+using SharedServices;
 
 namespace Petronomica.Controllers
 {
@@ -10,11 +12,12 @@ namespace Petronomica.Controllers
     {
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager;
-
-        public AccountController(UserManager<User> userManager, SignInManager<User> signInManager)
+        private readonly IMessageSender _ms;
+        public AccountController(UserManager<User> userManager, SignInManager<User> signInManager,IMessageSender ms)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _ms = ms;
         }
         [HttpGet]
         public IActionResult Register()
@@ -22,28 +25,52 @@ namespace Petronomica.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> Register(RegisterViewModel model)
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Register(RegisterViewModel model, string returnUrl = null)
         {
+            ViewData["ReturnUrl"] = returnUrl;
             if (ModelState.IsValid)
             {
-                User user = new User { Email = model.Email, UserName = model.Email};
-                // добавляем пользователя
+                var user = new User { UserName = model.Email, Email = model.Email };
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
-                    // установка куки
-                    await _signInManager.SignInAsync(user, false);
-                    return RedirectToAction("Index", "Home");
+                    var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+                    var callbackUrl = Url.Action(
+                        "ConfirmEmail",
+                        "Account",
+                        new { userId = user.Id, code = code },
+                        protocol: HttpContext.Request.Scheme);
+                    ConfirmEmail confirmEmail = new ConfirmEmail(model.Email, $"Подтвердите регистрацию, перейдя по ссылке: <a href='{callbackUrl}'>подтвердить</a>");
+                    await _ms.Send(confirmEmail);
+
+                    // await _signInManager.SignInAsync(user, isPersistent: false);
+                    return Redirect("Success");
                 }
-                else
-                {
-                    foreach (var error in result.Errors)
-                    {
-                        ModelState.AddModelError(string.Empty, error.Description);
-                    }
-                }
+          
             }
             return View(model);
+        }
+        [HttpGet]
+        [AllowAnonymous]
+        public async Task<IActionResult> ConfirmEmail(string userId, string code)
+        {
+            if (userId == null || code == null)
+            {
+                return RedirectToAction(nameof(HomeController.Index), "Home");
+            }
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null)
+            {
+                return View("Error");
+            }
+            var result = await _userManager.ConfirmEmailAsync(user, code);
+            return View(result.Succeeded ? "ConfirmEmail" : "Error");
+        }
+        public IActionResult Success()
+        {
+            return View();
         }
         [HttpGet]
         public IActionResult Login(string returnUrl = null)
@@ -58,7 +85,7 @@ namespace Petronomica.Controllers
             if (ModelState.IsValid)
             {
                 var result =
-                    await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
+                    await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, true);
                 if (result.Succeeded)
                 {
                     // проверяем, принадлежит ли URL приложению

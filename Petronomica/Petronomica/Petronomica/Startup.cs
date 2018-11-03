@@ -10,6 +10,7 @@ using Microsoft.Extensions.Logging;
 using Petronomica.Data;
 using Petronomica.Models;
 using PetronomicaServices;
+using SharedServices;
 using WebEssentials.AspNetCore.Pwa;
 namespace Petronomica
 {
@@ -54,11 +55,12 @@ namespace Petronomica
             app.UseCookiePolicy();
             app.UseStaticFiles();
             app.UseMvcWithDefaultRoute();
+            app.UseAuthentication();
         }
         private void ConfigureCommonServices(IServiceCollection services)
         {
-      
-         
+
+
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
@@ -69,8 +71,18 @@ namespace Petronomica
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddIdentity<User, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddIdentity<User, IdentityRole>((config =>
+            {
+
+                config.Password.RequireNonAlphanumeric = false;
+                config.Password.RequireLowercase = false;
+                config.Password.RequireUppercase = false;
+                config.Password.RequireDigit = true;
+            }))
+               .AddEntityFrameworkStores<ApplicationDbContext>()
+               .AddDefaultTokenProviders();
+
+            services.AddSingleton<IMessageSender, EmailMessageSender>();
             services.AddSession();
             services.AddDistributedMemoryCache();
             services.AddMvc();
@@ -83,7 +95,7 @@ namespace Petronomica
             //});
             //services.AddAutoMapper();
             services.AddSingleton<IConfiguration>(Configuration);
-            services.AddSingleton<IOrderRepo,HardCodeOrderRepository>();
+            services.AddSingleton<IOrderRepo, HardCodeOrderRepository>();
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿@if (User.Identity.IsAuthenticated)
+﻿@*@if (User.Identity.IsAuthenticated)
     {
         <p>@User.Identity.Name</p>
 
@@ -10,7 +10,7 @@
     {
         <a asp-controller="Account" asp-action="Login">Вход</a>
         <a asp-controller="Account" asp-action="Register">Регистрация</a>
-    }
+    }*@
 
 <style>
     .carousel-item .img-fluid {

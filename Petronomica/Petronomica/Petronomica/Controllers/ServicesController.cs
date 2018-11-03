@@ -42,7 +42,20 @@ namespace Petronomica.Controllers
             return View(new OrderViewModel(_orderrepo.CreatePreOrder(id)));
 
         }
-        public IActionResult SetOrder(ClientOrder co)
+        [HttpGet]
+        public PartialViewResult GetUserInfo()
+        {
+
+            UserMessageViewModel userMessageViewModel = new UserMessageViewModel();
+            return PartialView("_UserInfo", userMessageViewModel);//, constructorsarr[id]);
+        }
+        [Route("Save")]
+        [HttpPost]
+        public IActionResult Save(UserMessageViewModel umvm)
+        {
+            return Content(umvm.ToString());
+        }
+            public IActionResult SetOrder(ClientOrder co)
         {
             
 

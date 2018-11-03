@@ -14852,3 +14852,102 @@ Executed action method WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerA
 Executing ContentResult with HTTP Response ContentType of application/javascript; charset=utf-8
 Executed action WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa) in 12.9951ms
 Request finished in 38.395ms 200 application/javascript; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/  
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action Petronomica.Controllers.HomeController.Index (Petronomica1.0)
+Executing action method Petronomica.Controllers.HomeController.Index (Petronomica1.0) - Validation state: Valid
+Executed action method Petronomica.Controllers.HomeController.Index (Petronomica1.0), returned result Microsoft.AspNetCore.Mvc.ViewResult in 5.4907ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 5226.1257ms.
+Executed action Petronomica.Controllers.HomeController.Index (Petronomica1.0) in 5253.4267ms
+Request finished in 5472.3527ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/  
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action Petronomica.Controllers.HomeController.Index (Petronomica1.0)
+Executing action method Petronomica.Controllers.HomeController.Index (Petronomica1.0) - Validation state: Valid
+Executed action method Petronomica.Controllers.HomeController.Index (Petronomica1.0), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4.9353ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 207.29ms.
+Executed action Petronomica.Controllers.HomeController.Index (Petronomica1.0) in 235.6343ms
+Request finished in 429.4028ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/css/site.css  
+Request starting HTTP/1.1 GET http://localhost:62292/images/banner1.svg  
+Request starting HTTP/1.1 GET http://localhost:62292/images/banner2.svg  
+Request starting HTTP/1.1 GET http://localhost:62292/lib/jquery/dist/jquery.js  
+Request starting HTTP/1.1 GET http://localhost:62292/lib/bootstrap/dist/js/bootstrap.js  
+Request starting HTTP/1.1 GET http://localhost:62292/images/banner3.svg  
+Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica1.0\wwwroot\css\site.css'
+Sending file. Request path: '/images/banner3.svg'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica1.0\wwwroot\images\banner3.svg'
+Request finished in 321.6275ms 200 text/css
+Request finished in 305.3807ms 200 image/svg+xml
+Request starting HTTP/1.1 GET http://localhost:62292/images/sup.png  
+Request starting HTTP/1.1 GET http://localhost:62292/images/whatsup.png  
+Sending file. Request path: '/images/banner1.svg'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica1.0\wwwroot\images\banner1.svg'
+Request finished in 336.1242ms 200 image/svg+xml
+Sending file. Request path: '/images/whatsup.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica1.0\wwwroot\images\whatsup.png'
+Request finished in 37.1126ms 200 image/png
+Request starting HTTP/1.1 GET http://localhost:62292/images/vk-icon.png  
+Request starting HTTP/1.1 GET http://localhost:62292/css/logo2.svg  
+Sending file. Request path: '/images/sup.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica1.0\wwwroot\images\sup.png'
+Request finished in 91.5698ms 200 image/png
+Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica1.0\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+Request finished in 418.5458ms 200 application/javascript
+Sending file. Request path: '/images/vk-icon.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica1.0\wwwroot\images\vk-icon.png'
+Request finished in 61.7671ms 200 image/png
+Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica1.0\wwwroot\lib\jquery\dist\jquery.js'
+Sending file. Request path: '/css/logo2.svg'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica1.0\wwwroot\css\logo2.svg'
+Request finished in 613.9247ms 200 application/javascript
+Request finished in 240.6047ms 200 image/svg+xml
+Sending file. Request path: '/images/banner2.svg'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica1.0\wwwroot\images\banner2.svg'
+Request finished in 873.78ms 200 image/svg+xml
+Request starting HTTP/1.1 GET http://localhost:62292/serviceworker  
+Route matched with {action = "ServiceWorkerAsync", controller = "Pwa"}. Executing action WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa)
+Executing action method WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa) - Validation state: Valid
+Executed action method WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa), returned result Microsoft.AspNetCore.Mvc.ContentResult in 36.8903ms.
+Executing ContentResult with HTTP Response ContentType of application/javascript; charset=utf-8
+Executed action WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa) in 58.6614ms
+Request finished in 94.1702ms 200 application/javascript; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/manifest.json  
+Sending file. Request path: '/manifest.json'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica1.0\wwwroot\manifest.json'
+Request finished in 7.419ms 200 application/json
+Request starting HTTP/1.1 GET http://localhost:62292/icon/hd_lo  
+Processing request /icon/hd_lo
+Request finished in 17.202ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/favicon.ico  
+Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica1.0\wwwroot\favicon.ico'
+Request finished in 28.5245ms 200 image/x-icon
+Request starting HTTP/1.1 GET http://localhost:62292/Services  
+Route matched with {action = "Index", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.Index (Petronomica1.0)
+Executing action method Petronomica.Controllers.ServicesController.Index (Petronomica1.0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.Index (Petronomica1.0), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.587ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 69.0968ms.
+Executed action Petronomica.Controllers.ServicesController.Index (Petronomica1.0) in 96.5806ms
+Request starting HTTP/1.1 GET http://localhost:62292/images/sber.png  
+Request finished in 115.2257ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/images/qiwi.png  
+Request starting HTTP/1.1 GET http://localhost:62292/images/yamoney.png  
+Sending file. Request path: '/images/sber.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica1.0\wwwroot\images\sber.png'
+Request finished in 101.2955ms 200 image/png
+Sending file. Request path: '/images/qiwi.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica1.0\wwwroot\images\qiwi.png'
+Request finished in 133.5457ms 200 image/png
+Sending file. Request path: '/images/yamoney.png'. Physical path: 'C:\Users\User\source\repos\Petronomica\Petronomica\Petronomica1.0\wwwroot\images\yamoney.png'
+Request finished in 157.3135ms 200 image/png
+Request starting HTTP/1.1 GET http://localhost:62292/icon/hd_lo  
+Processing request /icon/hd_lo
+Request finished in 6.2267ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/serviceworker  
+Route matched with {action = "ServiceWorkerAsync", controller = "Pwa"}. Executing action WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa)
+Executing action method WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa) - Validation state: Valid
+Executed action method WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.382ms.
+Executing ContentResult with HTTP Response ContentType of application/javascript; charset=utf-8
+Executed action WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa) in 16.5793ms
+Request finished in 38.6181ms 200 application/javascript; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/Services/GetServiceType?id=0  
+Route matched with {action = "GetServiceType", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.GetServiceType (Petronomica1.0)
+Executing action method Petronomica.Controllers.ServicesController.GetServiceType (Petronomica1.0) with arguments (0) - Validation state: Valid
+Executed action method Petronomica.Controllers.ServicesController.GetServiceType (Petronomica1.0), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.4755ms.
+Executing PartialViewResult, running view _DiplomworkType.
+Executed PartialViewResult - view _DiplomworkType executed in 121.7558ms.
+Executed action Petronomica.Controllers.ServicesController.GetServiceType (Petronomica1.0) in 145.4439ms
+Request finished in 165.1248ms 200 text/html; charset=utf-8

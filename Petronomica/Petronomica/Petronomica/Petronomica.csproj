@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\PetronomicaServices\PetronomicaServices.csproj" />
+    <ProjectReference Include="..\..\SharedServices\SharedServices.csproj" />
     <ProjectReference Include="..\Client\Client.csproj" />
     <ProjectReference Include="..\HardCodeData\HardCodeData.csproj" />
     <ProjectReference Include="..\Orders\Orders.csproj" />

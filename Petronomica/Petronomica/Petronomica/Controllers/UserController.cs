@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
 using Petronomica.Models;
 using Petronomica.ViewModels;
-
 namespace Petronomica.Controllers
 {
     public class UsersController : Controller
@@ -52,7 +51,6 @@ namespace Petronomica.Controllers
             EditUserViewModel model = new EditUserViewModel { Id = user.Id, Email = user.Email };
             return View(model);
         }
-
         [HttpPost]
         public async Task<IActionResult> Edit(EditUserViewModel model)
         {
@@ -63,8 +61,6 @@ namespace Petronomica.Controllers
                 {
                     user.Email = model.Email;
                     user.UserName = model.Email;
-       
-
                     var result = await _userManager.UpdateAsync(user);
                     if (result.Succeeded)
                     {
@@ -81,7 +77,6 @@ namespace Petronomica.Controllers
             }
             return View(model);
         }
-
         [HttpPost]
         public async Task<ActionResult> Delete(string id)
         {
@@ -102,7 +97,6 @@ namespace Petronomica.Controllers
             ChangePasswordViewModel model = new ChangePasswordViewModel { Id = user.Id, Email = user.Email };
             return View(model);
         }
-
         [HttpPost]
         public async Task<IActionResult> ChangePassword(ChangePasswordViewModel model)
         {

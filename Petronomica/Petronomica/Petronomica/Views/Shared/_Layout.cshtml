@@ -35,7 +35,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link mainnav"  asp-controller="Services" asp-action="Index">Услуги<span class="sr-only">(current)</span></a>
+                    <a class="nav-link mainnav" asp-controller="Services" asp-action="Index">Услуги<span class="sr-only">(current)</span></a>
 
                 </li>
                 <li class="nav-item">
@@ -63,7 +63,7 @@
     </nav>
     <!-- Cookie partial -->
     <partial name="_CookieConsentPartial" />
-    <div class="container body-content">
+    <footer class="container body-content">
         @RenderBody()
         <hr />
         <!-- Footer -->
@@ -138,84 +138,84 @@
                 <!-- Grid row -->
 
             </div>
-            <!-- Footer Links -->
-            <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">
-                © 2018 Copyright:
-                <a href="https://mdbootstrap.com/bootstrap-tutorial/"> MDBootstrap.com</a>
-            </div>
-            <!-- Copyright -->
-
         </footer>
-        <!-- Footer -->
-        <!--Footer-->
-        @*<footer class="indexfooter">
+    <!-- Footer Links -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+        © 2018 Copyright:
+        <a href="https://mdbootstrap.com/bootstrap-tutorial/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+
+    <!-- Footer -->
+    <!--Footer-->
+    @*<footer class="indexfooter">
 
         <a href="https://wa.me/79836037400?text=Я%20заинтересован%20в%20ваших%20услугах"><img src="~/images/whatsup.png" alt="Whatsup"></a>
         <a href="#" data-toggle="modal" data-target="#exampleModal"><img src="~/images/sup.png" alt="Поддержка"></a>
         <a href="https://vk.com/petronomica" target="_blank"><img src="~/images/vk-icon.png" alt="Вконтакте"> </a>
         @*<a href="https://feziko.ru/" style="margin-left:20%;padding-top:10px"> © 2018 Copyright</a>
         </footer>*@
-        <!-- Button trigger modal -->
+    <!-- Button trigger modal -->
 
 
-        <div id="exampleModal" class="modal" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Быстрая поддержка</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Как заказать?</p>
-                        <p>Как оплатить?</p>
-                        <p>Какие у вас сроки?</p>
+    <div id="exampleModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Быстрая поддержка</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Как заказать?</p>
+                    <p>Как оплатить?</p>
+                    <p>Какие у вас сроки?</p>
 
-                    </div>
-                    <div class="modal-footer">
+                </div>
+                <div class="modal-footer">
 
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-                    </div>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
                 </div>
             </div>
         </div>
-        <environment include="Development">
-            <script src="~/lib/jquery/dist/jquery.js"></script>
-            <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-            <script src="~/js/site.js" asp-append-version="true"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-                    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-                    crossorigin="anonymous">
-            </script>
-        </environment>
-        <environment exclude="Development">
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-                    asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-                    crossorigin="anonymous">
-            </script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-                    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-                    crossorigin="anonymous">
-            </script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-                    asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
-                    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-                    crossorigin="anonymous">
-            </script>
-            <script src="~/js/site.min.js" asp-append-version="true"></script>
-
-        </environment>
-        <script asp-src-include="~/js/app.js" asp-append-version="true"></script>
-        <script asp-src-include="~/js/userinfo.js" asp-append-version="true"></script>
-        <script asp-src-include="~/js/site.js" asp-append-version="true"></script>
-        <script>
-            var app = new AppX();
-                     //   app.ShowUserInfo();
-
+    </div>
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous">
         </script>
-        @RenderSection("Scripts", required: false)
+    </environment>
+    <environment exclude="Development">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+
+    </environment>
+    <script asp-src-include="~/js/app.js" asp-append-version="true"></script>
+    <script asp-src-include="~/js/userinfo.js" asp-append-version="true"></script>
+    <script asp-src-include="~/js/site.js" asp-append-version="true"></script>
+    <script>
+        var app = new AppX();
+                         //   app.ShowUserInfo();
+
+    </script>
+    @RenderSection("Scripts", required: false)
 </body>
 </html>

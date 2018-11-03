@@ -18,7 +18,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ResScripts", "ResScripts", 
 		HTMLPage1.html = HTMLPage1.html
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{66833BF6-7436-460A-9FAF-865865B82414}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "Client\Client.csproj", "{66833BF6-7436-460A-9FAF-865865B82414}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedServices", "..\SharedServices\SharedServices.csproj", "{A6224CD6-DC68-42E2-9F5C-695ABF1673F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +52,10 @@ Global
 		{66833BF6-7436-460A-9FAF-865865B82414}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66833BF6-7436-460A-9FAF-865865B82414}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66833BF6-7436-460A-9FAF-865865B82414}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6224CD6-DC68-42E2-9F5C-695ABF1673F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6224CD6-DC68-42E2-9F5C-695ABF1673F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6224CD6-DC68-42E2-9F5C-695ABF1673F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6224CD6-DC68-42E2-9F5C-695ABF1673F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

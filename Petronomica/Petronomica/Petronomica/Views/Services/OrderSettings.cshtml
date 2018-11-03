@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "Настройки заказа";
 }
-
+<a asp-action="Index">Витрина</a>
 <h2>Настройки заказа</h2>
 <div class="container">
     <div class="row">
@@ -30,21 +30,9 @@
                 </dd>
             </dl>
         </div>
-        <div class="mb-3 shadow-sm">
-            <form asp-controller="Services" asp-action="SetOrder" method="post" enctype="multipart/form-data">
-                <input type="hidden" value="model => model.OrderType" />
+        <partial name="_UserInfo" />
+    </div>
+      
 
-
-                <label for="firstName">Адрес электронной почты</label>
-                <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Введите почту" required>
-                <div class="invalid-feedback">
-                    Почтовый адрес обязателен для заполнения
-
-                </div>
-                <button class="btn btn-primary btn-lg btn-block" type="submit">Отправить заявку</button>
-            </form>
-        </div>
-        </div>
-            <a asp-action="Index">Витрина</a>
-            <h4>Детали</h4>
-        </div>
+        <h4>Детали</h4>
+    </div>

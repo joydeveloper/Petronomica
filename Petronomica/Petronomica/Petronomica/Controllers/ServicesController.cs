@@ -10,13 +10,26 @@ using Petronomica.ViewModels;
 namespace Petronomica.Controllers
 {
     //TODO rename iordercontroller!
+    //TODO  transfer scripts from view to file
+    //TODO resize productconfig images
     public class ServicesController : Controller
     {
         private readonly IOrderRepo _orderrepo;
+        public List<ProductExtViewModel> _serviceproducts;
+        private string[] _serviceviewsarr;
+        private string[] _detailsimages;
+        private string[] _mobileimages;
+        private string[] _description;
         public ServicesController(IOrderRepo orderController)
         {
             _orderrepo = orderController;
-          //  _mapper = mapper;
+            _serviceproducts = new List<ProductExtViewModel>();
+            _serviceviewsarr = new string[] { "_Consul", "_Course", "_Diploma", "_Magister","_ComplexAnalyze","_Report","_BP","_InvestBP" };
+            _detailsimages= new string[] { "/images/products/512/consul.png", "'../images/products/512/course.png'", "'../images/products/512/diplom.png'", "'../images/products/512/magister.png'", "'../images/products/512/analyze.png'", "'../images/products/512/practice.png'", "'../images/products/512/businesscredit.png'", "'../images/products/512/businessinvest.png'" };
+            _mobileimages = new string[] { "'../images/products/128/consul.png'", "'../images/products/128/course.png'", "'../images/products/128/diplom.png'", "'../images/products/128/magister.png'", "'../images/products/128/analyze.png'", "'../images/products/128/practice.png'", "'../images/products/128/businesscredit.png'", "'../images/products/128/businessinvest.png'" };
+            _description= new string[] { "/pages/Consul.html", "_Course.html", "_Diploma.html", "_Magister.html", "_ComplexAnalyze.html", "_Report.html", "_BP.html", "_InvestBP.html" };
+            
+
         }
         public async Task<IActionResult> Index()
         {
@@ -28,19 +41,24 @@ namespace Petronomica.Controllers
             return View(await _orderrepo.GetProducts());
 
         }
-     
- 
+        [HttpGet]
+        public PartialViewResult GetServiceType(int id)
+        {
+            return PartialView(_serviceviewsarr[id-1]);
+        }
         public async Task<IActionResult> GetOrderInfo()
         {
             return  PartialView( "_GetOrderInfo");
         }
         // [HttpPost]
-    
+        public IActionResult ProductConfig(int id)
+        {
+            ProductExtViewModel previewproduct = new ProductExtViewModel(_orderrepo.GetProduct(id), _serviceviewsarr[id - 1], _description[id - 1], _detailsimages[id - 1], _mobileimages[id - 1], null);
+            return View(previewproduct);
+        }
         public IActionResult OrderSettings(int id)
         {
-
             return View(new OrderViewModel(_orderrepo.CreatePreOrder(id)));
-
         }
         [HttpGet]
         public PartialViewResult GetUserInfo()
@@ -51,9 +69,9 @@ namespace Petronomica.Controllers
         }
         [Route("Save")]
         [HttpPost]
-        public IActionResult Save(UserMessageViewModel umvm)
+        public IActionResult Save(PreOrderViewModel povm)
         {
-            return Content(umvm.ToString());
+            return Content(povm.ToString());
         }
             public IActionResult SetOrder(ClientOrder co)
         {

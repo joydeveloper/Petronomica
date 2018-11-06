@@ -31,8 +31,14 @@
     }
 
     <order-info order="myorder"></order-info>*@
+@model Petronomica.ViewModels.OrderViewModel
+@using (Html.BeginForm("Index", "Misc", FormMethod.Post))
+{
+   
 
+}
 <div id="begin"></div>
+
 <div class="row row-eq-height" style="padding-top:3%">
     <div class="col text-center">
         <h2>Здравствуй, человек, тянущийся к знаниям!</h2>
@@ -49,6 +55,7 @@
         <p>В разделе услуги вы можете получить консультацию или помощь в написании НИР (научно-исследовательской работы)</p>
         <p>Наша команда - это высококвалифицированные специалисты, нацеленные на предоставление самого качественного материала и решение любых проблем, связанных с написанием НИР.</p>
     </div>
+
 
     <div class="col text-center">
         <h2>Возможности.</h2>

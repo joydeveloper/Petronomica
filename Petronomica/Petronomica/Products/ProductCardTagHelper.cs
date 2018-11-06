@@ -18,7 +18,7 @@ namespace Products
 $@"<div class='card-body'>
     <p class='card-text'>{Product.Name}</p>
       <div class='d-flex justify-content-between align-items-center'>
-             <img id='{Product.Id}'  class='card-img-right' onclick='PreOrder({Product.Id})'  style='cursor:pointer' src={Product.Image}/>
+             <img id='{Product.Id}'  class='card-img-right' onclick='PoductConfig({Product.Id})'  style='cursor:pointer' src={Product.Image}/>
                  <h7 class='text-muted alert {colors[i]}'>От {Product.Price} рублей</h7>
       </div>";
             output.TagName = "div";
@@ -84,7 +84,7 @@ $@"<img class='card-img-top' style='background-color:{topcolors[i]};cursor:point
         {
             i = rand.Next(0, 4);
             var template =
-$@"<img class='card-img-top' style='cursor:pointer' src={Product.Image} alt={Product.Id}  onclick='PreOrder({Product.Id})' onmouseover='CardAnimOver(this)' onmouseout='CardAnimLost(this)'>
+$@"<img class='card-img-top' style='cursor:pointer' src={Product.Image} alt={Product.Id}  onclick='ProductConfig({Product.Id})' onmouseover='CardAnimOver(this)' onmouseout='CardAnimLost(this)'>
         <div class='card-body {css}'  onclick='PreOrder({Product.Id})';>
             <h5 class='card-title'>{Product.Name}</h5>
             <p class='card-text'>Цена от </p>

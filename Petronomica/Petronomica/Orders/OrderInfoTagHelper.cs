@@ -116,5 +116,29 @@ $@"<div class='modal-dialog' role='document'>
             output.Content.AppendHtml("</div></div>");
         }
     }
-
+//    public class OrderConstructorTagHelper : TagHelper
+//    {
+//        public Order Order { get; set; }
+//        public override void Process(TagHelperContext context, TagHelperOutput output)
+//        {
+//            output.TagName = "div";
+//            Order.
+//            string orderInfoContent = $@" <table cellpadding='0' cellspacing='0'>
+//        <tr>
+//            <th colspan = '2' align = 'center'> Person Details </th>
+//</tr>
+//<tr>
+//                   <td> PersonId: </td>
+          
+//                      <td>
+//                          @Html.TextBoxFor(model => model.OrderStatus)
+//                      </td>
+//                      <td></td>
+//                      < td >< input type = 'submit' value = 'Submit' /></ td >
+//                       </tr>
+//                   </table>";
+//            output.Content.AppendHtml("</div>");
+//            output.Content.SetHtmlContent(orderInfoContent);
+//        }
+//    }
 }

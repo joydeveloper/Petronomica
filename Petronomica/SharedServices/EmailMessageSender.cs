@@ -1,6 +1,8 @@
 ﻿using MailKit.Net.Smtp;
 using MimeKit;
+using MimeKit.Utils;
 using System;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace SharedServices
@@ -35,8 +37,10 @@ namespace SharedServices
                 await client.DisconnectAsync(true);
             }
         }
+       
         public async Task Send(EmailType et)
         {
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", "logo2.png");
             var emailMessage = new MimeMessage();
             emailMessage.From.Add(new MailboxAddress(et.Name, et.From));
             emailMessage.To.Add(new MailboxAddress("", et.To));
@@ -49,7 +53,9 @@ namespace SharedServices
                     {
                         builder.Attachments.Add(s);
                     }
-                builder.HtmlBody = et.Message;
+                var image = builder.LinkedResources.Add(path);
+                image.ContentId = MimeUtils.GenerateMessageId();
+                builder.HtmlBody = string.Format(@"<center><img src=""cid:{0}""></center>", image.ContentId)+et.Message;
             }
             catch (Exception e)
             {

@@ -16,8 +16,8 @@ namespace HardCodeData
         public void AddOrder(Order order)
         {
             _orders.Add(order);
-
         }
+
         
     }
 }

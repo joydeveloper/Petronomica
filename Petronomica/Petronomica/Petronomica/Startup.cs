@@ -15,7 +15,7 @@ using WebEssentials.AspNetCore.Pwa;
 namespace Petronomica
 {
     //TODO project version,description etc
-    //TODO error pages
+    //TODO error pages,error logger
     public class Startup
     {
         public IConfigurationRoot Configuration { get; }

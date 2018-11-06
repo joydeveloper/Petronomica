@@ -45,6 +45,7 @@ public class HardCodeOrderRepository : IOrderRepo
     }
     public void SetPreorder(Order order)
     {
+        if(order!=null)
       hardCodeOrders.AddOrder(order);
     }
     public Product GetProduct(int id)

@@ -4,7 +4,7 @@
     ViewData["Title"] = "Настройки заказа";
 }
 <a asp-action="Index">Витрина</a>
-<h2>Настройки заказа</h2>
+<h2>Ваш заказ:</h2>
 <div class="container">
     <div class="row">
         <div class="mb-3 shadow-sm">
@@ -30,9 +30,12 @@
                 </dd>
             </dl>
         </div>
-     
     </div>
-      
-
-        <h4>Детали</h4>
+    <div class="alert alert-info" role="alert">
+        Ваше сообщение: @TempData["YourMessage"]
     </div>
+    <hr>
+    <div class="alert alert-success" role="alert">
+        Ожидайте ответа на почту  @TempData["YourMail"]!
+    </div>
+</div>

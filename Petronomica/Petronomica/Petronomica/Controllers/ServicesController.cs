@@ -72,8 +72,8 @@ namespace Petronomica.Controllers
             TempData["YourMail"] = detail.Email;
             TempData["YourMessage"] = detail.Message;
             OrderViewModel orderViewModel = OrderRoutine(1);
-            ConsulPreOrderEmail consulEmail = new ConsulPreOrderEmail(_lastorderid, detail, orderViewModel, files);
-            await _ms.Send(consulEmail);
+            ConsulPreOrderEmail preOrderEmail = new ConsulPreOrderEmail(_lastorderid, detail, orderViewModel, files);
+            await _ms.Send(preOrderEmail);
             return View("OrderSettings",orderViewModel);
         }
         [HttpPost]
@@ -82,11 +82,30 @@ namespace Petronomica.Controllers
             TempData["YourMail"] = detail.Email;
             TempData["YourMessage"] = detail.Message;
             OrderViewModel orderViewModel = OrderRoutine(2);
-            CoursePreOrderEmail courseEmail = new CoursePreOrderEmail(_lastorderid, detail, orderViewModel, files);
+            CoursePreOrderEmail preOrderEmail = new CoursePreOrderEmail(_lastorderid, detail, orderViewModel, files);
+            await _ms.Send(preOrderEmail);
+            return View("OrderSettings", orderViewModel);
+        }
+        [HttpPost]
+        public async Task<IActionResult> SaveDiploma(DiplomaDetail detail, IFormFile[] files)
+        {
+            TempData["YourMail"] = detail.Email;
+            TempData["YourMessage"] = detail.Message;
+            OrderViewModel orderViewModel = OrderRoutine(3);
+            DiplomaPreOrderEmail courseEmail = new DiplomaPreOrderEmail(_lastorderid, detail, orderViewModel, files);
             await _ms.Send(courseEmail);
             return View("OrderSettings", orderViewModel);
         }
-       
+        [HttpPost]
+        public async Task<IActionResult> SaveMagister(DiplomaDetail detail, IFormFile[] files)
+        {
+            TempData["YourMail"] = detail.Email;
+            TempData["YourMessage"] = detail.Message;
+            OrderViewModel orderViewModel = OrderRoutine(4);
+           MagisterPreOrderEmail courseEmail = new MagisterPreOrderEmail(_lastorderid, detail, orderViewModel, files);
+            await _ms.Send(courseEmail);
+            return View("OrderSettings", orderViewModel);
+        }
         // [HttpPost]
         public IActionResult ProductConfig(int id)
         {
@@ -95,14 +114,11 @@ namespace Petronomica.Controllers
         }
         public IActionResult OrderSettings()
         {
-           
-           
             return View();
         }
         [HttpGet]
         public PartialViewResult GetUserInfo()
         {
-
             UserMessageViewModel userMessageViewModel = new UserMessageViewModel();
             return PartialView("_UserInfo", userMessageViewModel);//, constructorsarr[id]);
         }
@@ -111,42 +127,6 @@ namespace Petronomica.Controllers
         public IActionResult Save(PreOrderViewModel povm)
         {
             return Content(povm.ToString());
-        }
-            public IActionResult SetOrder(ClientOrder co)
-        {
-            
-
-            // _orderrepo.
-            //PreOrder po = new PreOrder();
-            //po.Email = povm.Email;
-            //po.YFiles = povm.YFiles;
-            //po.Message = povm.Message;
-            //po.Title = povm.Title;
-            //try
-            //{
-            //    int z = 0;
-            //    po.YFiles = new string[files.Length];
-            //    foreach (IFormFile doc in files)
-            //    {
-            //        var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/userfiles", doc.FileName);
-            //        var stream = new FileStream(path, FileMode.Create);
-            //        doc.CopyToAsync(stream);
-            //        po.YFiles[z] = path;
-            //        stream.Close();
-            //        z++;
-            //    }
-            //    FastOrderEmail poe = new FastOrderEmail(po);
-            //    FastOrderEmailReport tcoe = new FastOrderEmailReport(po);
-            //    TempData["ResultEmploer"] = ms.Send(poe).ToString();
-            //    TempData["ResultReport"] = ms.Send(tcoe).ToString();
-            //    return View("Success");
-            //}
-            //catch (Exception e)
-            //{
-            //    return Content(e.ToString());
-            //}
-           // _orderrepo.SetPreorder(_order);
-            return View("SuccessOrder");
         }
     }
 }

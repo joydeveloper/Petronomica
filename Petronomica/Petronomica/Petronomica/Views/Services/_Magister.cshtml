@@ -1,23 +1,27 @@
-﻿@model Petronomica.Models.CourseDetail
+﻿@model Petronomica.Models.DiplomaDetail
 <html lang="ru">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title></title>
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="form-validation.css" rel="stylesheet">
+    <title>Заказ диплома</title>
+
+    <!-- Bootstrap core CSS -->
+    @*<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">*@
+
+    <!-- Custom styles for this template -->
+    @*<link href="form-validation.css" rel="stylesheet">*@
 </head>
 <body class="bg-light">
     <div class="container">
         <div class="row">
             <div class="col-md-8 order-md-1">
-                <form asp-controller="Services" asp-action="SaveCourse" method="post" enctype="multipart/form-data">
+                <form asp-controller="Services" asp-action="SaveMagister" method="post" enctype="multipart/form-data">
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="firstName">Адрес электронной почты</label>
-                            <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Введите почту" asp-for="Email">
+                            <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Введите почту" asp-for="Email" required>
                             <div class="invalid-feedback">
                                 Почтовый адрес обязателен для заполнения
                             </div>
@@ -25,15 +29,19 @@
                     </div>
                     <div class="mb-3">
                     </div>
+                
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="theme" asp-for="Theme" checked>
-                        <label class="custom-control-label" for="theme">Тема курсовой</label>
+                        <label class="custom-control-label" for="theme">Тема диплома</label>
                     </div>
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="plan" asp-for="Plan" checked>
                         <label class="custom-control-label" for="plan">Содержание/план работы</label>
                     </div>
-
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="referat" asp-for="Referat" checked>
+                        <label class="custom-control-label" for="referat">Реферат</label>
+                    </div>
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="intro" asp-for="Intro" checked>
                         <label class="custom-control-label" for="intro">Введение</label>
@@ -58,8 +66,16 @@
                         <input type="checkbox" class="custom-control-input" id="literature" asp-for="Literature" checked>
                         <label class="custom-control-label" for="literature">Список используемой литературы</label>
                     </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="presentation" asp-for="Presentation" checked>
+                        <label class="custom-control-label" for="presentation">Презентация</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="presentreport" asp-for="PresentationReport" checked>
+                        <label class="custom-control-label" for="presentreport">Доклад к презентации</label>
+                    </div>
                     <div class="custom-control">
-                        <input type="number" class="custom-control" id="wishmark" value="5" max="5" min="3" asp-for="WishMark">
+                        <input type="number" class="custom-control" id="wishmark" value="5" max="5" min="3" asp-for="WishMark" >
                         <label class="custom-control-label" for="wishmark">Желаемая оценка</label>
                     </div>
                     <div class="custom-file" style="margin-top:5px;">
@@ -75,7 +91,6 @@
             </div>
         </div>
     </div>
-    <p id="result"></p>
     <footer class="my-5 pt-5 text-muted text-center text-small">
         <ul class="list-inline" style="padding-bottom:1%">
             <li class="list-inline-item"><a href="#">Договор-оферта</a></li>
@@ -90,26 +105,27 @@
     <script src="../../dist/js/bootstrap.min.js"></script>
     <script src="../../assets/js/vendor/holder.min.js"></script>
     <script>
-            // Example starter JavaScript for disabling form submissions if there are invalid fields
-            (function () {
-                'use strict';
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
 
-                window.addEventListener('load', function () {
-                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                    var forms = document.getElementsByClassName('needs-validation');
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
 
-                    // Loop over them and prevent submission
-                    var validation = Array.prototype.filter.call(forms, function (form) {
-                        form.addEventListener('submit', function (event) {
-                            if (form.checkValidity() === false) {
-                                event.preventDefault();
-                                event.stopPropagation();
-                            }
-                            form.classList.add('was-validated');
-                        }, false);
-                    });
-                }, false);
-            })();
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
     </script>
 </body>
 </html>
+

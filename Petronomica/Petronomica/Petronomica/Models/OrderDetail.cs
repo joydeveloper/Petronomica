@@ -42,11 +42,12 @@ namespace Petronomica.Models
         public int WishMark { get; set; }
         public bool Literature { get; set; }
     }
-    public class DiplomDetail : CourseDetail
+    public class DiplomaDetail : CourseDetail
     {
         public bool Referat { get; set; }
         public bool Presentation { get; set; }
         public bool PresentationReport { get; set; }
     }
+
 
 }

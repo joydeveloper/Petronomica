@@ -11,7 +11,7 @@ namespace HardCodeData
         {
             products = new List<Product>();
             products.Add(new Product { Id = 1, Name = "Консультация по НИР", Price = 150, Image = "'../images/products/consul.png'" });
-            products.Add(new Product { Id = 2, Name = "Курсовая", Price = 4000, Image = "'../images/products/course.png'" });
+            products.Add(new Product { Id = 2, Name = "Курсовая", Price = 3000, Image = "'../images/products/course.png'" });
             products.Add(new Product { Id = 3, Name = "Диплом", Price = 8000, Image = "'../images/products/diplom.png'" });
             products.Add(new Product { Id = 4, Name = "Магистерская диссертация", Price = 14000, Image = "'../images/products/magister.png'" });
             products.Add(new Product { Id = 5, Name = "Комплексный анализ предприятия", Price = 4500, Image = "'../images/products/analyze.png'" });

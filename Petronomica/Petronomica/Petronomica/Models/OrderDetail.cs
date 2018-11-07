@@ -5,9 +5,12 @@ using System.Threading.Tasks;
 
 namespace Petronomica.Models
 {
-    public class OrderDetail
+    
+    public class OrderDetail:ElementX.BaseX
     {
-       // public string Email { get; set; }
+        public int Id { get; set; }
+        public string Email { get; set; }
+        // public string Email { get; set; }
         //public string Title { get; set; }
         public string Message { get; set; }
         //public DateTime AvailabilityPeriod { get; set; }
@@ -18,7 +21,7 @@ namespace Petronomica.Models
     }
     public class ConsulDetail: OrderDetail
     {
-        public string Email { get; set; }
+      
         //public string Title { get; set; }
         //public DateTime AvailabilityPeriod { get; set; }
         //public bool Plan { get; set; }

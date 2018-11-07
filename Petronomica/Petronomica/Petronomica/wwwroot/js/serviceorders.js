@@ -1,13 +1,17 @@
 ﻿
 function ProductConfigResult(msg) {
     //document.getElementById("result").style.innerHTML = msg;
-   console.log(msg);
     window.location.href = 'OrderSettings?id' + id;
 }
-function PreOrder(id) {
-    var url = 'Services/OrderSettings?id='+id;
-            window.location.href = url;
-}
+//function Result(msg) {
+//    document.getElementById("result").style.innerHTML = msg;
+//   // window.location.href = 'OrderSettings?id' + id;
+//}
+//function PreOrder(id) {
+//    var url = 'Services/OrderSettings?id='+id;
+//    //window.location.href = url;
+//    httpGetAsync(url, Result);
+//}
 function ProductConfig(id) {
     var url = 'Services/ProductConfig?id=' + id;
     window.location.href = url;

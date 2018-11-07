@@ -4,9 +4,7 @@
 *@
 <div class="container">
     <div class="row">
-
         <div class="col-md-8 order-md-1">
-            <h4 class="mb-3">Конструктор диплома</h4>
             <form asp-controller="Services" asp-action="SaveConsul" method="post" enctype="multipart/form-data">
                 <div class="row">
                     <div class="col-md-6 mb-3">
@@ -24,10 +22,10 @@
                     <input type="file" class="btn btn-success" multiple="multiple" name="files" id="files" asp-for="YFiles">
                 </div>
                 <div class="form-group" style="margin-top:5px;">
-                    <label for="comment">Дополнительные пожелания:</label>
+                    <label for="comment">Ваш вопрос:</label>
                     <textarea class="form-control" rows="5" id="comment" asp-for="Message" required></textarea>
                     <div class="invalid-feedback">
-                        Почтовый адрес обязателен для заполнения
+                        Ваш вопрос?
                     </div>
                 </div>
                 <hr class="mb-4">

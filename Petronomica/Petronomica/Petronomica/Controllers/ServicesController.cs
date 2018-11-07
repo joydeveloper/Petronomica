@@ -20,6 +20,7 @@ namespace Petronomica.Controllers
         private readonly IMessageSender _ms;
         private readonly IOrderRepo _orderrepo;
         public List<ProductExtViewModel> _serviceproducts;
+        private int _lastorderid;
         private string[] _serviceviewsarr;
         private string[] _detailsimages;
         private string[] _mobileimages;
@@ -55,29 +56,35 @@ namespace Petronomica.Controllers
         {
             return  PartialView( "_GetOrderInfo");
         }
-        [HttpPost]
-        public async Task<IActionResult> SaveConsul(ConsulDetail consulDetail, IFormFile[] files)
+        private OrderViewModel OrderRoutine(int id)//,EmailType et)
         {
-            TempData["YourMail"] = consulDetail.Email;
-            TempData["YourMessage"] = consulDetail.Message;
-            Order temporder = _orderrepo.CreatePreOrder(1);
+            Order temporder = _orderrepo.CreatePreOrder(id);
             _orderrepo.SetPreorder(temporder);
+            _lastorderid = temporder.Id;
             OrderViewModel ovm = new OrderViewModel(temporder);
-            ConsulPreOrderEmail consulEmail = new ConsulPreOrderEmail(temporder.Id, consulDetail,ovm, files);
+            //await _ms.Send(et);
+            return ovm;
+        }
+       
+        [HttpPost]
+        public async Task<IActionResult> SaveConsul(ConsulDetail detail, IFormFile[] files)
+        {
+            TempData["YourMail"] = detail.Email;
+            TempData["YourMessage"] = detail.Message;
+            OrderViewModel orderViewModel = OrderRoutine(1);
+            ConsulPreOrderEmail consulEmail = new ConsulPreOrderEmail(_lastorderid, detail, orderViewModel, files);
             await _ms.Send(consulEmail);
-            return View("OrderSettings",ovm);
+            return View("OrderSettings",orderViewModel);
         }
         [HttpPost]
-        public async Task<IActionResult> SaveCourse(CourseDetail consulDetail, IFormFile[] files)
+        public async Task<IActionResult> SaveCourse(CourseDetail detail, IFormFile[] files)
         {
-            TempData["YourMail"] = consulDetail.Email;
-            TempData["YourMessage"] = consulDetail.Message;
-            Order temporder = _orderrepo.CreatePreOrder(1);
-            _orderrepo.SetPreorder(temporder);
-            OrderViewModel ovm = new OrderViewModel(temporder);
-            ConsulPreOrderEmail consulEmail = new ConsulPreOrderEmail(temporder.Id, consulDetail, ovm, files);
-            await _ms.Send(consulEmail);
-            return View("OrderSettings", ovm);
+            TempData["YourMail"] = detail.Email;
+            TempData["YourMessage"] = detail.Message;
+            OrderViewModel orderViewModel = OrderRoutine(2);
+            CoursePreOrderEmail courseEmail = new CoursePreOrderEmail(_lastorderid, detail, orderViewModel, files);
+            await _ms.Send(courseEmail);
+            return View("OrderSettings", orderViewModel);
         }
        
         // [HttpPost]
@@ -86,10 +93,11 @@ namespace Petronomica.Controllers
             ProductExtViewModel previewproduct = new ProductExtViewModel(_orderrepo.GetProduct(id), _serviceviewsarr[id - 1], _description[id - 1], _detailsimages[id - 1], _mobileimages[id - 1], null);
             return View(previewproduct);
         }
-        public IActionResult OrderSettings(int id)
+        public IActionResult OrderSettings()
         {
            
-            return View(new OrderViewModel(_orderrepo.CreatePreOrder(id)));
+           
+            return View();
         }
         [HttpGet]
         public PartialViewResult GetUserInfo()

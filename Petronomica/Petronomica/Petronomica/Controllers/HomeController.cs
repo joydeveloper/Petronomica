@@ -9,6 +9,7 @@ using Petronomica.Models;
 namespace Petronomica.Controllers
 {
     //TODO Footer layout
+    //Routes to precahs
     public class HomeController : Controller
     {
         public IActionResult Index()

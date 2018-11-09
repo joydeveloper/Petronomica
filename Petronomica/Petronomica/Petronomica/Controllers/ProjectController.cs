@@ -6,15 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Petronomica.Controllers
 {
-    public class MiscController : Controller
+    public class ProjectController : Controller
     {
         public IActionResult Index()
         {
             return View();
-        }
-        public IActionResult GetMiscInfo()
-        {
-            return  PartialView("_GetMiscInfo");
         }
     }
 }

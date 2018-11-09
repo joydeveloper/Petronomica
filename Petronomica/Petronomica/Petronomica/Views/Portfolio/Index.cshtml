@@ -1,0 +1,10 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+<link rel="stylesheet" asp-href-include="~/css/portfolio.css" asp-append-version="true" />
+<div id="begin"></div>
+
+@{await Html.RenderPartialAsync("_PortfolioInfo");}
+
+<script asp-src-include="~/lib/bootstrap/asset/js/vendor/popper.min.js" asp-append-version="true"></script>

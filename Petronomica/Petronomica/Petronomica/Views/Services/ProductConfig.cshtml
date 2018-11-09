@@ -30,6 +30,7 @@
     }())
 function Result(msg) {
     document.getElementById("result").innerHTML = msg;
+    document.getElementById("result").scrollIntoView();
 }
 function ConcreteProductView() {
     httpGetAsync("@Url.Action("GetServiceType", "Services")?id=" + @Model.Id, Result);

@@ -1,0 +1,173 @@
+﻿body {
+    margin: 0;
+}
+
+.orderbutgroup {
+    position: fixed;
+    z-index: 100;
+    background-image: linear-gradient(to top, #0280D5, #9639D5);
+    background-color: #4471a9;
+    margin: 0;
+    left: 0;
+}
+
+#orderbut {
+    max-height: 100px;
+    z-index: 100;
+    cursor: pointer;
+    color: whitesmoke;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    box-shadow: inset 0px 1px 1px 0 #90ADD2,0px 5px 0px 0 #223955,0px 8px 5px 0 #B3B3B3;
+    -moz-box-shadow: inset 0px 1px 1px 0 #90ADD2,0px 5px 0px 0 #223955,0px 8px 5px 0 #B3B3B3;
+    -webkit-box-shadow: inset 0px 1px 1px 0 #90ADD2,0px 5px 0px 0 #223955,0px 8px 5px 0 #B3B3B3;
+    text-shadow: 0 1px 0 #48576D;
+    background-image: linear-gradient(to top, #0280D5, #9639D5);
+    background-color: #4471a9;
+}
+
+    #orderbut:hover {
+        border: none;
+        color: #FFF;
+        box-shadow: inset 0px 1px 0px 0 #90ADD2,0px 2px 0px 0 #223955,0px 4px 3px 0 #6B6B6B;
+        -moz-box-shadow: inset 0px 1px 0px 0 #90ADD2,0px 2px 0px 0 #223955,0px 4px 3px 0 #6B6B6B;
+        -webkit-box-shadow: inset 0px 1px 0px 0 #90ADD2,0px 2px 0px 0 #223955,0px 4px 3px 0 #6B6B6B;
+        background-color: #BF75F2;
+    }
+
+.helpbar {
+    text-decoration-style: double;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-left: 3px;
+    padding-right: 3px;
+    -moz-box-shadow: 0px 0px 0px 2px #9fb4f2;
+    -webkit-box-shadow: 0px 0px 0px 2px #9fb4f2;
+    box-shadow: 0px 0px 0px 2px #9fb4f2;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7892c2), color-stop(1, #476e9e));
+    background: -moz-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+    background: -webkit-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+    background: -o-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+    background: -ms-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+    background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7892c2', endColorstr='#476e9e',GradientType=0);
+    background-color: #7892c2;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #4e6096;
+    cursor: help;
+    color: #ffffff;
+    font-family: Arial;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #283966;
+}
+
+.card-hover {
+    color: #cf2020;
+}
+
+#questbut {
+    max-height: 100px;
+    z-index: 100;
+    cursor: pointer;
+    color: whitesmoke;
+    text-shadow: 0 1px 0 #48576D;
+    background-image: linear-gradient(to top, #5884BC, #395e8d);
+    background-color: #4471a9;
+}
+
+    #questbut:hover {
+        border: none;
+        color: #FFF;
+        box-shadow: inset 0px 1px 0px 0 #90ADD2,0px 2px 0px 0 #223955,0px 4px 3px 0 #6B6B6B;
+        -moz-box-shadow: inset 0px 1px 0px 0 #90ADD2,0px 2px 0px 0 #223955,0px 4px 3px 0 #6B6B6B;
+        -webkit-box-shadow: inset 0px 1px 0px 0 #90ADD2,0px 2px 0px 0 #223955,0px 4px 3px 0 #6B6B6B;
+        background-color: #395e8d;
+    }
+
+    #questbut:active {
+        text-decoration-color: whitesmoke;
+        background-color: #63A3F5;
+    }
+
+.backgroundcard {
+    background-color: whitesmoke;
+}
+
+#orderbut:active {
+    text-decoration-color: whitesmoke;
+    background-color: #63A3F5;
+}
+
+@media (max-width:573px) {
+    #orderbut {
+        display: none;
+    }
+}
+
+@media (min-width:573px) {
+    #orderbut {
+        font-size: 7px;
+    }
+
+    .orderbutgroup {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    #orderbut {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 700px) {
+    .dr-breakout-btn {
+        display: none;
+    }
+
+
+    .dr-breakout {
+        display: inline;
+        background: transparent;
+        box-shadow: none;
+        border: none;
+        position: relative;
+        margin: 0;
+    }
+
+        .dr-breakout li {
+            display: inline;
+        }
+
+            .dr-breakout li a {
+                display: inline-block;
+                padding: 6px 12px;
+                margin-bottom: 0;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.42857143;
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: middle;
+                -ms-touch-action: manipulation;
+                touch-action: manipulation;
+                cursor: pointer;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                background-image: none;
+                border-radius: 4px;
+                color: #fff;
+                background-color: #507281;
+            }
+}
+
+.btn-group {
+    /*left: 40%;*/
+    margin: 50px 0;
+}

@@ -52,7 +52,7 @@ namespace Petronomica.Controllers
         {
             return PartialView(_serviceviewsarr[id-1]);
         }
-        public async Task<IActionResult> GetOrderInfo()
+        public IActionResult GetOrderInfo()
         {
             return  PartialView( "_GetOrderInfo");
         }

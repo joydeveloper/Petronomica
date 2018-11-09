@@ -15042,3 +15042,65 @@ Request finished in 38.6721ms 200 text/html; charset=utf-8
 Request starting HTTP/1.1 POST http://localhost:62292/Services/FastOrder multipart/form-data; boundary=----WebKitFormBoundarykA0GbBtAnRnNCA1a 272117
 Route matched with {action = "FastOrder", controller = "Services"}. Executing action Petronomica.Controllers.ServicesController.FastOrder (Petronomica1.0)
 Executing action method Petronomica.Controllers.ServicesController.FastOrder (Petronomica1.0) with arguments (Petronomica.ViewModels.PreOrderViewModel, Microsoft.AspNetCore.Http.IFormFile[], Petronomica.Services.MessageService) - Validation state: Valid
+Request starting HTTP/1.1 GET http://localhost:62292/  
+Failed to determine the https port for redirect.
+Route matched with {action = "Index", controller = "Home"}. Executing action Petronomica.Controllers.HomeController.Index (Petronomica1.0)
+Executing action method Petronomica.Controllers.HomeController.Index (Petronomica1.0) - Validation state: Valid
+Executed action method Petronomica.Controllers.HomeController.Index (Petronomica1.0), returned result Microsoft.AspNetCore.Mvc.ViewResult in 5.671ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 277.1905ms.
+Executed action Petronomica.Controllers.HomeController.Index (Petronomica1.0) in 320.321ms
+Request starting HTTP/1.1 GET http://localhost:62292/css/site.css  
+Request finished in 559.5402ms 200 text/html; charset=utf-8
+The file /css/site.css was not modified
+Request finished in 20.4412ms 304 text/css
+Request starting HTTP/1.1 GET http://localhost:62292/images/banner1.svg  
+Request starting HTTP/1.1 GET http://localhost:62292/lib/bootstrap/dist/js/bootstrap.js  
+Request starting HTTP/1.1 GET http://localhost:62292/lib/jquery/dist/jquery.js  
+Request starting HTTP/1.1 GET http://localhost:62292/images/banner2.svg  
+The file /lib/jquery/dist/jquery.js was not modified
+The file /lib/bootstrap/dist/js/bootstrap.js was not modified
+Request finished in 8.6881ms 304 application/javascript
+Request finished in 10.7765ms 304 application/javascript
+The file /images/banner1.svg was not modified
+Request finished in 248.8523ms 304 image/svg+xml
+Request finished in 253.1975ms 304 image/svg+xml
+Request starting HTTP/1.1 GET http://localhost:62292/images/banner3.svg  
+Request starting HTTP/1.1 GET http://localhost:62292/images/whatsup.png  
+The file /images/whatsup.png was not modified
+The file /images/banner3.svg was not modified
+Request finished in 15.6434ms 304 image/svg+xml
+Request finished in 14.8935ms 304 image/png
+Request starting HTTP/1.1 GET http://localhost:62292/images/vk-icon.png  
+Request starting HTTP/1.1 GET http://localhost:62292/images/sup.png  
+The file /images/sup.png was not modified
+The file /images/vk-icon.png was not modified
+Request finished in 7.874ms 304 image/png
+Request finished in 9.5414ms 304 image/png
+Request starting HTTP/1.1 GET http://localhost:62292/css/logo2.svg  
+The file /css/logo2.svg was not modified
+Request finished in 5.0553ms 304 image/svg+xml
+Request starting HTTP/1.1 GET http://localhost:62292/manifest.json  
+The file /manifest.json was not modified
+Request finished in 8.0455ms 304 application/json
+Request starting HTTP/1.1 GET http://localhost:62292/icon/hd_lo  
+Processing request /icon/hd_lo
+Request finished in 6.5277ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/Portfolio  
+Route matched with {action = "Index", controller = "Portfolio"}. Executing action Petronomica.Controllers.PortfolioController.Index (Petronomica1.0)
+Executing action method Petronomica.Controllers.PortfolioController.Index (Petronomica1.0) - Validation state: Valid
+Executed action method Petronomica.Controllers.PortfolioController.Index (Petronomica1.0), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.3461ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 8.2343ms.
+Executed action Petronomica.Controllers.PortfolioController.Index (Petronomica1.0) in 17.7414ms
+Request finished in 27.7189ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/icon/hd_lo  
+Processing request /icon/hd_lo
+Request finished in 3.7844ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:62292/serviceworker  
+Route matched with {action = "ServiceWorkerAsync", controller = "Pwa"}. Executing action WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa)
+Executing action method WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa) - Validation state: Valid
+Executed action method WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa), returned result Microsoft.AspNetCore.Mvc.ContentResult in 25.7309ms.
+Executing ContentResult with HTTP Response ContentType of application/javascript; charset=utf-8
+Executed action WebEssentials.AspNetCore.Pwa.PwaController.ServiceWorkerAsync (WebEssentials.AspNetCore.Pwa) in 35.6502ms
+Request finished in 50.3981ms 200 application/javascript; charset=utf-8

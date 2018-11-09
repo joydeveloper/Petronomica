@@ -12,7 +12,7 @@ using SharedServices;
 
 namespace Petronomica.Controllers
 {
-    //TODO rename iordercontroller!
+    
     //TODO  transfer scripts from view to file
     //TODO resize productconfig images
     public class ServicesController : Controller

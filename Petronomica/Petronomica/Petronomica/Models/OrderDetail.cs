@@ -35,6 +35,26 @@ namespace Petronomica.Models
         public bool Presentation { get; set; }
         public bool PresentationReport { get; set; }
     }
+    public class AFDetail : OrderDetail
+    {
+        public bool GorizontalA { get; set; }
+        public bool GorizontalB { get; set; }
+        public bool Liquid{ get; set; }
+        public bool CapitalAnal { get; set; }
+        public bool BusinessActivity{ get; set; }
+        public bool FinancialCycle { get; set; }
+        public bool FinancialState { get; set; }
+        public bool LuquidRatio { get; set; }
+        public bool MoneyFlow { get; set; }
+        public bool FinancialStability { get; set; }
+        public bool MoneyFlowRatio { get; set; }
+        public bool FinancialStabilityDefine { get; set; }
+        public bool RelativeStability { get; set; }
+        public bool RaitingCalc { get; set; }
+        public bool FinresultReport { get; set; }
+        public bool Profitability { get; set; }
+
+    }
     public class SearchPaid : OrderDetail
     {
         public string Infotype { get; set; }

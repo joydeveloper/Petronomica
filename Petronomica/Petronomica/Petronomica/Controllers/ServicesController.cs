@@ -12,9 +12,10 @@ using SharedServices;
 
 namespace Petronomica.Controllers
 {
-    
+
     //TODO  transfer scripts from view to file
     //TODO resize productconfig images
+    //TODO main button collapsel
     public class ServicesController : Controller
     {
         private readonly IMessageSender _ms;
@@ -29,32 +30,28 @@ namespace Petronomica.Controllers
         {
             _orderrepo = orderController;
             _serviceproducts = new List<ProductExtViewModel>();
-            _serviceviewsarr = new string[] { "_Consul", "_Course", "_Diploma", "_Magister","_ComplexAnalyze","_Report","_BP","_InvestBP" };
-            _detailsimages= new string[] { "/images/products/512/consul.png", "/images/products/512/course.png", "/images/products/512/diplom.png", "/images/products/512/magister.png", "/images/products/512/analyze.png", "/images/products/512/practice.png", "/images/products/512/businesscredit.png", "/images/products/512/businessinvest.png" };
-            _mobileimages = new string[] { "/images/products/128/consul.png", "/images/products/128/course.png", "/images/products/128/diplom.png", "/images/products/128/magister.png", "/images/products/128/analyze.png", "/images/products/128/practice.png", "/images/products/128/businesscredit.png", "/images/products/128/businessinvest.png" };
-            _description= new string[] { "/pages/Consul.html", "/pages/Course.html", "/pages/Diploma.html", "/pages/Magister.html", "/pages/ComplexAnalyze.html", "/pages/Report.html", "/pages/BP.html", "/pages/InvestBP.html" };
+            _serviceviewsarr = new string[] { "_Consul", "_Course", "_Diploma", "_Magister", "_ComplexAnalyze", "_Report", "_BP", "_InvestBP", "_SearchPaid" };
+            _detailsimages = new string[] { "/images/products/512/consul.png", "/images/products/512/course.png", "/images/products/512/diplom.png", "/images/products/512/magister.png", "/images/products/512/analyze.png", "/images/products/512/practice.png", "/images/products/512/businesscredit.png", "/images/products/512/businessinvest.png", "/images/products/512/search.png" };
+            _mobileimages = new string[] { "/images/products/128/consul.png", "/images/products/128/course.png", "/images/products/128/diplom.png", "/images/products/128/magister.png", "/images/products/128/analyze.png", "/images/products/128/practice.png", "/images/products/128/businesscredit.png", "/images/products/128/businessinvest.png", "/images/products/512/search.png" };
+            _description = new string[] { "/pages/Consul.html", "/pages/Course.html", "/pages/Diploma.html", "/pages/Magister.html", "/pages/ComplexAnalyze.html", "/pages/Report.html", "/pages/BP.html", "/pages/InvestBP.html", "/pages/SearchPaid.html" };
             _ms = ms;
-
         }
-     
         public async Task<IActionResult> Index()
         {
             return View(await _orderrepo.GetProducts());
-          
         }
         public async Task<IActionResult> CreatePanel()
         {
             return View(await _orderrepo.GetProducts());
-
         }
         [HttpGet]
         public PartialViewResult GetServiceType(int id)
         {
-            return PartialView(_serviceviewsarr[id-1]);
+            return PartialView(_serviceviewsarr[id - 1]);
         }
         public IActionResult GetOrderInfo()
         {
-            return  PartialView( "_GetOrderInfo");
+            return PartialView("_GetOrderInfo");
         }
         private OrderViewModel OrderRoutine(int id)//,EmailType et)
         {
@@ -62,10 +59,8 @@ namespace Petronomica.Controllers
             _orderrepo.SetPreorder(temporder);
             _lastorderid = temporder.Id;
             OrderViewModel ovm = new OrderViewModel(temporder);
-            //await _ms.Send(et);
             return ovm;
         }
-       
         [HttpPost]
         public async Task<IActionResult> SaveConsul(ConsulDetail detail, IFormFile[] files)
         {
@@ -74,7 +69,7 @@ namespace Petronomica.Controllers
             OrderViewModel orderViewModel = OrderRoutine(1);
             ConsulPreOrderEmail preOrderEmail = new ConsulPreOrderEmail(_lastorderid, detail, orderViewModel, files);
             await _ms.Send(preOrderEmail);
-            return View("OrderSettings",orderViewModel);
+            return View("OrderSettings", orderViewModel);
         }
         [HttpPost]
         public async Task<IActionResult> SaveCourse(CourseDetail detail, IFormFile[] files)
@@ -102,7 +97,37 @@ namespace Petronomica.Controllers
             TempData["YourMail"] = detail.Email;
             TempData["YourMessage"] = detail.Message;
             OrderViewModel orderViewModel = OrderRoutine(4);
-           MagisterPreOrderEmail courseEmail = new MagisterPreOrderEmail(_lastorderid, detail, orderViewModel, files);
+            MagisterPreOrderEmail courseEmail = new MagisterPreOrderEmail(_lastorderid, detail, orderViewModel, files);
+            await _ms.Send(courseEmail);
+            return View("OrderSettings", orderViewModel);
+        }
+        [HttpPost]
+        public async Task<IActionResult> SaveSearchPaid(SearchPaidDetail detail, IFormFile[] files)
+        {
+            TempData["YourMail"] = detail.Email;
+            TempData["YourMessage"] = detail.Message;
+            OrderViewModel orderViewModel = OrderRoutine(4);
+            SearchPreOrderEmail courseEmail = new SearchPreOrderEmail(_lastorderid, detail, orderViewModel, files);
+            await _ms.Send(courseEmail);
+            return View("OrderSettings", orderViewModel);
+        }
+        [HttpPost]
+        public async Task<IActionResult> SaveComplexAnalyze(AFDetail detail, IFormFile[] files)
+        {
+            TempData["YourMail"] = detail.Email;
+            TempData["YourMessage"] = detail.Message;
+            OrderViewModel orderViewModel = OrderRoutine(4);
+            AFPreOrderEmail courseEmail = new AFPreOrderEmail(_lastorderid, detail, orderViewModel, files);
+            await _ms.Send(courseEmail);
+            return View("OrderSettings", orderViewModel);
+        }
+        [HttpPost]
+        public async Task<IActionResult> SaveCreditBP(CreditBPDetal detail, IFormFile[] files)
+        {
+            TempData["YourMail"] = detail.Email;
+            TempData["YourMessage"] = detail.Message;
+            OrderViewModel orderViewModel = OrderRoutine(4);
+            AFPreOrderEmail courseEmail = new AFPreOrderEmail(_lastorderid, detail, orderViewModel, files);
             await _ms.Send(courseEmail);
             return View("OrderSettings", orderViewModel);
         }

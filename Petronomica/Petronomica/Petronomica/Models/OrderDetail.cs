@@ -37,13 +37,14 @@ namespace Petronomica.Models
     }
     public class AFDetail : OrderDetail
     {
+
         public bool GorizontalA { get; set; }
         public bool GorizontalB { get; set; }
         public bool Liquid{ get; set; }
-        public bool CapitalAnal { get; set; }
+      //  public bool CapitalAnal { get; set; }
         public bool BusinessActivity{ get; set; }
         public bool FinancialCycle { get; set; }
-        public bool FinancialState { get; set; }
+       // public bool FinancialState { get; set; }
         public bool LuquidRatio { get; set; }
         public bool MoneyFlow { get; set; }
         public bool FinancialStability { get; set; }
@@ -55,7 +56,7 @@ namespace Petronomica.Models
         public bool Profitability { get; set; }
 
     }
-    public class SearchPaid : OrderDetail
+    public class SearchPaidDetail : OrderDetail
     {
         public string Infotype { get; set; }
         public DateTime dateTimePublication { get; set; }
@@ -74,14 +75,14 @@ namespace Petronomica.Models
         public bool AnalRisk { get; set; }
         public bool FinancialPlan { get; set; }
     }
-    public class InvestBP : BP
+    public class InvestBPDetail : BP
     {
         public bool FirmDescription { get; set; }
         public bool Production { get; set; }
         public bool Effective { get; set; }
        
     }
-    public class CreditBP : BP
+    public class CreditBPDetal : BP
     {
         public bool FirmStatus { get; set; }
         public bool Industry { get; set; }

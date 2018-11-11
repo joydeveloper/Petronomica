@@ -321,6 +321,292 @@ namespace Petronomica.Models
             }
         }
     }
+    public class SearchPreOrderEmail : PreOrderEmail<SearchPaidDetail>
+    {
+        public SearchPreOrderEmail(int id, SearchPaidDetail cd, OrderViewModel orderViewModel, IFormFile[] files) : base(id, cd, orderViewModel, files)
+        {
+            To = cd.Email;
+        }
+        protected override string CreateMsg(int id, OrderViewModel orderViewModel, IFormFile[] files)
+        {
+            try
+            {
+                int z = 0;
+                _details.YFiles = new string[files.Length];
+                foreach (IFormFile doc in files)
+                {
+                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/userfiles", doc.FileName);
+                    var stream = new FileStream(path, FileMode.Create);
+                    doc.CopyToAsync(stream);
+                    _details.YFiles[z] = path;
+                    stream.Close();
+                    z++;
+                }
+
+                StringBuilder sb = new StringBuilder();
+                sb.Append("<hr><hr>");
+                sb.Append("<div>");
+                sb.Append("<h3 style='text-align:right;'>Дата:" + orderViewModel.OrderDate + "</h3>");
+                sb.Append("</div>");
+                sb.Append("<h3>" + orderViewModel.OrderStatus + "№ " + id + "</h3>");
+                sb.Append("<h3>Тип:" + orderViewModel.OrderType + "</h3>");
+                sb.Append("<h3>Ваш вопрос:" + _details.Message + "</h3>");
+                sb.Append("<hr>");
+                sb.Append("<h3>Адрес электронной почты:" + _details.Email + "</h3>");
+                sb.Append("<h3>Вид информации-" + _details.Infotype + "</h3>");
+                sb.Append("<h3>Год публикации(не позднее)" + _details.dateTimePublication + "</h3>");
+                sb.Append("<h3>Источники" + _details.Sources + "</h3>");
+                sb.Append("<h3>Количество источников" + _details.SourcesCount + "</h3>");
+                sb.Append("<h3>Срок готовности к" + _details.AvailabilityPeriod + "</h3>");
+  
+                _details.Message += sb.ToString();
+                return sb.ToString();
+            }
+            catch (Exception e)
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.Append("<hr><hr>");
+                sb.Append("<div>");
+                sb.Append("<h3 style='text-align:right;'>Дата:" + orderViewModel.OrderDate + "</h3>");
+                sb.Append("</div>");
+                sb.Append("<h3>" + orderViewModel.OrderStatus + "№ " + id + "</h3>");
+                sb.Append("<h3>Тип:" + orderViewModel.OrderType + "</h3>");
+                sb.Append("<h3>Ваш вопрос:" + _details.Message + "</h3>");
+                sb.Append("<hr>");
+                sb.Append("<h3>Адрес электронной почты:" + _details.Email + "</h3>");
+                sb.Append("<h3>Вид информации-" + _details.Infotype + "</h3>");
+                sb.Append("<h3>Год публикации(не позднее)" + _details.dateTimePublication + "</h3>");
+                sb.Append("<h3>Источники" + _details.Sources + "</h3>");
+                sb.Append("<h3>Количество источников" + _details.SourcesCount + "</h3>");
+                sb.Append("<h3>Срок готовности к" + _details.AvailabilityPeriod + "</h3>");
+                _details.Message += sb.ToString();
+                return sb.ToString();
+            }
+        }
+    }
+    public class AFPreOrderEmail : PreOrderEmail<AFDetail>
+    {
+        public AFPreOrderEmail(int id, AFDetail cd, OrderViewModel orderViewModel, IFormFile[] files) : base(id, cd, orderViewModel, files)
+        {
+            To = cd.Email;
+        }
+        protected override string CreateMsg(int id, OrderViewModel orderViewModel, IFormFile[] files)
+        {
+            try
+            {
+                int z = 0;
+                _details.YFiles = new string[files.Length];
+                foreach (IFormFile doc in files)
+                {
+                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/userfiles", doc.FileName);
+                    var stream = new FileStream(path, FileMode.Create);
+                    doc.CopyToAsync(stream);
+                    _details.YFiles[z] = path;
+                    stream.Close();
+                    z++;
+                }
+                StringBuilder sb = new StringBuilder();
+                sb.Append("<hr><hr>");
+                sb.Append("<div>");
+                sb.Append("<h3 style='text-align:right;'>Дата:" + orderViewModel.OrderDate + "</h3>");
+                sb.Append("</div>");
+                sb.Append("<h3>" + orderViewModel.OrderStatus + "№ " + id + "</h3>");
+                sb.Append("<h3>Тип:" + orderViewModel.OrderType + "</h3>");
+                sb.Append("<h3>Ваш вопрос:" + _details.Message + "</h3>");
+                sb.Append("<hr>");
+                sb.Append("<h3>Адрес электронной почты:" + _details.Email + "</h3>");
+                sb.Append("<h3>Горизонтальный(временный)" + _details.GorizontalA+ "</h3>");
+                sb.Append("<h3>Вертикальный(структурный)" + _details.GorizontalB + "</h3>");
+                sb.Append("<h3>Анализ ликвидности" + _details.Liquid + "</h3>");
+                sb.Append("<h3>Анализ оборачиваемости" + _details.BusinessActivity + "</h3>");
+                sb.Append("<h3>Характеристика этапов финансового цикла" + _details.FinancialCycle + "</h3>");
+                sb.Append("<h3>Показатели ликвидности и платежеспособности" + _details.LuquidRatio + "</h3>");
+                sb.Append("<h3>Показатели достаточности денежного потока" + _details.MoneyFlow + "</h3>");
+                sb.Append("<h3>Определение типа финансовой устойчивости" + _details.FinancialStabilityDefine+ "</h3>");
+                sb.Append("<h3>Анализ относительных показателей финансовой устойчивости" + _details.RelativeStability + "</h3>");
+                sb.Append("<h3>Расчет рейтинга заемщика" + _details.RaitingCalc + "</h3>");
+                sb.Append("<h3>Анализ отчета о прибылях и убытках" + _details.FinresultReport + "</h3>");
+                sb.Append("<h3>Анализ рентабельности" + _details.Profitability+ "</h3>");
+                _details.Message += sb.ToString();
+                return sb.ToString();
+            }
+            catch (Exception e)
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.Append("<hr><hr>");
+                sb.Append("<div>");
+                sb.Append("<h3 style='text-align:right;'>Дата:" + orderViewModel.OrderDate + "</h3>");
+                sb.Append("</div>");
+                sb.Append("<h3>" + orderViewModel.OrderStatus + "№ " + id + "</h3>");
+                sb.Append("<h3>Тип:" + orderViewModel.OrderType + "</h3>");
+                sb.Append("<h3>Ваш вопрос:" + _details.Message + "</h3>");
+                sb.Append("<hr>");
+                sb.Append("<h3>Адрес электронной почты:" + _details.Email + "</h3>");
+                sb.Append("<h3>Горизонтальный(временный)" + _details.GorizontalA + "</h3>");
+                sb.Append("<h3>Вертикальный(структурный)" + _details.GorizontalB + "</h3>");
+                sb.Append("<h3>Анализ ликвидности" + _details.Liquid + "</h3>");
+                sb.Append("<h3>Анализ оборачиваемости" + _details.BusinessActivity + "</h3>");
+                sb.Append("<h3>Характеристика этапов финансового цикла" + _details.FinancialCycle + "</h3>");
+                sb.Append("<h3>Показатели ликвидности и платежеспособности" + _details.LuquidRatio + "</h3>");
+                sb.Append("<h3>Показатели достаточности денежного потока" + _details.MoneyFlow + "</h3>");
+                sb.Append("<h3>Определение типа финансовой устойчивости" + _details.FinancialStabilityDefine + "</h3>");
+                sb.Append("<h3>Анализ относительных показателей финансовой устойчивости" + _details.RelativeStability + "</h3>");
+                sb.Append("<h3>Расчет рейтинга заемщика" + _details.RaitingCalc + "</h3>");
+                sb.Append("<h3>Анализ отчета о прибылях и убытках" + _details.FinresultReport + "</h3>");
+                sb.Append("<h3>Анализ рентабельности" + _details.Profitability + "</h3>");
+                _details.Message += sb.ToString();
+                return sb.ToString();
+            }
+        }
+    }
+    public class CreditInvestPreOrderEmail : PreOrderEmail<CreditBPDetal>
+    {
+        public CreditInvestPreOrderEmail(int id,CreditBPDetal cd, OrderViewModel orderViewModel, IFormFile[] files) : base(id, cd, orderViewModel, files)
+        {
+            To = cd.Email;
+        }
+        protected override string CreateMsg(int id, OrderViewModel orderViewModel, IFormFile[] files)
+        {
+            try
+            {
+                int z = 0;
+                _details.YFiles = new string[files.Length];
+                foreach (IFormFile doc in files)
+                {
+                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/userfiles", doc.FileName);
+                    var stream = new FileStream(path, FileMode.Create);
+                    doc.CopyToAsync(stream);
+                    _details.YFiles[z] = path;
+                    stream.Close();
+                    z++;
+                }
+                StringBuilder sb = new StringBuilder();
+                sb.Append("<hr><hr>");
+                sb.Append("<div>");
+                sb.Append("<h3 style='text-align:right;'>Дата:" + orderViewModel.OrderDate + "</h3>");
+                sb.Append("</div>");
+                sb.Append("<h3>" + orderViewModel.OrderStatus + "№ " + id + "</h3>");
+                sb.Append("<h3>Тип:" + orderViewModel.OrderType + "</h3>");
+                sb.Append("<h3>Ваш вопрос:" + _details.Message + "</h3>");
+                sb.Append("<hr>");
+                sb.Append("<h3>Адрес электронной почты:" + _details.Email + "</h3>");
+                sb.Append("<h3>Горизонтальный(временный)" + _details.Intro + "</h3>");
+                sb.Append("<h3>Вертикальный(структурный)" + _details.FirmStatus + "</h3>");
+                sb.Append("<h3>Вертикальный(структурный)" + _details.Industry + "</h3>");
+                sb.Append("<h3>Вертикальный(структурный)" + _details.MarketAnal + "</h3>");
+                sb.Append("<h3>Анализ ликвидности" + _details.Marketing + "</h3>");
+                sb.Append("<h3>Анализ оборачиваемости" + _details.ProductionPlan + "</h3>");
+                sb.Append("<h3>Характеристика этапов финансового цикла" + _details.FinancialPlan + "</h3>");
+                sb.Append("<h3>Показатели ликвидности и платежеспособности" + _details.Economic + "</h3>");
+                sb.Append("<h3>Показатели ликвидности и платежеспособности" + _details.FinancialPlan + "</h3>");
+                sb.Append("<h3>Показатели достаточности денежного потока" + _details.AnalRisk + "</h3>");
+                sb.Append("<h3>Определение типа финансовой устойчивости" + _details.PaidCalendar + "</h3>");
+                sb.Append("<h3>Определение типа финансовой устойчивости" + _details.Conclusion + "</h3>");
+                sb.Append("<h3>Анализ относительных показателей финансовой устойчивости" + _details.Additional + "</h3>");
+                _details.Message += sb.ToString();
+                return sb.ToString();
+            }
+            catch (Exception e)
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.Append("<hr><hr>");
+                sb.Append("<div>");
+                sb.Append("<h3 style='text-align:right;'>Дата:" + orderViewModel.OrderDate + "</h3>");
+                sb.Append("</div>");
+                sb.Append("<h3>" + orderViewModel.OrderStatus + "№ " + id + "</h3>");
+                sb.Append("<h3>Тип:" + orderViewModel.OrderType + "</h3>");
+                sb.Append("<h3>Ваш вопрос:" + _details.Message + "</h3>");
+                sb.Append("<hr>");
+                sb.Append("<h3>Адрес электронной почты:" + _details.Email + "</h3>");
+                sb.Append("<h3>Горизонтальный(временный)" + _details.Intro + "</h3>");
+                sb.Append("<h3>Вертикальный(структурный)" + _details.FirmStatus + "</h3>");
+                sb.Append("<h3>Вертикальный(структурный)" + _details.Industry + "</h3>");
+                sb.Append("<h3>Вертикальный(структурный)" + _details.MarketAnal + "</h3>");
+                sb.Append("<h3>Анализ ликвидности" + _details.Marketing + "</h3>");
+                sb.Append("<h3>Анализ оборачиваемости" + _details.ProductionPlan + "</h3>");
+                sb.Append("<h3>Характеристика этапов финансового цикла" + _details.FinancialPlan + "</h3>");
+                sb.Append("<h3>Показатели ликвидности и платежеспособности" + _details.Economic + "</h3>");
+                sb.Append("<h3>Показатели ликвидности и платежеспособности" + _details.FinancialPlan + "</h3>");
+                sb.Append("<h3>Показатели достаточности денежного потока" + _details.AnalRisk + "</h3>");
+                sb.Append("<h3>Определение типа финансовой устойчивости" + _details.PaidCalendar + "</h3>");
+                sb.Append("<h3>Определение типа финансовой устойчивости" + _details.Conclusion + "</h3>");
+                sb.Append("<h3>Анализ относительных показателей финансовой устойчивости" + _details.Additional + "</h3>");
+                _details.Message += sb.ToString();
+                return sb.ToString();
+            }
+        }
+    }
+    public class InvestBPPreOrderEmail : PreOrderEmail<InvestBPDetail>
+    {
+        public InvestBPPreOrderEmail(int id, InvestBPDetail cd, OrderViewModel orderViewModel, IFormFile[] files) : base(id, cd, orderViewModel, files)
+        {
+            To = cd.Email;
+        }
+        protected override string CreateMsg(int id, OrderViewModel orderViewModel, IFormFile[] files)
+        {
+            try
+            {
+                int z = 0;
+                _details.YFiles = new string[files.Length];
+                foreach (IFormFile doc in files)
+                {
+                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/userfiles", doc.FileName);
+                    var stream = new FileStream(path, FileMode.Create);
+                    doc.CopyToAsync(stream);
+                    _details.YFiles[z] = path;
+                    stream.Close();
+                    z++;
+                }
+                StringBuilder sb = new StringBuilder();
+                sb.Append("<hr><hr>");
+                sb.Append("<div>");
+                sb.Append("<h3 style='text-align:right;'>Дата:" + orderViewModel.OrderDate + "</h3>");
+                sb.Append("</div>");
+                sb.Append("<h3>" + orderViewModel.OrderStatus + "№ " + id + "</h3>");
+                sb.Append("<h3>Тип:" + orderViewModel.OrderType + "</h3>");
+                sb.Append("<h3>Ваш вопрос:" + _details.Message + "</h3>");
+                sb.Append("<hr>");
+                sb.Append("<h3>Адрес электронной почты:" + _details.Email + "</h3>");
+                sb.Append("<h3>Горизонтальный(временный)" + _details.Intro + "</h3>");
+                sb.Append("<h3>Вертикальный(структурный)" + _details.FirmDescription + "</h3>");
+                sb.Append("<h3>Вертикальный(структурный)" + _details.Production + "</h3>");
+                sb.Append("<h3>Анализ ликвидности" + _details.Marketing + "</h3>");
+                sb.Append("<h3>Анализ оборачиваемости" + _details.ProductionPlan + "</h3>");
+                sb.Append("<h3>Характеристика этапов финансового цикла" + _details.FinancialPlan + "</h3>");
+                sb.Append("<h3>Показатели ликвидности и платежеспособности" + _details.Effective + "</h3>");
+                sb.Append("<h3>Показатели достаточности денежного потока" + _details.AnalRisk + "</h3>");
+                sb.Append("<h3>Определение типа финансовой устойчивости" + _details.Conclusion + "</h3>");
+                sb.Append("<h3>Анализ относительных показателей финансовой устойчивости" + _details.Additional + "</h3>");
+                _details.Message += sb.ToString();
+                return sb.ToString();
+            }
+            catch (Exception e)
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.Append("<hr><hr>");
+                sb.Append("<div>");
+                sb.Append("<h3 style='text-align:right;'>Дата:" + orderViewModel.OrderDate + "</h3>");
+                sb.Append("</div>");
+                sb.Append("<h3>" + orderViewModel.OrderStatus + "№ " + id + "</h3>");
+                sb.Append("<h3>Тип:" + orderViewModel.OrderType + "</h3>");
+                sb.Append("<h3>Ваш вопрос:" + _details.Message + "</h3>");
+                sb.Append("<hr>");
+                sb.Append("<h3>Адрес электронной почты:" + _details.Email + "</h3>");
+                sb.Append("<h3>Горизонтальный(временный)" + _details.Intro + "</h3>");
+                sb.Append("<h3>Вертикальный(структурный)" + _details.FirmDescription + "</h3>");
+                sb.Append("<h3>Вертикальный(структурный)" + _details.Production + "</h3>");
+                sb.Append("<h3>Анализ ликвидности" + _details.Marketing + "</h3>");
+                sb.Append("<h3>Анализ оборачиваемости" + _details.ProductionPlan + "</h3>");
+                sb.Append("<h3>Характеристика этапов финансового цикла" + _details.FinancialPlan + "</h3>");
+                sb.Append("<h3>Показатели ликвидности и платежеспособности" + _details.Effective + "</h3>");
+                sb.Append("<h3>Показатели достаточности денежного потока" + _details.AnalRisk + "</h3>");
+                sb.Append("<h3>Определение типа финансовой устойчивости" + _details.Conclusion + "</h3>");
+                sb.Append("<h3>Анализ относительных показателей финансовой устойчивости" + _details.Additional + "</h3>");
+                _details.Message += sb.ToString();
+                return sb.ToString();
+            }
+        }
+    }
 }
 
 

@@ -30,7 +30,7 @@ namespace Petronomica.Controllers
         {
             _orderrepo = orderController;
             _serviceproducts = new List<ProductExtViewModel>();
-            _serviceviewsarr = new string[] { "_Consul", "_Course", "_Diploma", "_Magister", "_ComplexAnalyze", "_Report", "_BP", "_InvestBP", "_SearchPaid" };
+            _serviceviewsarr = new string[] { "_Consul", "_Course", "_Diploma", "_Magister", "_ComplexAnalyze", "_Report", "_CreditBP", "_InvestBP", "_SearchPaid" };
             _detailsimages = new string[] { "/images/products/512/consul.png", "/images/products/512/course.png", "/images/products/512/diplom.png", "/images/products/512/magister.png", "/images/products/512/analyze.png", "/images/products/512/practice.png", "/images/products/512/businesscredit.png", "/images/products/512/businessinvest.png", "/images/products/512/search.png" };
             _mobileimages = new string[] { "/images/products/128/consul.png", "/images/products/128/course.png", "/images/products/128/diplom.png", "/images/products/128/magister.png", "/images/products/128/analyze.png", "/images/products/128/practice.png", "/images/products/128/businesscredit.png", "/images/products/128/businessinvest.png", "/images/products/512/search.png" };
             _description = new string[] { "/pages/Consul.html", "/pages/Course.html", "/pages/Diploma.html", "/pages/Magister.html", "/pages/ComplexAnalyze.html", "/pages/Report.html", "/pages/BP.html", "/pages/InvestBP.html", "/pages/SearchPaid.html" };
@@ -102,11 +102,21 @@ namespace Petronomica.Controllers
             return View("OrderSettings", orderViewModel);
         }
         [HttpPost]
+        public async Task<IActionResult> SaveReport(PracticeReportDetail detail, IFormFile[] files)
+        {
+            TempData["YourMail"] = detail.Email;
+            TempData["YourMessage"] = detail.Message;
+            OrderViewModel orderViewModel = OrderRoutine(6);
+            PracticeReportPreOrderEmail courseEmail = new PracticeReportPreOrderEmail(_lastorderid, detail, orderViewModel, files);
+            await _ms.Send(courseEmail);
+            return View("OrderSettings", orderViewModel);
+        }
+        [HttpPost]
         public async Task<IActionResult> SaveSearchPaid(SearchPaidDetail detail, IFormFile[] files)
         {
             TempData["YourMail"] = detail.Email;
             TempData["YourMessage"] = detail.Message;
-            OrderViewModel orderViewModel = OrderRoutine(4);
+            OrderViewModel orderViewModel = OrderRoutine(9);
             SearchPreOrderEmail courseEmail = new SearchPreOrderEmail(_lastorderid, detail, orderViewModel, files);
             await _ms.Send(courseEmail);
             return View("OrderSettings", orderViewModel);
@@ -116,18 +126,28 @@ namespace Petronomica.Controllers
         {
             TempData["YourMail"] = detail.Email;
             TempData["YourMessage"] = detail.Message;
-            OrderViewModel orderViewModel = OrderRoutine(4);
+            OrderViewModel orderViewModel = OrderRoutine(5);
             AFPreOrderEmail courseEmail = new AFPreOrderEmail(_lastorderid, detail, orderViewModel, files);
             await _ms.Send(courseEmail);
             return View("OrderSettings", orderViewModel);
         }
         [HttpPost]
-        public async Task<IActionResult> SaveCreditBP(CreditBPDetal detail, IFormFile[] files)
+        public async Task<IActionResult> SaveCreditBP(CreditBPDetail detail, IFormFile[] files)
         {
             TempData["YourMail"] = detail.Email;
             TempData["YourMessage"] = detail.Message;
-            OrderViewModel orderViewModel = OrderRoutine(4);
-            AFPreOrderEmail courseEmail = new AFPreOrderEmail(_lastorderid, detail, orderViewModel, files);
+            OrderViewModel orderViewModel = OrderRoutine(7);
+            CreditBPPreOrderEmail courseEmail = new CreditBPPreOrderEmail(_lastorderid, detail, orderViewModel, files);
+            await _ms.Send(courseEmail);
+            return View("OrderSettings", orderViewModel);
+        }
+        [HttpPost]
+        public async Task<IActionResult> SaveInvestBP(InvestBPDetail detail, IFormFile[] files)
+        {
+            TempData["YourMail"] = detail.Email;
+            TempData["YourMessage"] = detail.Message;
+            OrderViewModel orderViewModel = OrderRoutine(8);
+            InvestBPPreOrderEmail courseEmail = new InvestBPPreOrderEmail(_lastorderid, detail, orderViewModel, files);
             await _ms.Send(courseEmail);
             return View("OrderSettings", orderViewModel);
         }

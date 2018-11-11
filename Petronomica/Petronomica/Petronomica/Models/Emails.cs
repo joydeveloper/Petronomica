@@ -321,6 +321,64 @@ namespace Petronomica.Models
             }
         }
     }
+    public class PracticeReportPreOrderEmail : PreOrderEmail<PracticeReportDetail>
+    {
+        public PracticeReportPreOrderEmail(int id, PracticeReportDetail cd, OrderViewModel orderViewModel, IFormFile[] files) : base(id, cd, orderViewModel, files)
+        {
+            To = cd.Email;
+        }
+        protected override string CreateMsg(int id, OrderViewModel orderViewModel, IFormFile[] files)
+        {
+            try
+            {
+                int z = 0;
+                _details.YFiles = new string[files.Length];
+                foreach (IFormFile doc in files)
+                {
+                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/userfiles", doc.FileName);
+                    var stream = new FileStream(path, FileMode.Create);
+                    doc.CopyToAsync(stream);
+                    _details.YFiles[z] = path;
+                    stream.Close();
+                    z++;
+                }
+
+                StringBuilder sb = new StringBuilder();
+                sb.Append("<hr><hr>");
+                sb.Append("<div>");
+                sb.Append("<h3 style='text-align:right;'>Дата:" + orderViewModel.OrderDate + "</h3>");
+                sb.Append("</div>");
+                sb.Append("<h3>" + orderViewModel.OrderStatus + "№ " + id + "</h3>");
+                sb.Append("<h3>Тип:" + orderViewModel.OrderType + "</h3>");
+                sb.Append("<h3>Ваш вопрос:" + _details.Message + "</h3>");
+                sb.Append("<hr>");
+                sb.Append("<h3>Адрес электронной почты:" + _details.Email + "</h3>");
+                sb.Append("<h3>Вид информации-" + _details.Theme + "</h3>");
+                sb.Append("<h3>Год публикации(не позднее)" + _details.FirmAnal + "</h3>");
+         
+
+                _details.Message += sb.ToString();
+                return sb.ToString();
+            }
+            catch (Exception e)
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.Append("<hr><hr>");
+                sb.Append("<div>");
+                sb.Append("<h3 style='text-align:right;'>Дата:" + orderViewModel.OrderDate + "</h3>");
+                sb.Append("</div>");
+                sb.Append("<h3>" + orderViewModel.OrderStatus + "№ " + id + "</h3>");
+                sb.Append("<h3>Тип:" + orderViewModel.OrderType + "</h3>");
+                sb.Append("<h3>Ваш вопрос:" + _details.Message + "</h3>");
+                sb.Append("<hr>");
+                sb.Append("<h3>Адрес электронной почты:" + _details.Email + "</h3>");
+                sb.Append("<h3>Вид информации-" + _details.Theme + "</h3>");
+                sb.Append("<h3>Год публикации(не позднее)" + _details.FirmAnal + "</h3>");
+                _details.Message += sb.ToString();
+                return sb.ToString();
+            }
+        }
+    }
     public class SearchPreOrderEmail : PreOrderEmail<SearchPaidDetail>
     {
         public SearchPreOrderEmail(int id, SearchPaidDetail cd, OrderViewModel orderViewModel, IFormFile[] files) : base(id, cd, orderViewModel, files)
@@ -459,9 +517,9 @@ namespace Petronomica.Models
             }
         }
     }
-    public class CreditInvestPreOrderEmail : PreOrderEmail<CreditBPDetal>
+    public class CreditBPPreOrderEmail : PreOrderEmail<CreditBPDetail>
     {
-        public CreditInvestPreOrderEmail(int id,CreditBPDetal cd, OrderViewModel orderViewModel, IFormFile[] files) : base(id, cd, orderViewModel, files)
+        public CreditBPPreOrderEmail(int id,CreditBPDetail cd, OrderViewModel orderViewModel, IFormFile[] files) : base(id, cd, orderViewModel, files)
         {
             To = cd.Email;
         }
@@ -490,15 +548,14 @@ namespace Petronomica.Models
                 sb.Append("<h3>Ваш вопрос:" + _details.Message + "</h3>");
                 sb.Append("<hr>");
                 sb.Append("<h3>Адрес электронной почты:" + _details.Email + "</h3>");
-                sb.Append("<h3>Горизонтальный(временный)" + _details.Intro + "</h3>");
-                sb.Append("<h3>Вертикальный(структурный)" + _details.FirmStatus + "</h3>");
-                sb.Append("<h3>Вертикальный(структурный)" + _details.Industry + "</h3>");
-                sb.Append("<h3>Вертикальный(структурный)" + _details.MarketAnal + "</h3>");
-                sb.Append("<h3>Анализ ликвидности" + _details.Marketing + "</h3>");
-                sb.Append("<h3>Анализ оборачиваемости" + _details.ProductionPlan + "</h3>");
-                sb.Append("<h3>Характеристика этапов финансового цикла" + _details.FinancialPlan + "</h3>");
-                sb.Append("<h3>Показатели ликвидности и платежеспособности" + _details.Economic + "</h3>");
-                sb.Append("<h3>Показатели ликвидности и платежеспособности" + _details.FinancialPlan + "</h3>");
+                sb.Append("<h3>Резюме" + _details.Intro + "</h3>");
+                sb.Append("<h3>Юридический статус организации" + _details.FirmStatus + "</h3>");
+                sb.Append("<h3>Характеристика отрасли" + _details.Industry + "</h3>");
+                sb.Append("<h3>Анализ рынка" + _details.MarketAnal + "</h3>");
+                sb.Append("<h3>Маркетинговый план" + _details.Marketing + "</h3>");
+                sb.Append("<h3>Экономика предприятия" + _details.Economic  + "</h3>");
+                sb.Append("<h3>Экономика предприятия" + _details.ProductionPlan + "</h3>");
+                sb.Append("<h3>Производственный план" + _details.FinancialPlan + "</h3>");
                 sb.Append("<h3>Показатели достаточности денежного потока" + _details.AnalRisk + "</h3>");
                 sb.Append("<h3>Определение типа финансовой устойчивости" + _details.PaidCalendar + "</h3>");
                 sb.Append("<h3>Определение типа финансовой устойчивости" + _details.Conclusion + "</h3>");
@@ -518,15 +575,14 @@ namespace Petronomica.Models
                 sb.Append("<h3>Ваш вопрос:" + _details.Message + "</h3>");
                 sb.Append("<hr>");
                 sb.Append("<h3>Адрес электронной почты:" + _details.Email + "</h3>");
-                sb.Append("<h3>Горизонтальный(временный)" + _details.Intro + "</h3>");
-                sb.Append("<h3>Вертикальный(структурный)" + _details.FirmStatus + "</h3>");
-                sb.Append("<h3>Вертикальный(структурный)" + _details.Industry + "</h3>");
-                sb.Append("<h3>Вертикальный(структурный)" + _details.MarketAnal + "</h3>");
-                sb.Append("<h3>Анализ ликвидности" + _details.Marketing + "</h3>");
-                sb.Append("<h3>Анализ оборачиваемости" + _details.ProductionPlan + "</h3>");
-                sb.Append("<h3>Характеристика этапов финансового цикла" + _details.FinancialPlan + "</h3>");
-                sb.Append("<h3>Показатели ликвидности и платежеспособности" + _details.Economic + "</h3>");
-                sb.Append("<h3>Показатели ликвидности и платежеспособности" + _details.FinancialPlan + "</h3>");
+                sb.Append("<h3>Резюме" + _details.Intro + "</h3>");
+                sb.Append("<h3>Юридический статус организации" + _details.FirmStatus + "</h3>");
+                sb.Append("<h3>Характеристика отрасли" + _details.Industry + "</h3>");
+                sb.Append("<h3>Анализ рынка" + _details.MarketAnal + "</h3>");
+                sb.Append("<h3>Маркетинговый план" + _details.Marketing + "</h3>");
+                sb.Append("<h3>Экономика предприятия" + _details.Economic + "</h3>");
+                sb.Append("<h3>Экономика предприятия" + _details.ProductionPlan + "</h3>");
+                sb.Append("<h3>Производственный план" + _details.FinancialPlan + "</h3>");
                 sb.Append("<h3>Показатели достаточности денежного потока" + _details.AnalRisk + "</h3>");
                 sb.Append("<h3>Определение типа финансовой устойчивости" + _details.PaidCalendar + "</h3>");
                 sb.Append("<h3>Определение типа финансовой устойчивости" + _details.Conclusion + "</h3>");
@@ -567,16 +623,16 @@ namespace Petronomica.Models
                 sb.Append("<h3>Ваш вопрос:" + _details.Message + "</h3>");
                 sb.Append("<hr>");
                 sb.Append("<h3>Адрес электронной почты:" + _details.Email + "</h3>");
-                sb.Append("<h3>Горизонтальный(временный)" + _details.Intro + "</h3>");
-                sb.Append("<h3>Вертикальный(структурный)" + _details.FirmDescription + "</h3>");
-                sb.Append("<h3>Вертикальный(структурный)" + _details.Production + "</h3>");
-                sb.Append("<h3>Анализ ликвидности" + _details.Marketing + "</h3>");
-                sb.Append("<h3>Анализ оборачиваемости" + _details.ProductionPlan + "</h3>");
-                sb.Append("<h3>Характеристика этапов финансового цикла" + _details.FinancialPlan + "</h3>");
-                sb.Append("<h3>Показатели ликвидности и платежеспособности" + _details.Effective + "</h3>");
-                sb.Append("<h3>Показатели достаточности денежного потока" + _details.AnalRisk + "</h3>");
-                sb.Append("<h3>Определение типа финансовой устойчивости" + _details.Conclusion + "</h3>");
-                sb.Append("<h3>Анализ относительных показателей финансовой устойчивости" + _details.Additional + "</h3>");
+                sb.Append("<h3>Краткая характеристика инвестиционного проекта" + _details.Intro + "</h3>");
+                sb.Append("<h3>Описание предприятия" + _details.FirmDescription + "</h3>");
+                sb.Append("<h3>Описание продукции" + _details.Production + "</h3>");
+                sb.Append("<h3>Маркетинг и сбыт продукции" + _details.Marketing + "</h3>");
+                sb.Append("<h3>Производственный план" + _details.ProductionPlan + "</h3>");
+                sb.Append("<h3>Финансовый план" + _details.FinancialPlan + "</h3>");
+                sb.Append("<h3>Эффективность проекта" + _details.Effective + "</h3>");
+                sb.Append("<h3>Анализ и оценка рисков" + _details.AnalRisk + "</h3>");
+                sb.Append("<h3>Заключение" + _details.Conclusion + "</h3>");
+                sb.Append("<h3>Приложения" + _details.Additional + "</h3>");
                 _details.Message += sb.ToString();
                 return sb.ToString();
             }
@@ -592,16 +648,16 @@ namespace Petronomica.Models
                 sb.Append("<h3>Ваш вопрос:" + _details.Message + "</h3>");
                 sb.Append("<hr>");
                 sb.Append("<h3>Адрес электронной почты:" + _details.Email + "</h3>");
-                sb.Append("<h3>Горизонтальный(временный)" + _details.Intro + "</h3>");
-                sb.Append("<h3>Вертикальный(структурный)" + _details.FirmDescription + "</h3>");
-                sb.Append("<h3>Вертикальный(структурный)" + _details.Production + "</h3>");
-                sb.Append("<h3>Анализ ликвидности" + _details.Marketing + "</h3>");
-                sb.Append("<h3>Анализ оборачиваемости" + _details.ProductionPlan + "</h3>");
-                sb.Append("<h3>Характеристика этапов финансового цикла" + _details.FinancialPlan + "</h3>");
-                sb.Append("<h3>Показатели ликвидности и платежеспособности" + _details.Effective + "</h3>");
-                sb.Append("<h3>Показатели достаточности денежного потока" + _details.AnalRisk + "</h3>");
-                sb.Append("<h3>Определение типа финансовой устойчивости" + _details.Conclusion + "</h3>");
-                sb.Append("<h3>Анализ относительных показателей финансовой устойчивости" + _details.Additional + "</h3>");
+                sb.Append("<h3>Краткая характеристика инвестиционного проекта" + _details.Intro + "</h3>");
+                sb.Append("<h3>Описание предприятия" + _details.FirmDescription + "</h3>");
+                sb.Append("<h3>Описание продукции" + _details.Production + "</h3>");
+                sb.Append("<h3>Маркетинг и сбыт продукции" + _details.Marketing + "</h3>");
+                sb.Append("<h3>Производственный план" + _details.ProductionPlan + "</h3>");
+                sb.Append("<h3>Финансовый план" + _details.FinancialPlan + "</h3>");
+                sb.Append("<h3>Эффективность проекта" + _details.Effective + "</h3>");
+                sb.Append("<h3>Анализ и оценка рисков" + _details.AnalRisk + "</h3>");
+                sb.Append("<h3>Заключение" + _details.Conclusion + "</h3>");
+                sb.Append("<h3>Приложения" + _details.Additional + "</h3>");
                 _details.Message += sb.ToString();
                 return sb.ToString();
             }

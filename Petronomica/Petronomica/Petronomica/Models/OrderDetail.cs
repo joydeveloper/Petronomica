@@ -35,6 +35,12 @@ namespace Petronomica.Models
         public bool Presentation { get; set; }
         public bool PresentationReport { get; set; }
     }
+    public class PracticeReportDetail : OrderDetail
+    {
+        public bool Theme { get; set; }
+        public bool FirmAnal { get; set; }
+        public bool Commet { get; set; }
+    }
     public class AFDetail : OrderDetail
     {
 
@@ -82,7 +88,7 @@ namespace Petronomica.Models
         public bool Effective { get; set; }
        
     }
-    public class CreditBPDetal : BP
+    public class CreditBPDetail : BP
     {
         public bool FirmStatus { get; set; }
         public bool Industry { get; set; }

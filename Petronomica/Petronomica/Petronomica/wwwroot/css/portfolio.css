@@ -64,7 +64,13 @@
     text-decoration: none;
     text-shadow: 0px 1px 0px #283966;
 }
+.staricon {
+    background-image: url(../images/star.png);
+    background-color:aqua;
+    width:128px;
+    height:128px;
 
+}
 .card-hover {
     color: #cf2020;
 }

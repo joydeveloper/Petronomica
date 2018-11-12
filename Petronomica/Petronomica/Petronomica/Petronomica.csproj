@@ -4,6 +4,8 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <UserSecretsId>aspnet-Petronomica-EE97FEA1-C73D-4AAC-ABFC-A06EE288BC0C</UserSecretsId>
     <LangVersion>7.1</LangVersion>
+    <Version>2.1.1</Version>
+    <Copyright>"FEZIKO" LLc</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,6 +22,7 @@
     <ProjectReference Include="..\ElementX\ElementX.csproj" />
     <ProjectReference Include="..\HardCodeData\HardCodeData.csproj" />
     <ProjectReference Include="..\Orders\Orders.csproj" />
+    <ProjectReference Include="..\Portfolio\Portfolio.csproj" />
     <ProjectReference Include="..\Products\Products.csproj" />
   </ItemGroup>
 

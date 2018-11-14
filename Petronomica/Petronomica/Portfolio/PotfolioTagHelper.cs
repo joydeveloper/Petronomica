@@ -16,7 +16,7 @@ namespace Portfolio
         {
             i = rand.Next(0, 4);
             var template =
-    $@"<div class='jumbotron'>
+            $@"<div class='jumbotron'>
             <p class='card-text'>{PortfolioItem.Name}</p>
               <div class='d-flex justify-content-between align-items-center'>
                      <img id='{PortfolioItem.IdEmployee}'  class='card-img-right' onclick='PoductConfig({PortfolioItem.Path})'  style='cursor:pointer' src={PortfolioItem.Rating}/>

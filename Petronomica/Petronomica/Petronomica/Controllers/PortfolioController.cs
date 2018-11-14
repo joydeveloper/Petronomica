@@ -13,13 +13,12 @@ namespace Petronomica.Controllers
         public HardCodePortfolio()
         {
             pitems = new List<Portfolio.PortfolioItem>();
-            pitems.Add(new Portfolio.PortfolioItem { IdEmployee = 1, Name = "Консультация по НИР", Rating = 5,Path = "'../images/products/consul.png'" });
-            pitems.Add(new Portfolio.PortfolioItem { IdEmployee = 1, Name = "Курсовая", Rating = 5, Path = "'../images/products/course.png'" });
-            pitems.Add(new Portfolio.PortfolioItem { IdEmployee = 1, Name = "Диплом",Rating= 5, Path = "'../images/products/diplom.png'" });
-            pitems.Add(new Portfolio.PortfolioItem { IdEmployee = 1, Name = "Магистерская диссертация", Rating = 5, Path = "'../images/products/magister.png'" });
-            pitems.Add(new Portfolio.PortfolioItem { IdEmployee = 1, Name = "Комплексный анализ предприятия", Rating = 5, Path = "'../images/products/analyze.png'" });
-            pitems.Add(new Portfolio.PortfolioItem { IdEmployee = 2, Name = "Отчет по практике", Rating = 5, Path = "'../images/products/practice.png'" });
-            pitems.Add(new Portfolio.PortfolioItem { IdEmployee = 2, Name = "Бизнес-план для получения кредита", Rating = 5, Path = "'../images/products/businesscredit.png'" });
+            pitems.Add(new Portfolio.PortfolioItem { IdEmployee = 1, Name = "Диплом", Rating = 5,Path = "../userwfiles/abramov/Diplom.html" });
+            pitems.Add(new Portfolio.PortfolioItem { IdEmployee = 1, Name = "Диссертация", Rating = 5, Path = "../userwfiles/abramov/Disser.html" });
+            pitems.Add(new Portfolio.PortfolioItem { IdEmployee = 1, Name = "Курсовая",Rating= 5, Path = "../userwfiles/abramov/Course.html" });
+            pitems.Add(new Portfolio.PortfolioItem { IdEmployee = 1, Name = "Маркетинговая стратегия", Rating = 5, Path = "../userwfiles/abramov/Marketing.html" });
+            pitems.Add(new Portfolio.PortfolioItem { IdEmployee = 1, Name = "Отчет", Rating = 5, Path = "../userwfiles/abramov/Report.html" });
+           
         
         }
         public async Task<IEnumerable<Portfolio.PortfolioItem>> GetItems()
@@ -29,12 +28,16 @@ namespace Petronomica.Controllers
     }
     public class PortfolioController : Controller
     {
-       
+        private HardCodePortfolio hcd;
+        public PortfolioController()
+        {
+            hcd = new HardCodePortfolio();
+        }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
 
-            return View();
+            return View(await hcd.GetItems());
         }
     }
 }

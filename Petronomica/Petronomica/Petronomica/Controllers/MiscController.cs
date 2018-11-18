@@ -16,5 +16,9 @@ namespace Petronomica.Controllers
         {
             return  PartialView("_GetMiscInfo");
         }
+        public IActionResult Project()
+        {
+            return View();
+        }
     }
 }

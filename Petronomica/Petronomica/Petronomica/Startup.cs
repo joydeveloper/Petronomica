@@ -93,7 +93,7 @@ namespace Petronomica
             //    RoutesToPreCache = "~/css/site.css, ~/images",
             //    RegisterServiceWorker = true
             //});
-            //services.AddAutoMapper();
+         
             services.AddSingleton<IConfiguration>(Configuration);
             services.AddSingleton<IOrderRepo, HardCodeOrderRepository>();
         }

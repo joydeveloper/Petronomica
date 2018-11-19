@@ -1,5 +1,6 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
 for details on configuring this project to bundle and minify static web assets. */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 body {
     /*background-image: url("../images/mainbg.png");
     background-position: center;
@@ -100,17 +101,17 @@ body {
 #qrCode {
     margin: 15px;
 }
-
 .indexfooter {
- 
-  
+   
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    color: cornflowerblue;
+padding-top:2%;
+    color: white;
     text-align: center;
-    margin-top:10%;
 }
+
 
 #social-em {
     font-size: 62px;
@@ -129,39 +130,94 @@ img {
 }
 
 
-/* Hide/rearrange for smaller screens */
-@media screen and (max-width: 767px) {
-    /* Hide captions */
+section {
+    padding: 60px 0;
+}
 
-    .navbtn {
-        margin-top: 1%;
+    section .section-title {
+        text-align: center;
+        color: #007b5e;
+        margin-bottom: 50px;
+        text-transform: uppercase;
     }
 
-    .logoimg {
-        margin: 0;
+#footer {
+    background: #226969 !important;
+}
+
+    #footer h5 {
+        padding-left: 10px;
+        border-left: 3px solid #eeeeee;
+        padding-bottom: 6px;
+        margin-bottom: 20px;
+        color: #ffffff;
     }
 
-    .navbar-nav {
-        margin: 2px;
+    #footer a {
+        color: #ffffff;
+        text-decoration: none !important;
+        background-color: transparent;
+        -webkit-text-decoration-skip: objects;
     }
 
-    .body {
-        margin-top: 10px;
+    #footer ul.social li {
+        padding: 3px 0;
     }
 
-    img {
-        width: 32px;
-        height: 32px;
-        object-fit: cover;
+        #footer ul.social li a i {
+            margin-right: 5px;
+            font-size: 25px;
+            -webkit-transition: .5s all ease;
+            -moz-transition: .5s all ease;
+            transition: .5s all ease;
+        }
+
+        #footer ul.social li:hover a i {
+            font-size: 30px;
+            margin-top: -10px;
+        }
+
+        #footer ul.social li a,
+        #footer ul.quick-links li a {
+            color: #ffffff;
+        }
+
+            #footer ul.social li a:hover {
+                color: #eeeeee;
+            }
+
+    #footer ul.quick-links li {
+        padding: 3px 0;
+        -webkit-transition: .5s all ease;
+        -moz-transition: .5s all ease;
+        transition: .5s all ease;
     }
 
-    #social-em {
-        font-size: 30px;
-    }
-    .mainnav{
-        font-size:10px;
+        #footer ul.quick-links li:hover {
+            padding: 3px 0;
+            margin-left: 5px;
+            font-weight: 700;
+        }
+
+        #footer ul.quick-links li a i {
+            margin-right: 5px;
+        }
+
+        #footer ul.quick-links li:hover a i {
+            font-weight: 700;
+        }
+
+@media (max-width:767px) {
+    #footer h5 {
+        padding-left: 0;
+        border-left: transparent;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
     }
 }
+
+
+
 
 @media screen and (max-width: 1024px) {
     /* Hide captions */

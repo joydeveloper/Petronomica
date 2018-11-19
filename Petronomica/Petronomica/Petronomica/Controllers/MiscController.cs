@@ -20,5 +20,19 @@ namespace Petronomica.Controllers
         {
             return View();
         }
+      
+              public IActionResult Guarantee()
+        {
+            return View();
+        }
+        public IActionResult PaidMethods()
+        {
+            return View();
+        }
+        public IActionResult AntiPlagiat()
+        {
+            return View();
+        }
+
     }
 }

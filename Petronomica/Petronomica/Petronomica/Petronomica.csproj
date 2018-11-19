@@ -30,6 +30,7 @@
     <Folder Include="Components\" />
     <Folder Include="wwwroot\images\userfiles\" />
     <Folder Include="wwwroot\portfolio\" />
+    <Folder Include="wwwroot\userfiles\" />
     <Folder Include="wwwroot\userwfiles\unknown\" />
   </ItemGroup>
 

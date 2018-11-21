@@ -16,16 +16,15 @@ namespace Portfolio
         {
             i = rand.Next(0, 4);
             var template =
-            $@"<div class='jumbotron'>
-            <p class='card-text'>{PortfolioItem.Name}</p>
-              <div class='d-flex justify-content-between align-items-center'>
-                     <img id='{PortfolioItem.IdEmployee}'  class='card-img-right' onclick='PoductConfig({PortfolioItem.Path})'  style='cursor:pointer' src={PortfolioItem.Rating}/>
-              </div>";
+         $@"<div class='card-body'>
+      <h4 class='text-muted alert {colors[i]}'>{PortfolioItem.Name}</h4>
+      <div class='d-flex justify-content-between align-items-center'>
+      </div>";
             output.TagName = "div";
             output.Attributes.SetAttribute("class", "card mb-1 shadow-sm");
             output.Content.AppendHtml(template);
             output.Content.AppendHtml("</div>");
         }
     }
-   
+          
 }

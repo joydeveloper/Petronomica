@@ -13,11 +13,11 @@ namespace Petronomica.Controllers
         public HardCodePortfolio()
         {
             pitems = new List<Portfolio.PortfolioItem>();
-            pitems.Add(new Portfolio.PortfolioItem { IdEmployee = 1, Name = "Диплом", Rating = 5,Path = "../userwfiles/abramov/Diplom.html" });
-            pitems.Add(new Portfolio.PortfolioItem { IdEmployee = 1, Name = "Диссертация", Rating = 5, Path = "../userwfiles/abramov/Disser.html" });
-            pitems.Add(new Portfolio.PortfolioItem { IdEmployee = 1, Name = "Курсовая",Rating= 5, Path = "../userwfiles/abramov/Course.html" });
-            pitems.Add(new Portfolio.PortfolioItem { IdEmployee = 1, Name = "Маркетинговая стратегия", Rating = 5, Path = "../userwfiles/abramov/Marketing.html" });
-            pitems.Add(new Portfolio.PortfolioItem { IdEmployee = 1, Name = "Отчет", Rating = 5, Path = "../userwfiles/abramov/Report.html" });
+            pitems.Add(new Portfolio.PortfolioItem { IdEmployee = 1, Name = "Диссертация", Rating = 5,downloadPath= "../userwfiles/portfolio/Disser.docx" });
+            pitems.Add(new Portfolio.PortfolioItem { IdEmployee = 1, Name = "Курсовая", Rating = 5, downloadPath = "../userwfiles/portfolio/Problems.docx" });
+            pitems.Add(new Portfolio.PortfolioItem { IdEmployee = 1, Name = "Курсовая",Rating= 5, downloadPath = "../userwfiles/portfolio/Unemployment.docx" });
+            pitems.Add(new Portfolio.PortfolioItem { IdEmployee = 1, Name = "Бизнес-план", Rating = 5 , downloadPath = "../userwfiles/portfolio/BP.docx" });
+            pitems.Add(new Portfolio.PortfolioItem { IdEmployee = 1, Name = "Отчет", Rating = 5, downloadPath = "../userwfiles/portfolio/Report.docx" });
            
         
         }

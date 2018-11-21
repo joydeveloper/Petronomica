@@ -3,11 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Petronomica.Models;
+using SharedServices;
 
 namespace Petronomica.Controllers
 {
     public class MiscController : Controller
     {
+        private readonly IMessageSender _ms;
+      
+        public MiscController( IMessageSender ms)
+        {
+            _ms = ms;
+        }
         public IActionResult Index()
         {
             return View();
@@ -33,6 +41,18 @@ namespace Petronomica.Controllers
         {
             return View();
         }
+        public IActionResult Wish()
+        {
 
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> WishGet(ConsulDetail detail)
+        {
+       
+            ConfirmEmail Email = new ConfirmEmail( detail.Email, detail.Message);
+            await _ms.Send(Email);
+            return View(Request.Headers["Referer"].ToString());
+        }
     }
 }

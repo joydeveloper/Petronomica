@@ -87,7 +87,7 @@ $@"<img class='card-img-top' style='background-color:{topcolors[i]};cursor:point
 $@"<img class='card-img-top' style='cursor:pointer' src={Product.Image} alt={Product.Id}  onclick='ProductConfig({Product.Id})' onmouseover='CardAnimOver(this)' onmouseout='CardAnimLost(this)'>
         <div class='card-body {css}'  onclick='PreOrder({Product.Id})';>
             <h5 class='card-title'>{Product.Name}</h5>
-            <p class='card-text'>Цена от </p>
+            <p class='card-text'>Цена  </p>
              <div class='card-footer'>
              <h5 class='text-muted alert {colors[i]}'>От {Product.Price} рублей</h5>
         </div>";

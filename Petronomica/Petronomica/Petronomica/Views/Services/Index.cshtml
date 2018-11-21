@@ -9,7 +9,12 @@
 
 @{await Html.RenderPartialAsync("_GetOrderInfo");}
 
-
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <p class="lead">Вы можете заказать у нас научно-исследовательскую работу полностью.</p>
+        <p>Или только определенную часть, воспользовавшись конструктором НИР<p/>
+    </div>
+</div>
 @{var ismobile = false;}
 @if (!ismobile)
 {

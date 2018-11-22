@@ -11,7 +11,6 @@ namespace Petronomica.Controllers
     public class MiscController : Controller
     {
         private readonly IMessageSender _ms;
-      
         public MiscController( IMessageSender ms)
         {
             _ms = ms;
@@ -28,7 +27,6 @@ namespace Petronomica.Controllers
         {
             return View();
         }
-      
               public IActionResult Guarantee()
         {
             return View();
@@ -43,16 +41,19 @@ namespace Petronomica.Controllers
         }
         public IActionResult Wish()
         {
-
+            return View();
+        }
+        public IActionResult WishSuccess()
+        {
             return View();
         }
         [HttpPost]
         public async Task<IActionResult> WishGet(ConsulDetail detail)
         {
-       
-            ConfirmEmail Email = new ConfirmEmail( detail.Email, detail.Message);
+
+            WishEmail Email = new WishEmail( detail.Email, detail.Message);
             await _ms.Send(Email);
-            return View(Request.Headers["Referer"].ToString());
+            return View("WishSuccess");
         }
     }
 }

@@ -27,6 +27,19 @@ namespace Petronomica.Models
         }
 
     }
+    public class WishEmail : EmailType
+    {
+        public WishEmail(string emailto, string message)
+        {
+            Name = "Пожелания и предложения";
+            From = "development@petronomica.ru";
+            To = "development@petronomica.ru";
+            Subject = "Пожелание "+emailto;
+            Message = message;
+            Password = "Toster12";
+        }
+
+    }
     public abstract class PreOrderEmail<T>:EmailType 
     {
        protected abstract string CreateMsg(int id,OrderViewModel orderViewModel, IFormFile[] files);

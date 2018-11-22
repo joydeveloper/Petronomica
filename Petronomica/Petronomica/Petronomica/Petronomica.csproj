@@ -9,6 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\portfolio\**" />
+    <Content Remove="wwwroot\portfolio\**" />
+    <EmbeddedResource Remove="wwwroot\portfolio\**" />
+    <None Remove="wwwroot\portfolio\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="7.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.4" PrivateAssets="All" />
@@ -18,6 +25,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\PetronomicaServices\PetronomicaServices.csproj" />
     <ProjectReference Include="..\..\SharedServices\SharedServices.csproj" />
+    <ProjectReference Include="..\Blog\Blog.csproj" />
     <ProjectReference Include="..\Client\Client.csproj" />
     <ProjectReference Include="..\ElementX\ElementX.csproj" />
     <ProjectReference Include="..\HardCodeData\HardCodeData.csproj" />
@@ -29,7 +37,6 @@
   <ItemGroup>
     <Folder Include="Components\" />
     <Folder Include="wwwroot\images\userfiles\" />
-    <Folder Include="wwwroot\portfolio\" />
     <Folder Include="wwwroot\userfiles\" />
     <Folder Include="wwwroot\userwfiles\unknown\" />
   </ItemGroup>

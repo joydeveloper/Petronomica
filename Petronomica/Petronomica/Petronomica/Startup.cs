@@ -86,13 +86,13 @@ namespace Petronomica
             services.AddSession();
             services.AddDistributedMemoryCache();
             services.AddMvc();
-            services.AddProgressiveWebApp(new PwaOptions
-            {
-                Strategy = ServiceWorkerStrategy.CacheFirst,
-                CacheId = "v5",
-                RoutesToPreCache = "~/css/site.css, ~/images",
-                RegisterServiceWorker = true
-            });
+            //services.AddProgressiveWebApp(new PwaOptions
+            //{
+            //    Strategy = ServiceWorkerStrategy.CacheFirst,
+            //    CacheId = "v5",
+            //    RoutesToPreCache = "~/css/site.css, ~/images",
+            //    RegisterServiceWorker = true
+            //});
 
             services.AddSingleton<IConfiguration>(Configuration);
             services.AddSingleton<IOrderRepo, HardCodeOrderRepository>();

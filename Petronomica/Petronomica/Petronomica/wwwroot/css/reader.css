@@ -1,0 +1,9 @@
+﻿body {
+ margin:0;
+    
+}
+.tablebg {
+    background-image: url("../images/readerbg1.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}

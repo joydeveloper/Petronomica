@@ -39,6 +39,7 @@
     <Folder Include="wwwroot\images\userfiles\" />
     <Folder Include="wwwroot\userfiles\" />
     <Folder Include="wwwroot\userwfiles\unknown\" />
+    <Folder Include="wwwroot\articles\" />
   </ItemGroup>
 
 </Project>

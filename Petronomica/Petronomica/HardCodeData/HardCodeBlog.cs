@@ -12,9 +12,20 @@ namespace HardCodeData
         public HardCodeBlog()
         {
             articles = new List<BlogItem>();
-            articles.Add(new BlogItem { Id = 1 });
+            articles.Add(new BlogItem { Id = 1 ,});
             blogItemContainer = new BlogItemContainer(articles);
         }
+        public HardCodeBlog(string[] paths)
+        {
+            articles = new List<BlogItem>();
+            int i = 0;
+            foreach (string path in paths)
+            {
 
+                articles.Add(new BlogItem { Id = i, Name = paths[i], Path = paths[i], PublishDate = DateTime.Now });
+                i++;
+            }
+            blogItemContainer = new BlogItemContainer(articles);
+        }
     }
 }

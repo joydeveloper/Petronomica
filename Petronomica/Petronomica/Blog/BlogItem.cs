@@ -11,6 +11,7 @@ namespace Blog
         public float Rating { get; set; }
         public string Path { get; set; }
         public DateTime PublishDate { get; set; }
+        public string Type { get; set; }
     }
     public class BlogItemContainer: Switcher<BlogItem>
     {

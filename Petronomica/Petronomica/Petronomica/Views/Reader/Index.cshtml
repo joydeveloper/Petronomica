@@ -4,31 +4,48 @@
     ViewData["Title"] = " Reader";
 }
 <link rel="stylesheet" asp-href-include="~/css/reader.css" asp-append-version="true" />
+<script asp-src-include="~/js/site.js" asp-append-version="true"></script>
 <h2>@TempData["data"]</h2>
-<div class="tablebg">
-    <div class="row">
-        <div class="col col-md-2 bg-info border-dark">
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown button
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">@Model.blogItemContainer.GetActiveObject().Name</a>
-                    <a class="dropdown-item" href="#">Бухгалтерский учёт</a>
-                    <a class="dropdown-item" href="#">Банковское дело</a>
-                    <a class="dropdown-item" href="#">Маркетинг</a>
-                    <a class="dropdown-item" href="#">Менеджемент</a>
-                    <a class="dropdown-item" href="#">Страхование</a>
-                    <a class="dropdown-item" href="#">Туризм</a>
-                </div>
-            </div>
-            <div class="col col-md-2 bg-light border-dark tablebg">
-                <h2>Введение</h2>
 
-                <p>Производственная практика проходила в отделе кредитования, который является структурным подразделением Управления кредитования Алтайского отделения №8644 ОАО «Сбербанк России». Период прохождения практики с 04.02.13г. по 22.02.13г. </p>
-                <p>Цель производственной практики – научиться применять теоретические знания на практике и получить навыки работы в банке. Для реализации поставленной цели необходимо решить следующие задачи: </p>
+<div class="row">
+    <div class="col col-md-9 mb-6 bg-info border-dark">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Меню документов
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item"  href="#">Статьи</a>
+                <a class="dropdown-item" href="#">Портфолио</a>
+                <a class="dropdown-item" href="#">Договоры</a>
             </div>
         </div>
     </div>
+    <div id="descript" class="col col-md-6 mb-3 bg-light border-dark">
 
+    </div>
+    <p>"@Model.blogItemContainer.GetActiveObject().Type"</p>
 </div>
+ <script>
+    function Description(msg) {
+        document.getElementById("descript").innerHTML = msg;
+    }
+    (function LoadDescription(path) {
+        httpGetAsync("@Model.blogItemContainer.GetActiveObject().Path.Replace("wwwroot","..")", Description);
+    }())
+function Result(msg) {
+    document.getElementById("result").innerHTML = msg;
+    document.getElementById("result").scrollIntoView();
+}
+</script>
+@*function ConcreteProductView() {
+    httpGetAsync("@Url.Action("GetServiceType", "Services")?id=" + @Model.Id, Result);
+    }
+    function httpGetAsync(theUrl, callback) {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.onreadystatechange = function () {
+            if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+                callback(xmlHttp.responseText);
+        }
+        xmlHttp.open("GET", theUrl, true);
+        xmlHttp.send(null);
+    }*@

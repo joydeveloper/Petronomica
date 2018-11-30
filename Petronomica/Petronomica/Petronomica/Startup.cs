@@ -96,6 +96,7 @@ namespace Petronomica
 
             services.AddSingleton<IConfiguration>(Configuration);
             services.AddSingleton<IOrderRepo, HardCodeOrderRepository>();
+            services.AddSingleton<IBlogRepo, HardCodeBlogRepository>();
         }
     }
 }

@@ -79,7 +79,7 @@ namespace Petronomica.Controllers
             OrderViewModel orderViewModel = OrderRoutine(2);
             CoursePreOrderEmail preOrderEmail = new CoursePreOrderEmail(_lastorderid, detail, orderViewModel, files);
             CoursePreOrderEmail preOrderEmailr = new CoursePreOrderEmail(_lastorderid, detail, orderViewModel, files);
-            preOrderEmailr.To= "petr_abramov_1991@mail.ru";
+            preOrderEmailr.To= "mainpetronomist@petronomica.ru";
             await _ms.Send(preOrderEmail);
             await _ms.Send(preOrderEmailr);
             return View("OrderSettings", orderViewModel);
@@ -92,7 +92,7 @@ namespace Petronomica.Controllers
             OrderViewModel orderViewModel = OrderRoutine(3);
             DiplomaPreOrderEmail courseEmail = new DiplomaPreOrderEmail(_lastorderid, detail, orderViewModel, files);
             DiplomaPreOrderEmail courseEmailr = new DiplomaPreOrderEmail(_lastorderid, detail, orderViewModel, files);
-            courseEmailr.To = "petr_abramov_1991@mail.ru";
+            courseEmailr.To = "mainpetronomist@petronomica.ru";
             await _ms.Send(courseEmail);
             await _ms.Send(courseEmailr);
             return View("OrderSettings", orderViewModel);
@@ -105,7 +105,7 @@ namespace Petronomica.Controllers
             OrderViewModel orderViewModel = OrderRoutine(4);
             MagisterPreOrderEmail courseEmail = new MagisterPreOrderEmail(_lastorderid, detail, orderViewModel, files);
             MagisterPreOrderEmail courseEmailr = new MagisterPreOrderEmail(_lastorderid, detail, orderViewModel, files);
-            courseEmailr.To = "petr_abramov_1991@mail.ru";
+            courseEmailr.To = "mainpetronomist@petronomica.ru";
             await _ms.Send(courseEmail);
             await _ms.Send(courseEmailr);
             return View("OrderSettings", orderViewModel);
@@ -118,7 +118,7 @@ namespace Petronomica.Controllers
             OrderViewModel orderViewModel = OrderRoutine(6);
             PracticeReportPreOrderEmail courseEmail = new PracticeReportPreOrderEmail(_lastorderid, detail, orderViewModel, files);
             PracticeReportPreOrderEmail courseEmailr = new PracticeReportPreOrderEmail(_lastorderid, detail, orderViewModel, files);
-            courseEmailr.To = "petr_abramov_1991@mail.ru";
+            courseEmailr.To = "mainpetronomist@petronomica.ru";
             await _ms.Send(courseEmail);
             await _ms.Send(courseEmailr);
             return View("OrderSettings", orderViewModel);
@@ -131,7 +131,7 @@ namespace Petronomica.Controllers
             OrderViewModel orderViewModel = OrderRoutine(9);
             SearchPreOrderEmail courseEmail = new SearchPreOrderEmail(_lastorderid, detail, orderViewModel, files);
             SearchPreOrderEmail courseEmailr = new SearchPreOrderEmail(_lastorderid, detail, orderViewModel, files);
-            courseEmailr.To = "petr_abramov_1991@mail.ru";
+            courseEmailr.To = "mainpetronomist@petronomica.ru";
             await _ms.Send(courseEmail);
             await _ms.Send(courseEmailr);
             return View("OrderSettings", orderViewModel);
@@ -144,7 +144,7 @@ namespace Petronomica.Controllers
             OrderViewModel orderViewModel = OrderRoutine(5);
             AFPreOrderEmail courseEmail = new AFPreOrderEmail(_lastorderid, detail, orderViewModel, files);
             AFPreOrderEmail courseEmailr = new AFPreOrderEmail(_lastorderid, detail, orderViewModel, files);
-            courseEmailr.To = "petr_abramov_1991@mail.ru";
+            courseEmailr.To = "mainpetronomist@petronomica.ru";
             await _ms.Send(courseEmail);
             await _ms.Send(courseEmailr);
             return View("OrderSettings", orderViewModel);
@@ -157,7 +157,7 @@ namespace Petronomica.Controllers
             OrderViewModel orderViewModel = OrderRoutine(7);
             CreditBPPreOrderEmail courseEmail = new CreditBPPreOrderEmail(_lastorderid, detail, orderViewModel, files);
             CreditBPPreOrderEmail courseEmailr = new CreditBPPreOrderEmail(_lastorderid, detail, orderViewModel, files);
-            courseEmailr.To = "petr_abramov_1991@mail.ru";
+            courseEmailr.To = "mainpetronomist@petronomica.ru";
             await _ms.Send(courseEmail);
             await _ms.Send(courseEmailr);
             return View("OrderSettings", orderViewModel);
@@ -170,7 +170,7 @@ namespace Petronomica.Controllers
             OrderViewModel orderViewModel = OrderRoutine(8);
             InvestBPPreOrderEmail courseEmail = new InvestBPPreOrderEmail(_lastorderid, detail, orderViewModel, files);
             InvestBPPreOrderEmail courseEmailr = new InvestBPPreOrderEmail(_lastorderid, detail, orderViewModel, files);
-            courseEmailr.To = "petr_abramov_1991@mail.ru";
+            courseEmailr.To = "mainpetronomist@petronomica.ru";
             await _ms.Send(courseEmail);
             await _ms.Send(courseEmailr);
             return View("OrderSettings", orderViewModel);

@@ -5,9 +5,8 @@
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
 
-
-
-@{await Html.RenderPartialAsync("_GetOrderInfo");}
+<script src="~/js/userinfo.js"></script>
+        @{await Html.RenderPartialAsync("_GetOrderInfo");}
 
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
@@ -15,7 +14,9 @@
         <p>Или только определенную часть, воспользовавшись конструктором НИР<p/>
     </div>
 </div>
-@{var ismobile = false;}
+
+@{   
+    var ismobile = false;}
 @if (!ismobile)
 {
     <div>
@@ -80,7 +81,8 @@ else
         <p id="result">Нажмите на иконку нужной услуги</p>
     </modal-body>
 </modal>*@
+<p id="m" hidden></p>
 <script asp-src-include="~/js/serviceorders.js" asp-append-version="true">
-
+    
 </script>
 

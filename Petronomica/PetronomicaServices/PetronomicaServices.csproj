@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Petronomica\Blog\Blog.csproj" />
     <ProjectReference Include="..\Petronomica\HardCodeData\HardCodeData.csproj" />
     <ProjectReference Include="..\Petronomica\Orders\Orders.csproj" />
     <ProjectReference Include="..\Petronomica\Products\Products.csproj" />

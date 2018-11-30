@@ -1,4 +1,4 @@
-﻿
+﻿@model Blog.BlogItemContainer
 @{
     ViewData["Title"] = "Чтиво";
 }
@@ -6,60 +6,66 @@
 
 <div id="begin"></div>
 @*<div class="nav-scroller py-1 mb-2">
-    <nav class="nav d-flex justify-content-between">
-        <a class="p-2 text-muted" href="#">Общие статьи</a>
-        <a class="p-2 text-muted" href="#">Учебные статьи</a>
-        <a class="p-2 text-muted" href="#">Разное</a>
-    </nav>
-</div>*@
-
-<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
-    <div class="col-md-6 px-0">
-        <h1 class="display-4 font-italic">О ПРОЕКТЕ </h1>
-        <p class="lead my-3">
-            Сложившаяся в настоящий момент времени система высшего образования в нашей стране оставляет желать лучшего.
-            Самое ценное, чему могут научить в университете, это «самообразование». А дать реальные знания и компетенции могут только единицы ВУЗов.
-        </p>
-        <p class="lead mb-0"><a  href='Reader/Index?id=0' class="text-white font-weight-bold">Продолжить читать...</a></p>
-
-    </div>
-</div>
-
+        <nav class="nav d-flex justify-content-between">
+            <a class="p-2 text-muted" href="#">Общие статьи</a>
+            <a class="p-2 text-muted" href="#">Учебные статьи</a>
+            <a class="p-2 text-muted" href="#">Разное</a>
+        </nav>
+    </div>*@
+<blog-main blog-item="Model.ObjectArray[3]"></blog-main>
 <div class="row mb-2">
-    <div class="col-md-6">
-        <div class="card flex-md-row mb-4 box-shadow h-md-250">
-            <div class="card-body d-flex flex-column align-items-start">
-                <strong class="d-inline-block mb-2 text-primary">Учебные статьи</strong>
-                <h3 class="mb-0 text-dark">
-                    Как выбрать научного руководителя?
-                </h3>
-                <div class="mb-1 text-muted">09 Сентября</div>
-                <p class="card-text mb-auto">
-                    Определиться с целью.Сначала определите для себя, хотите ли вы просто написать, защитить диплом и успешно забыть об этом или сделать реально сильную работу, которая послужит ступенькой для научной деятельности. Если вы выбрали первый вариант, то дальше следует определить, кто будет заниматься этой муторной и нудной работой – только вы, только исполнитель (писатель научных работ) или же вы совместно с помощником (тем же исполнителем). Лучшим вариантом, конечно, будет третий. Так вы сэкономите очень много времени и сумеете разобраться в теме, что очень важно, ведь защищать диплом за вас никто не сможет! Во втором случае, естественно, писать работу предстоит самостоятельно.
-
-                </p>
-                <a href='Reader/Index?id=1'>Продолжить читать...</a>
-            </div>
-            <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb">
-        </div>
-    </div>
-    <div class="col-md-6">
-        <div class="card flex-md-row mb-4 box-shadow h-md-250">
-            <div class="card-body d-flex flex-column align-items-start">
-                <strong class="d-inline-block mb-2 text-success">Разное</strong>
-                <h3 class="mb-0">
-                    <a class="text-dark" href="#">Петрокоин</a>
-                </h3>
-                <div class="mb-1 text-muted">26 Августа</div>
-                <p class="card-text mb-auto">Petrocoin – это электронная частная денежная единица, номинальная (внутренняя) стоимость которой обеспечена суммой капиталовложений в создание нашего образовательного портала. </p>
-                <a href="#">Продолжить читать...</a>
-
-            </div>
-            <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb">
-        </div>
-    </div>
-
+    <blog-item blog-item="Model.ObjectArray[0]"></blog-item>
+    <blog-item blog-item="Model.ObjectArray[1]"></blog-item>
 </div>
+<div class="row mb-2">
+    <blog-item blog-item="Model.ObjectArray[2]"></blog-item>
+    <blog-item blog-item="Model.ObjectArray[4]"></blog-item>
+</div>
+<div class="row mb-2">
+    <blog-item blog-item="Model.ObjectArray[5]"></blog-item>
+    <blog-item blog-item="Model.ObjectArray[6]"></blog-item>
+</div>
+<div class="row mb-2">
+    <blog-item blog-item="Model.ObjectArray[7]"></blog-item>
+   
+</div>
+@*<div class="row mb-2">
+    <div class="col-md-6">
+            <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                <div class="card-body d-flex flex-column align-items-start">
+                    <strong class="d-inline-block mb-2 text-primary">Учебные статьи</strong>
+                    <h3 class="mb-0 text-dark">
+                        Как выбрать научного руководителя?
+                    </h3>
+                    <div class="mb-1 text-muted">09 Сентября</div>
+                    <p class="card-text mb-auto">
+                        Определиться с целью.Сначала определите для себя, хотите ли вы просто написать, защитить диплом и успешно забыть об этом или сделать реально сильную работу, которая послужит ступенькой для научной деятельности. Если вы выбрали первый вариант, то дальше следует определить, кто будет заниматься этой муторной и нудной работой – только вы, только исполнитель (писатель научных работ) или же вы совместно с помощником (тем же исполнителем). Лучшим вариантом, конечно, будет третий. Так вы сэкономите очень много времени и сумеете разобраться в теме, что очень важно, ведь защищать диплом за вас никто не сможет! Во втором случае, естественно, писать работу предстоит самостоятельно.
+
+                    </p>
+                    <a href='Reader/Index?id=1'>Продолжить читать...</a>
+                </div>
+                <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                <div class="card-body d-flex flex-column align-items-start">
+                    <strong class="d-inline-block mb-2 text-primary">Учебные статьи</strong>
+                    <h3 class="mb-0 text-dark">
+                        Как выбрать научного руководителя?
+                    </h3>
+                    <div class="mb-1 text-muted">09 Сентября</div>
+                    <p class="card-text mb-auto">
+                        Определиться с целью.Сначала определите для себя, хотите ли вы просто написать, защитить диплом и успешно забыть об этом или сделать реально сильную работу, которая послужит ступенькой для научной деятельности. Если вы выбрали первый вариант, то дальше следует определить, кто будет заниматься этой муторной и нудной работой – только вы, только исполнитель (писатель научных работ) или же вы совместно с помощником (тем же исполнителем). Лучшим вариантом, конечно, будет третий. Так вы сэкономите очень много времени и сумеете разобраться в теме, что очень важно, ведь защищать диплом за вас никто не сможет! Во втором случае, естественно, писать работу предстоит самостоятельно.
+
+                    </p>
+                    <a href='Reader/Index?id=1'>Продолжить читать...</a>
+                </div>
+                <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb">
+            </div>
+        </div>
+
+</div>*@
 <a class="btn-info btn-sm d-xl-none" href="#begin">Наверх</a>
 
 @*<main role="main" class="container">
@@ -142,3 +148,72 @@
             </footer>
             </div>
     </main>*@
+@*<div class="row mb-2">
+    <div class="card mb-6">
+        <div class='card flex-md-row mb-4 box-shadow h-md-250'>
+            <div class='card-body d-flex flex-column align-items-start'>
+                <strong class='d-inline-block mb-2 text-primary'>Общие</strong>
+                <h3 class='mb-0 text-dark'>
+                    Структура бизнес-плана
+                </h3>
+                <div class='mb-1 text-muted'> 25.10.2018 0:00:00</div>
+                <p class='card-text mb-auto'>
+                    Независимо от цели, для которой составляется бизнес-план, в нем в обязательном порядке должны быть следующие основные разделы:
+                </p>
+                <a href='Reader/Index?id=1'> Продолжить читать...</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="card mb-6">
+        <div class='card flex-md-row mb-4 box-shadow h-md-250'>
+            <div class='card-body d-flex flex-column align-items-start'>
+                <strong class='d-inline-block mb-2 text-primary'>Общие</strong>
+                <h3 class='mb-0 text-dark'>
+                    Структура бизнес-плана
+                </h3>
+                <div class='mb-1 text-muted'> 25.10.2018 0:00:00</div>
+                <p class='card-text mb-auto'>
+                    Независимо от цели, для которой составляется бизнес-план, в нем в обязательном порядке должны быть следующие основные разделы:
+                </p>
+                <a href='Reader/Index?id=1'> Продолжить читать...</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>*@
+@*<div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <div class="card-body d-flex flex-column align-items-start">
+                <strong class="d-inline-block mb-2 text-primary">Учебные статьи</strong>
+                <h3 class="mb-0 text-dark">
+                    Как выбрать научного руководителя?
+                </h3>
+                <div class="mb-1 text-muted">09 Сентября</div>
+                <p class="card-text mb-auto">
+                    Определиться с целью.Сначала определите для себя, хотите ли вы просто написать, защитить диплом и успешно забыть об этом или сделать реально сильную работу, которая послужит ступенькой для научной деятельности. Если вы выбрали первый вариант, то дальше следует определить, кто будет заниматься этой муторной и нудной работой – только вы, только исполнитель (писатель научных работ) или же вы совместно с помощником (тем же исполнителем). Лучшим вариантом, конечно, будет третий. Так вы сэкономите очень много времени и сумеете разобраться в теме, что очень важно, ведь защищать диплом за вас никто не сможет! Во втором случае, естественно, писать работу предстоит самостоятельно.
+
+                </p>
+                <a href='Reader/Index?id=1'>Продолжить читать...</a>
+            </div>
+            <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb">
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <div class="card-body d-flex flex-column align-items-start">
+                <strong class="d-inline-block mb-2 text-primary">Учебные статьи</strong>
+                <h3 class="mb-0 text-dark">
+                    Как выбрать научного руководителя?
+                </h3>
+                <div class="mb-1 text-muted">09 Сентября</div>
+                <p class="card-text mb-auto">
+                    Определиться с целью.Сначала определите для себя, хотите ли вы просто написать, защитить диплом и успешно забыть об этом или сделать реально сильную работу, которая послужит ступенькой для научной деятельности. Если вы выбрали первый вариант, то дальше следует определить, кто будет заниматься этой муторной и нудной работой – только вы, только исполнитель (писатель научных работ) или же вы совместно с помощником (тем же исполнителем). Лучшим вариантом, конечно, будет третий. Так вы сэкономите очень много времени и сумеете разобраться в теме, что очень важно, ведь защищать диплом за вас никто не сможет! Во втором случае, естественно, писать работу предстоит самостоятельно.
+
+                </p>
+                <a href='Reader/Index?id=1'>Продолжить читать...</a>
+            </div>
+            <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb">
+        </div>
+    </div>*@

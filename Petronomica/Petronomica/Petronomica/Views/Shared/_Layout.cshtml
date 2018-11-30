@@ -69,13 +69,13 @@
             <div class="container">
                 <div class="row text-center text-xs-center text-sm-left text-md-left">
                     <div class="col-xs-12 col-sm-4 col-md-4">
-                 
+
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-4">
                         <h5>Заказчику</h5>
                         <ul class="list-unstyled quick-links">
                             <li><a href="~/userwfiles/abramov/Offert.docx"><i class="fa fa-angle-double-right"></i>Договор</a></li>
-                            <li><a asp-controller="Misc" asp-action="Guarantee"><i class="fa fa-angle-double-right"></i>Гарантии</a></li>  
+                            <li><a asp-controller="Misc" asp-action="Guarantee"><i class="fa fa-angle-double-right"></i>Гарантии</a></li>
                             <li><a asp-controller="Misc" asp-action="Index"><i class="fa fa-angle-double-right"></i>Источники</a></li>
                         </ul>
                     </div>
@@ -199,9 +199,42 @@
         <script asp-src-include="~/js/site.js" asp-append-version="true"></script>
         <script>
             var app = new AppX();
-                                                                                                                                                                                     //   app.ShowUserInfo();
+            //   app.ShowUserInfo();
 
         </script>
+        <!--Yandex.Metrika counter -->
+        <script type="text/javascript">
+            (function (d, w, c) {
+                (w[c] = w[c] || []).push(function () {
+                    try {
+                        w.yaCounter51357256 = new Ya.Metrika2({
+                            id: 51357256,
+                            clickmap: true,
+                            trackLinks: true,
+                            accurateTrackBounce: true,
+                            webvisor: true
+                        });
+                    } catch (e) { }
+                });
+
+                var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function () { n.parentNode.insertBefore(s, n); };
+                s.type = "text/javascript";
+                s.async = true;
+                s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+                if (w.opera == "[object Opera]") {
+                    d.addEventListener("DOMContentLoaded", f, false);
+                } else { f(); }
+            })(document, window, "yandex_metrika_callbacks2");
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/51357256" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+        <!-- /Yandex.Metrika counter -->
+        <!--Start Prodalet code {literal}-->
+        <script>(function (d, w) { var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; var dt = new Date().getTime(); s.type = "text/javascript"; s.id = "plt_main"; s.src = "https://prodalet.ru/bundles/api/main.js?h=" + dt; s.setAttribute("data-pltkey", "5be64ac340b42409748b46c1"); s.setAttribute("data-plthost", "https://prodalet.ru"); s.async = true; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window);</script><!--End Prodalet code {/literal}-->
         @RenderSection("Scripts", required: false)
+
 </body>
 </html>

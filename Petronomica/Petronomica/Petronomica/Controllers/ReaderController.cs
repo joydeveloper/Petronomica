@@ -10,26 +10,17 @@ namespace Petronomica.Controllers
 {
     public class ReaderController : Controller
     {
-        HardCodeBlog hcb;
-        public ReaderController()
+        private readonly IBlogRepo _blogrepo;
+        public ReaderController(IBlogRepo blogcontrol)
         {
-            try
-            {
-                string[] dirs = Directory.GetFiles("wwwroot/articles/", "*.html");
-                hcb = new HardCodeBlog(dirs);
-            }
-            catch (Exception e)
-            {
-                hcb = new HardCodeBlog(new string[] { "wwwroot/articles/0312" });
-            }
+            _blogrepo = blogcontrol;
             // Only get files that begin with the letter "c."
         }
         public IActionResult Index(int id)
         {
-            hcb.blogItemContainer.SetActive(id);
-            return View(hcb);
+            _blogrepo.GetArticlesAsync().Result.SetActive(id);
+            return View(_blogrepo.GetArticlesAsync().Result);
         }
-
     }
   
 }

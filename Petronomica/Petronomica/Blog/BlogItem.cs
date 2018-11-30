@@ -12,6 +12,7 @@ namespace Blog
         public string Path { get; set; }
         public DateTime PublishDate { get; set; }
         public string Type { get; set; }
+        public string Short { get; set; }
     }
     public class BlogItemContainer: Switcher<BlogItem>
     {

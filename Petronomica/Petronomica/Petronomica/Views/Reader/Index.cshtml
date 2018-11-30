@@ -1,37 +1,42 @@
-﻿@model HardCodeData.HardCodeBlog
+﻿@model Blog.BlogItemContainer
 
 @{
     ViewData["Title"] = " Reader";
 }
 <link rel="stylesheet" asp-href-include="~/css/reader.css" asp-append-version="true" />
 <script asp-src-include="~/js/site.js" asp-append-version="true"></script>
+<script asp-src-include="~/js/reader.js" asp-append-version="true"></script>
 <h2>@TempData["data"]</h2>
-
-<div class="row">
-    <div class="col col-md-9 mb-6 bg-info border-dark">
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Меню документов
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item"  href="#">Статьи</a>
-                <a class="dropdown-item" href="#">Портфолио</a>
-                <a class="dropdown-item" href="#">Договоры</a>
-            </div>
-        </div>
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Статьи
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="Index?id=0">@Model.ObjectArray[0].Name</a>
+        <a class="dropdown-item" href="Index?id=1">@Model.ObjectArray[1].Name</a>
+        <a class="dropdown-item" href="Index?id=2">@Model.ObjectArray[2].Name</a>
+        <a class="dropdown-item" href="Index?id=3">@Model.ObjectArray[3].Name</a>
+        <a class="dropdown-item" href="Index?id=4">@Model.ObjectArray[4].Name</a>
+        <a class="dropdown-item" href="Index?id=5">@Model.ObjectArray[5].Name</a>
+        <a class="dropdown-item" href="Index?id=6">@Model.ObjectArray[6].Name</a>
+        <a class="dropdown-item" href="Index?id=7">@Model.ObjectArray[7].Name</a>
     </div>
-    <div id="descript" class="col col-md-6 mb-3 bg-light border-dark">
-
-    </div>
-    <p>"@Model.blogItemContainer.GetActiveObject().Type"</p>
 </div>
- <script>
-    function Description(msg) {
-        document.getElementById("descript").innerHTML = msg;
-    }
-    (function LoadDescription(path) {
-        httpGetAsync("@Model.blogItemContainer.GetActiveObject().Path.Replace("wwwroot","..")", Description);
-    }())
+
+   
+    <div id="descript" class="bg-light border-dark">
+
+    </div>
+  
+
+<script>
+  
+  function Description(msg) {
+    document.getElementById("descript").innerHTML = msg;
+}
+(function LoadDescription(path) {
+    httpGetAsync("@Model.GetActiveObject().Path.Replace("wwwroot","..")", Description);
+}())
 function Result(msg) {
     document.getElementById("result").innerHTML = msg;
     document.getElementById("result").scrollIntoView();

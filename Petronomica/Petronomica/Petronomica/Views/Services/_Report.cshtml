@@ -13,18 +13,18 @@
                 <form asp-controller="Services" asp-action="SaveSearchPaid" method="post" enctype="multipart/form-data">
 
                     <div class="row">
-                        @*<div class="col-md-6 mb-3">
+                        <div class="col-md-6 mb-3">
                                 <label for="firstName">Адрес электронной почты</label>
                                 <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Введите почту" asp-for="Email" required>
                                 <div class="invalid-feedback">
                                     Почтовый адрес обязателен для заполнения
                                 </div>
-                            </div>*@
+                            </div>
                     </div>
             
                     <div class="mb-3">
                         <label class="custom-control-label" for="plan">Тема</label>
-                        <input type="datetime-local" id="plan" asp-for="Theme">
+                        <input type="text" id="plan" asp-for="Theme">
                     </div>
                     <label class="custom-control-label" for="referat">Анализ</label>
                     <input type="text" class="form-control" id="referat" asp-for="FirmAnal">

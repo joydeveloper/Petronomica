@@ -1,4 +1,8 @@
 ﻿@model IEnumerable<Product>
+
+@{
+    ViewData["Title"] = "Услуги";
+}
 <link rel="stylesheet" asp-href-include="~/css/services.css" asp-append-version="true" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         asp-fallback-src="~/lib/bootstrap/assets/js/vendor/popper.min.js"
@@ -6,16 +10,16 @@
         crossorigin="anonymous"></script>
 
 <script src="~/js/userinfo.js"></script>
-        @{await Html.RenderPartialAsync("_GetOrderInfo");}
+@{await Html.RenderPartialAsync("_GetOrderInfo");}
 
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
         <p class="lead">Вы можете заказать у нас научно-исследовательскую работу полностью.</p>
-        <p>Или только определенную часть, воспользовавшись конструктором НИР<p/>
+        <p>Или только определенную часть, воспользовавшись конструктором НИР<p />
     </div>
 </div>
 
-@{   
+@{
     var ismobile = false;}
 @if (!ismobile)
 {
@@ -76,13 +80,13 @@ else
 }
 
 @*<modal id="simpleModal"
-       title="Предзаказ">
-    <modal-body>
-        <p id="result">Нажмите на иконку нужной услуги</p>
-    </modal-body>
-</modal>*@
+           title="Предзаказ">
+        <modal-body>
+            <p id="result">Нажмите на иконку нужной услуги</p>
+        </modal-body>
+    </modal>*@
 <p id="m" hidden></p>
 <script asp-src-include="~/js/serviceorders.js" asp-append-version="true">
-    
+
 </script>
 

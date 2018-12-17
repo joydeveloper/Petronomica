@@ -34,8 +34,11 @@
 @model Petronomica.ViewModels.OrderViewModel
 @using (Html.BeginForm("Index", "Misc", FormMethod.Post))
 {
-   
 
+
+}
+@{
+    ViewData["Title"] = "Petronomica";
 }
 <div id="begin"></div>
 
@@ -62,15 +65,15 @@
 
 
         @*<div class="btn-group-vertical">
-            <button class="btn btn-primary">Я гость</button>
-            <button class="btn btn-primary">Я знаю про Петрономику!</button>
-            <button class="btn btn-primary">Зарегистрироватся</button>
-            <button class="btn btn-primary">У меня есть инвайт</button>
-        </div>*@
+                <button class="btn btn-primary">Я гость</button>
+                <button class="btn btn-primary">Я знаю про Петрономику!</button>
+                <button class="btn btn-primary">Зарегистрироватся</button>
+                <button class="btn btn-primary">У меня есть инвайт</button>
+            </div>*@
         <div class="jumbotron container body-content" style="width:90%;height:35%;margin-top:2%">
             <p class="lead">Время нельзя остановить, но его можно обогнать… Обогнать при помощи разума!</p>
         </div>
-     
+
         <div class="col text-center">
             <h2>Возможности.</h2>
             <ol class="text-left" style="padding-right:1%">
@@ -80,12 +83,12 @@
                 <li>Блог с полезными статьями!</li>
 
                 @*<li>Мы предоставляем максимально полную информацию о нашем проекте и всегда готовы к диалогу с нашими клиентами.</li>
-            <li>Удобное и эффективное взаимодействие.</li>
-            <li>Бесплатное консультирование, информационная поддержка и интересный и полезный контент.</li>
-            <li>Относительно низкие цены на оказание услуг.</li>
-            <li>Отсутствие комиссии при оплате.</li>
-            <li>Постоянное развитие и совершенствование проекта.</li>
-            <li>Возможность учиться и развиваться вместе с нами и даже зарабатывать!</li>*@
+                    <li>Удобное и эффективное взаимодействие.</li>
+                    <li>Бесплатное консультирование, информационная поддержка и интересный и полезный контент.</li>
+                    <li>Относительно низкие цены на оказание услуг.</li>
+                    <li>Отсутствие комиссии при оплате.</li>
+                    <li>Постоянное развитие и совершенствование проекта.</li>
+                    <li>Возможность учиться и развиваться вместе с нами и даже зарабатывать!</li>*@
             </ol>
         </div>
     </div>
@@ -114,8 +117,8 @@
             </div>
         </div>
         @*<div class="carousel-item">
-            <img src="~/images/banners/banner2.svg" alt="Акция осени" class="img-fluid" />
-        </div>*@
+                <img src="~/images/banners/banner2.svg" alt="Акция осени" class="img-fluid" />
+            </div>*@
         <div class="carousel-item">
             <img src="~/images/banners/banner3.svg" alt="Акция осени" class="img-fluid" />
             <div class="carousel-caption" role="option">

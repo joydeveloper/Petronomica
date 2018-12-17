@@ -68,6 +68,10 @@ namespace Petronomica.Controllers
             TempData["YourMessage"] = detail.Message;
             OrderViewModel orderViewModel = OrderRoutine(1);
             ConsulPreOrderEmail preOrderEmail = new ConsulPreOrderEmail(_lastorderid, detail, orderViewModel, files);
+            ConsulPreOrderEmail preOrderEmailr = new ConsulPreOrderEmail(_lastorderid, detail, orderViewModel, files);
+            preOrderEmailr.To = "mainpetronomist@petronomica.ru";
+            await _ms.Send(preOrderEmail);
+            await _ms.Send(preOrderEmailr);
             await _ms.Send(preOrderEmail);
             return View("OrderSettings", orderViewModel);
         }

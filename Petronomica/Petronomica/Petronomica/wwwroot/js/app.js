@@ -11,7 +11,7 @@ function AppX() {
         self._userinfo = new UserInfo();
         console.log(this._userinfo);
         console.log(window.document.head);
-
+    
     }
     function SelectStrategy() {
         GetScenario();

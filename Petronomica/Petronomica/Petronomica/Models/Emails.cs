@@ -71,19 +71,16 @@ namespace Petronomica.Models
         }
         protected override string CreateMsg(int id, OrderViewModel orderViewModel, IFormFile[] files)
         {
-            try
-            {
-                int z = 0;
-                _details.YFiles = new string[files.Length];
-                foreach (IFormFile doc in files)
-                {
-                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/userfiles", doc.FileName);
-                    var stream = new FileStream(path, FileMode.Create);
-                    doc.CopyToAsync(stream);
-                    _details.YFiles[z] = path;
-                    stream.Close();
-                    z++;
-                }
+            //try
+            //{
+            //    int z = 0;
+            //    _details.YFiles = new string[files.Length];
+            //    foreach (IFormFile doc in files)
+            //    {
+            //        var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/userfiles", doc.FileName);
+            //        _details.YFiles[z] = path;
+            //        z++;
+            //    }
                 AttachmentPath = _details.YFiles;
                 StringBuilder sb = new StringBuilder();
                 sb.Append("<hr><hr>");
@@ -98,22 +95,9 @@ namespace Petronomica.Models
                 sb.Append("<hr>");
                 return sb.ToString();
             }
-            catch (Exception e)
-            {
-                StringBuilder sb = new StringBuilder();
-                sb.Append("<hr><hr>");
-                sb.Append("<div>");
-                sb.Append("<h3 style='text-align:right;'>Дата:" + orderViewModel.OrderDate + "</h3>");
-                sb.Append("</div>");
-                sb.Append("<h3>Предзаказ № " + id + "</h3>");
-                sb.Append("<h3>Тип:" + orderViewModel.OrderType + "</h3>");
-                sb.Append("<h3>Ваш вопрос:" + _details.Message + "</h3>");
-                sb.Append("<hr>");
-                sb.Append("<h3>Статус:" + orderViewModel.OrderStatus + "</h3>");
-                return sb.ToString();
-            }
+            
         }
-    }
+    
     public class CoursePreOrderEmail : PreOrderEmail<CourseDetail>
     {
         public CoursePreOrderEmail(int id, CourseDetail cd, OrderViewModel orderViewModel, IFormFile[] files) : base(id, cd, orderViewModel, files)

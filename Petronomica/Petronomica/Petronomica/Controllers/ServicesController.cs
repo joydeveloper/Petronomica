@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Client;
@@ -67,12 +68,22 @@ namespace Petronomica.Controllers
             TempData["YourMail"] = detail.Email;
             TempData["YourMessage"] = detail.Message;
             OrderViewModel orderViewModel = OrderRoutine(1);
+            int z = 0;
+            detail.YFiles = new string[files.Length];
+            foreach (IFormFile doc in files)
+            {
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/userfiles", doc.FileName);
+                var stream = new FileStream(path, FileMode.Create);
+                await doc.CopyToAsync(stream);
+                detail.YFiles[z] = path;
+                stream.Close();
+                z++;
+            }
             ConsulPreOrderEmail preOrderEmail = new ConsulPreOrderEmail(_lastorderid, detail, orderViewModel, files);
             ConsulPreOrderEmail preOrderEmailr = new ConsulPreOrderEmail(_lastorderid, detail, orderViewModel, files);
             preOrderEmailr.To = "mainpetronomist@petronomica.ru";
             await _ms.Send(preOrderEmail);
             await _ms.Send(preOrderEmailr);
-            await _ms.Send(preOrderEmail);
             return View("OrderSettings", orderViewModel);
         }
         [HttpPost]

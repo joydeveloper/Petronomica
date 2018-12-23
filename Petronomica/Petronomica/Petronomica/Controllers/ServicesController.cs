@@ -92,10 +92,22 @@ namespace Petronomica.Controllers
             TempData["YourMail"] = detail.Email;
             TempData["YourMessage"] = detail.Message;
             OrderViewModel orderViewModel = OrderRoutine(2);
+            int z = 0;
+            detail.YFiles = new string[files.Length];
+            foreach (IFormFile doc in files)
+            {
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/userfiles", doc.FileName);
+                var stream = new FileStream(path, FileMode.Create);
+                await doc.CopyToAsync(stream);
+                detail.YFiles[z] = path;
+                stream.Close();
+                z++;
+            }
             CoursePreOrderEmail preOrderEmail = new CoursePreOrderEmail(_lastorderid, detail, orderViewModel, files);
             CoursePreOrderEmail preOrderEmailr = new CoursePreOrderEmail(_lastorderid, detail, orderViewModel, files);
             preOrderEmailr.To= "mainpetronomist@petronomica.ru";
-            await _ms.Send(preOrderEmail);
+            preOrderEmailr.Subject = detail.Email;
+           await _ms.Send(preOrderEmail);
             await _ms.Send(preOrderEmailr);
             return View("OrderSettings", orderViewModel);
         }
@@ -105,9 +117,21 @@ namespace Petronomica.Controllers
             TempData["YourMail"] = detail.Email;
             TempData["YourMessage"] = detail.Message;
             OrderViewModel orderViewModel = OrderRoutine(3);
+            int z = 0;
+            detail.YFiles = new string[files.Length];
+            foreach (IFormFile doc in files)
+            {
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/userfiles", doc.FileName);
+                var stream = new FileStream(path, FileMode.Create);
+                await doc.CopyToAsync(stream);
+                detail.YFiles[z] = path;
+                stream.Close();
+                z++;
+            }
             DiplomaPreOrderEmail courseEmail = new DiplomaPreOrderEmail(_lastorderid, detail, orderViewModel, files);
             DiplomaPreOrderEmail courseEmailr = new DiplomaPreOrderEmail(_lastorderid, detail, orderViewModel, files);
             courseEmailr.To = "mainpetronomist@petronomica.ru";
+            courseEmailr.Subject = detail.Email;
             await _ms.Send(courseEmail);
             await _ms.Send(courseEmailr);
             return View("OrderSettings", orderViewModel);
@@ -118,9 +142,21 @@ namespace Petronomica.Controllers
             TempData["YourMail"] = detail.Email;
             TempData["YourMessage"] = detail.Message;
             OrderViewModel orderViewModel = OrderRoutine(4);
+            int z = 0;
+            detail.YFiles = new string[files.Length];
+            foreach (IFormFile doc in files)
+            {
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/userfiles", doc.FileName);
+                var stream = new FileStream(path, FileMode.Create);
+                await doc.CopyToAsync(stream);
+                detail.YFiles[z] = path;
+                stream.Close();
+                z++;
+            }
             MagisterPreOrderEmail courseEmail = new MagisterPreOrderEmail(_lastorderid, detail, orderViewModel, files);
             MagisterPreOrderEmail courseEmailr = new MagisterPreOrderEmail(_lastorderid, detail, orderViewModel, files);
             courseEmailr.To = "mainpetronomist@petronomica.ru";
+            courseEmailr.Subject = detail.Email;
             await _ms.Send(courseEmail);
             await _ms.Send(courseEmailr);
             return View("OrderSettings", orderViewModel);
@@ -131,9 +167,21 @@ namespace Petronomica.Controllers
             TempData["YourMail"] = detail.Email;
             TempData["YourMessage"] = detail.Message;
             OrderViewModel orderViewModel = OrderRoutine(6);
+            int z = 0;
+            detail.YFiles = new string[files.Length];
+            foreach (IFormFile doc in files)
+            {
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/userfiles", doc.FileName);
+                var stream = new FileStream(path, FileMode.Create);
+                await doc.CopyToAsync(stream);
+                detail.YFiles[z] = path;
+                stream.Close();
+                z++;
+            }
             PracticeReportPreOrderEmail courseEmail = new PracticeReportPreOrderEmail(_lastorderid, detail, orderViewModel, files);
             PracticeReportPreOrderEmail courseEmailr = new PracticeReportPreOrderEmail(_lastorderid, detail, orderViewModel, files);
             courseEmailr.To = "mainpetronomist@petronomica.ru";
+            courseEmailr.Subject = detail.Email;
             await _ms.Send(courseEmail);
             await _ms.Send(courseEmailr);
             return View("OrderSettings", orderViewModel);
@@ -144,9 +192,21 @@ namespace Petronomica.Controllers
             TempData["YourMail"] = detail.Email;
             TempData["YourMessage"] = detail.Message;
             OrderViewModel orderViewModel = OrderRoutine(9);
+            int z = 0;
+            detail.YFiles = new string[files.Length];
+            foreach (IFormFile doc in files)
+            {
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/userfiles", doc.FileName);
+                var stream = new FileStream(path, FileMode.Create);
+                await doc.CopyToAsync(stream);
+                detail.YFiles[z] = path;
+                stream.Close();
+                z++;
+            }
             SearchPreOrderEmail courseEmail = new SearchPreOrderEmail(_lastorderid, detail, orderViewModel, files);
             SearchPreOrderEmail courseEmailr = new SearchPreOrderEmail(_lastorderid, detail, orderViewModel, files);
             courseEmailr.To = "mainpetronomist@petronomica.ru";
+            courseEmailr.Subject = detail.Email;
             await _ms.Send(courseEmail);
             await _ms.Send(courseEmailr);
             return View("OrderSettings", orderViewModel);
@@ -157,9 +217,21 @@ namespace Petronomica.Controllers
             TempData["YourMail"] = detail.Email;
             TempData["YourMessage"] = detail.Message;
             OrderViewModel orderViewModel = OrderRoutine(5);
+            int z = 0;
+            detail.YFiles = new string[files.Length];
+            foreach (IFormFile doc in files)
+            {
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/userfiles", doc.FileName);
+                var stream = new FileStream(path, FileMode.Create);
+                await doc.CopyToAsync(stream);
+                detail.YFiles[z] = path;
+                stream.Close();
+                z++;
+            }
             AFPreOrderEmail courseEmail = new AFPreOrderEmail(_lastorderid, detail, orderViewModel, files);
             AFPreOrderEmail courseEmailr = new AFPreOrderEmail(_lastorderid, detail, orderViewModel, files);
             courseEmailr.To = "mainpetronomist@petronomica.ru";
+            courseEmailr.Subject = detail.Email;
             await _ms.Send(courseEmail);
             await _ms.Send(courseEmailr);
             return View("OrderSettings", orderViewModel);
@@ -170,9 +242,21 @@ namespace Petronomica.Controllers
             TempData["YourMail"] = detail.Email;
             TempData["YourMessage"] = detail.Message;
             OrderViewModel orderViewModel = OrderRoutine(7);
+            int z = 0;
+            detail.YFiles = new string[files.Length];
+            foreach (IFormFile doc in files)
+            {
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/userfiles", doc.FileName);
+                var stream = new FileStream(path, FileMode.Create);
+                await doc.CopyToAsync(stream);
+                detail.YFiles[z] = path;
+                stream.Close();
+                z++;
+            }
             CreditBPPreOrderEmail courseEmail = new CreditBPPreOrderEmail(_lastorderid, detail, orderViewModel, files);
             CreditBPPreOrderEmail courseEmailr = new CreditBPPreOrderEmail(_lastorderid, detail, orderViewModel, files);
             courseEmailr.To = "mainpetronomist@petronomica.ru";
+            courseEmailr.Subject = detail.Email;
             await _ms.Send(courseEmail);
             await _ms.Send(courseEmailr);
             return View("OrderSettings", orderViewModel);
@@ -183,9 +267,21 @@ namespace Petronomica.Controllers
             TempData["YourMail"] = detail.Email;
             TempData["YourMessage"] = detail.Message;
             OrderViewModel orderViewModel = OrderRoutine(8);
+            int z = 0;
+            detail.YFiles = new string[files.Length];
+            foreach (IFormFile doc in files)
+            {
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/userfiles", doc.FileName);
+                var stream = new FileStream(path, FileMode.Create);
+                await doc.CopyToAsync(stream);
+                detail.YFiles[z] = path;
+                stream.Close();
+                z++;
+            }
             InvestBPPreOrderEmail courseEmail = new InvestBPPreOrderEmail(_lastorderid, detail, orderViewModel, files);
             InvestBPPreOrderEmail courseEmailr = new InvestBPPreOrderEmail(_lastorderid, detail, orderViewModel, files);
             courseEmailr.To = "mainpetronomist@petronomica.ru";
+            courseEmailr.Subject = detail.Email;
             await _ms.Send(courseEmail);
             await _ms.Send(courseEmailr);
             return View("OrderSettings", orderViewModel);

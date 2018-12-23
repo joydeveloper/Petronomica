@@ -15,7 +15,7 @@
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="firstName">Адрес электронной почты</label>
-                            <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Введите почту" asp-for="Email" required>
+                            <input type="email" id="firstName" class="form-control" aria-describedby="emailHelp" placeholder="Введите почту" asp-for="Email" required>
                             <div class="invalid-feedback">
                                 Почтовый адрес обязателен для заполнения
                             </div>
@@ -24,13 +24,13 @@
 
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="thm" asp-for="Theme" checked>
-                        <label class="custom-control-label" for="thm">Тема</label>
+                        <label class="custom-control-label" for="thm">Теоретическая часть</label>
                     </div>
 
 
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="plan" asp-for="FirmAnal" checked>
-                        <label class="custom-control-label" for="plan">Анализ</label>
+                        <label class="custom-control-label" for="plan">Аналитическая часть</label>
                     </div>
                     <div class="custom-file" style="margin-top:5px;">
                         <input type="file" class="btn btn-success" multiple="multiple" name="files" id="files" asp-for="YFiles">

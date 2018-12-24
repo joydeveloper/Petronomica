@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <UserSecretsId>aspnet-Petronomica-EE97FEA1-C73D-4AAC-ABFC-A06EE288BC0C</UserSecretsId>
-    <LangVersion>7.1</LangVersion>
+    <LangVersion>7.2</LangVersion>
     <Version>2.1.1</Version>
     <Copyright>"FEZIKO" LLc</Copyright>
   </PropertyGroup>
@@ -35,6 +35,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\Identity\Services\" />
     <Folder Include="Components\" />
     <Folder Include="wwwroot\images\userfiles\" />
     <Folder Include="wwwroot\userfiles\" />

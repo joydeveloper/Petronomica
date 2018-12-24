@@ -1,13 +1,8 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
 for details on configuring this project to bundle and minify static web assets. */
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 body {
-    /*background-image: url("../images/mainbg.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;*/
-    margin: 0;
-    background-image: linear-gradient(to right, #FFD92D 70%, #2BD663);
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
 
 /* Wrapping element */
@@ -15,84 +10,14 @@ body {
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
-  
 }
 
-.logoimg {
-    background-image: url("../images/logo2.svg");
-    background-repeat: no-repeat;
-    min-height: 60px;
-    min-width: 200px;
-    margin-left: 1%;
-    margin-top: 1%;
-}
-
-.logoimg1 {
-    background-image: url("~qiwi.jpg");
-    background-repeat: no-repeat;
-    min-height: 60px;
-    min-width: 200px;
-    margin-left: 1%;
-    margin-top: 1%;
-}
-.mainnav {
-    font-size: 20px;
-}
-.navfont {
-    color :red;
-}
-
-.navbtn {
-    cursor: pointer;
-    border: none;
-    color: yellow;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    width: auto;
-    height: auto;
-    font-size: 1em;
-    box-shadow: inset 0px 1px 1px 0 #90ADD2,0px 5px 0px 0 #223955,0px 8px 5px 0 #B3B3B3;
-    -moz-box-shadow: inset 0px 1px 1px 0 #90ADD2,0px 5px 0px 0 #223955,0px 8px 5px 0 #B3B3B3;
-    -webkit-box-shadow: inset 0px 1px 1px 0 #90ADD2,0px 5px 0px 0 #223955,0px 8px 5px 0 #B3B3B3;
-    text-shadow: 0 1px 0 #48576D;
-    background-image: linear-gradient(to top, #5884BC, #395e8d);
-    background-color: #4471a9;
-}
-
-    .navbtn:hover {
-        border: none;
-        color: #FFF;
-        box-shadow: inset 0px 1px 0px 0 #90ADD2,0px 2px 0px 0 #223955,0px 4px 3px 0 #6B6B6B;
-        -moz-box-shadow: inset 0px 1px 0px 0 #90ADD2,0px 2px 0px 0 #223955,0px 4px 3px 0 #6B6B6B;
-        -webkit-box-shadow: inset 0px 1px 0px 0 #90ADD2,0px 2px 0px 0 #223955,0px 4px 3px 0 #6B6B6B;
-        background-color: #395e8d;
-    }
-
-    .navbtn:active {
-        text-decoration-color: whitesmoke;
-        background-color: #63A3F5;
-    }
-
-.navbar {
-    /*background-image: linear-gradient(to right, #C9D3DF, #435B7E ,#475B67 90%);*/
-    border-bottom:2px solid ;
-}
 /* Carousel */
 .carousel-caption p {
     font-size: 20px;
     line-height: 1.4;
 }
 
-.navbar-nav {
-    margin-top: 15px;
-    margin-left:2%;
-}
-
-.navbar-toggle {
-    background-color: gray;
-}
 /* Make .svg files in the carousel display properly in older browsers */
 .carousel-inner .item img[src$=".svg"] {
     width: 100%;
@@ -102,181 +27,11 @@ body {
 #qrCode {
     margin: 15px;
 }
-.indexfooter {
-   
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-padding-top:2%;
-    color: white;
-    text-align: center;
-}
 
-
-#social-em {
-    font-size: 62px;
-}
-
-img {
-    width: 64px;
-    height: 64px;
-    object-fit: cover;
-}
-
-.promoblock {
-    background-color: #CDDEFC;
-    border: 0.5em double #86813C;
-    padding: 2px;
-}
-
-
-section {
-    padding: 60px 0;
-}
-
-    section .section-title {
-        text-align: center;
-        color: #007b5e;
-        margin-bottom: 50px;
-        text-transform: uppercase;
-    }
-
-#footer {
-    background: #226969 !important;
-}
-
-    #footer h5 {
-        padding-left: 10px;
-        border-left: 3px solid #eeeeee;
-        padding-bottom: 6px;
-        margin-bottom: 20px;
-        color: #ffffff;
-    }
-
-    #footer a {
-        color: #ffffff;
-        text-decoration: none !important;
-        background-color: transparent;
-        -webkit-text-decoration-skip: objects;
-    }
-
-    #footer ul.social li {
-        padding: 3px 0;
-    }
-
-        #footer ul.social li a i {
-            margin-right: 5px;
-            font-size: 25px;
-            -webkit-transition: .5s all ease;
-            -moz-transition: .5s all ease;
-            transition: .5s all ease;
-        }
-
-        #footer ul.social li:hover a i {
-            font-size: 30px;
-            margin-top: -10px;
-        }
-
-        #footer ul.social li a,
-        #footer ul.quick-links li a {
-            color: #ffffff;
-        }
-
-            #footer ul.social li a:hover {
-                color: #eeeeee;
-            }
-
-    #footer ul.quick-links li {
-        padding: 3px 0;
-        -webkit-transition: .5s all ease;
-        -moz-transition: .5s all ease;
-        transition: .5s all ease;
-    }
-
-        #footer ul.quick-links li:hover {
-            padding: 3px 0;
-            margin-left: 5px;
-            font-weight: 700;
-        }
-
-        #footer ul.quick-links li a i {
-            margin-right: 5px;
-        }
-
-        #footer ul.quick-links li:hover a i {
-            font-weight: 700;
-        }
-
-@media (max-width:767px) {
-    #footer h5 {
-        padding-left: 0;
-        border-left: transparent;
-        padding-bottom: 0px;
-        margin-bottom: 10px;
-    }
-}
-
-
-
-
-@media screen and (max-width: 1024px) {
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
     /* Hide captions */
-
-    .navbtn {
-        margin-top: 1%;
-    }
-
-    .logoimg {
-        margin: 0;
-    }
-
-    .navbar-nav {
-        margin: 2px;
-        margin-left: 10px;
-    }
-
-    .body {
-        margin-top: 10px;
-    }
-    .mainnav {
-        font-size: 14px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    /* Hide captions */
-
-    .navbtn {
-        margin-top: 1%;
-        margin-right: 4px;
-    }
-
-    img {
-        width: 64px;
-        height: 64px;
-        object-fit: cover;
-    }
-    .mainnav {
-        font-size: 16px;
-    }
-}
-
-@media screen and (min-width: 1820px) {
-    /* Hide captions */
-
-
-    .navbtn {
-        margin-top: 1%;
-        margin-right: 4px;
-    }
-
-    img {
-        width: 64px;
-        height: 64px;
-        object-fit: cover;
-    }
-    .mainnav {
-        font-size: 20px;
+    .carousel-caption {
+        display: none;
     }
 }

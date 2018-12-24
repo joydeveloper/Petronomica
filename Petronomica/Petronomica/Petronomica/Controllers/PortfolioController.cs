@@ -15,7 +15,7 @@ namespace Petronomica.Controllers
             pitems = new List<Portfolio.PortfolioItem>();
             pitems.Add(new Portfolio.PortfolioItem { IdEmployee = 1, Name = "Диссертация", Rating = 5,downloadPath= "../userwfiles/portfolio/Disser.docx" });
             pitems.Add(new Portfolio.PortfolioItem { IdEmployee = 1, Name = "Курсовая", Rating = 5, downloadPath = "../userwfiles/portfolio/Problems.docx" });
-            pitems.Add(new Portfolio.PortfolioItem { IdEmployee = 1, Name = "Курсовая",Rating= 5, downloadPath = "../userwfiles/portfolio/Unemployment.docx" });
+            pitems.Add(new Portfolio.PortfolioItem { IdEmployee = 1, Name = "Курсовая",Rating= 5, downloadPath = "../userwfiles/portfolio/Unemployment.doc" });
             pitems.Add(new Portfolio.PortfolioItem { IdEmployee = 1, Name = "Бизнес-план", Rating = 5 , downloadPath = "../userwfiles/portfolio/BP.docx" });
             pitems.Add(new Portfolio.PortfolioItem { IdEmployee = 1, Name = "Отчет", Rating = 5, downloadPath = "../userwfiles/portfolio/Report.docx" });
            

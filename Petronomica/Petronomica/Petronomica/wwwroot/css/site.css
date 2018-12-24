@@ -7,6 +7,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;*/
     margin: 0;
+    background-image: linear-gradient(to right, #FFD92D 70%, #2BD663);
 }
 
 /* Wrapping element */

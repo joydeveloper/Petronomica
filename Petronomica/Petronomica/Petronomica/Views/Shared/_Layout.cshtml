@@ -10,7 +10,7 @@
     <environment include="Development">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
- 
+
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -24,7 +24,7 @@
 <body>
     <div id="begin"></div>
     <!-- Nav -->
-    <nav class="navbar navbar-expand-lg navbar-light" >
+    <nav class="navbar navbar-expand-lg navbar-light">
         <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand logoimg"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -41,8 +41,8 @@
                     <a class="nav-link" asp-controller="Misc" asp-action="Index">Полезное</a>
                 </li>
                 @*<li class="nav-item mainnav">
-                    <a class="nav-link" asp-controller="Project" asp-action="Index">Проект</a>
-                </li>*@
+                        <a class="nav-link" asp-controller="Project" asp-action="Index">Проект</a>
+                    </li>*@
                 <li class="nav-item mainnav">
                     <a class="nav-link" asp-controller="Useful" asp-action="Index">Чтиво</a>
                 </li>
@@ -51,13 +51,16 @@
                 <li>
             </ul>
             <a asp-controller="Misc" asp-action="Wish"><i id="social-em" class="fa fa-envelope-square fa-3x social-em"></i></a>
-           
+
             @*<form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>*@
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>*@
         </div>
+
+
     </nav>
+    <partial name="_LoginPartial" />
     <!-- Cookie partial -->
     @*<partial name="_CookieConsentPartial" />*@
     <div class="container body-content">
@@ -94,45 +97,45 @@
         </section>
         @*<a href="https://wa.me/79836037400?text=Я%20заинтересован%20в%20ваших%20услугах"><img src="~/images/whatsup.png" alt="Whatsup"></a>*@
         @*</div>
-        <section id="footer">
-            <div class="col">
-                <h5>Клиенту</h5>
-                <ul class="list-group-item-danger list-inline  text-center">
-                    <li><a href="~/userwfiles/abramov/Offert.docx"><i class="fa fa-angle-double-right"></i>Договор</a></li>
-                    <li><a asp-controller="Misc" asp-action="Guarantee"><i class="fa fa-angle-double-right"></i>Гарантии</a></li>
-                    <li><a asp-controller="Misc" asp-action="AntiPlagiat"><i class="fa fa-angle-double-right"></i>Антиплагиат</a></li>
-                    <li><a asp-controller="Misc" asp-action="PaidMethods"><i class="fa fa-angle-double-right"></i>Оплата</a></li>
-                    <li><a asp-controller="Misc" asp-action="Index"><i class="fa fa-angle-double-right"></i>Источники</a></li>
-                </ul>
-            </div>
-        </section>
-            <footer class="indexfooter">
+            <section id="footer">
                 <div class="col">
-                    <ul class="list-unstyled list-inline social text-center">
-                        <li class="list-inline-item"><a href="https://www.facebook.com/petronomist/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="https://twitter.com/petronomica" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.instagram.com/petronomica/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                        <li class="list-inline-item"><a href="https://vk.com/petronomica" target="_blank"><i class="fa fa-vk"></i></a></li>
+                    <h5>Клиенту</h5>
+                    <ul class="list-group-item-danger list-inline  text-center">
+                        <li><a href="~/userwfiles/abramov/Offert.docx"><i class="fa fa-angle-double-right"></i>Договор</a></li>
+                        <li><a asp-controller="Misc" asp-action="Guarantee"><i class="fa fa-angle-double-right"></i>Гарантии</a></li>
+                        <li><a asp-controller="Misc" asp-action="AntiPlagiat"><i class="fa fa-angle-double-right"></i>Антиплагиат</a></li>
+                        <li><a asp-controller="Misc" asp-action="PaidMethods"><i class="fa fa-angle-double-right"></i>Оплата</a></li>
+                        <li><a asp-controller="Misc" asp-action="Index"><i class="fa fa-angle-double-right"></i>Источники</a></li>
                     </ul>
                 </div>
-            </footer>*@
+            </section>
+                <footer class="indexfooter">
+                    <div class="col">
+                        <ul class="list-unstyled list-inline social text-center">
+                            <li class="list-inline-item"><a href="https://www.facebook.com/petronomist/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/petronomica" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/petronomica/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="https://vk.com/petronomica" target="_blank"><i class="fa fa-vk"></i></a></li>
+                        </ul>
+                    </div>
+                </footer>*@
 
         <!-- Footer Links -->
         <!-- Copyright -->
         @*<div class="footer-copyright text-center py-3">
-            © 2018 Copyright:
-            <a href="https://feziko.ru/"target="_blank"> Feziko</a>
-        </div>*@
+                © 2018 Copyright:
+                <a href="https://feziko.ru/"target="_blank"> Feziko</a>
+            </div>*@
         <!-- Copyright -->
         <!-- Footer -->
         <!--Footer-->
         @*<footer class="indexfooter">
 
-        <a href="https://wa.me/79836037400?text=Я%20заинтересован%20в%20ваших%20услугах"><img src="~/images/whatsup.png" alt="Whatsup"></a>
-        <a href="#" data-toggle="modal" data-target="#exampleModal"><img src="~/images/sup.png" alt="Поддержка"></a>
-        <a href="https://vk.com/petronomica" target="_blank"><img src="~/images/vk-icon.png" alt="Вконтакте"> </a>
-        @*<a href="https://feziko.ru/" style="margin-left:20%;padding-top:10px"> © 2018 Copyright</a>
-        </footer>*@
+            <a href="https://wa.me/79836037400?text=Я%20заинтересован%20в%20ваших%20услугах"><img src="~/images/whatsup.png" alt="Whatsup"></a>
+            <a href="#" data-toggle="modal" data-target="#exampleModal"><img src="~/images/sup.png" alt="Поддержка"></a>
+            <a href="https://vk.com/petronomica" target="_blank"><img src="~/images/vk-icon.png" alt="Вконтакте"> </a>
+            @*<a href="https://feziko.ru/" style="margin-left:20%;padding-top:10px"> © 2018 Copyright</a>
+            </footer>*@
         <!-- Button trigger modal -->
 
 

@@ -103,6 +103,7 @@ namespace Petronomica.Controllers
                     ModelState.AddModelError("", "Неправильный логин и (или) пароль");
                 }
             }
+            var x = _signInManager.UserManager.Users;
             return View(model);
         }
 
